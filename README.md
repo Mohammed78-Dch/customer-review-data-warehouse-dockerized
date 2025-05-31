@@ -1,62 +1,131 @@
-# Analyzing Customer Reviews of Bank Agencies in Morocco
+# 📦 Data Warehouse Project Submission
 
-## 1. Project Objective
+## 📌 Title
+**Analyzing Customer Reviews of Bank Agencies in Morocco using a Modern Data Stack**
 
-This project focuses on building a data pipeline to collect, process, and analyze Google Maps reviews for bank agencies in Morocco. The main goal is to extract valuable insights, such as customer sentiment trends and common feedback topics, using a modern data stack. This involves automating the extraction of unstructured review data, cleaning and transforming it, storing it efficiently, and visualizing the results for analysis.
+---
 
-## 2. Tech Stack Used
+## 👨‍💻 Author
 
-*   **Data Collection:** Python (with libraries like `requests`, `BeautifulSoup`, or Google Maps API client)
-*   **Scheduling:** Apache Airflow
-*   **Data Storage:** PostgreSQL
-*   **Transformation:** DBT (Data Build Tool)
-*   **BI / Visualization:** Google Looker Studio
-*   **Version Control:** Git / GitHub
+**Mohammed Dechraoui**  
+Master 2 – Systèmes d'Information et Systèmes Intelligents (M2SI)  
+Institut National de Statistique et d'Économie Appliquée (INSEA)  
+📧 mohammed.dechraoui@insea.ac.ma *(example)*  
+📅 Academic Year: 2024–2025  
 
-## 3. Project Structure
+---
 
-The project files are organized into the following main directories:
+## ✅ My Contributions
 
-*   `1_data_collection`: Contains the Python script (`google_maps_scraper.py`) and its dependencies (`requirements.txt`) for fetching reviews.
-*   `2_airflow_automation`: Holds the Airflow DAGs (`data_collection_dag.py`, `data_pipeline_dag.py`) that automate the pipeline execution.
-*   `3_dbt_transformation`: The DBT project folder where data cleaning, transformation, and modeling logic resides (within `models/`). Includes `dbt_project.yml` for configuration.
-*   `4_database_setup`: Contains the `schema_creation.sql` script to set up the necessary tables in your PostgreSQL database.
-*   `5_looker_dashboard`: Includes `dashboard_info.txt` with the link to the final Looker Studio dashboard.
+This project was developed individually as part of the Data Warehouse module. All components of the pipeline were implemented, tested, and documented by me.
 
-## 4. Setup Instructions
+### 🔹 Phase 1 – Data Collection
+- Implemented a Python-based web scraper using **Scrapy** to extract:
+  - Bank name
+  - Branch location
+  - Review text
+  - Rating
+  - Date of review
+- Used **Google Maps search patterns** to locate bank branches in Morocco.
+- Exported data to structured **JSON** and imported it into PostgreSQL.
+- Designed and scheduled an **Apache Airflow DAG** to automate weekly extraction.
 
-1.  **Clone Repository:** Get the code: `git clone <repository_url>` and `cd project_root`.
-2.  **Python Environment (Data Collection):** Go to `1_data_collection`, create a virtual environment (`python -m venv venv`), activate it (`source venv/bin/activate`), and install requirements (`pip install -r requirements.txt`). Configure any necessary API keys or settings.
-3.  **PostgreSQL:** Ensure PostgreSQL is running. Create a database for this project. Run the script in `4_database_setup/schema_creation.sql` to create the tables.
-4.  **DBT:** Go to `3_dbt_transformation`, set up a Python virtual environment if needed (`pip install dbt-postgres`), and configure your `profiles.yml` (usually in `~/.dbt/` or see DBT docs) with your PostgreSQL connection details. Make sure this profile is referenced in `dbt_project.yml`.
-5.  **Airflow:** Install and configure Apache Airflow. Set up a PostgreSQL connection in Airflow. Place the DAG files from `2_airflow_automation` into your Airflow DAGs folder.
+### 🔹 Phase 2 – Data Cleaning & Transformation
+- Used **DBT (Data Build Tool)** to:
+  - Clean raw review data (remove duplicates, missing values).
+  - Normalize and preprocess text (lowercasing, stop words removal).
+- Developed Python scripts to:
+  - Detect the language of reviews.
+  - Apply **sentiment analysis** using TextBlob.
+  - Extract common themes using **LDA topic modeling**.
+- Logged transformations and documented DBT models.
 
-## 5. How to Run the Pipeline
+### 🔹 Phase 3 – Data Modeling (Star Schema)
+- Designed and created the following tables in **PostgreSQL**:
+  - `fact_reviews`
+  - `dim_bank`
+  - `dim_branch`
+  - `dim_location`
+  - `dim_sentiment`
+- Used DBT to create SQL models and load data incrementally.
+- Ensured referential integrity and optimized queries for BI tools.
 
-1.  **Airflow:** The primary way to run the pipeline is through Airflow. Ensure Airflow is running and the DAGs (`data_collection_dag.py`, `data_pipeline_dag.py`) are active. Trigger the main pipeline DAG (`data_pipeline_dag.py`) manually for the first run or rely on its schedule.
-2.  **Manual Steps (Optional):**
-    *   Run the data collection script in `1_data_collection` manually.
-    *   Run DBT commands from within the `3_dbt_transformation` directory (`dbt run`, `dbt test`) after data is collected.
+### 🔹 Phase 4 – BI & Analytics
+- Built a **Looker Studio (Data Studio)** dashboard:
+  - Trends of customer sentiment per bank and branch.
+  - Top positive/negative themes extracted from reviews.
+  - Ranking of bank branches by average sentiment.
+  - Interactive filters for location, bank, and date range.
 
-## 6. Deliverables Location
+### 🔹 Phase 5 – Deployment & Automation
+- Integrated all steps in a single Apache Airflow workflow:
+  - Daily DAG: fetch new reviews, update DBT models, refresh schema.
+  - Included email alerts for DAG failures.
 
-*   **Data Collection Script:** `1_data_collection/google_maps_scraper.py`
-*   **Airflow DAGs:** `2_airflow_automation/`
-*   **DBT Models:** `3_dbt_transformation/models/`
-*   **PostgreSQL Schema Script:** `4_database_setup/schema_creation.sql`
-*   **Looker Studio Dashboard:** Link in `5_looker_dashboard/dashboard_info.txt`
-*   **Project Documentation:** This `README.md` file.
+---
 
-## 7. Dashboard Access
+## 📁 Repository Structure
 
-The final analysis and visualizations are available on a Google Looker Studio dashboard. Please find the access link in the `5_looker_dashboard/dashboard_info.txt` file.
+📁 project-data-warehouse/
+├── airflow/
+│   ├── dags/
+│   │   └── review_pipeline_dag.py
+│   └── scripts/
+│       ├── scraper.py
+│       └── sentiment_analysis.py
+├── .dbt/
+│   ├── models/
+│   └── dbt_project.yml
+└── README.md
 
-## 8. License
+---
 
-[Specify License, e.g., MIT License]
+## 🧪 Tools & Libraries Used
 
-## 9. Authors
+- **Languages**: Python, SQL
+- **Data Collection**: Scrapy, Google Maps search, JSON
+- **Transformation**: DBT
+- **Analysis**: TextBlob,  NLTK
+- **Automation**: Apache Airflow
+- **Database**: PostgreSQL
+- **Visualization**: Looker Studio
+- **Version Control**: GitHub
 
-*  Mohammed Dechraoui
-   Master 2 Systèmes d'Information et Systèmes Intelligents (M2SI)
-   Institut National de Statistique et d'Économie Appliquée (INSEA)
+---
+
+## 📄 Deliverables Checklist
+
+| Deliverable                        | Status     |
+|------------------------------------|------------|
+| Python script for data collection  | ✅ Complete |
+| Airflow DAGs for automation        | ✅ Complete |
+| DBT models for transformation      | ✅ Complete |
+| PostgreSQL star schema             | ✅ Complete |
+| Looker Studio dashboard            | ✅ Complete |
+| Project documentation              | ✅ Complete |
+
+---
+
+## 🧠 Learned Skills
+
+- Designing a modern ETL/ELT pipeline with **Airflow and DBT**
+- Applying **NLP techniques** (sentiment analysis, topic modeling) to real-world unstructured data
+- Modeling a data warehouse using **star schema**
+- Building **interactive BI dashboards** for business users
+- End-to-end project automation with scheduling and monitoring
+
+---
+
+## 📚 Supervisor
+
+**Professor:** Dr. [Name of Supervisor]  
+Course: Data Warehouse & Business Intelligence  
+INSEA – Master M2SI
+
+---
+
+## 📌 Remarks
+
+This project simulates a real-world data engineering and analytics challenge in the banking sector, using customer voice data to drive insights.  
+All scripts, models, dashboards, and datasets are included in this submission and stored in the GitHub repository.
+

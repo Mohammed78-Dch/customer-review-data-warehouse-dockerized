@@ -1,0 +1,22 @@
+[2025-02-20T12:25:42.585+0100] {processor.py:186} INFO - Started process (PID=1008) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2025-02-20T12:25:42.591+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py for tasks to queue
+[2025-02-20T12:25:42.606+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:42.604+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2025-02-20T12:25:42.665+0100] {processor.py:925} INFO - DAG(s) 'example_branch_dop_operator_v3' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2025-02-20T12:25:42.961+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:42.960+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_branch_dop_operator_v3
+[2025-02-20T12:25:43.007+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.006+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_branch_dop_operator_v3
+[2025-02-20T12:25:43.034+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.033+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:example_branch_dop_operator_v3
+[2025-02-20T12:25:43.098+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.097+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_branch_dop_operator_v3
+[2025-02-20T12:25:43.132+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.131+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_branch_dop_operator_v3
+[2025-02-20T12:25:43.180+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.178+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_branch_dop_operator_v3
+[2025-02-20T12:25:43.223+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.222+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_branch_dop_operator_v3
+[2025-02-20T12:25:43.225+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.224+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:25:43.277+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.276+0100] {dag.py:3262} INFO - Creating ORM DAG for example_branch_dop_operator_v3
+[2025-02-20T12:25:43.328+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:43.327+0100] {dag.py:4180} INFO - Setting next_dagrun for example_branch_dop_operator_v3 to 2025-02-20 11:24:00+00:00, run_after=2025-02-20 11:25:00+00:00
+[2025-02-20T12:25:43.423+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py took 0.870 seconds
+[2025-02-20T12:28:52.306+0100] {processor.py:186} INFO - Started process (PID=1090) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2025-02-20T12:28:52.316+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py for tasks to queue
+[2025-02-20T12:28:52.325+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:52.323+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2025-02-20T12:28:52.374+0100] {processor.py:925} INFO - DAG(s) 'example_branch_dop_operator_v3' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py
+[2025-02-20T12:28:52.417+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:52.416+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:28:52.474+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:52.474+0100] {dag.py:4180} INFO - Setting next_dagrun for example_branch_dop_operator_v3 to 2025-02-20 11:27:00+00:00, run_after=2025-02-20 11:28:00+00:00
+[2025-02-20T12:28:52.523+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py took 0.242 seconds

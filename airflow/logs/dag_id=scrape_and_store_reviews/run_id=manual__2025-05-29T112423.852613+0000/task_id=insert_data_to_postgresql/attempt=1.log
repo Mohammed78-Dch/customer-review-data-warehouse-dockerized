@@ -1,0 +1,28 @@
+[2025-05-29T12:24:29.274+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-29T12:24:29.389+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_and_store_reviews.insert_data_to_postgresql manual__2025-05-29T11:24:23.852613+00:00 [queued]>
+[2025-05-29T12:24:29.426+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_and_store_reviews.insert_data_to_postgresql manual__2025-05-29T11:24:23.852613+00:00 [queued]>
+[2025-05-29T12:24:29.427+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-05-29T12:24:29.504+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): insert_data_to_postgresql> on 2025-05-29 11:24:23.852613+00:00
+[2025-05-29T12:24:29.548+0100] {standard_task_runner.py:72} INFO - Started process 52641 to run task
+[2025-05-29T12:24:29.561+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'scrape_and_store_reviews', 'insert_data_to_postgresql', 'manual__2025-05-29T11:24:23.852613+00:00', '--job-id', '2529', '--raw', '--subdir', 'DAGS_FOLDER/scrape_and_store_reviews.py', '--cfg-path', '/tmp/tmpz36ksitc']
+[2025-05-29T12:24:29.565+0100] {standard_task_runner.py:105} INFO - Job 2529: Subtask insert_data_to_postgresql
+[2025-05-29T12:24:29.837+0100] {task_command.py:467} INFO - Running <TaskInstance: scrape_and_store_reviews.insert_data_to_postgresql manual__2025-05-29T11:24:23.852613+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-05-29T12:24:30.281+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='scrape_and_store_reviews' AIRFLOW_CTX_TASK_ID='insert_data_to_postgresql' AIRFLOW_CTX_EXECUTION_DATE='2025-05-29T11:24:23.852613+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-29T11:24:23.852613+00:00'
+[2025-05-29T12:24:30.284+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-05-29T12:24:30.285+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-05-29T12:24:30.286+0100] {logging_mixin.py:190} INFO - Current task name:insert_data_to_postgresql state:running start_date:2025-05-29 11:24:29.390567+00:00
+[2025-05-29T12:24:30.286+0100] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_reviews and current dag run status:running
+[2025-05-29T12:24:30.288+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-05-29T12:24:30.707+0100] {logging_mixin.py:190} INFO - ❌ Erreur PostgreSQL : invalid input syntax for type date: "il y a un mois"
+LINE 3: ...0, Maroc', 'Très très bon service 04/04/25', 5.0, 'il y a un...
+                                                             ^
+[2025-05-29T12:24:30.719+0100] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-29T12:24:30.756+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-05-29T12:24:30.756+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scrape_and_store_reviews, task_id=insert_data_to_postgresql, run_id=manual__2025-05-29T11:24:23.852613+00:00, execution_date=20250529T112423, start_date=20250529T112429, end_date=20250529T112430
+[2025-05-29T12:24:30.842+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-05-29T12:24:30.843+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-05-29T12:24:30.844+0100] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_reviews queued_at:2025-05-29 11:24:24.159286+00:00
+[2025-05-29T12:24:30.844+0100] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:PythonOperator
+[2025-05-29T12:24:30.889+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-05-29T12:24:30.931+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-29T12:24:30.939+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

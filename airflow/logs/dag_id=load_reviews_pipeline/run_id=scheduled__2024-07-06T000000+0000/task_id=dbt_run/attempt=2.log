@@ -1,0 +1,152 @@
+[2025-03-17T00:47:55.405+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-17T00:47:56.080+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_reviews_pipeline.dbt_run scheduled__2024-07-06T00:00:00+00:00 [queued]>
+[2025-03-17T00:47:56.212+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_reviews_pipeline.dbt_run scheduled__2024-07-06T00:00:00+00:00 [queued]>
+[2025-03-17T00:47:56.220+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-03-17T00:47:56.808+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): dbt_run> on 2024-07-06 00:00:00+00:00
+[2025-03-17T00:47:56.841+0000] {standard_task_runner.py:72} INFO - Started process 284897 to run task
+[2025-03-17T00:47:57.387+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'load_reviews_pipeline', 'dbt_run', 'scheduled__2024-07-06T00:00:00+00:00', '--job-id', '353', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmpoxlootye']
+[2025-03-17T00:47:57.394+0000] {standard_task_runner.py:105} INFO - Job 353: Subtask dbt_run
+[2025-03-17T00:47:59.903+0000] {task_command.py:467} INFO - Running <TaskInstance: load_reviews_pipeline.dbt_run scheduled__2024-07-06T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-17T00:48:01.762+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='load_reviews_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T00:00:00+00:00'
+[2025-03-17T00:48:01.766+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-17T00:48:01.767+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-17T00:48:01.768+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run state:running start_date:2025-03-17 00:47:56.081453+00:00
+[2025-03-17T00:48:01.768+0000] {logging_mixin.py:190} INFO - Dag name:load_reviews_pipeline and current dag run status:running
+[2025-03-17T00:48:01.769+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-17T00:48:01.808+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-17T00:48:01.813+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/bank_reviews_project && dbt run']
+[2025-03-17T00:48:01.907+0000] {subprocess.py:99} INFO - Output:
+[2025-03-17T00:48:33.003+0000] {subprocess.py:106} INFO - [0m00:48:32  Running with dbt=1.9.3
+[2025-03-17T00:48:35.735+0000] {subprocess.py:106} INFO - [0m00:48:35  Registered adapter: postgres=1.9.0
+[2025-03-17T00:48:39.145+0000] {subprocess.py:106} INFO - [0m00:48:39  Found 11 models, 4 data tests, 2 sources, 433 macros
+[2025-03-17T00:48:39.191+0000] {subprocess.py:106} INFO - [0m00:48:39
+[2025-03-17T00:48:39.193+0000] {subprocess.py:106} INFO - [0m00:48:39  Concurrency: 4 threads (target='dev')
+[2025-03-17T00:48:39.220+0000] {subprocess.py:106} INFO - [0m00:48:39
+[2025-03-17T00:48:39.908+0000] {subprocess.py:106} INFO - [0m00:48:39  1 of 11 START sql view model public.clean_reviews .............................. [RUN]
+[2025-03-17T00:48:39.938+0000] {subprocess.py:106} INFO - [0m00:48:39  2 of 11 START sql table model public.my_first_dbt_model ........................ [RUN]
+[2025-03-17T00:48:39.951+0000] {subprocess.py:106} INFO - [0m00:48:39  3 of 11 START sql view model public.remove_duplicates .......................... [RUN]
+[2025-03-17T00:48:39.955+0000] {subprocess.py:106} INFO - [0m00:48:39  4 of 11 START sql view model public.stg_clean_reviews .......................... [RUN]
+[2025-03-17T00:48:42.062+0000] {subprocess.py:106} INFO - [0m00:48:42  2 of 11 OK created sql table model public.my_first_dbt_model ................... [[32mSELECT 2[0m in 2.12s]
+[2025-03-17T00:48:42.072+0000] {subprocess.py:106} INFO - [0m00:48:42  1 of 11 OK created sql view model public.clean_reviews ......................... [[32mCREATE VIEW[0m in 2.14s]
+[2025-03-17T00:48:42.076+0000] {subprocess.py:106} INFO - [0m00:48:42  3 of 11 OK created sql view model public.remove_duplicates ..................... [[32mCREATE VIEW[0m in 2.09s]
+[2025-03-17T00:48:42.087+0000] {subprocess.py:106} INFO - [0m00:48:42  4 of 11 OK created sql view model public.stg_clean_reviews ..................... [[32mCREATE VIEW[0m in 2.06s]
+[2025-03-17T00:48:42.110+0000] {subprocess.py:106} INFO - [0m00:48:42  8 of 11 START sql view model public.dim_sentiment .............................. [RUN]
+[2025-03-17T00:48:42.111+0000] {subprocess.py:106} INFO - [0m00:48:42  7 of 11 START sql view model public.dim_location ............................... [RUN]
+[2025-03-17T00:48:42.115+0000] {subprocess.py:106} INFO - [0m00:48:42  5 of 11 START sql view model public.dim_bank ................................... [RUN]
+[2025-03-17T00:48:42.122+0000] {subprocess.py:106} INFO - [0m00:48:42  6 of 11 START sql view model public.dim_branch ................................. [RUN]
+[2025-03-17T00:48:42.598+0000] {subprocess.py:106} INFO - [0m00:48:42  8 of 11 ERROR creating sql view model public.dim_sentiment ..................... [[31mERROR[0m in 0.47s]
+[2025-03-17T00:48:42.631+0000] {subprocess.py:106} INFO - [0m00:48:42  9 of 11 START sql view model public.dwh_model .................................. [RUN]
+[2025-03-17T00:48:42.683+0000] {subprocess.py:106} INFO - [0m00:48:42  6 of 11 ERROR creating sql view model public.dim_branch ........................ [[31mERROR[0m in 0.52s]
+[2025-03-17T00:48:42.895+0000] {subprocess.py:106} INFO - [0m00:48:42  7 of 11 ERROR creating sql view model public.dim_location ...................... [[31mERROR[0m in 0.53s]
+[2025-03-17T00:48:42.934+0000] {subprocess.py:106} INFO - [0m00:48:42  5 of 11 ERROR creating sql view model public.dim_bank .......................... [[31mERROR[0m in 0.64s]
+[2025-03-17T00:48:42.935+0000] {subprocess.py:106} INFO - [0m00:48:42  10 of 11 START sql view model public.my_second_dbt_model ....................... [RUN]
+[2025-03-17T00:48:43.116+0000] {subprocess.py:106} INFO - [0m00:48:43  11 of 11 SKIP relation public.fact_reviews ..................................... [[33mSKIP[0m]
+[2025-03-17T00:48:43.770+0000] {subprocess.py:106} INFO - [0m00:48:43  10 of 11 OK created sql view model public.my_second_dbt_model .................. [[32mCREATE VIEW[0m in 0.88s]
+[2025-03-17T00:48:43.825+0000] {subprocess.py:106} INFO - [0m00:48:43  9 of 11 OK created sql view model public.dwh_model ............................. [[32mCREATE VIEW[0m in 1.15s]
+[2025-03-17T00:48:44.018+0000] {subprocess.py:106} INFO - [0m00:48:44
+[2025-03-17T00:48:44.031+0000] {subprocess.py:106} INFO - [0m00:48:44  Finished running 1 table model, 10 view models in 0 hours 0 minutes and 4.81 seconds (4.81s).
+[2025-03-17T00:48:44.539+0000] {subprocess.py:106} INFO - [0m00:48:44
+[2025-03-17T00:48:44.545+0000] {subprocess.py:106} INFO - [0m00:48:44  [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[2025-03-17T00:48:44.558+0000] {subprocess.py:106} INFO - [0m00:48:44
+[2025-03-17T00:48:44.576+0000] {subprocess.py:106} INFO - [0m00:48:44    Database Error in model dim_sentiment (models/dim_sentiment.sql)
+[2025-03-17T00:48:44.577+0000] {subprocess.py:106} INFO -   syntax error at or near ";"
+[2025-03-17T00:48:44.579+0000] {subprocess.py:106} INFO -   LINE 7: ... FROM "project_data_wherhouse"."public"."stg_clean_reviews";
+[2025-03-17T00:48:44.581+0000] {subprocess.py:106} INFO -                                                                         ^
+[2025-03-17T00:48:44.582+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_project/models/dim_sentiment.sql
+[2025-03-17T00:48:44.597+0000] {subprocess.py:106} INFO - [0m00:48:44
+[2025-03-17T00:48:44.600+0000] {subprocess.py:106} INFO - [0m00:48:44    Database Error in model dim_branch (models/dim_branch.sql)
+[2025-03-17T00:48:44.601+0000] {subprocess.py:106} INFO -   syntax error at or near ";"
+[2025-03-17T00:48:44.613+0000] {subprocess.py:106} INFO -   LINE 7: ... FROM "project_data_wherhouse"."public"."stg_clean_reviews";
+[2025-03-17T00:48:44.614+0000] {subprocess.py:106} INFO -                                                                         ^
+[2025-03-17T00:48:44.635+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_project/models/dim_branch.sql
+[2025-03-17T00:48:44.636+0000] {subprocess.py:106} INFO - [0m00:48:44
+[2025-03-17T00:48:44.637+0000] {subprocess.py:106} INFO - [0m00:48:44    Database Error in model dim_bank (models/dim_bank.sql)
+[2025-03-17T00:48:44.757+0000] {subprocess.py:106} INFO -   syntax error at or near ";"
+[2025-03-17T00:48:44.758+0000] {subprocess.py:106} INFO -   LINE 7: ... FROM "project_data_wherhouse"."public"."stg_clean_reviews";
+[2025-03-17T00:48:44.759+0000] {subprocess.py:106} INFO -                                                                         ^
+[2025-03-17T00:48:44.789+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_project/models/dim_bank.sql
+[2025-03-17T00:48:44.790+0000] {subprocess.py:106} INFO - [0m00:48:44
+[2025-03-17T00:48:44.791+0000] {subprocess.py:106} INFO - [0m00:48:44    Database Error in model dim_location (models/dim_location.sql)
+[2025-03-17T00:48:44.791+0000] {subprocess.py:106} INFO -   syntax error at or near ";"
+[2025-03-17T00:48:44.792+0000] {subprocess.py:106} INFO -   LINE 7: ... FROM "project_data_wherhouse"."public"."stg_clean_reviews";
+[2025-03-17T00:48:44.793+0000] {subprocess.py:106} INFO -                                                                         ^
+[2025-03-17T00:48:44.793+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_project/models/dim_location.sql
+[2025-03-17T00:48:44.806+0000] {subprocess.py:106} INFO - [0m00:48:44
+[2025-03-17T00:48:44.806+0000] {subprocess.py:106} INFO - [0m00:48:44  Done. PASS=6 WARN=0 ERROR=4 SKIP=1 TOTAL=11
+[2025-03-17T00:48:48.459+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2025-03-17T00:48:49.262+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-17T00:48:49.389+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-17T00:48:49.391+0000] {logging_mixin.py:190} INFO - Task start:2025-03-17 00:47:56.081453+00:00 end:2025-03-17 00:48:49.347619+00:00 duration:53.266166
+[2025-03-17T00:48:49.422+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): dbt_run> dag:<DAG: load_reviews_pipeline> dagrun:<DagRun load_reviews_pipeline @ 2024-07-06 00:00:00+00:00: scheduled__2024-07-06T00:00:00+00:00, state:running, queued_at: 2025-03-17 00:42:18.060473+00:00. externally triggered: False>
+[2025-03-17T00:48:49.423+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-17T00:48:49.425+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=load_reviews_pipeline, task_id=dbt_run, run_id=scheduled__2024-07-06T00:00:00+00:00, execution_date=20240706T000000, start_date=20250317T004756, end_date=20250317T004849
+[2025-03-17T00:48:50.020+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-17T00:48:50.026+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 353 for task dbt_run (Bash command failed. The command returned a non-zero exit code 1.; 284897)
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-17T00:48:50.124+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-17T00:48:50.493+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-17T00:48:50.536+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-03-17T00:48:50.548+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics

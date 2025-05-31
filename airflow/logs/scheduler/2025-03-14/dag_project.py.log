@@ -1,0 +1,332 @@
+[2025-03-14T14:22:31.105+0000] {processor.py:186} INFO - Started process (PID=8017) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:22:31.111+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:22:31.127+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:22:31.126+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:22:31.719+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:22:31.718+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T14:22:35.270+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:22:35.270+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:22:35.610+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:22:35.609+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:22:35.913+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:22:35.912+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T14:22:38.330+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T14:22:58.941+0000] {logging_mixin.py:190} INFO - Bank Al-Maghrib
+[2025-03-14T14:23:04.091+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:04.090+0000] {timeout.py:68} ERROR - Process timed out, PID: 8017
+[2025-03-14T14:23:04.129+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:23:04.685+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:04.684+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T14:23:04.827+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:04.826+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T14:23:04.915+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 30.902 seconds
+[2025-03-14T14:23:35.473+0000] {processor.py:186} INFO - Started process (PID=8990) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:23:35.478+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:23:35.492+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:35.490+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:23:35.860+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:35.860+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T14:23:36.049+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:36.048+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:23:36.858+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:36.858+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:23:38.371+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:23:38.371+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T14:23:39.269+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T14:24:06.651+0000] {logging_mixin.py:190} INFO - Bank Al-Maghrib
+[2025-03-14T14:24:08.348+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:08.347+0000] {timeout.py:68} ERROR - Process timed out, PID: 8990
+[2025-03-14T14:24:08.370+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:24:08.429+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:08.429+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T14:24:08.488+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:08.488+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T14:24:08.526+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 30.254 seconds
+[2025-03-14T14:24:40.017+0000] {processor.py:186} INFO - Started process (PID=10088) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:24:40.039+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:24:40.055+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:40.053+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:24:41.441+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:41.440+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T14:24:42.909+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:42.909+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:24:43.493+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:43.493+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:24:44.086+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:24:44.086+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T14:24:49.987+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T14:25:13.217+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:13.216+0000] {timeout.py:68} ERROR - Process timed out, PID: 10088
+[2025-03-14T14:25:13.232+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:25:13.303+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:13.302+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T14:25:13.375+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:13.375+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T14:25:13.432+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 30.321 seconds
+[2025-03-14T14:25:47.525+0000] {processor.py:186} INFO - Started process (PID=11055) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:25:47.530+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:25:47.540+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:47.538+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:25:47.992+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:47.992+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T14:25:48.385+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:48.384+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:25:49.879+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:49.871+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:25:50.438+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:25:50.436+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T14:25:54.716+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T14:26:17.556+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:17.555+0000] {timeout.py:68} ERROR - Process timed out, PID: 11055
+[2025-03-14T14:26:17.613+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:26:17.697+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:17.697+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T14:26:17.780+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:17.779+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T14:26:17.816+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 30.357 seconds
+[2025-03-14T14:26:48.026+0000] {processor.py:186} INFO - Started process (PID=12161) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:26:48.030+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:26:48.039+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:48.038+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:26:48.909+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:48.908+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T14:26:49.506+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:49.505+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:26:50.523+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:50.523+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:26:50.983+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:26:50.982+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T14:27:21.066+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:27:20.929+0000] {timeout.py:68} ERROR - Process timed out, PID: 12161
+[2025-03-14T14:27:22.734+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:27:21.502+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_project.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_project.py", line 6, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/airflow/dags/scraper.py", line 27, in <module>
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 427, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/usr/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/mohammed/airflow/dags/dag_project.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#reducing-dag-complexity, PID: 12161
+[2025-03-14T14:27:49.131+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:41:57.545+0000] {processor.py:186} INFO - Started process (PID=13401) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:41:57.550+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:41:57.554+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:41:57.553+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:42:03.367+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:42:03.365+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T14:42:11.933+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:42:11.929+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:42:13.734+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:42:13.716+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:42:14.234+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:42:14.216+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T14:42:30.735+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:42:30.623+0000] {timeout.py:68} ERROR - Process timed out, PID: 13401
+[2025-03-14T14:42:31.640+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:42:31.021+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_project.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_project.py", line 6, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/airflow/dags/scraper.py", line 27, in <module>
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 427, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/request.py", line 81, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/usr/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/mohammed/airflow/dags/dag_project.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#reducing-dag-complexity, PID: 13401
+[2025-03-14T14:42:48.247+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:55:08.624+0000] {processor.py:186} INFO - Started process (PID=14101) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:55:08.628+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:55:08.632+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:55:08.631+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:55:10.091+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T14:55:10.097+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:55:10.097+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T14:55:16.547+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:55:16.515+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:55:27.717+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:55:27.717+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T14:55:28.514+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:55:28.506+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T14:55:46.049+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:55:43.977+0000] {timeout.py:68} ERROR - Process timed out, PID: 14101
+[2025-03-14T14:59:32.490+0000] {processor.py:186} INFO - Started process (PID=15127) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:59:32.495+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T14:59:32.499+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:59:32.498+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T14:59:33.648+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T14:59:33.651+0000] {logging_mixin.py:190} INFO - [2025-03-14T14:59:33.651+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T15:00:09.196+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:08.828+0000] {timeout.py:68} ERROR - Process timed out, PID: 15127
+[2025-03-14T15:00:10.712+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:00:12.367+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:12.366+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T15:00:12.469+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:12.468+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T15:00:12.551+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 36.526 seconds
+[2025-03-14T15:00:42.699+0000] {processor.py:186} INFO - Started process (PID=15679) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:00:42.702+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T15:00:42.706+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:42.705+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:00:43.616+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T15:00:43.617+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:43.617+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T15:00:44.150+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:44.149+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T15:00:45.181+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:45.180+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T15:00:45.596+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:00:45.596+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T15:01:20.261+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:01:18.301+0000] {timeout.py:68} ERROR - Process timed out, PID: 15679
+[2025-03-14T15:01:37.991+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:03:20.118+0000] {processor.py:186} INFO - Started process (PID=16508) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:03:20.122+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T15:03:20.126+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:03:20.125+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:03:20.842+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T15:03:20.843+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:03:20.843+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T15:03:21.419+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:03:21.419+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T15:03:50.137+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:03:50.135+0000] {timeout.py:68} ERROR - Process timed out, PID: 16508
+[2025-03-14T15:03:50.177+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:03:50.639+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:03:50.638+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T15:03:50.765+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:03:50.763+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T15:03:50.884+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 30.797 seconds
+[2025-03-14T15:04:21.459+0000] {processor.py:186} INFO - Started process (PID=17378) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:04:21.899+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T15:04:21.904+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:04:21.903+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:04:26.324+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T15:04:26.328+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:04:26.327+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T15:04:29.203+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:04:29.202+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T15:04:30.547+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:04:30.546+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T15:04:32.134+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:04:32.134+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T15:04:54.702+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:04:54.140+0000] {timeout.py:68} ERROR - Process timed out, PID: 17378
+[2025-03-14T15:06:25.592+0000] {processor.py:186} INFO - Started process (PID=17750) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:06:25.597+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T15:06:25.615+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:06:25.599+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T15:06:27.476+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T15:06:27.482+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:06:27.482+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T15:06:34.439+0000] {logging_mixin.py:190} INFO - [2025-03-14T15:06:34.415+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:02:57.603+0000] {processor.py:186} INFO - Started process (PID=19997) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:02:57.609+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T16:02:57.625+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:02:57.624+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:02:58.096+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T16:02:58.096+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:02:58.096+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T16:02:58.697+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:02:58.697+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:02:59.014+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:02:59.014+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:02:59.335+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:02:59.335+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T16:03:26.818+0000] {logging_mixin.py:190} INFO - Bank Al-Maghrib
+[2025-03-14T16:03:31.163+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:03:31.162+0000] {timeout.py:68} ERROR - Process timed out, PID: 19997
+[2025-03-14T16:03:33.425+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:03:36.572+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:03:36.570+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T16:03:36.702+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:03:36.701+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T16:03:36.777+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 35.676 seconds
+[2025-03-14T16:04:07.044+0000] {processor.py:186} INFO - Started process (PID=20939) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:04:07.047+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T16:04:07.050+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:07.049+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:04:07.656+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T16:04:07.658+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:07.657+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T16:04:11.031+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:11.030+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:04:11.798+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:11.797+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:04:12.209+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:12.208+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T16:04:40.163+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:40.054+0000] {timeout.py:68} ERROR - Process timed out, PID: 20939
+[2025-03-14T16:04:52.100+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:04:54.266+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:54.216+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T16:04:55.883+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:04:55.780+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T16:04:56.814+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 46.829 seconds
+[2025-03-14T16:08:18.847+0000] {processor.py:186} INFO - Started process (PID=21560) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:08:18.850+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T16:08:18.853+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:08:18.852+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:08:19.652+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T16:08:19.655+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:08:19.655+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T16:08:32.215+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:08:32.177+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:08:34.200+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:08:34.199+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:08:35.077+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:08:35.058+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T16:08:52.016+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:08:51.798+0000] {timeout.py:68} ERROR - Process timed out, PID: 21560
+[2025-03-14T16:09:03.626+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:09:07.734+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:09:07.326+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T16:22:34.337+0000] {processor.py:186} INFO - Started process (PID=22670) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:22:34.368+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T16:22:34.373+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:22:34.373+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:22:34.780+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T16:22:34.782+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:22:34.782+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T16:22:35.299+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:22:35.299+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:22:35.723+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:22:35.723+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:22:36.050+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:22:36.050+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T16:23:07.056+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:23:07.055+0000] {timeout.py:68} ERROR - Process timed out, PID: 22670
+[2025-03-14T16:23:07.163+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:23:08.542+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:23:08.537+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-14T16:23:08.806+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:23:08.793+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-16 00:00:00+00:00, run_after=2025-03-23 00:00:00+00:00
+[2025-03-14T16:23:09.126+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_project.py took 32.140 seconds
+[2025-03-14T16:29:29.311+0000] {processor.py:186} INFO - Started process (PID=23406) to work on /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:29:29.315+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_project.py for tasks to queue
+[2025-03-14T16:29:29.347+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:29:29.318+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_project.py
+[2025-03-14T16:29:30.618+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-14T16:29:30.626+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:29:30.626+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T16:29:36.025+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:29:36.020+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:29:39.287+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:29:39.264+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T16:29:39.827+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:29:39.827+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T16:30:59.700+0000] {logging_mixin.py:190} INFO - [2025-03-14T16:30:03.166+0000] {timeout.py:68} ERROR - Process timed out, PID: 23406

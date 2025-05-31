@@ -1,0 +1,209 @@
+[2025-03-21T02:40:04.970+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-21T02:40:05.018+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_and_store_all_jobs.extract_data manual__2025-03-21T02:39:33.620080+00:00 [queued]>
+[2025-03-21T02:40:05.036+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_and_store_all_jobs.extract_data manual__2025-03-21T02:39:33.620080+00:00 [queued]>
+[2025-03-21T02:40:05.037+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-21T02:40:05.074+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract_data> on 2025-03-21 02:39:33.620080+00:00
+[2025-03-21T02:40:05.103+0000] {standard_task_runner.py:72} INFO - Started process 599536 to run task
+[2025-03-21T02:40:05.129+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'scrape_and_store_all_jobs', 'extract_data', 'manual__2025-03-21T02:39:33.620080+00:00', '--job-id', '1885', '--raw', '--subdir', 'DAGS_FOLDER/scrape_and_store_all_jobs.py', '--cfg-path', '/tmp/tmpwajia7sf']
+[2025-03-21T02:40:05.132+0000] {standard_task_runner.py:105} INFO - Job 1885: Subtask extract_data
+[2025-03-21T02:40:05.702+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_and_store_all_jobs.extract_data manual__2025-03-21T02:39:33.620080+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-21T02:40:06.265+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='scrape_and_store_all_jobs' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-21T02:39:33.620080+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-21T02:39:33.620080+00:00'
+[2025-03-21T02:40:06.283+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-21T02:40:06.284+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-21T02:40:06.285+0000] {logging_mixin.py:190} INFO - Current task name:extract_data state:running start_date:2025-03-21 02:40:05.019055+00:00
+[2025-03-21T02:40:06.285+0000] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_all_jobs and current dag run status:running
+[2025-03-21T02:40:06.286+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-21T02:40:06.296+0000] {logging_mixin.py:190} INFO - Extraction des données depuis rekrute.com...
+[2025-03-21T02:40:09.188+0000] {logging_mixin.py:190} INFO - (rekrute.com) Nombre total de pages : 172
+[2025-03-21T02:40:09.188+0000] {logging_mixin.py:190} INFO - (rekrute.com) Traitement de la page 1...
+[2025-03-21T02:40:10.664+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : RPA BLUEPRISM Developer
+[2025-03-21T02:40:10.665+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : RPA BLUEPRISM Developer
+[2025-03-21T02:40:11.460+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Dessinateur Projeteur Installation Générale/Tuyauterie H/F
+[2025-03-21T02:40:11.461+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Dessinateur Projeteur Installation Générale/Tuyauterie H/F
+[2025-03-21T02:40:12.010+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé(e) de Clientèle
+[2025-03-21T02:40:12.011+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé(e) de Clientèle
+[2025-03-21T02:40:13.020+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chef Comptable
+[2025-03-21T02:40:13.022+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chef Comptable
+[2025-03-21T02:40:13.780+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé de clientèle - Réception d'appel - Rabat
+[2025-03-21T02:40:13.781+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé de clientèle - Réception d'appel - Rabat
+[2025-03-21T02:40:14.388+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Conseiller Digital
+[2025-03-21T02:40:14.389+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Conseiller Digital
+[2025-03-21T02:40:15.292+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Conseiller Commercial
+[2025-03-21T02:40:15.293+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Conseiller Commercial
+[2025-03-21T02:40:15.861+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Conseiller Commercial
+[2025-03-21T02:40:15.862+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Conseiller Commercial
+[2025-03-21T02:40:16.413+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Manager H/F
+[2025-03-21T02:40:16.414+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Manager H/F
+[2025-03-21T02:40:16.975+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Responsable Compensation and Benefits H/F
+[2025-03-21T02:40:16.976+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Responsable Compensation and Benefits H/F
+[2025-03-21T02:40:18.976+0000] {logging_mixin.py:190} INFO - (rekrute.com) Traitement de la page 2...
+[2025-03-21T02:40:21.156+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Accountant
+[2025-03-21T02:40:21.157+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Accountant
+[2025-03-21T02:40:22.233+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Back Office
+[2025-03-21T02:40:22.234+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Back Office
+[2025-03-21T02:40:24.864+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé(e) s de Conduite d'Activité francophones
+[2025-03-21T02:40:24.865+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé(e) s de Conduite d'Activité francophones
+[2025-03-21T02:40:26.153+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : HR Generalist
+[2025-03-21T02:40:26.154+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : HR Generalist
+[2025-03-21T02:40:28.711+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Développeur Full Stack de Talent Expérimenté - PHP7 (H/F)
+[2025-03-21T02:40:28.712+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Développeur Full Stack de Talent Expérimenté - PHP7 (H/F)
+[2025-03-21T02:40:30.118+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Ingénieur Safety/Sécurité Incendie
+[2025-03-21T02:40:30.119+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Ingénieur Safety/Sécurité Incendie
+[2025-03-21T02:40:32.717+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Cadre Recouvrement
+[2025-03-21T02:40:32.718+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Cadre Recouvrement
+[2025-03-21T02:40:33.548+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Data Analyst - Contrôle de Gestion H/F
+[2025-03-21T02:40:33.549+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Data Analyst - Contrôle de Gestion H/F
+[2025-03-21T02:40:34.810+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé(e) de support informatique N0 parfaitement francophones
+[2025-03-21T02:40:34.811+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé(e) de support informatique N0 parfaitement francophones
+[2025-03-21T02:40:36.023+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Assistante RH
+[2025-03-21T02:40:36.024+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Assistante RH
+[2025-03-21T02:40:38.028+0000] {logging_mixin.py:190} INFO - Extraction des données depuis marocemploi.net...
+[2025-03-21T02:40:38.029+0000] {logging_mixin.py:190} INFO - (marocemploi.net) Traitement de la page 1...
+[2025-03-21T02:40:41.071+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Commerciale en Immobilier
+[2025-03-21T02:40:41.072+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Commerciale en Immobilier
+[2025-03-21T02:40:42.775+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : COMPTABLE (H/F)
+[2025-03-21T02:40:42.776+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : COMPTABLE (H/F)
+[2025-03-21T02:40:43.722+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Un(e) Pharmacien Assistant de Production
+[2025-03-21T02:40:43.723+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Un(e) Pharmacien Assistant de Production
+[2025-03-21T02:40:44.725+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Développeur Symfony Junior – API (CDI)
+[2025-03-21T02:40:44.726+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Développeur Symfony Junior – API (CDI)
+[2025-03-21T02:40:46.425+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Responsable Magasin MP
+[2025-03-21T02:40:46.426+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Responsable Magasin MP
+[2025-03-21T02:40:47.742+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Magasinier à Boulevard chefchaouni Ain Sebaa Casablanca
+[2025-03-21T02:40:47.743+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Magasinier à Boulevard chefchaouni Ain Sebaa Casablanca
+[2025-03-21T02:40:48.793+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeurs à Val Fleuri Maarif Casablanca
+[2025-03-21T02:40:48.794+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeurs à Val Fleuri Maarif Casablanca
+[2025-03-21T02:40:50.581+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Technicien réseau
+[2025-03-21T02:40:50.582+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Technicien réseau
+[2025-03-21T02:40:52.029+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2025-03-21T02:40:52.030+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-03-21T02:40:52.049+0000] {process_utils.py:132} INFO - Sending 15 to group 599536. PIDs of all processes in the group: [599536]
+[2025-03-21T02:40:52.060+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 599536
+[2025-03-21T02:40:52.099+0000] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-03-21T02:40:52.171+0000] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/mohammed/venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 56, in scheduler
+    run_command_with_daemon_option(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 59, in <lambda>
+    callback=lambda: _run_scheduler_job(args),
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 47, in _run_scheduler_job
+    run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/scheduler_job_runner.py", line 990, in _execute
+    executor.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 392, in start
+    self.impl.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 330, in start
+    worker.start()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 281, in _Popen
+    return Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 71, in _launch
+    code = process_obj._bootstrap(parent_sentinel=child_r)
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 80, in run
+    return super().run()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 211, in do_work
+    self.execute_work(key=key, command=command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 100, in execute_work
+    state = self._execute_work_in_fork(command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 142, in _execute_work_in_fork
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/airflow/dags/scripts/scraping_all_jobs.py", line 277, in extract_data
+    all_offers.extend(extract_from_marocemploi_net())
+  File "/home/mohammed/airflow/dags/scripts/scraping_all_jobs.py", line 259, in extract_from_marocemploi_net
+    ajouter_offre(offre)
+  File "/home/mohammed/airflow/dags/scripts/scraping_all_jobs.py", line 59, in ajouter_offre
+    with open(JSON_FILE_PATH, "r", encoding="utf-8") as f:
+  File "<frozen codecs>", line 309, in __init__
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-03-21T02:40:52.429+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-21T02:40:52.530+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=599536, status='terminated', exitcode=0, started='02:40:04') (599536) terminated with exit code 0

@@ -1,0 +1,34 @@
+[2025-03-21T14:59:05.464+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-21T14:59:05.553+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.topic_modeling manual__2025-03-21T14:58:57.893711+00:00 [queued]>
+[2025-03-21T14:59:05.577+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.topic_modeling manual__2025-03-21T14:58:57.893711+00:00 [queued]>
+[2025-03-21T14:59:05.577+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-21T14:59:05.692+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): topic_modeling> on 2025-03-21 14:58:57.893711+00:00
+[2025-03-21T14:59:05.715+0000] {standard_task_runner.py:72} INFO - Started process 1013896 to run task
+[2025-03-21T14:59:05.723+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'process_enrichir_clean_reviews', 'topic_modeling', 'manual__2025-03-21T14:58:57.893711+00:00', '--job-id', '1923', '--raw', '--subdir', 'DAGS_FOLDER/process_clean_reviews.py', '--cfg-path', '/tmp/tmpqshbkj3v']
+[2025-03-21T14:59:05.724+0000] {standard_task_runner.py:105} INFO - Job 1923: Subtask topic_modeling
+[2025-03-21T14:59:05.877+0000] {task_command.py:467} INFO - Running <TaskInstance: process_enrichir_clean_reviews.topic_modeling manual__2025-03-21T14:58:57.893711+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-21T14:59:06.141+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='process_enrichir_clean_reviews' AIRFLOW_CTX_TASK_ID='topic_modeling' AIRFLOW_CTX_EXECUTION_DATE='2025-03-21T14:58:57.893711+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-21T14:58:57.893711+00:00'
+[2025-03-21T14:59:06.145+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-21T14:59:06.145+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-21T14:59:06.145+0000] {logging_mixin.py:190} INFO - Current task name:topic_modeling state:running start_date:2025-03-21 14:59:05.554240+00:00
+[2025-03-21T14:59:06.146+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews and current dag run status:running
+[2025-03-21T14:59:06.146+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-21T14:59:06.150+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-21T14:59:06.158+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/topic_modeling.py']
+[2025-03-21T14:59:06.189+0000] {subprocess.py:99} INFO - Output:
+[2025-03-21T15:00:42.531+0000] {subprocess.py:106} INFO - === Sujets Extraits ===
+[2025-03-21T15:00:42.631+0000] {subprocess.py:106} INFO - Sujet 1: expérience meilleur club architecture centre
+[2025-03-21T15:00:42.633+0000] {subprocess.py:106} INFO - Sujet 2: service bon mauvais nul voir
+[2025-03-21T15:00:42.657+0000] {subprocess.py:106} INFO - Sujet 3: professionnel mrc service personnel jai
+[2025-03-21T15:00:42.660+0000] {subprocess.py:106} INFO - Sujet 4: agence client service aucun respect
+[2025-03-21T15:00:42.666+0000] {subprocess.py:106} INFO - Sujet 5: banque bien muser excellent maroc
+[2025-03-21T15:00:42.672+0000] {subprocess.py:106} INFO - ✅ Extraction des sujets terminée avec succès ! 🚀
+[2025-03-21T15:00:47.732+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-21T15:00:48.027+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-21T15:00:48.031+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=process_enrichir_clean_reviews, task_id=topic_modeling, run_id=manual__2025-03-21T14:58:57.893711+00:00, execution_date=20250321T145857, start_date=20250321T145905, end_date=20250321T150048
+[2025-03-21T15:00:48.112+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-21T15:00:48.113+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-21T15:00:48.113+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews queued_at:2025-03-21 14:58:58.583206+00:00
+[2025-03-21T15:00:48.113+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-21T15:00:48.161+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-21T15:00:48.197+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

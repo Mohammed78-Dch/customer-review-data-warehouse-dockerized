@@ -1,0 +1,169 @@
+[2025-03-21T01:03:55.438+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-21T01:03:55.563+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_and_store_all_jobs.scrape_and_insert_data_to_json manual__2025-03-21T01:03:41.851384+00:00 [queued]>
+[2025-03-21T01:03:55.609+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_and_store_all_jobs.scrape_and_insert_data_to_json manual__2025-03-21T01:03:41.851384+00:00 [queued]>
+[2025-03-21T01:03:55.612+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-21T01:03:55.739+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-03-21 01:03:41.851384+00:00
+[2025-03-21T01:03:55.748+0000] {standard_task_runner.py:72} INFO - Started process 530310 to run task
+[2025-03-21T01:03:55.754+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'scrape_and_store_all_jobs', 'scrape_and_insert_data_to_json', 'manual__2025-03-21T01:03:41.851384+00:00', '--job-id', '1873', '--raw', '--subdir', 'DAGS_FOLDER/dags/scrape_and_store_all_jobs.py', '--cfg-path', '/tmp/tmp1jrbhkos']
+[2025-03-21T01:03:55.755+0000] {standard_task_runner.py:105} INFO - Job 1873: Subtask scrape_and_insert_data_to_json
+[2025-03-21T01:03:55.876+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_and_store_all_jobs.scrape_and_insert_data_to_json manual__2025-03-21T01:03:41.851384+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-21T01:03:56.120+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='scrape_and_store_all_jobs' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-03-21T01:03:41.851384+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-21T01:03:41.851384+00:00'
+[2025-03-21T01:03:56.127+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-21T01:03:56.127+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-21T01:03:56.127+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-03-21 01:03:55.564638+00:00
+[2025-03-21T01:03:56.127+0000] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_all_jobs and current dag run status:running
+[2025-03-21T01:03:56.128+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-21T01:03:56.129+0000] {logging_mixin.py:190} INFO - Extraction des données depuis rekrute.com...
+[2025-03-21T01:04:06.388+0000] {logging_mixin.py:190} INFO - (rekrute.com) Nombre total de pages : 172
+[2025-03-21T01:04:06.388+0000] {logging_mixin.py:190} INFO - (rekrute.com) Traitement de la page 1...
+[2025-03-21T01:04:07.721+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : RPA BLUEPRISM Developer
+[2025-03-21T01:04:07.722+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : RPA BLUEPRISM Developer
+[2025-03-21T01:04:08.444+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Dessinateur Projeteur Installation Générale/Tuyauterie H/F
+[2025-03-21T01:04:08.444+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Dessinateur Projeteur Installation Générale/Tuyauterie H/F
+[2025-03-21T01:04:09.280+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé(e) de Clientèle
+[2025-03-21T01:04:09.281+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé(e) de Clientèle
+[2025-03-21T01:04:13.842+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chef Comptable
+[2025-03-21T01:04:13.844+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chef Comptable
+[2025-03-21T01:04:14.815+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé de clientèle - Réception d'appel - Rabat
+[2025-03-21T01:04:14.817+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé de clientèle - Réception d'appel - Rabat
+[2025-03-21T01:04:15.417+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Conseiller Digital
+[2025-03-21T01:04:15.420+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Conseiller Digital
+[2025-03-21T01:04:16.161+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Conseiller Commercial
+[2025-03-21T01:04:16.162+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Conseiller Commercial
+[2025-03-21T01:04:16.767+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Conseiller Commercial
+[2025-03-21T01:04:16.768+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Conseiller Commercial
+[2025-03-21T01:04:17.283+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Manager H/F
+[2025-03-21T01:04:17.283+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Manager H/F
+[2025-03-21T01:04:17.972+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Responsable Compensation and Benefits H/F
+[2025-03-21T01:04:17.972+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Responsable Compensation and Benefits H/F
+[2025-03-21T01:04:19.973+0000] {logging_mixin.py:190} INFO - (rekrute.com) Traitement de la page 2...
+[2025-03-21T01:04:22.488+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Accountant
+[2025-03-21T01:04:22.489+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Accountant
+[2025-03-21T01:04:23.084+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Back Office
+[2025-03-21T01:04:23.084+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Back Office
+[2025-03-21T01:04:23.782+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé(e) s de Conduite d'Activité francophones
+[2025-03-21T01:04:23.783+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé(e) s de Conduite d'Activité francophones
+[2025-03-21T01:04:24.408+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : HR Generalist
+[2025-03-21T01:04:24.408+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : HR Generalist
+[2025-03-21T01:04:25.087+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Développeur Full Stack de Talent Expérimenté - PHP7 (H/F)
+[2025-03-21T01:04:25.088+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Développeur Full Stack de Talent Expérimenté - PHP7 (H/F)
+[2025-03-21T01:04:25.723+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Ingénieur Safety/Sécurité Incendie
+[2025-03-21T01:04:25.724+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Ingénieur Safety/Sécurité Incendie
+[2025-03-21T01:04:26.418+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Cadre Recouvrement
+[2025-03-21T01:04:26.419+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Cadre Recouvrement
+[2025-03-21T01:04:26.974+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Data Analyst - Contrôle de Gestion H/F
+[2025-03-21T01:04:26.975+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Data Analyst - Contrôle de Gestion H/F
+[2025-03-21T01:04:27.797+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Chargé(e) de support informatique N0 parfaitement francophones
+[2025-03-21T01:04:27.798+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Chargé(e) de support informatique N0 parfaitement francophones
+[2025-03-21T01:04:28.366+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Assistante RH
+[2025-03-21T01:04:28.366+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Assistante RH
+[2025-03-21T01:04:30.371+0000] {logging_mixin.py:190} INFO - Extraction des données depuis marocemploi.net...
+[2025-03-21T01:04:30.372+0000] {logging_mixin.py:190} INFO - (marocemploi.net) Traitement de la page 1...
+[2025-03-21T01:04:32.955+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Commerciale en Immobilier
+[2025-03-21T01:04:32.956+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Commerciale en Immobilier
+[2025-03-21T01:04:33.546+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : COMPTABLE (H/F)
+[2025-03-21T01:04:33.546+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : COMPTABLE (H/F)
+[2025-03-21T01:04:34.243+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Un(e) Pharmacien Assistant de Production
+[2025-03-21T01:04:34.244+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Un(e) Pharmacien Assistant de Production
+[2025-03-21T01:04:35.908+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Développeur Symfony Junior – API (CDI)
+[2025-03-21T01:04:35.908+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Développeur Symfony Junior – API (CDI)
+[2025-03-21T01:04:37.799+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Responsable Magasin MP
+[2025-03-21T01:04:37.800+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Responsable Magasin MP
+[2025-03-21T01:04:38.268+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Magasinier à Boulevard chefchaouni Ain Sebaa Casablanca
+[2025-03-21T01:04:38.269+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Magasinier à Boulevard chefchaouni Ain Sebaa Casablanca
+[2025-03-21T01:04:38.707+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeurs à Val Fleuri Maarif Casablanca
+[2025-03-21T01:04:38.708+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeurs à Val Fleuri Maarif Casablanca
+[2025-03-21T01:04:39.532+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Technicien réseau
+[2025-03-21T01:04:39.534+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Technicien réseau
+[2025-03-21T01:04:40.275+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Développeur Back-End
+[2025-03-21T01:04:40.276+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Développeur Back-End
+[2025-03-21T01:04:41.053+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Caissière
+[2025-03-21T01:04:41.053+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Caissière
+[2025-03-21T01:04:41.498+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Soudeur à Ain Sebaa
+[2025-03-21T01:04:41.499+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Soudeur à Ain Sebaa
+[2025-03-21T01:04:42.079+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Assistante digitale et e-commerce d’une parapharmacie
+[2025-03-21T01:04:42.079+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Assistante digitale et e-commerce d’une parapharmacie
+[2025-03-21T01:04:42.580+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Equipier polyvalent – restauration rapide
+[2025-03-21T01:04:42.581+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Equipier polyvalent – restauration rapide
+[2025-03-21T01:04:42.963+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Commis de cuisine – restauration rapide
+[2025-03-21T01:04:42.964+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Commis de cuisine – restauration rapide
+[2025-03-21T01:04:43.562+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Une assistante juridique
+[2025-03-21T01:04:43.564+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Une assistante juridique
+[2025-03-21T01:04:43.958+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Assistante Appels d’offres
+[2025-03-21T01:04:43.959+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Assistante Appels d’offres
+[2025-03-21T01:04:44.249+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Technico-commercial
+[2025-03-21T01:04:44.250+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Technico-commercial
+[2025-03-21T01:04:44.576+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Responsable de la Chaîne Logistique
+[2025-03-21T01:04:44.576+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Responsable de la Chaîne Logistique
+[2025-03-21T01:04:44.890+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Livreur
+[2025-03-21T01:04:44.891+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Livreur
+[2025-03-21T01:04:45.233+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Agent de nettoyage
+[2025-03-21T01:04:45.234+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Agent de nettoyage
+[2025-03-21T01:04:45.582+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Assistant Comptable
+[2025-03-21T01:04:45.583+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Assistant Comptable
+[2025-03-21T01:04:46.040+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Ingénieur chargé d’affaires
+[2025-03-21T01:04:46.041+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Ingénieur chargé d’affaires
+[2025-03-21T01:04:46.381+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : ​Infirmière éducatrice
+[2025-03-21T01:04:46.382+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : ​Infirmière éducatrice
+[2025-03-21T01:04:46.745+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Cuisinier – restauration rapide
+[2025-03-21T01:04:46.746+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Cuisinier – restauration rapide
+[2025-03-21T01:04:47.107+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Technicien de réseau
+[2025-03-21T01:04:47.108+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Technicien de réseau
+[2025-03-21T01:04:47.670+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeurs à TEMARA HAY ENNASSR
+[2025-03-21T01:04:47.671+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeurs à TEMARA HAY ENNASSR
+[2025-03-21T01:04:48.109+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Assistante administrative
+[2025-03-21T01:04:48.110+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Assistante administrative
+[2025-03-21T01:04:48.782+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeurs à Casablanca Bourgogne
+[2025-03-21T01:04:48.783+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeurs à Casablanca Bourgogne
+[2025-03-21T01:04:49.437+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Conseiller Commercial
+[2025-03-21T01:04:49.438+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Conseiller Commercial
+[2025-03-21T01:04:50.192+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Responsable injection
+[2025-03-21T01:04:50.193+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Responsable injection
+[2025-03-21T01:04:51.620+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeur et Vendeuse Casablanca
+[2025-03-21T01:04:51.621+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeur et Vendeuse Casablanca
+[2025-03-21T01:04:52.236+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Sales Analyste (H/F) – Casablanca
+[2025-03-21T01:04:52.237+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Sales Analyste (H/F) – Casablanca
+[2025-03-21T01:04:55.180+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Téléacteur en création de traffic
+[2025-03-21T01:04:55.181+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Téléacteur en création de traffic
+[2025-03-21T01:04:55.905+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Rejoignez Amazing Media en tant que Créateur TikTok
+[2025-03-21T01:04:55.906+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Rejoignez Amazing Media en tant que Créateur TikTok
+[2025-03-21T01:04:59.287+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Trade Marketing Manager
+[2025-03-21T01:04:59.287+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Trade Marketing Manager
+[2025-03-21T01:05:01.288+0000] {logging_mixin.py:190} INFO - (marocemploi.net) Traitement de la page 2...
+[2025-03-21T01:05:05.871+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Stagiaire PFE Contrôle de Gestion – Rémunéré – Ain Sebaa – Casablanca
+[2025-03-21T01:05:05.872+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Stagiaire PFE Contrôle de Gestion – Rémunéré – Ain Sebaa – Casablanca
+[2025-03-21T01:05:07.750+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Superviseur Modern Trade / GMS – Rabat
+[2025-03-21T01:05:07.752+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Superviseur Modern Trade / GMS – Rabat
+[2025-03-21T01:05:08.520+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Un(e) Sales Capability
+[2025-03-21T01:05:08.520+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Un(e) Sales Capability
+[2025-03-21T01:05:08.913+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeur Gros
+[2025-03-21T01:05:08.914+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeur Gros
+[2025-03-21T01:05:09.406+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Offre de Stage : Assistante ADV – Département Logistique
+[2025-03-21T01:05:09.407+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Offre de Stage : Assistante ADV – Département Logistique
+[2025-03-21T01:05:10.052+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Merchandiser
+[2025-03-21T01:05:10.053+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Merchandiser
+[2025-03-21T01:05:11.077+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Aide Magasinier
+[2025-03-21T01:05:11.077+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Aide Magasinier
+[2025-03-21T01:05:21.828+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeurs Détail et Gros – Maroc –
+[2025-03-21T01:05:21.830+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeurs Détail et Gros – Maroc –
+[2025-03-21T01:05:26.757+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Superviseur Détail
+[2025-03-21T01:05:26.757+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Superviseur Détail
+[2025-03-21T01:05:27.230+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : VENDEURS et LIVREURS MEKNES
+[2025-03-21T01:05:27.231+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : VENDEURS et LIVREURS MEKNES
+[2025-03-21T01:05:27.654+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : SUPERVISEUR DETAIL MOHAMMEDIA
+[2025-03-21T01:05:27.654+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : SUPERVISEUR DETAIL MOHAMMEDIA
+[2025-03-21T01:05:28.063+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : Vendeurs Casablanca, Rabat et Marrakech
+[2025-03-21T01:05:28.069+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : Vendeurs Casablanca, Rabat et Marrakech
+[2025-03-21T01:05:29.745+0000] {logging_mixin.py:190} INFO - ✅ Offre ajoutée avec succès : COMPTABLE
+[2025-03-21T01:05:29.745+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ajoutée : COMPTABLE
+[2025-03-21T01:05:31.753+0000] {logging_mixin.py:190} INFO - ✅ Données enregistrées dans /mnt/c/Users/hp/Desktop/offres/toutes_les_offres.json.
+[2025-03-21T01:05:31.766+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-21T01:05:32.095+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-21T01:05:32.095+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scrape_and_store_all_jobs, task_id=scrape_and_insert_data_to_json, run_id=manual__2025-03-21T01:03:41.851384+00:00, execution_date=20250321T010341, start_date=20250321T010355, end_date=20250321T010532
+[2025-03-21T01:05:32.392+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-21T01:05:32.392+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-21T01:05:32.392+0000] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_all_jobs queued_at:2025-03-21 01:03:43.097134+00:00
+[2025-03-21T01:05:32.393+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:PythonOperator
+[2025-03-21T01:05:32.531+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-21T01:05:32.867+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-21T01:05:32.895+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

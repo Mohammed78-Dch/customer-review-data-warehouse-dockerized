@@ -1,0 +1,46 @@
+[2025-03-18T18:27:13.594+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-18T18:27:13.786+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run scheduled__2024-11-02T00:00:00+00:00 [queued]>
+[2025-03-18T18:27:13.967+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run scheduled__2024-11-02T00:00:00+00:00 [queued]>
+[2025-03-18T18:27:13.980+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-18T18:27:14.136+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): dbt_run> on 2024-11-02 00:00:00+00:00
+[2025-03-18T18:27:14.161+0000] {standard_task_runner.py:72} INFO - Started process 21623 to run task
+[2025-03-18T18:27:14.209+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'load_dbt_clean_reviews_pipeline', 'dbt_run', 'scheduled__2024-11-02T00:00:00+00:00', '--job-id', '1057', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmplhvaw5vs']
+[2025-03-18T18:27:14.214+0000] {standard_task_runner.py:105} INFO - Job 1057: Subtask dbt_run
+[2025-03-18T18:27:14.855+0000] {task_command.py:467} INFO - Running <TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run scheduled__2024-11-02T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-18T18:27:15.465+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='load_dbt_clean_reviews_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-11-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-02T00:00:00+00:00'
+[2025-03-18T18:27:15.483+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-18T18:27:15.484+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-18T18:27:15.485+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run state:running start_date:2025-03-18 18:27:13.797296+00:00
+[2025-03-18T18:27:15.485+0000] {logging_mixin.py:190} INFO - Dag name:load_dbt_clean_reviews_pipeline and current dag run status:running
+[2025-03-18T18:27:15.486+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-18T18:27:15.489+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-18T18:27:15.491+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/dbt_projects/bank_reviews_transactional && dbt run']
+[2025-03-18T18:27:15.525+0000] {subprocess.py:99} INFO - Output:
+[2025-03-18T18:27:34.710+0000] {subprocess.py:106} INFO - [0m18:27:34  Running with dbt=1.9.3
+[2025-03-18T18:27:36.324+0000] {subprocess.py:106} INFO - [0m18:27:36  Registered adapter: postgres=1.9.0
+[2025-03-18T18:27:37.390+0000] {subprocess.py:106} INFO - [0m18:27:37  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-18T18:27:37.391+0000] {subprocess.py:106} INFO - There are 1 unused configuration paths:
+[2025-03-18T18:27:37.391+0000] {subprocess.py:106} INFO - - models.bank_reviews_transactional.transactional
+[2025-03-18T18:27:39.019+0000] {subprocess.py:106} INFO - [0m18:27:39  Found 1 model, 1 source, 433 macros
+[2025-03-18T18:27:39.053+0000] {subprocess.py:106} INFO - [0m18:27:39
+[2025-03-18T18:27:39.061+0000] {subprocess.py:106} INFO - [0m18:27:39  Concurrency: 4 threads (target='dev')
+[2025-03-18T18:27:39.093+0000] {subprocess.py:106} INFO - [0m18:27:39
+[2025-03-18T18:27:40.635+0000] {subprocess.py:106} INFO - [0m18:27:40  1 of 1 START sql table model transactional.clean_reviews ....................... [RUN]
+[2025-03-18T18:27:43.677+0000] {subprocess.py:106} INFO - [0m18:27:43  1 of 1 OK created sql table model transactional.clean_reviews .................. [[32mSELECT 549[0m in 3.03s]
+[2025-03-18T18:27:43.810+0000] {subprocess.py:106} INFO - [0m18:27:43
+[2025-03-18T18:27:43.811+0000] {subprocess.py:106} INFO - [0m18:27:43  Finished running 1 table model in 0 hours 0 minutes and 4.70 seconds (4.70s).
+[2025-03-18T18:27:44.041+0000] {subprocess.py:106} INFO - [0m18:27:44
+[2025-03-18T18:27:44.052+0000] {subprocess.py:106} INFO - [0m18:27:44  [32mCompleted successfully[0m
+[2025-03-18T18:27:44.054+0000] {subprocess.py:106} INFO - [0m18:27:44
+[2025-03-18T18:27:44.057+0000] {subprocess.py:106} INFO - [0m18:27:44  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-03-18T18:27:49.260+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-18T18:27:49.800+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-18T18:27:49.803+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=load_dbt_clean_reviews_pipeline, task_id=dbt_run, run_id=scheduled__2024-11-02T00:00:00+00:00, execution_date=20241102T000000, start_date=20250318T182713, end_date=20250318T182749
+[2025-03-18T18:27:50.456+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-18T18:27:50.457+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-18T18:27:50.458+0000] {logging_mixin.py:190} INFO - Dag name:load_dbt_clean_reviews_pipeline queued_at:2025-03-18 18:27:09.979795+00:00
+[2025-03-18T18:27:50.459+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-18T18:27:50.525+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-18T18:27:50.538+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-03-18T18:27:50.661+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-18T18:27:50.689+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

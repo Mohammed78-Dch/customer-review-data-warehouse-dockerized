@@ -1,0 +1,50 @@
+[2025-03-28T02:15:02.413+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T02:15:02.755+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run_transactional scheduled__2024-03-25T00:00:00+00:00 [queued]>
+[2025-03-28T02:15:02.856+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run_transactional scheduled__2024-03-25T00:00:00+00:00 [queued]>
+[2025-03-28T02:15:02.857+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-28T02:15:03.071+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): dbt_run_transactional> on 2024-03-25 00:00:00+00:00
+[2025-03-28T02:15:03.219+0000] {standard_task_runner.py:72} INFO - Started process 187299 to run task
+[2025-03-28T02:15:03.578+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'load_dbt_clean_reviews_pipeline', 'dbt_run_transactional', 'scheduled__2024-03-25T00:00:00+00:00', '--job-id', '1998', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmpx3eehaoo']
+[2025-03-28T02:15:03.608+0000] {standard_task_runner.py:105} INFO - Job 1998: Subtask dbt_run_transactional
+[2025-03-28T02:15:06.122+0000] {task_command.py:467} INFO - Running <TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run_transactional scheduled__2024-03-25T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-28T02:15:08.842+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='load_dbt_clean_reviews_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run_transactional' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-25T00:00:00+00:00'
+[2025-03-28T02:15:08.894+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T02:15:08.895+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T02:15:08.896+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run_transactional state:running start_date:2025-03-28 02:15:02.756378+00:00
+[2025-03-28T02:15:08.896+0000] {logging_mixin.py:190} INFO - Dag name:load_dbt_clean_reviews_pipeline and current dag run status:running
+[2025-03-28T02:15:08.897+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-28T02:15:08.899+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-28T02:15:08.946+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/dbt_projects/bank_reviews_transactional && dbt run']
+[2025-03-28T02:15:09.338+0000] {subprocess.py:99} INFO - Output:
+[2025-03-28T02:15:52.090+0000] {job.py:229} INFO - Heartbeat recovered after 21.75 seconds
+[2025-03-28T02:15:58.833+0000] {job.py:229} INFO - Heartbeat recovered after 24.18 seconds
+[2025-03-28T02:16:01.033+0000] {subprocess.py:106} INFO - [0m02:16:00  Running with dbt=1.9.3
+[2025-03-28T02:16:09.840+0000] {subprocess.py:106} INFO - [0m02:16:09  Registered adapter: postgres=1.9.0
+[2025-03-28T02:16:13.583+0000] {subprocess.py:106} INFO - [0m02:16:13  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-28T02:16:13.585+0000] {subprocess.py:106} INFO - There are 1 unused configuration paths:
+[2025-03-28T02:16:13.587+0000] {subprocess.py:106} INFO - - models.bank_reviews_transactional.transactional
+[2025-03-28T02:16:15.864+0000] {subprocess.py:106} INFO - [0m02:16:15  Found 1 model, 1 source, 433 macros
+[2025-03-28T02:16:15.920+0000] {subprocess.py:106} INFO - [0m02:16:15
+[2025-03-28T02:16:15.923+0000] {subprocess.py:106} INFO - [0m02:16:15  Concurrency: 4 threads (target='dev')
+[2025-03-28T02:16:15.927+0000] {subprocess.py:106} INFO - [0m02:16:15
+[2025-03-28T02:16:17.874+0000] {subprocess.py:106} INFO - [0m02:16:17  1 of 1 START sql table model transactional.clean_reviews ....................... [RUN]
+[2025-03-28T02:16:52.257+0000] {job.py:229} INFO - Heartbeat recovered after 36.76 seconds
+[2025-03-28T02:17:07.850+0000] {subprocess.py:106} INFO - [0m02:17:07  1 of 1 OK created sql table model transactional.clean_reviews .................. [[32mSELECT 153[0m in 49.96s]
+[2025-03-28T02:17:07.942+0000] {subprocess.py:106} INFO - [0m02:17:07
+[2025-03-28T02:17:07.947+0000] {subprocess.py:106} INFO - [0m02:17:07  Finished running 1 table model in 0 hours 0 minutes and 52.02 seconds (52.02s).
+[2025-03-28T02:17:08.092+0000] {subprocess.py:106} INFO - [0m02:17:08
+[2025-03-28T02:17:08.097+0000] {subprocess.py:106} INFO - [0m02:17:08  [32mCompleted successfully[0m
+[2025-03-28T02:17:08.100+0000] {subprocess.py:106} INFO - [0m02:17:08
+[2025-03-28T02:17:08.104+0000] {subprocess.py:106} INFO - [0m02:17:08  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-03-28T02:17:11.976+0000] {job.py:229} INFO - Heartbeat recovered after 25.58 seconds
+[2025-03-28T02:17:13.419+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-28T02:17:14.969+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-28T02:17:14.990+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=load_dbt_clean_reviews_pipeline, task_id=dbt_run_transactional, run_id=scheduled__2024-03-25T00:00:00+00:00, execution_date=20240325T000000, start_date=20250328T021502, end_date=20250328T021714
+[2025-03-28T02:17:16.421+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-28T02:17:16.438+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-28T02:17:16.459+0000] {logging_mixin.py:190} INFO - Dag name:load_dbt_clean_reviews_pipeline queued_at:2025-03-28 02:14:49.565413+00:00
+[2025-03-28T02:17:16.462+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-28T02:17:16.713+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-28T02:17:17.741+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T02:17:17.759+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-03-28T02:17:19.688+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics

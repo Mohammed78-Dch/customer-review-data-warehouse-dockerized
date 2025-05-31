@@ -1,0 +1,22 @@
+[2025-02-20T12:24:41.945+0100] {processor.py:186} INFO - Started process (PID=973) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-02-20T12:24:41.949+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2025-02-20T12:24:41.958+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:41.956+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-02-20T12:24:41.993+0100] {processor.py:925} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-02-20T12:24:42.259+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.257+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:tutorial_objectstorage
+[2025-02-20T12:24:42.318+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.317+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:tutorial_objectstorage
+[2025-02-20T12:24:42.358+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.357+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:tutorial_objectstorage
+[2025-02-20T12:24:42.441+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.440+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:tutorial_objectstorage
+[2025-02-20T12:24:42.492+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.491+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:tutorial_objectstorage
+[2025-02-20T12:24:42.538+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.537+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:tutorial_objectstorage
+[2025-02-20T12:24:42.588+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.586+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:tutorial_objectstorage
+[2025-02-20T12:24:42.589+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.588+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:24:42.636+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.635+0100] {dag.py:3262} INFO - Creating ORM DAG for tutorial_objectstorage
+[2025-02-20T12:24:42.638+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:42.638+0100] {dag.py:4180} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2025-02-20T12:24:42.698+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.778 seconds
+[2025-02-20T12:28:13.549+0100] {processor.py:186} INFO - Started process (PID=1057) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-02-20T12:28:13.557+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2025-02-20T12:28:13.565+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:13.563+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-02-20T12:28:13.612+0100] {processor.py:925} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2025-02-20T12:28:13.676+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:13.675+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:28:13.719+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:13.718+0100] {dag.py:4180} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2025-02-20T12:28:13.769+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.244 seconds

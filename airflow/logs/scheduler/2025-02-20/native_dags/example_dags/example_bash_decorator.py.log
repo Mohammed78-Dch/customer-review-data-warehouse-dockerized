@@ -1,0 +1,15 @@
+[2025-02-20T12:29:12.719+0100] {processor.py:186} INFO - Started process (PID=1105) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-20T12:29:12.722+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2025-02-20T12:29:12.729+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:12.728+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-20T12:29:12.787+0100] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-20T12:29:13.005+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.003+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_bash_decorator
+[2025-02-20T12:29:13.034+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.033+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:example_bash_decorator
+[2025-02-20T12:29:13.056+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.055+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_bash_decorator
+[2025-02-20T12:29:13.092+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.091+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_bash_decorator
+[2025-02-20T12:29:13.120+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.119+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_bash_decorator
+[2025-02-20T12:29:13.155+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.154+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_bash_decorator
+[2025-02-20T12:29:13.189+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.187+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_bash_decorator
+[2025-02-20T12:29:13.190+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.189+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:29:13.228+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.228+0100] {dag.py:3262} INFO - Creating ORM DAG for example_bash_decorator
+[2025-02-20T12:29:13.231+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:13.230+0100] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2025-02-20T12:29:13.295+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_bash_decorator.py took 0.599 seconds

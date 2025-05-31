@@ -1,0 +1,114 @@
+2025-02-16 23:22:12,750 WARNING - Could not import pandas. Holidays will not be considered.
+2025-02-16 23:22:12,756 INFO - Loaded executor: SequentialExecutor
+2025-02-16 23:22:12,863 INFO - Starting the scheduler
+2025-02-16 23:22:12,865 INFO - Processing each file at most -1 times
+2025-02-16 23:22:12,876 INFO - Launched DagFileProcessorManager with pid: 4177
+2025-02-16 23:22:12,879 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-16 23:22:12,886 INFO - Configured default timezone UTC
+2025-02-16 23:27:19,664 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-16 23:32:21,704 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-16 23:37:28,974 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-16 23:42:33,211 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-16 23:47:36,868 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-16 23:52:40,439 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-16 23:57:44,856 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 00:02:52,869 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 00:08:01,193 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:05:30,194 INFO - Loaded executor: SequentialExecutor
+2025-02-17 17:05:30,769 INFO - Starting the scheduler
+2025-02-17 17:05:30,775 INFO - Processing each file at most -1 times
+2025-02-17 17:05:30,816 INFO - Launched DagFileProcessorManager with pid: 2394
+2025-02-17 17:05:30,825 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:05:30,860 INFO - Marked 1 SchedulerJob instances as failed
+2025-02-17 17:05:30,862 INFO - Configured default timezone UTC
+2025-02-17 17:05:39,279 INFO - Heartbeat recovered after 33.97 seconds
+2025-02-17 17:10:31,247 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:15:31,688 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:20:32,105 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:34:41,978 INFO - Loaded executor: SequentialExecutor
+2025-02-17 17:34:43,139 INFO - Starting the scheduler
+2025-02-17 17:34:43,144 INFO - Processing each file at most -1 times
+2025-02-17 17:34:43,186 INFO - Launched DagFileProcessorManager with pid: 436
+2025-02-17 17:34:43,200 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:34:43,238 INFO - Configured default timezone UTC
+2025-02-17 17:34:43,265 INFO - Marked 2 SchedulerJob instances as failed
+2025-02-17 17:34:56,018 INFO - Heartbeat recovered after 70.12 seconds
+2025-02-17 17:39:43,609 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:41:13,972 INFO - Setting next_dagrun for tutorial to 2025-02-17 00:00:00+00:00, run_after=2025-02-18 00:00:00+00:00
+2025-02-17 17:41:14,188 INFO - 1 tasks up for execution:
+	<TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+2025-02-17 17:41:14,194 INFO - DAG tutorial has 0/16 running and queued tasks
+2025-02-17 17:41:14,200 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+2025-02-17 17:41:14,212 INFO - Trying to enqueue tasks: [<TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-02-17 17:41:14,219 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 3 and queue default
+2025-02-17 17:41:14,224 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/mnt/c/Users/hp/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 17:41:14,253 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/mnt/c/Users/hp/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 17:43:50,325 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/mnt/c/Users/hp/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py']' returned non-zero exit status 1..
+2025-02-17 17:43:50,331 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1)
+2025-02-17 17:43:50,356 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date_1, run_id=scheduled__2025-02-16T00:00:00+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor=SequentialExecutor(parallelism=32), executor_state=failed, try_number=1, max_tries=1, job_id=None, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2025-02-17 16:41:14.208023+00:00, queued_by_job_id=3, pid=None
+2025-02-17 17:43:50,361 ERROR - Executor SequentialExecutor(parallelism=32) reported that the task instance <TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [queued]> finished with state failed, but the task instance's state attribute is queued. Learn more: https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#task-state-changed-externally
+2025-02-17 17:43:50,389 ERROR - Executor SequentialExecutor(parallelism=32) reported that the task instance <TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [queued]> finished with state failed, but the task instance's state attribute is queued. Learn more: https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#task-state-changed-externally
+2025-02-17 17:43:50,531 INFO - Marking task as UP_FOR_RETRY. dag_id=tutorial, task_id=print_date_1, run_id=scheduled__2025-02-16T00:00:00+00:00, execution_date=20250216T000000, start_date=, end_date=20250217T164350
+2025-02-17 17:43:50,661 ERROR - DagFileProcessorManager (PID=436) last sent a heartbeat 157.55 seconds ago! Restarting it
+2025-02-17 17:43:50,691 INFO - Sending 15 to group 436. PIDs of all processes in the group: [436]
+2025-02-17 17:43:50,698 INFO - Sending the signal 15 to group 436
+2025-02-17 17:44:50,743 WARNING - process psutil.Process(pid=436, name='airflow scheduler -- DagFileProcessorManager', status='disk-sleep', started='17:34:42') did not respond to SIGTERM. Trying SIGKILL
+2025-02-17 17:44:50,759 INFO - Sending the signal 9 to group 436
+2025-02-17 17:44:50,821 INFO - Process psutil.Process(pid=436, name='airflow scheduler -- DagFileProcessorManager', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='17:34:42') (436) terminated with exit code -9
+2025-02-17 17:44:50,846 INFO - Launched DagFileProcessorManager with pid: 842
+2025-02-17 17:44:50,975 INFO - Heartbeat recovered after 221.35 seconds
+2025-02-17 17:44:50,986 INFO - Configured default timezone UTC
+2025-02-17 17:44:51,086 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:45:00,943 INFO - 1 tasks up for execution:
+	<TaskInstance: tutorial.print_date_1 manual__2025-02-17T16:41:27.601042+00:00 [scheduled]>
+2025-02-17 17:45:00,947 INFO - DAG tutorial has 0/16 running and queued tasks
+2025-02-17 17:45:00,951 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.print_date_1 manual__2025-02-17T16:41:27.601042+00:00 [scheduled]>
+2025-02-17 17:45:00,957 INFO - Trying to enqueue tasks: [<TaskInstance: tutorial.print_date_1 manual__2025-02-17T16:41:27.601042+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-02-17 17:45:00,962 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='manual__2025-02-17T16:41:27.601042+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 3 and queue default
+2025-02-17 17:45:00,965 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'manual__2025-02-17T16:41:27.601042+00:00', '--local', '--subdir', '/mnt/c/Users/hp/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 17:45:00,983 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'manual__2025-02-17T16:41:27.601042+00:00', '--local', '--subdir', '/mnt/c/Users/hp/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 17:47:32,266 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'manual__2025-02-17T16:41:27.601042+00:00', '--local', '--subdir', '/mnt/c/Users/hp/venv/lib/python3.11/site-packages/airflow/example_dags/tutorial.py']' returned non-zero exit status 1..
+2025-02-17 17:47:32,274 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='manual__2025-02-17T16:41:27.601042+00:00', try_number=1, map_index=-1)
+2025-02-17 17:47:32,299 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date_1, run_id=manual__2025-02-17T16:41:27.601042+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor=SequentialExecutor(parallelism=32), executor_state=failed, try_number=1, max_tries=1, job_id=None, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2025-02-17 16:45:00.955902+00:00, queued_by_job_id=3, pid=None
+2025-02-17 17:47:32,307 ERROR - Executor SequentialExecutor(parallelism=32) reported that the task instance <TaskInstance: tutorial.print_date_1 manual__2025-02-17T16:41:27.601042+00:00 [queued]> finished with state failed, but the task instance's state attribute is queued. Learn more: https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#task-state-changed-externally
+2025-02-17 17:47:32,346 ERROR - Executor SequentialExecutor(parallelism=32) reported that the task instance <TaskInstance: tutorial.print_date_1 manual__2025-02-17T16:41:27.601042+00:00 [queued]> finished with state failed, but the task instance's state attribute is queued. Learn more: https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#task-state-changed-externally
+2025-02-17 17:47:32,383 INFO - Marking task as UP_FOR_RETRY. dag_id=tutorial, task_id=print_date_1, run_id=manual__2025-02-17T16:41:27.601042+00:00, execution_date=20250217T164127, start_date=, end_date=20250217T164732
+2025-02-17 17:47:32,463 ERROR - DagFileProcessorManager (PID=842) last sent a heartbeat 151.63 seconds ago! Restarting it
+2025-02-17 17:47:32,474 INFO - Sending 15 to group 842. PIDs of all processes in the group: [842]
+2025-02-17 17:47:32,479 INFO - Sending the signal 15 to group 842
+2025-02-17 17:48:32,136 INFO - Process psutil.Process(pid=842, status='terminated', exitcode=0, started='17:44:50') (842) terminated with exit code 0
+2025-02-17 17:48:32,173 INFO - Launched DagFileProcessorManager with pid: 930
+2025-02-17 17:48:32,308 INFO - Configured default timezone UTC
+2025-02-17 17:48:32,373 INFO - Heartbeat recovered after 221.43 seconds
+2025-03-14 16:38:17,529 INFO - Loaded executor: LocalExecutor
+2025-03-14 17:45:57,436 INFO - Loaded executor: LocalExecutor
+2025-03-16 12:50:52,121 INFO - NumExpr defaulting to 8 threads.
+2025-03-16 12:50:53,938 INFO - Loaded executor: LocalExecutor
+2025-03-16 12:51:00,104 INFO - Starting the scheduler
+2025-03-16 12:51:00,105 INFO - Processing each file at most -1 times
+2025-03-16 12:51:02,467 INFO - Launched DagFileProcessorManager with pid: 236913
+2025-03-16 12:51:02,665 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-16 12:51:02,902 INFO - Configured default timezone UTC
+2025-03-16 12:53:51,287 WARNING - DagFileProcessorManager (PID=236913) exited with exit code -9 - re-launching
+2025-03-16 12:53:51,298 INFO - Launched DagFileProcessorManager with pid: 240490
+2025-03-16 12:53:51,321 INFO - Configured default timezone UTC
+2025-03-16 14:35:10,907 INFO - NumExpr defaulting to 8 threads.
+2025-03-16 14:35:11,422 INFO - Loaded executor: LocalExecutor
+2025-03-16 14:35:16,587 INFO - Starting the scheduler
+2025-03-16 14:35:16,588 INFO - Processing each file at most -1 times
+2025-03-16 14:35:17,135 INFO - Launched DagFileProcessorManager with pid: 2323
+2025-03-16 14:35:17,139 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-16 14:35:17,156 INFO - Configured default timezone UTC
+2025-03-16 14:35:52,533 INFO - Exiting gracefully upon receiving signal 15
+2025-03-16 14:35:53,423 INFO - Sending 15 to group 2323. PIDs of all processes in the group: []
+2025-03-16 14:35:53,424 INFO - Sending the signal 15 to group 2323
+2025-03-16 14:35:53,426 INFO - Sending the signal 15 to process 2323 as process group is missing.
+2025-03-16 14:35:53,430 INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
+2025-03-16 14:35:53,771 INFO - Sending 15 to group 2323. PIDs of all processes in the group: []
+2025-03-16 14:35:53,773 INFO - Sending the signal 15 to group 2323
+2025-03-16 14:35:53,774 INFO - Sending the signal 15 to process 2323 as process group is missing.
+2025-03-16 14:35:53,776 INFO - Exited execute loop
+2025-03-16 14:36:37,265 INFO - NumExpr defaulting to 8 threads.
+2025-03-16 14:36:37,888 INFO - Loaded executor: LocalExecutor

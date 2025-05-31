@@ -1,0 +1,22 @@
+[2025-02-20T12:24:50.406+0100] {processor.py:186} INFO - Started process (PID=978) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-02-20T12:24:50.410+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2025-02-20T12:24:50.419+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:50.417+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-02-20T12:24:50.486+0100] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-02-20T12:24:50.758+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:50.757+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_task_group_decorator
+[2025-02-20T12:24:50.795+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:50.794+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_task_group_decorator
+[2025-02-20T12:24:50.833+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:50.832+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:example_task_group_decorator
+[2025-02-20T12:24:50.903+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:50.902+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_task_group_decorator
+[2025-02-20T12:24:50.952+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:50.951+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_task_group_decorator
+[2025-02-20T12:24:50.992+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:50.990+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_task_group_decorator
+[2025-02-20T12:24:51.043+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:51.042+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_task_group_decorator
+[2025-02-20T12:24:51.044+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:51.044+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:24:51.089+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:51.088+0100] {dag.py:3262} INFO - Creating ORM DAG for example_task_group_decorator
+[2025-02-20T12:24:51.092+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:51.091+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2025-02-20T12:24:51.181+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.801 seconds
+[2025-02-20T12:28:19.055+0100] {processor.py:186} INFO - Started process (PID=1062) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-02-20T12:28:19.061+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2025-02-20T12:28:19.072+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:19.070+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-02-20T12:28:19.146+0100] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2025-02-20T12:28:19.242+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:19.241+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:28:19.292+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:19.291+0100] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2025-02-20T12:28:19.389+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.356 seconds

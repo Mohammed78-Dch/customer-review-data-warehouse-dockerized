@@ -1,0 +1,13 @@
+name: 'bank_reviews_transactional'
+version: '1.0'
+config-version: 2
+
+profile: 'bank_reviews_transactional'
+
+model-paths: ["models"]
+
+models:
+  bank_reviews_transactional:
+    transactional:
+      +schema: transactional
+      +materialized: table

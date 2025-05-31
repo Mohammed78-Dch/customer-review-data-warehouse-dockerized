@@ -1,0 +1,218 @@
+[2025-03-14T00:40:14.414+0000] {processor.py:186} INFO - Started process (PID=406913) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:40:14.418+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T00:40:14.476+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:40:14.471+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:40:50.955+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:40:46.035+0000] {timeout.py:68} ERROR - Process timed out, PID: 406913
+[2025-03-14T00:40:51.953+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:40:51.416+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/scraper.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/scraper.py", line 4, in <module>
+    from selenium import webdriver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/__init__.py", line 20, in <module>
+    from .chrome.webdriver import WebDriver as Chrome  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 18, in <module>
+    from selenium.webdriver.chromium.webdriver import ChromiumDriver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 22, in <module>
+    from selenium.webdriver.remote.webdriver import WebDriver as RemoteWebDriver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 49, in <module>
+    from selenium.webdriver.common.timeouts import Timeouts
+  File "<frozen importlib._bootstrap>", line 1165, in _find_and_load
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/mohammed/airflow/dags/scraper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#reducing-dag-complexity, PID: 406913
+[2025-03-14T00:40:52.359+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:42:04.269+0000] {processor.py:186} INFO - Started process (PID=407350) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:42:04.282+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T00:42:04.295+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:42:04.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:43:58.998+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:42:43.191+0000] {timeout.py:68} ERROR - Process timed out, PID: 407350
+[2025-03-14T00:45:33.126+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:45:18.224+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/scraper.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/scraper.py", line 4, in <module>
+    from selenium import webdriver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/__init__.py", line 21, in <module>
+    from .common.action_chains import ActionChains  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/common/action_chains.py", line 25, in <module>
+    from .actions.action_builder import ActionBuilder
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/common/actions/action_builder.py", line 27, in <module>
+    from .pointer_actions import PointerActions
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/common/actions/pointer_actions.py", line 27, in <module>
+    class PointerActions(Interaction):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/common/actions/pointer_actions.py", line 28, in PointerActions
+    def __init__(self, source: Optional[PointerInput] = None, duration: int = 250):
+                               ~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/typing.py", line 376, in inner
+    return cached(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/typing.py", line 502, in __getitem__
+    return self._getitem(self, parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/typing.py", line 727, in Optional
+    return Union[arg, type(None)]
+           ~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/typing.py", line 376, in inner
+    return cached(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/mohammed/airflow/dags/scraper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#reducing-dag-complexity, PID: 407350
+[2025-03-14T00:45:33.147+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:45:33.621+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 200.978 seconds
+[2025-03-14T00:46:38.374+0000] {processor.py:186} INFO - Started process (PID=407924) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:46:38.376+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T00:46:38.388+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:46:38.387+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:46:38.635+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:46:38.635+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T00:46:38.906+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:46:38.906+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T00:46:39.830+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:46:39.829+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T00:46:40.240+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:46:40.240+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T00:46:44.718+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:46:45.113+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 6.755 seconds
+[2025-03-14T00:47:18.261+0000] {processor.py:186} INFO - Started process (PID=408629) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:47:18.266+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T00:47:18.296+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:47:18.272+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T00:47:22.191+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:47:21.986+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T00:49:08.944+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:47:55.599+0000] {timeout.py:68} ERROR - Process timed out, PID: 408629
+[2025-03-14T00:54:01.397+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:54:01.328+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/scraper.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/scraper.py", line 16, in <module>
+    service = Service(ChromeDriverManager().install())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/manager.py", line 35, in _get_driver_binary_path
+    binary_path = self._cache_manager.find_driver(driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/driver_cache.py", line 103, in find_driver
+    browser_version = self._os_system_manager.get_browser_version_from_os(browser_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/os_manager.py", line 159, in get_browser_version_from_os
+    version = read_version_from_cmd(cmd_mapping, pattern)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/utils.py", line 46, in read_version_from_cmd
+    stdout = stream.communicate()[0].decode()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 1196, in communicate
+    stdout = self.stdout.read()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/mohammed/airflow/dags/scraper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#reducing-dag-complexity, PID: 408629
+[2025-03-14T00:54:01.402+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:07:51.817+0000] {processor.py:186} INFO - Started process (PID=641) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:07:51.828+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:07:51.837+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:07:51.836+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:07:53.343+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:07:53.343+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T01:07:55.763+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:07:55.762+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:07:56.320+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:07:56.320+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:07:56.730+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:07:56.729+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T01:08:00.665+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:08:00.727+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 8.941 seconds
+[2025-03-14T01:08:31.230+0000] {processor.py:186} INFO - Started process (PID=1405) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:08:31.232+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:08:31.237+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:08:31.236+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:08:31.392+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:08:31.391+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T01:08:31.534+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:08:31.534+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:08:33.559+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:08:33.559+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:08:34.898+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:08:34.898+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T01:08:35.754+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:08:35.809+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 4.590 seconds
+[2025-03-14T01:09:06.002+0000] {processor.py:186} INFO - Started process (PID=2213) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:09:06.003+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:09:06.007+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:06.006+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:09:06.120+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:06.120+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T01:09:06.201+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:06.200+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:09:18.900+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:18.899+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:09:21.145+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:21.144+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T01:09:21.914+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:09:21.950+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 13.062 seconds
+[2025-03-14T01:09:52.875+0000] {processor.py:186} INFO - Started process (PID=3035) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:09:52.876+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:09:52.878+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:52.878+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:09:53.041+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:53.041+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T01:09:53.121+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:53.121+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:09:53.927+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:53.927+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:09:58.062+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:09:58.062+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T01:09:58.675+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:09:58.720+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 5.852 seconds
+[2025-03-14T01:10:29.383+0000] {processor.py:186} INFO - Started process (PID=3807) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:10:29.384+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:10:29.387+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:10:29.387+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:10:29.570+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:10:29.570+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T01:10:29.650+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:10:29.649+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:10:31.017+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:10:31.016+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:10:32.190+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:10:32.189+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T01:10:32.760+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:10:32.815+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 3.440 seconds
+[2025-03-14T01:11:03.635+0000] {processor.py:186} INFO - Started process (PID=4564) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:11:03.636+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:11:03.640+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:03.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:11:03.927+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:03.926+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T01:11:04.155+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:04.154+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:11:04.837+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:04.837+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:11:05.587+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:05.587+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T01:11:07.220+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:11:07.305+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 3.683 seconds
+[2025-03-14T01:11:38.519+0000] {processor.py:186} INFO - Started process (PID=5509) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:11:38.542+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:11:38.548+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:38.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:11:39.206+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:39.206+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-14T01:11:39.594+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:39.593+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:11:42.724+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:42.723+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-14T01:11:45.656+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:45.649+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver] found in cache
+[2025-03-14T01:11:46.858+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:11:46.844+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/scraper.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/scraper.py", line 30, in <module>
+    with open('/home/mohammed/airflow/dags/banks_maroc_url_1.json', 'r', encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mohammed/airflow/dags/banks_maroc_url_1.json'
+[2025-03-14T01:11:46.859+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:11:47.032+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 8.545 seconds
+[2025-03-14T01:12:03.172+0000] {processor.py:186} INFO - Started process (PID=6252) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:03.173+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:12:03.177+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:03.177+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:03.180+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:03.179+0000] {dagbag.py:366} INFO - File /home/mohammed/airflow/dags/scraper.py assumed to contain no DAGs. Skipping.
+[2025-03-14T01:12:03.180+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:03.234+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 0.078 seconds
+[2025-03-14T01:12:08.278+0000] {processor.py:186} INFO - Started process (PID=6286) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:08.280+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:12:08.293+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:08.292+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:08.296+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:08.296+0000] {dagbag.py:366} INFO - File /home/mohammed/airflow/dags/scraper.py assumed to contain no DAGs. Skipping.
+[2025-03-14T01:12:08.297+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:08.356+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 0.104 seconds
+[2025-03-14T01:12:41.593+0000] {processor.py:186} INFO - Started process (PID=6938) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:41.601+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:12:41.604+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:41.603+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:41.605+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:41.605+0000] {dagbag.py:366} INFO - File /home/mohammed/airflow/dags/scraper.py assumed to contain no DAGs. Skipping.
+[2025-03-14T01:12:41.605+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:41.650+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 0.073 seconds
+[2025-03-14T01:12:47.593+0000] {processor.py:186} INFO - Started process (PID=7092) to work on /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:47.594+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scraper.py for tasks to queue
+[2025-03-14T01:12:47.597+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:47.596+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:47.599+0000] {logging_mixin.py:190} INFO - [2025-03-14T01:12:47.598+0000] {dagbag.py:366} INFO - File /home/mohammed/airflow/dags/scraper.py assumed to contain no DAGs. Skipping.
+[2025-03-14T01:12:47.599+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/scraper.py
+[2025-03-14T01:12:47.626+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scraper.py took 0.042 seconds

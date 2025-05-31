@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bank_reviews_project
+    database: project_data_wherhouse
+    schema: public 
+    tables:
+      - name: bank_reviews
+        description: "Table contenant les avis bancaires bruts"

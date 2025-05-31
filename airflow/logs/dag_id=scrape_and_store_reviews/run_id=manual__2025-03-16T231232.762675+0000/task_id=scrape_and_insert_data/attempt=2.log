@@ -1,0 +1,30 @@
+[2025-03-17T00:09:38.005+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-17T00:09:38.176+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_and_store_reviews.scrape_and_insert_data manual__2025-03-16T23:12:32.762675+00:00 [queued]>
+[2025-03-17T00:09:38.239+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_and_store_reviews.scrape_and_insert_data manual__2025-03-16T23:12:32.762675+00:00 [queued]>
+[2025-03-17T00:09:38.241+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-03-17T00:09:38.347+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data> on 2025-03-16 23:12:32.762675+00:00
+[2025-03-17T00:09:38.386+0000] {standard_task_runner.py:72} INFO - Started process 245777 to run task
+[2025-03-17T00:09:38.448+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'scrape_and_store_reviews', 'scrape_and_insert_data', 'manual__2025-03-16T23:12:32.762675+00:00', '--job-id', '146', '--raw', '--subdir', 'DAGS_FOLDER/scrape_and_store_reviews.py', '--cfg-path', '/tmp/tmphd6mlay5']
+[2025-03-17T00:09:38.451+0000] {standard_task_runner.py:105} INFO - Job 146: Subtask scrape_and_insert_data
+[2025-03-17T00:09:38.670+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_and_store_reviews.scrape_and_insert_data manual__2025-03-16T23:12:32.762675+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-17T00:09:39.069+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='scrape_and_store_reviews' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T23:12:32.762675+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T23:12:32.762675+00:00'
+[2025-03-17T00:09:39.092+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-17T00:09:39.093+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-17T00:09:39.093+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data state:running start_date:2025-03-17 00:09:38.176894+00:00
+[2025-03-17T00:09:39.094+0000] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_reviews and current dag run status:running
+[2025-03-17T00:09:39.095+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-17T00:09:39.136+0000] {logging_mixin.py:190} INFO - 
+긁 [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-17T00:09:39.139+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-17T00:09:40.509+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-17T00:09:46.320+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-17T00:09:48.470+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-17T00:09:57.913+0000] {logger.py:11} INFO - WebDriver version 134.0.6998.88 selected
+[2025-03-17T00:09:57.964+0000] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.88/linux64/chromedriver-linux64.zip
+[2025-03-17T00:09:57.965+0000] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.88/linux64/chromedriver-linux64.zip
+[2025-03-17T00:09:59.832+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-03-17T00:10:50.720+0000] {job.py:229} INFO - Heartbeat recovered after 27.73 seconds
+[2025-03-17T00:11:55.442+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-03-17T00:11:55.433+0000] {local_task_job_runner.py:266} INFO - Task exited with return code -9. For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed
+[2025-03-17T00:12:04.525+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-17T00:12:26.445+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

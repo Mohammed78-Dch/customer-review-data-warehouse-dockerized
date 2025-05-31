@@ -1,0 +1,29 @@
+[2025-05-29T15:43:08.480+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-29T15:43:08.570+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.sentiment_analysis manual__2025-05-29T14:38:54.018523+00:00 [queued]>
+[2025-05-29T15:43:08.599+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.sentiment_analysis manual__2025-05-29T14:38:54.018523+00:00 [queued]>
+[2025-05-29T15:43:08.599+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-05-29T15:43:08.665+0100] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): sentiment_analysis> on 2025-05-29 14:38:54.018523+00:00
+[2025-05-29T15:43:08.677+0100] {standard_task_runner.py:72} INFO - Started process 218210 to run task
+[2025-05-29T15:43:08.690+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'sentiment_analysis', 'manual__2025-05-29T14:38:54.018523+00:00', '--job-id', '2546', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmp5nkpcazm']
+[2025-05-29T15:43:08.693+0100] {standard_task_runner.py:105} INFO - Job 2546: Subtask sentiment_analysis
+[2025-05-29T15:43:08.928+0100] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.sentiment_analysis manual__2025-05-29T14:38:54.018523+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-05-29T15:43:09.184+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='sentiment_analysis' AIRFLOW_CTX_EXECUTION_DATE='2025-05-29T14:38:54.018523+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-29T14:38:54.018523+00:00'
+[2025-05-29T15:43:09.187+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-05-29T15:43:09.188+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-05-29T15:43:09.189+0100] {logging_mixin.py:190} INFO - Current task name:sentiment_analysis state:running start_date:2025-05-29 14:43:08.572133+00:00
+[2025-05-29T15:43:09.190+0100] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-05-29T15:43:09.190+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-05-29T15:43:09.191+0100] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-05-29T15:43:09.195+0100] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/sentiment_analysis.py']
+[2025-05-29T15:43:09.214+0100] {subprocess.py:99} INFO - Output:
+[2025-05-29T16:37:31.793+0100] {subprocess.py:106} INFO - 2025-05-29 16:37:31,583 - INFO - ✅ Sentiment analysis applied successfully!
+[2025-05-29T16:38:11.648+0100] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-05-29T16:38:13.966+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-05-29T16:38:14.018+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=sentiment_analysis, run_id=manual__2025-05-29T14:38:54.018523+00:00, execution_date=20250529T143854, start_date=20250529T144308, end_date=20250529T153813
+[2025-05-29T16:38:15.115+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-05-29T16:38:15.119+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-05-29T16:38:15.126+0100] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline queued_at:2025-05-29 14:38:54.124621+00:00
+[2025-05-29T16:38:15.127+0100] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-05-29T16:38:15.572+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-05-29T16:38:16.602+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-29T16:38:16.620+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,29 @@
+[2025-03-22T22:51:45.680+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-22T22:51:45.820+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.detect_language manual__2025-03-22T22:51:33.598503+00:00 [queued]>
+[2025-03-22T22:51:45.872+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.detect_language manual__2025-03-22T22:51:33.598503+00:00 [queued]>
+[2025-03-22T22:51:45.873+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-22T22:51:45.986+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): detect_language> on 2025-03-22 22:51:33.598503+00:00
+[2025-03-22T22:51:46.039+0000] {standard_task_runner.py:72} INFO - Started process 318932 to run task
+[2025-03-22T22:51:46.069+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'process_enrichir_clean_reviews', 'detect_language', 'manual__2025-03-22T22:51:33.598503+00:00', '--job-id', '1963', '--raw', '--subdir', 'DAGS_FOLDER/process_clean_reviews.py', '--cfg-path', '/tmp/tmp6lofq07r']
+[2025-03-22T22:51:46.080+0000] {standard_task_runner.py:105} INFO - Job 1963: Subtask detect_language
+[2025-03-22T22:51:46.443+0000] {task_command.py:467} INFO - Running <TaskInstance: process_enrichir_clean_reviews.detect_language manual__2025-03-22T22:51:33.598503+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-22T22:51:47.323+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='process_enrichir_clean_reviews' AIRFLOW_CTX_TASK_ID='detect_language' AIRFLOW_CTX_EXECUTION_DATE='2025-03-22T22:51:33.598503+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-22T22:51:33.598503+00:00'
+[2025-03-22T22:51:47.349+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-22T22:51:47.352+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-22T22:51:47.353+0000] {logging_mixin.py:190} INFO - Current task name:detect_language state:running start_date:2025-03-22 22:51:45.822118+00:00
+[2025-03-22T22:51:47.355+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews and current dag run status:running
+[2025-03-22T22:51:47.358+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-22T22:51:47.392+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-22T22:51:47.401+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/detect_language.py']
+[2025-03-22T22:51:47.565+0000] {subprocess.py:99} INFO - Output:
+[2025-03-22T22:51:53.949+0000] {subprocess.py:106} INFO - ✅ Détection de langue et insertion terminées avec succès ! 🚀
+[2025-03-22T22:51:54.018+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-22T22:51:54.183+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-22T22:51:54.184+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=process_enrichir_clean_reviews, task_id=detect_language, run_id=manual__2025-03-22T22:51:33.598503+00:00, execution_date=20250322T225133, start_date=20250322T225145, end_date=20250322T225154
+[2025-03-22T22:51:54.298+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-22T22:51:54.300+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-22T22:51:54.301+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews queued_at:2025-03-22 22:51:34.365449+00:00
+[2025-03-22T22:51:54.303+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-22T22:51:54.345+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-22T22:51:54.437+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-22T22:51:54.444+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

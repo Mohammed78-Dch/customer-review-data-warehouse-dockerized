@@ -1,0 +1,48 @@
+[2025-03-18T18:29:23.277+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-18T18:29:23.476+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run scheduled__2024-12-07T00:00:00+00:00 [queued]>
+[2025-03-18T18:29:23.517+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run scheduled__2024-12-07T00:00:00+00:00 [queued]>
+[2025-03-18T18:29:23.520+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-18T18:29:23.617+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): dbt_run> on 2024-12-07 00:00:00+00:00
+[2025-03-18T18:29:23.636+0000] {standard_task_runner.py:72} INFO - Started process 24556 to run task
+[2025-03-18T18:29:23.684+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'load_dbt_clean_reviews_pipeline', 'dbt_run', 'scheduled__2024-12-07T00:00:00+00:00', '--job-id', '1094', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmpqt5q7dfg']
+[2025-03-18T18:29:23.686+0000] {standard_task_runner.py:105} INFO - Job 1094: Subtask dbt_run
+[2025-03-18T18:29:24.226+0000] {task_command.py:467} INFO - Running <TaskInstance: load_dbt_clean_reviews_pipeline.dbt_run scheduled__2024-12-07T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-18T18:29:25.323+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='load_dbt_clean_reviews_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-12-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-07T00:00:00+00:00'
+[2025-03-18T18:29:25.326+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-18T18:29:25.326+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-18T18:29:25.328+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run state:running start_date:2025-03-18 18:29:23.477001+00:00
+[2025-03-18T18:29:25.329+0000] {logging_mixin.py:190} INFO - Dag name:load_dbt_clean_reviews_pipeline and current dag run status:running
+[2025-03-18T18:29:25.330+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-18T18:29:25.333+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-18T18:29:25.336+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/dbt_projects/bank_reviews_transactional && dbt run']
+[2025-03-18T18:29:25.465+0000] {subprocess.py:99} INFO - Output:
+[2025-03-18T18:29:58.188+0000] {job.py:229} INFO - Heartbeat recovered after 11.16 seconds
+[2025-03-18T18:30:04.378+0000] {subprocess.py:106} INFO - [0m18:30:04  Running with dbt=1.9.3
+[2025-03-18T18:30:07.863+0000] {job.py:229} INFO - Heartbeat recovered after 13.36 seconds
+[2025-03-18T18:30:11.005+0000] {subprocess.py:106} INFO - [0m18:30:11  Registered adapter: postgres=1.9.0
+[2025-03-18T18:30:17.439+0000] {subprocess.py:106} INFO - [0m18:30:17  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-18T18:30:17.443+0000] {subprocess.py:106} INFO - There are 1 unused configuration paths:
+[2025-03-18T18:30:17.445+0000] {subprocess.py:106} INFO - - models.bank_reviews_transactional.transactional
+[2025-03-18T18:30:21.432+0000] {subprocess.py:106} INFO - [0m18:30:21  Found 1 model, 1 source, 433 macros
+[2025-03-18T18:30:21.555+0000] {subprocess.py:106} INFO - [0m18:30:21
+[2025-03-18T18:30:21.559+0000] {subprocess.py:106} INFO - [0m18:30:21  Concurrency: 4 threads (target='dev')
+[2025-03-18T18:30:21.565+0000] {subprocess.py:106} INFO - [0m18:30:21
+[2025-03-18T18:30:23.880+0000] {subprocess.py:106} INFO - [0m18:30:23  1 of 1 START sql table model transactional.clean_reviews ....................... [RUN]
+[2025-03-18T18:30:25.603+0000] {subprocess.py:106} INFO - [0m18:30:25  1 of 1 OK created sql table model transactional.clean_reviews .................. [[32mSELECT 549[0m in 1.70s]
+[2025-03-18T18:30:25.800+0000] {subprocess.py:106} INFO - [0m18:30:25
+[2025-03-18T18:30:25.827+0000] {subprocess.py:106} INFO - [0m18:30:25  Finished running 1 table model in 0 hours 0 minutes and 4.23 seconds (4.23s).
+[2025-03-18T18:30:26.272+0000] {subprocess.py:106} INFO - [0m18:30:26
+[2025-03-18T18:30:26.274+0000] {subprocess.py:106} INFO - [0m18:30:26  [32mCompleted successfully[0m
+[2025-03-18T18:30:26.291+0000] {subprocess.py:106} INFO - [0m18:30:26
+[2025-03-18T18:30:26.303+0000] {subprocess.py:106} INFO - [0m18:30:26  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-03-18T18:30:29.985+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-18T18:30:30.635+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-18T18:30:30.639+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=load_dbt_clean_reviews_pipeline, task_id=dbt_run, run_id=scheduled__2024-12-07T00:00:00+00:00, execution_date=20241207T000000, start_date=20250318T182923, end_date=20250318T183030
+[2025-03-18T18:30:31.008+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-18T18:30:31.010+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-18T18:30:31.012+0000] {logging_mixin.py:190} INFO - Dag name:load_dbt_clean_reviews_pipeline queued_at:2025-03-18 18:29:18.970904+00:00
+[2025-03-18T18:30:31.013+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-18T18:30:31.306+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-18T18:30:31.608+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-03-18T18:30:31.650+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-18T18:30:31.671+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

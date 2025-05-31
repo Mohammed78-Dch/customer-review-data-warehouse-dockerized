@@ -1,0 +1,31 @@
+[2025-05-29T21:43:25.997+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-29T21:43:26.085+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.detect_language manual__2025-05-29T19:32:03.129470+00:00 [queued]>
+[2025-05-29T21:43:26.130+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.detect_language manual__2025-05-29T19:32:03.129470+00:00 [queued]>
+[2025-05-29T21:43:26.132+0100] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-05-29T21:43:26.208+0100] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): detect_language> on 2025-05-29 19:32:03.129470+00:00
+[2025-05-29T21:43:26.228+0100] {standard_task_runner.py:72} INFO - Started process 276853 to run task
+[2025-05-29T21:43:26.253+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'detect_language', 'manual__2025-05-29T19:32:03.129470+00:00', '--job-id', '2570', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmpuxhv_k1l']
+[2025-05-29T21:43:26.257+0100] {standard_task_runner.py:105} INFO - Job 2570: Subtask detect_language
+[2025-05-29T21:43:26.474+0100] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.detect_language manual__2025-05-29T19:32:03.129470+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-05-29T21:43:26.974+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='detect_language' AIRFLOW_CTX_EXECUTION_DATE='2025-05-29T19:32:03.129470+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-29T19:32:03.129470+00:00'
+[2025-05-29T21:43:26.976+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-05-29T21:43:26.977+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-05-29T21:43:26.977+0100] {logging_mixin.py:190} INFO - Current task name:detect_language state:running start_date:2025-05-29 20:43:26.085718+00:00
+[2025-05-29T21:43:26.978+0100] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-05-29T21:43:26.978+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-05-29T21:43:26.984+0100] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-05-29T21:43:26.989+0100] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/detect_language.py']
+[2025-05-29T21:43:27.020+0100] {subprocess.py:99} INFO - Output:
+[2025-05-29T22:21:14.988+0100] {subprocess.py:106} INFO - ✅ Connexion réussie à la base de données Aiven PostgreSQL.
+[2025-05-29T22:21:15.107+0100] {subprocess.py:106} INFO - ✅ Connexion réussie à la base de données.
+[2025-05-29T22:21:15.108+0100] {subprocess.py:106} INFO - ✅ Mise à jour de la colonne 'language' terminée avec succès ! 🚀
+[2025-05-29T22:21:16.191+0100] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-05-29T22:21:16.518+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-05-29T22:21:16.522+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=detect_language, run_id=manual__2025-05-29T19:32:03.129470+00:00, execution_date=20250529T193203, start_date=20250529T204326, end_date=20250529T212116
+[2025-05-29T22:21:16.631+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-05-29T22:21:16.631+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-05-29T22:21:16.632+0100] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline queued_at:2025-05-29 19:32:03.309621+00:00
+[2025-05-29T22:21:16.632+0100] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-05-29T22:21:16.685+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-05-29T22:21:16.857+0100] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-29T22:21:16.860+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,68 @@
+[2025-03-13T15:31:31.403+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-13T15:31:31.436+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Simple_etl.file_sensor manual__2025-03-10T15:49:03.350379+00:00 [queued]>
+[2025-03-13T15:31:31.447+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Simple_etl.file_sensor manual__2025-03-10T15:49:03.350379+00:00 [queued]>
+[2025-03-13T15:31:31.448+0000] {taskinstance.py:2867} INFO - Starting attempt 4 of 1
+[2025-03-13T15:31:31.467+0000] {taskinstance.py:2890} INFO - Executing <Task(FileSensor): file_sensor> on 2025-03-10 15:49:03.350379+00:00
+[2025-03-13T15:31:31.474+0000] {standard_task_runner.py:72} INFO - Started process 11869 to run task
+[2025-03-13T15:31:31.480+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-10T15:49:03.350379+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmpuqg13jf7']
+[2025-03-13T15:31:31.482+0000] {standard_task_runner.py:105} INFO - Job 91: Subtask file_sensor
+[2025-03-13T15:31:31.645+0000] {task_command.py:467} INFO - Running <TaskInstance: Simple_etl.file_sensor manual__2025-03-10T15:49:03.350379+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-13T15:31:31.852+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Simple_etl' AIRFLOW_CTX_TASK_ID='file_sensor' AIRFLOW_CTX_EXECUTION_DATE='2025-03-10T15:49:03.350379+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-10T15:49:03.350379+00:00'
+[2025-03-13T15:31:31.856+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-13T15:31:31.856+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-13T15:31:31.857+0000] {logging_mixin.py:190} INFO - Current task name:file_sensor state:running start_date:2025-03-13 15:31:31.436927+00:00
+[2025-03-13T15:31:31.857+0000] {logging_mixin.py:190} INFO - Dag name:Simple_etl and current dag run status:running
+[2025-03-13T15:31:31.857+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-13T15:31:31.858+0000] {baseoperator.py:423} WARNING - FileSensor.execute cannot be called outside TaskInstance!
+[2025-03-13T15:31:31.887+0000] {base.py:84} INFO - Retrieving connection 'fs_default'
+[2025-03-13T15:31:31.887+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:31:41.888+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:31:53.844+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:32:03.845+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:32:13.846+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:32:25.977+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:32:35.979+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:32:45.979+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:32:59.338+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:33:09.338+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:33:19.339+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:33:29.340+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:33:42.588+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:33:52.589+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:34:02.590+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:34:15.180+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:34:25.181+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:34:35.182+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:34:47.750+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:34:57.751+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:35:07.753+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:35:20.617+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:35:30.618+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:35:40.621+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:35:50.621+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:36:03.918+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:36:13.919+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:36:23.922+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:36:37.010+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:36:47.013+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:36:57.015+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:37:10.188+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:37:20.189+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:37:30.190+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:37:40.191+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:37:50.193+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:38:04.329+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:38:04.406+0000] {filesystem.py:113} INFO - Found File /home/mohammed/input/bank-additional.csv last modified: 20250224160741
+[2025-03-13T15:38:04.424+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2025-03-13T15:38:04.501+0000] {filesystem.py:109} INFO - Poking for file /home/mohammed/input/*.csv
+[2025-03-13T15:38:04.502+0000] {filesystem.py:113} INFO - Found File /home/mohammed/input/bank-additional.csv last modified: 20250224160741
+[2025-03-13T15:38:09.006+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-13T15:38:09.098+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=Simple_etl, task_id=file_sensor, run_id=manual__2025-03-10T15:49:03.350379+00:00, execution_date=20250310T154903, start_date=20250313T153131, end_date=20250313T153809
+[2025-03-13T15:38:10.369+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-13T15:38:10.370+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-13T15:38:10.370+0000] {logging_mixin.py:190} INFO - Dag name:Simple_etl queued_at:2025-03-10 15:49:03.677493+00:00
+[2025-03-13T15:38:10.371+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:FileSensor
+[2025-03-13T15:38:11.495+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-13T15:38:13.872+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-13T15:38:13.884+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-03-13T15:38:13.939+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics

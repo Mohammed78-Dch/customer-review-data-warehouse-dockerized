@@ -1,0 +1,60 @@
+[2025-03-17T01:00:15.949+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-17T01:00:15.972+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_reviews_pipeline.dbt_run scheduled__2024-08-17T00:00:00+00:00 [queued]>
+[2025-03-17T01:00:15.981+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_reviews_pipeline.dbt_run scheduled__2024-08-17T00:00:00+00:00 [queued]>
+[2025-03-17T01:00:15.981+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-03-17T01:00:16.001+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): dbt_run> on 2024-08-17 00:00:00+00:00
+[2025-03-17T01:00:16.020+0000] {standard_task_runner.py:72} INFO - Started process 300906 to run task
+[2025-03-17T01:00:16.028+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'load_reviews_pipeline', 'dbt_run', 'scheduled__2024-08-17T00:00:00+00:00', '--job-id', '429', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmp2gvk0_uu']
+[2025-03-17T01:00:16.030+0000] {standard_task_runner.py:105} INFO - Job 429: Subtask dbt_run
+[2025-03-17T01:00:16.108+0000] {task_command.py:467} INFO - Running <TaskInstance: load_reviews_pipeline.dbt_run scheduled__2024-08-17T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-17T01:00:16.253+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='load_reviews_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-08-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-17T00:00:00+00:00'
+[2025-03-17T01:00:16.255+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-17T01:00:16.255+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-17T01:00:16.255+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run state:running start_date:2025-03-17 01:00:15.973265+00:00
+[2025-03-17T01:00:16.255+0000] {logging_mixin.py:190} INFO - Dag name:load_reviews_pipeline and current dag run status:running
+[2025-03-17T01:00:16.255+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-17T01:00:16.256+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-17T01:00:16.257+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/bank_reviews_project && dbt run']
+[2025-03-17T01:00:16.282+0000] {subprocess.py:99} INFO - Output:
+[2025-03-17T01:00:16.909+0000] {subprocess.py:106} INFO - [0m01:00:16  Running with dbt=1.9.3
+[2025-03-17T01:00:17.289+0000] {subprocess.py:106} INFO - [0m01:00:17  Registered adapter: postgres=1.9.0
+[2025-03-17T01:00:17.869+0000] {subprocess.py:106} INFO - [0m01:00:17  Found 10 models, 4 data tests, 2 sources, 433 macros
+[2025-03-17T01:00:17.876+0000] {subprocess.py:106} INFO - [0m01:00:17
+[2025-03-17T01:00:17.876+0000] {subprocess.py:106} INFO - [0m01:00:17  Concurrency: 4 threads (target='dev')
+[2025-03-17T01:00:17.877+0000] {subprocess.py:106} INFO - [0m01:00:17
+[2025-03-17T01:00:18.204+0000] {subprocess.py:106} INFO - [0m01:00:18  1 of 10 START sql view model public.clean_reviews .............................. [RUN]
+[2025-03-17T01:00:18.207+0000] {subprocess.py:106} INFO - [0m01:00:18  2 of 10 START sql table model public.my_first_dbt_model ........................ [RUN]
+[2025-03-17T01:00:18.211+0000] {subprocess.py:106} INFO - [0m01:00:18  3 of 10 START sql view model public.remove_duplicates .......................... [RUN]
+[2025-03-17T01:00:18.214+0000] {subprocess.py:106} INFO - [0m01:00:18  4 of 10 START sql view model public.stg_clean_reviews .......................... [RUN]
+[2025-03-17T01:00:18.707+0000] {subprocess.py:106} INFO - [0m01:00:18  1 of 10 OK created sql view model public.clean_reviews ......................... [[32mCREATE VIEW[0m in 0.48s]
+[2025-03-17T01:00:18.714+0000] {subprocess.py:106} INFO - [0m01:00:18  3 of 10 OK created sql view model public.remove_duplicates ..................... [[32mCREATE VIEW[0m in 0.49s]
+[2025-03-17T01:00:18.720+0000] {subprocess.py:106} INFO - [0m01:00:18  2 of 10 OK created sql table model public.my_first_dbt_model ................... [[32mSELECT 2[0m in 0.50s]
+[2025-03-17T01:00:18.725+0000] {subprocess.py:106} INFO - [0m01:00:18  4 of 10 OK created sql view model public.stg_clean_reviews ..................... [[32mCREATE VIEW[0m in 0.50s]
+[2025-03-17T01:00:18.734+0000] {subprocess.py:106} INFO - [0m01:00:18  5 of 10 START sql view model public.dim_bank ................................... [RUN]
+[2025-03-17T01:00:18.737+0000] {subprocess.py:106} INFO - [0m01:00:18  6 of 10 START sql view model public.dim_branch ................................. [RUN]
+[2025-03-17T01:00:18.738+0000] {subprocess.py:106} INFO - [0m01:00:18  7 of 10 START sql view model public.dim_location ............................... [RUN]
+[2025-03-17T01:00:18.740+0000] {subprocess.py:106} INFO - [0m01:00:18  8 of 10 START sql view model public.dim_sentiment .............................. [RUN]
+[2025-03-17T01:00:18.966+0000] {subprocess.py:106} INFO - [0m01:00:18  5 of 10 OK created sql view model public.dim_bank .............................. [[32mCREATE VIEW[0m in 0.22s]
+[2025-03-17T01:00:18.978+0000] {subprocess.py:106} INFO - [0m01:00:18  9 of 10 START sql view model public.my_second_dbt_model ........................ [RUN]
+[2025-03-17T01:00:18.988+0000] {subprocess.py:106} INFO - [0m01:00:18  6 of 10 OK created sql view model public.dim_branch ............................ [[32mCREATE VIEW[0m in 0.24s]
+[2025-03-17T01:00:18.996+0000] {subprocess.py:106} INFO - [0m01:00:18  7 of 10 OK created sql view model public.dim_location .......................... [[32mCREATE VIEW[0m in 0.25s]
+[2025-03-17T01:00:19.004+0000] {subprocess.py:106} INFO - [0m01:00:19  8 of 10 OK created sql view model public.dim_sentiment ......................... [[32mCREATE VIEW[0m in 0.25s]
+[2025-03-17T01:00:19.021+0000] {subprocess.py:106} INFO - [0m01:00:19  10 of 10 START sql view model public.fact_reviews .............................. [RUN]
+[2025-03-17T01:00:19.138+0000] {subprocess.py:106} INFO - [0m01:00:19  9 of 10 OK created sql view model public.my_second_dbt_model ................... [[32mCREATE VIEW[0m in 0.15s]
+[2025-03-17T01:00:19.160+0000] {subprocess.py:106} INFO - [0m01:00:19  10 of 10 OK created sql view model public.fact_reviews ......................... [[32mCREATE VIEW[0m in 0.13s]
+[2025-03-17T01:00:19.208+0000] {subprocess.py:106} INFO - [0m01:00:19
+[2025-03-17T01:00:19.209+0000] {subprocess.py:106} INFO - [0m01:00:19  Finished running 1 table model, 9 view models in 0 hours 0 minutes and 1.33 seconds (1.33s).
+[2025-03-17T01:00:19.315+0000] {subprocess.py:106} INFO - [0m01:00:19
+[2025-03-17T01:00:19.316+0000] {subprocess.py:106} INFO - [0m01:00:19  [32mCompleted successfully[0m
+[2025-03-17T01:00:19.318+0000] {subprocess.py:106} INFO - [0m01:00:19
+[2025-03-17T01:00:19.320+0000] {subprocess.py:106} INFO - [0m01:00:19  Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[2025-03-17T01:00:26.451+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-17T01:00:26.574+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-17T01:00:26.575+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=load_reviews_pipeline, task_id=dbt_run, run_id=scheduled__2024-08-17T00:00:00+00:00, execution_date=20240817T000000, start_date=20250317T010015, end_date=20250317T010026
+[2025-03-17T01:00:26.669+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-17T01:00:26.670+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-17T01:00:26.670+0000] {logging_mixin.py:190} INFO - Dag name:load_reviews_pipeline queued_at:2025-03-17 00:54:20.228726+00:00
+[2025-03-17T01:00:26.671+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-17T01:00:26.711+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-17T01:00:26.755+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-17T01:00:26.763+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

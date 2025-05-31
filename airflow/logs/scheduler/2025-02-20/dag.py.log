@@ -1,0 +1,7 @@
+[2025-02-20T12:29:14.524+0100] {processor.py:186} INFO - Started process (PID=1106) to work on /home/mohammed/airflow/dags/dag.py
+[2025-02-20T12:29:14.527+0100] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag.py for tasks to queue
+[2025-02-20T12:29:14.536+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:14.534+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag.py
+[2025-02-20T12:29:14.568+0100] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /home/mohammed/airflow/dags/dag.py
+[2025-02-20T12:29:14.819+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:14.818+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:29:14.862+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:29:14.861+0100] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-02-19 00:00:00+00:00, run_after=2025-02-20 00:00:00+00:00
+[2025-02-20T12:29:14.924+0100] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag.py took 0.422 seconds

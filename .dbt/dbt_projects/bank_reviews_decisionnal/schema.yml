@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: bank_reviews_project
+    database: project_data_wherhouse
+    schema: public
+    tables:
+      - name: bank_reviews
+        description: "Table des avis bancaires"
+
+models:
+  - name: clean_reviews
+    description: "Nettoyage des avis bancaires"
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: cleaned_review
+        tests:
+          - not_null
+

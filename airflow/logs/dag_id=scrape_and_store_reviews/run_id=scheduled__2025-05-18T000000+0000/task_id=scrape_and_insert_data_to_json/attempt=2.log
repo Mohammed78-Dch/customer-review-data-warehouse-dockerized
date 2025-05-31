@@ -1,0 +1,217 @@
+[2025-05-29T12:07:34.300+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-29T12:07:34.366+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_and_store_reviews.scrape_and_insert_data_to_json scheduled__2025-05-18T00:00:00+00:00 [queued]>
+[2025-05-29T12:07:34.399+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_and_store_reviews.scrape_and_insert_data_to_json scheduled__2025-05-18T00:00:00+00:00 [queued]>
+[2025-05-29T12:07:34.400+0100] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-05-29T12:07:34.452+0100] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-05-18 00:00:00+00:00
+[2025-05-29T12:07:34.462+0100] {standard_task_runner.py:72} INFO - Started process 25973 to run task
+[2025-05-29T12:07:34.471+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'scrape_and_store_reviews', 'scrape_and_insert_data_to_json', 'scheduled__2025-05-18T00:00:00+00:00', '--job-id', '2522', '--raw', '--subdir', 'DAGS_FOLDER/scrape_and_store_reviews.py', '--cfg-path', '/tmp/tmpte925cwh']
+[2025-05-29T12:07:34.474+0100] {standard_task_runner.py:105} INFO - Job 2522: Subtask scrape_and_insert_data_to_json
+[2025-05-29T12:07:34.676+0100] {task_command.py:467} INFO - Running <TaskInstance: scrape_and_store_reviews.scrape_and_insert_data_to_json scheduled__2025-05-18T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-05-29T12:07:35.121+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='scrape_and_store_reviews' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-05-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-05-18T00:00:00+00:00'
+[2025-05-29T12:07:35.138+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-05-29T12:07:35.139+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-05-29T12:07:35.141+0100] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-05-29 11:07:34.369853+00:00
+[2025-05-29T12:07:35.146+0100] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_reviews and current dag run status:running
+[2025-05-29T12:07:35.148+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-05-29T12:07:35.155+0100] {logging_mixin.py:190} INFO - 
+ [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-05-29T12:07:35.157+0100] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-05-29T12:07:36.859+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:07:38.143+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:07:39.552+0100] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver] found in cache
+[2025-05-29T12:08:59.763+0100] {logging_mixin.py:190} INFO - ❌ Impossible de trouver le bouton des avis
+[2025-05-29T12:09:00.655+0100] {logging_mixin.py:190} INFO - 
+ [2/1023] Extraction pour Bank Al-Maghrib...
+[2025-05-29T12:09:00.663+0100] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-05-29T12:09:08.000+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:09:11.100+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:09:12.017+0100] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver] found in cache
+[2025-05-29T12:10:12.865+0100] {logging_mixin.py:190} INFO - ❌ Impossible de trouver le bouton des avis
+[2025-05-29T12:10:14.953+0100] {logging_mixin.py:190} INFO - 
+ [3/1023] Extraction pour Bank Al Maghrib...
+[2025-05-29T12:10:15.252+0100] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-05-29T12:10:22.454+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:10:26.387+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:10:27.458+0100] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver] found in cache
+[2025-05-29T12:10:49.883+0100] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2025-05-29T12:10:50.064+0100] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-05-29T12:10:50.166+0100] {process_utils.py:132} INFO - Sending 15 to group 25973. PIDs of all processes in the group: [32038, 32070, 32096, 32100, 32181, 32119, 32187, 32420, 32503, 32171, 25973]
+[2025-05-29T12:10:50.182+0100] {process_utils.py:87} INFO - Sending the signal 15 to group 25973
+[2025-05-29T12:10:50.313+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32171, status='terminated', started='12:10:28') (32171) terminated with exit code None
+[2025-05-29T12:10:50.277+0100] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-29T12:10:50.453+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32070, status='terminated', started='12:10:27') (32070) terminated with exit code None
+[2025-05-29T12:10:50.455+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32503, status='terminated', started='12:10:36') (32503) terminated with exit code None
+[2025-05-29T12:10:50.456+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32420, status='terminated', started='12:10:34') (32420) terminated with exit code None
+[2025-05-29T12:10:50.456+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32181, status='terminated', started='12:10:28') (32181) terminated with exit code None
+[2025-05-29T12:10:50.457+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32100, status='terminated', started='12:10:28') (32100) terminated with exit code None
+[2025-05-29T12:10:50.458+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32187, status='terminated', started='12:10:29') (32187) terminated with exit code None
+[2025-05-29T12:10:50.466+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32096, status='terminated', started='12:10:28') (32096) terminated with exit code None
+[2025-05-29T12:10:50.467+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32119, status='terminated', started='12:10:28') (32119) terminated with exit code None
+[2025-05-29T12:10:50.953+0100] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/mohammed/venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 56, in scheduler
+    run_command_with_daemon_option(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 59, in <lambda>
+    callback=lambda: _run_scheduler_job(args),
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 47, in _run_scheduler_job
+    run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/scheduler_job_runner.py", line 990, in _execute
+    executor.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 392, in start
+    self.impl.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 330, in start
+    worker.start()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 281, in _Popen
+    return Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 71, in _launch
+    code = process_obj._bootstrap(parent_sentinel=child_r)
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 80, in run
+    return super().run()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 211, in do_work
+    self.execute_work(key=key, command=command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 100, in execute_work
+    state = self._execute_work_in_fork(command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 142, in _execute_work_in_fork
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/airflow/scripts/insert_data_to_json.py", line 9, in insert_data_to_json
+    scraped_data = scrape_bank_reviews()
+  File "/home/mohammed/airflow/scripts/scraper.py", line 181, in scrape_bank_reviews
+    reviews,ads,bank_name = extraire_avis(bank['url'])
+  File "/home/mohammed/airflow/scripts/scraper.py", line 81, in extraire_avis
+    driver.get(url + "?hl=fr")
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/request.py", line 81, in request
+    return self.request_encode_body(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/usr/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-05-29T12:10:51.696+0100] {logging_mixin.py:190} INFO - 
+ [4/1023] Extraction pour Bank Al Maghrib...
+[2025-05-29T12:10:51.706+0100] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-05-29T12:10:52.128+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=32038, status='terminated', started='12:10:27') (32038) terminated with exit code None
+[2025-05-29T12:10:53.025+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:10:55.278+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:10:56.117+0100] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver] found in cache
+[2025-05-29T12:11:35.840+0100] {logging_mixin.py:190} INFO - ❌ Impossible de trouver le bouton des avis
+[2025-05-29T12:11:36.232+0100] {logging_mixin.py:190} INFO - 
+ [5/1023] Extraction pour ...
+[2025-05-29T12:11:36.326+0100] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-05-29T12:11:38.841+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:11:40.018+0100] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-05-29T12:11:41.299+0100] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver] found in cache
+[2025-05-29T12:11:49.885+0100] {process_utils.py:150} WARNING - process psutil.Process(pid=25973, name='airflow task ru', status='sleeping', started='12:07:34') did not respond to SIGTERM. Trying SIGKILL
+[2025-05-29T12:11:50.454+0100] {process_utils.py:87} INFO - Sending the signal 9 to group 25973
+[2025-05-29T12:11:50.677+0100] {process_utils.py:80} INFO - Process psutil.Process(pid=25973, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='12:07:34') (25973) terminated with exit code -9
+[2025-05-29T12:11:50.702+0100] {standard_task_runner.py:190} ERROR - ('Job 2522 was killed before it finished (likely due to running out of memory)', 'For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed')

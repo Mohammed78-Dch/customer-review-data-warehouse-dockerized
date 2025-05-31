@@ -1,0 +1,52 @@
+[2025-05-29T23:21:12.106+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-29T23:21:12.219+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.topic_modeling manual__2025-05-29T19:32:03.129470+00:00 [queued]>
+[2025-05-29T23:21:12.280+0100] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.topic_modeling manual__2025-05-29T19:32:03.129470+00:00 [queued]>
+[2025-05-29T23:21:12.281+0100] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-05-29T23:21:12.403+0100] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): topic_modeling> on 2025-05-29 19:32:03.129470+00:00
+[2025-05-29T23:21:12.422+0100] {standard_task_runner.py:72} INFO - Started process 354498 to run task
+[2025-05-29T23:21:12.438+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'topic_modeling', 'manual__2025-05-29T19:32:03.129470+00:00', '--job-id', '2572', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmp0j6z10cc']
+[2025-05-29T23:21:12.442+0100] {standard_task_runner.py:105} INFO - Job 2572: Subtask topic_modeling
+[2025-05-29T23:21:12.764+0100] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.topic_modeling manual__2025-05-29T19:32:03.129470+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-05-29T23:21:13.330+0100] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='topic_modeling' AIRFLOW_CTX_EXECUTION_DATE='2025-05-29T19:32:03.129470+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-29T19:32:03.129470+00:00'
+[2025-05-29T23:21:13.338+0100] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-05-29T23:21:13.339+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-05-29T23:21:13.340+0100] {logging_mixin.py:190} INFO - Current task name:topic_modeling state:running start_date:2025-05-29 22:21:12.219586+00:00
+[2025-05-29T23:21:13.341+0100] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-05-29T23:21:13.342+0100] {taskinstance.py:732} INFO - ::endgroup::
+[2025-05-29T23:21:13.352+0100] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-05-29T23:21:13.366+0100] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/topic_modeling.py']
+[2025-05-29T23:21:13.431+0100] {subprocess.py:99} INFO - Output:
+[2025-05-29T23:21:42.218+0100] {subprocess.py:106} INFO - [nltk_data] Downloading package stopwords to
+[2025-05-29T23:21:42.223+0100] {subprocess.py:106} INFO - [nltk_data]     /home/mohammed/nltk_data...
+[2025-05-29T23:21:42.262+0100] {subprocess.py:106} INFO - [nltk_data]   Package stopwords is already up-to-date!
+[2025-05-29T23:23:24.576+0100] {job.py:229} INFO - Heartbeat recovered after 12.31 seconds
+[2025-05-29T23:23:39.161+0100] {job.py:229} INFO - Heartbeat recovered after 16.12 seconds
+[2025-05-29T23:34:11.512+0100] {subprocess.py:106} INFO - ✅ Connexion réussie à la base de données Aiven PostgreSQL.
+[2025-05-29T23:34:11.814+0100] {subprocess.py:106} INFO - === Correspondance entre les Topics et leurs Significations ===
+[2025-05-29T23:34:11.823+0100] {subprocess.py:106} INFO - Topic 0: Frais bancaires et gestion des comptes
+[2025-05-29T23:34:11.826+0100] {subprocess.py:106} INFO - Topic 1: Autre sujet bancaire
+[2025-05-29T23:34:11.828+0100] {subprocess.py:106} INFO - Topic 2: Temps d'attente et gestion en agence
+[2025-05-29T23:34:11.830+0100] {subprocess.py:106} INFO - Topic 3: Autre sujet bancaire
+[2025-05-29T23:34:11.831+0100] {subprocess.py:106} INFO - Topic 4: Autre sujet bancaire
+[2025-05-29T23:34:11.836+0100] {subprocess.py:106} INFO - Topic 5: Qualité du service et relation client, Expérience avec le personnel
+[2025-05-29T23:34:11.840+0100] {subprocess.py:106} INFO - Topic 6: Frais bancaires et gestion des comptes
+[2025-05-29T23:34:11.846+0100] {subprocess.py:106} INFO - Topic 7: Qualité du service et relation client, Expérience avec le personnel
+[2025-05-29T23:34:11.847+0100] {subprocess.py:106} INFO - Topic 8: Qualité du service et relation client
+[2025-05-29T23:34:11.848+0100] {subprocess.py:106} INFO - Topic 9: Qualité du service et relation client, Expérience avec le personnel, Problèmes et insatisfactions
+[2025-05-29T23:34:11.848+0100] {subprocess.py:106} INFO - ❌ Erreur PostgreSQL : server closed the connection unexpectedly
+[2025-05-29T23:34:11.848+0100] {subprocess.py:106} INFO - 	This probably means the server terminated abnormally
+[2025-05-29T23:34:11.849+0100] {subprocess.py:106} INFO - 	before or while processing the request.
+[2025-05-29T23:34:11.849+0100] {subprocess.py:106} INFO - server closed the connection unexpectedly
+[2025-05-29T23:34:11.849+0100] {subprocess.py:106} INFO - 	This probably means the server terminated abnormally
+[2025-05-29T23:34:11.850+0100] {subprocess.py:106} INFO - 	before or while processing the request.
+[2025-05-29T23:34:11.850+0100] {subprocess.py:106} INFO - 
+[2025-05-29T23:35:05.849+0100] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-05-29T23:35:08.331+0100] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-05-29T23:35:08.360+0100] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=topic_modeling, run_id=manual__2025-05-29T19:32:03.129470+00:00, execution_date=20250529T193203, start_date=20250529T222112, end_date=20250529T223508
+[2025-05-29T23:35:08.798+0100] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-05-29T23:35:08.799+0100] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-05-29T23:35:08.799+0100] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline queued_at:2025-05-29 19:32:03.309621+00:00
+[2025-05-29T23:35:08.800+0100] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-05-29T23:35:09.476+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-05-29T23:35:10.438+0100] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-29T23:35:10.451+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

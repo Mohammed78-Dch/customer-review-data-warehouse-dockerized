@@ -1,0 +1,27 @@
+[2025-03-20T00:48:56.542+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-20T00:48:56.604+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: automate_emploi_extraction.extract_data scheduled__2024-09-07T00:00:00+00:00 [queued]>
+[2025-03-20T00:48:56.620+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: automate_emploi_extraction.extract_data scheduled__2024-09-07T00:00:00+00:00 [queued]>
+[2025-03-20T00:48:56.620+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-20T00:48:56.651+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract_data> on 2024-09-07 00:00:00+00:00
+[2025-03-20T00:48:56.661+0000] {standard_task_runner.py:72} INFO - Started process 82077 to run task
+[2025-03-20T00:48:56.678+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'automate_emploi_extraction', 'extract_data', 'scheduled__2024-09-07T00:00:00+00:00', '--job-id', '1654', '--raw', '--subdir', 'DAGS_FOLDER/dag_scraper_offres_emploi.py', '--cfg-path', '/tmp/tmp7sjjcaey']
+[2025-03-20T00:48:56.680+0000] {standard_task_runner.py:105} INFO - Job 1654: Subtask extract_data
+[2025-03-20T00:48:56.872+0000] {task_command.py:467} INFO - Running <TaskInstance: automate_emploi_extraction.extract_data scheduled__2024-09-07T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-20T00:48:57.185+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='automate_emploi_extraction' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-09-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-07T00:00:00+00:00'
+[2025-03-20T00:48:57.186+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-20T00:48:57.187+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-20T00:48:57.187+0000] {logging_mixin.py:190} INFO - Current task name:extract_data state:running start_date:2025-03-20 00:48:56.605521+00:00
+[2025-03-20T00:48:57.187+0000] {logging_mixin.py:190} INFO - Dag name:automate_emploi_extraction and current dag run status:running
+[2025-03-20T00:48:57.188+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-20T00:48:57.416+0000] {logging_mixin.py:190} INFO - Erreur de requête pour la première page : 403
+[2025-03-20T00:48:57.417+0000] {logging_mixin.py:190} INFO - Fichier JSON enregistré avec succès.
+[2025-03-20T00:48:57.421+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-20T00:48:57.450+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-20T00:48:57.451+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=automate_emploi_extraction, task_id=extract_data, run_id=scheduled__2024-09-07T00:00:00+00:00, execution_date=20240907T000000, start_date=20250320T004856, end_date=20250320T004857
+[2025-03-20T00:48:57.552+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-20T00:48:57.553+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-20T00:48:57.553+0000] {logging_mixin.py:190} INFO - Dag name:automate_emploi_extraction queued_at:2025-03-20 00:48:53.550173+00:00
+[2025-03-20T00:48:57.554+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:PythonOperator
+[2025-03-20T00:48:57.604+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-20T00:48:57.648+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T00:48:57.652+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

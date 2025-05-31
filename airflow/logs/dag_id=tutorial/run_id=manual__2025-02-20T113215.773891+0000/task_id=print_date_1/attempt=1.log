@@ -1,0 +1,29 @@
+[2025-02-24T16:43:13.581+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-24T16:43:13.598+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tutorial.print_date_1 manual__2025-02-20T11:32:15.773891+00:00 [queued]>
+[2025-02-24T16:43:13.607+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tutorial.print_date_1 manual__2025-02-20T11:32:15.773891+00:00 [queued]>
+[2025-02-24T16:43:13.607+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-02-24T16:43:13.640+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): print_date_1> on 2025-02-20 11:32:15.773891+00:00
+[2025-02-24T16:43:13.648+0000] {standard_task_runner.py:72} INFO - Started process 603 to run task
+[2025-02-24T16:43:13.655+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'manual__2025-02-20T11:32:15.773891+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpxbt6iwvx']
+[2025-02-24T16:43:13.657+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask print_date_1
+[2025-02-24T16:43:13.759+0000] {task_command.py:467} INFO - Running <TaskInstance: tutorial.print_date_1 manual__2025-02-20T11:32:15.773891+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-02-24T16:43:13.881+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tutorial' AIRFLOW_CTX_TASK_ID='print_date_1' AIRFLOW_CTX_EXECUTION_DATE='2025-02-20T11:32:15.773891+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-20T11:32:15.773891+00:00'
+[2025-02-24T16:43:13.884+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-24T16:43:13.884+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-24T16:43:13.885+0000] {logging_mixin.py:190} INFO - Current task name:print_date_1 state:running start_date:2025-02-24 16:43:13.598935+00:00
+[2025-02-24T16:43:13.885+0000] {logging_mixin.py:190} INFO - Dag name:tutorial and current dag run status:running
+[2025-02-24T16:43:13.885+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-24T16:43:13.887+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-02-24T16:43:13.889+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'date']
+[2025-02-24T16:43:13.903+0000] {subprocess.py:99} INFO - Output:
+[2025-02-24T16:43:13.912+0000] {subprocess.py:106} INFO - Mon Feb 24 16:43:13 +00 2025
+[2025-02-24T16:43:13.913+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-02-24T16:43:13.964+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-24T16:43:13.964+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=print_date_1, run_id=manual__2025-02-20T11:32:15.773891+00:00, execution_date=20250220T113215, start_date=20250224T164313, end_date=20250224T164313
+[2025-02-24T16:43:14.011+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-02-24T16:43:14.012+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-02-24T16:43:14.012+0000] {logging_mixin.py:190} INFO - Dag name:tutorial queued_at:2025-02-20 11:32:15.837209+00:00
+[2025-02-24T16:43:14.013+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-02-24T16:43:14.040+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-24T16:43:14.137+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-24T16:43:14.155+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

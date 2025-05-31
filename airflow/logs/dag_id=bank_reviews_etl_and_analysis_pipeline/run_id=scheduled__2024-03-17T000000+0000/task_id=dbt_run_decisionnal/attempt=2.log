@@ -1,0 +1,134 @@
+[2025-03-28T22:48:59.237+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T22:48:59.341+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.dbt_run_decisionnal scheduled__2024-03-17T00:00:00+00:00 [queued]>
+[2025-03-28T22:48:59.389+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.dbt_run_decisionnal scheduled__2024-03-17T00:00:00+00:00 [queued]>
+[2025-03-28T22:48:59.390+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-03-28T22:48:59.441+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): dbt_run_decisionnal> on 2024-03-17 00:00:00+00:00
+[2025-03-28T22:48:59.471+0000] {standard_task_runner.py:72} INFO - Started process 581256 to run task
+[2025-03-28T22:48:59.500+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'dbt_run_decisionnal', 'scheduled__2024-03-17T00:00:00+00:00', '--job-id', '2413', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmp9cosci0m']
+[2025-03-28T22:48:59.502+0000] {standard_task_runner.py:105} INFO - Job 2413: Subtask dbt_run_decisionnal
+[2025-03-28T22:48:59.812+0000] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.dbt_run_decisionnal scheduled__2024-03-17T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-28T22:49:00.161+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run_decisionnal' AIRFLOW_CTX_EXECUTION_DATE='2024-03-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-17T00:00:00+00:00'
+[2025-03-28T22:49:00.163+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T22:49:00.163+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T22:49:00.164+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run_decisionnal state:running start_date:2025-03-28 22:48:59.343139+00:00
+[2025-03-28T22:49:00.164+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-03-28T22:49:00.166+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-28T22:49:00.168+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-28T22:49:00.170+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/dbt_projects/bank_reviews_decisionnal && dbt run']
+[2025-03-28T22:49:00.212+0000] {subprocess.py:99} INFO - Output:
+[2025-03-28T22:49:09.752+0000] {subprocess.py:106} INFO - [0m22:49:09  Running with dbt=1.9.3
+[2025-03-28T22:49:14.081+0000] {subprocess.py:106} INFO - [0m22:49:14  Registered adapter: postgres=1.9.0
+[2025-03-28T22:49:15.736+0000] {subprocess.py:106} INFO - [0m22:49:15  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-28T22:49:15.737+0000] {subprocess.py:106} INFO - There are 1 unused configuration paths:
+[2025-03-28T22:49:15.737+0000] {subprocess.py:106} INFO - - models.bank_reviews_decisionnal.decisionnal
+[2025-03-28T22:49:16.747+0000] {subprocess.py:106} INFO - [0m22:49:16  Found 5 models, 2 sources, 547 macros
+[2025-03-28T22:49:16.753+0000] {subprocess.py:106} INFO - [0m22:49:16
+[2025-03-28T22:49:16.755+0000] {subprocess.py:106} INFO - [0m22:49:16  Concurrency: 4 threads (target='dev')
+[2025-03-28T22:49:16.756+0000] {subprocess.py:106} INFO - [0m22:49:16
+[2025-03-28T22:49:18.237+0000] {subprocess.py:106} INFO - [0m22:49:18  1 of 5 START sql view model decisionnal.dim_bank ............................... [RUN]
+[2025-03-28T22:49:18.303+0000] {subprocess.py:106} INFO - [0m22:49:18  3 of 5 START sql view model decisionnal.dim_location ........................... [RUN]
+[2025-03-28T22:49:18.325+0000] {subprocess.py:106} INFO - [0m22:49:18  2 of 5 START sql view model decisionnal.dim_branch ............................. [RUN]
+[2025-03-28T22:49:18.354+0000] {subprocess.py:106} INFO - [0m22:49:18  4 of 5 START sql view model decisionnal.dim_sentiment .......................... [RUN]
+[2025-03-28T22:49:19.521+0000] {subprocess.py:106} INFO - [0m22:49:19  4 of 5 ERROR creating sql view model decisionnal.dim_sentiment ................. [[31mERROR[0m in 1.15s]
+[2025-03-28T22:49:19.920+0000] {subprocess.py:106} INFO - [0m22:49:19  2 of 5 ERROR creating sql view model decisionnal.dim_branch .................... [[31mERROR[0m in 1.59s]
+[2025-03-28T22:49:20.323+0000] {subprocess.py:106} INFO - [0m22:49:20  3 of 5 ERROR creating sql view model decisionnal.dim_location .................. [[31mERROR[0m in 2.02s]
+[2025-03-28T22:49:20.688+0000] {subprocess.py:106} INFO - [0m22:49:20  1 of 5 ERROR creating sql view model decisionnal.dim_bank ...................... [[31mERROR[0m in 2.45s]
+[2025-03-28T22:49:20.739+0000] {subprocess.py:106} INFO - [0m22:49:20  5 of 5 SKIP relation decisionnal.fact_reviews .................................. [[33mSKIP[0m]
+[2025-03-28T22:49:20.915+0000] {subprocess.py:106} INFO - [0m22:49:20
+[2025-03-28T22:49:20.917+0000] {subprocess.py:106} INFO - [0m22:49:20  Finished running 5 view models in 0 hours 0 minutes and 4.15 seconds (4.15s).
+[2025-03-28T22:49:21.422+0000] {subprocess.py:106} INFO - [0m22:49:21
+[2025-03-28T22:49:21.446+0000] {subprocess.py:106} INFO - [0m22:49:21  [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[2025-03-28T22:49:21.447+0000] {subprocess.py:106} INFO - [0m22:49:21
+[2025-03-28T22:49:21.451+0000] {subprocess.py:106} INFO - [0m22:49:21    Database Error in model dim_sentiment (models/dim_sentiment.sql)
+[2025-03-28T22:49:21.451+0000] {subprocess.py:106} INFO -   relation "dim_sentiment__dbt_backup" already exists
+[2025-03-28T22:49:21.452+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_decisionnal/models/dim_sentiment.sql
+[2025-03-28T22:49:21.452+0000] {subprocess.py:106} INFO - [0m22:49:21
+[2025-03-28T22:49:21.452+0000] {subprocess.py:106} INFO - [0m22:49:21    Database Error in model dim_branch (models/dim_branch.sql)
+[2025-03-28T22:49:21.453+0000] {subprocess.py:106} INFO -   relation "dim_branch__dbt_backup" already exists
+[2025-03-28T22:49:21.453+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_decisionnal/models/dim_branch.sql
+[2025-03-28T22:49:21.488+0000] {subprocess.py:106} INFO - [0m22:49:21
+[2025-03-28T22:49:21.489+0000] {subprocess.py:106} INFO - [0m22:49:21    Database Error in model dim_location (models/dim_location.sql)
+[2025-03-28T22:49:21.489+0000] {subprocess.py:106} INFO -   relation "dim_location__dbt_backup" already exists
+[2025-03-28T22:49:21.490+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_decisionnal/models/dim_location.sql
+[2025-03-28T22:49:21.490+0000] {subprocess.py:106} INFO - [0m22:49:21
+[2025-03-28T22:49:21.491+0000] {subprocess.py:106} INFO - [0m22:49:21    Database Error in model dim_bank (models/dim_bank.sql)
+[2025-03-28T22:49:21.492+0000] {subprocess.py:106} INFO -   relation "dim_bank__dbt_backup" already exists
+[2025-03-28T22:49:21.500+0000] {subprocess.py:106} INFO -   compiled code at target/run/bank_reviews_decisionnal/models/dim_bank.sql
+[2025-03-28T22:49:21.501+0000] {subprocess.py:106} INFO - [0m22:49:21
+[2025-03-28T22:49:21.501+0000] {subprocess.py:106} INFO - [0m22:49:21  Done. PASS=0 WARN=0 ERROR=4 SKIP=1 TOTAL=5
+[2025-03-28T22:49:24.104+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2025-03-28T22:49:24.251+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-28T22:49:24.305+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-28T22:49:24.306+0000] {logging_mixin.py:190} INFO - Task start:2025-03-28 22:48:59.343139+00:00 end:2025-03-28 22:49:24.289252+00:00 duration:24.946113
+[2025-03-28T22:49:24.307+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): dbt_run_decisionnal> dag:<DAG: bank_reviews_etl_and_analysis_pipeline> dagrun:<DagRun bank_reviews_etl_and_analysis_pipeline @ 2024-03-17 00:00:00+00:00: scheduled__2024-03-17T00:00:00+00:00, state:running, queued_at: 2025-03-28 22:39:53.868001+00:00. externally triggered: False>
+[2025-03-28T22:49:24.308+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-28T22:49:24.309+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=dbt_run_decisionnal, run_id=scheduled__2024-03-17T00:00:00+00:00, execution_date=20240317T000000, start_date=20250328T224859, end_date=20250328T224924
+[2025-03-28T22:49:24.595+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-28T22:49:24.596+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 2413 for task dbt_run_decisionnal (Bash command failed. The command returned a non-zero exit code 1.; 581256)
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-28T22:49:24.666+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-28T22:49:24.766+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T22:49:24.779+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

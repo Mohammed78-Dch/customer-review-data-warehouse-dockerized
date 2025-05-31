@@ -1,0 +1,101 @@
+[2025-03-17T00:00:31.322+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-17T00:00:31.713+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_clean_reviews.run_dbt_clean scheduled__2025-03-16T00:00:00+00:00 [queued]>
+[2025-03-17T00:00:31.805+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_clean_reviews.run_dbt_clean scheduled__2025-03-16T00:00:00+00:00 [queued]>
+[2025-03-17T00:00:31.805+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-17T00:00:31.932+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): run_dbt_clean> on 2025-03-16 00:00:00+00:00
+[2025-03-17T00:00:32.182+0000] {standard_task_runner.py:72} INFO - Started process 239538 to run task
+[2025-03-17T00:00:32.480+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_clean_reviews', 'run_dbt_clean', 'scheduled__2025-03-16T00:00:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/dag_clean_reviews.py', '--cfg-path', '/tmp/tmpmks376uy']
+[2025-03-17T00:00:32.537+0000] {standard_task_runner.py:105} INFO - Job 128: Subtask run_dbt_clean
+[2025-03-17T00:00:33.738+0000] {task_command.py:467} INFO - Running <TaskInstance: dbt_clean_reviews.run_dbt_clean scheduled__2025-03-16T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-17T00:00:35.053+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dbt_clean_reviews' AIRFLOW_CTX_TASK_ID='run_dbt_clean' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-16T00:00:00+00:00'
+[2025-03-17T00:00:35.064+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-17T00:00:35.066+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-17T00:00:35.066+0000] {logging_mixin.py:190} INFO - Current task name:run_dbt_clean state:running start_date:2025-03-17 00:00:31.735017+00:00
+[2025-03-17T00:00:35.067+0000] {logging_mixin.py:190} INFO - Dag name:dbt_clean_reviews and current dag run status:running
+[2025-03-17T00:00:35.067+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-17T00:00:35.081+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-17T00:00:35.086+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/bank_reviews_project && dbt run --select clean_reviews']
+[2025-03-17T00:00:35.225+0000] {subprocess.py:99} INFO - Output:
+[2025-03-17T00:00:58.944+0000] {job.py:229} INFO - Heartbeat recovered after 12.45 seconds
+[2025-03-17T00:01:52.687+0000] {job.py:229} INFO - Heartbeat recovered after 53.75 seconds
+[2025-03-17T00:02:03.590+0000] {subprocess.py:106} INFO - [0m00:02:03  Running with dbt=1.9.3
+[2025-03-17T00:02:15.479+0000] {subprocess.py:106} INFO - [0m00:02:15  Registered adapter: postgres=1.9.0
+[2025-03-17T00:02:20.507+0000] {subprocess.py:106} INFO - [0m00:02:20  Encountered an error:
+[2025-03-17T00:02:20.522+0000] {subprocess.py:106} INFO - Compilation Error
+[2025-03-17T00:02:20.536+0000] {subprocess.py:106} INFO -   Model 'model.bank_reviews_project.stg_clean_reviews' (models/stg_clean_reviews.sql) depends on a source named 'public.clean_reviews_enriched' which was not found
+[2025-03-17T00:02:25.300+0000] {subprocess.py:110} INFO - Command exited with return code 2
+[2025-03-17T00:02:26.775+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-03-17T00:02:27.083+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-17T00:02:27.084+0000] {logging_mixin.py:190} INFO - Task start:2025-03-17 00:00:31.735017+00:00 end:2025-03-17 00:02:27.028573+00:00 duration:115.293556
+[2025-03-17T00:02:27.105+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): run_dbt_clean> dag:<DAG: dbt_clean_reviews> dagrun:<DagRun dbt_clean_reviews @ 2025-03-16 00:00:00+00:00: scheduled__2025-03-16T00:00:00+00:00, state:running, queued_at: 2025-03-17 00:00:02.324869+00:00. externally triggered: False>
+[2025-03-17T00:02:27.107+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 2.
+[2025-03-17T00:02:27.112+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_clean_reviews, task_id=run_dbt_clean, run_id=scheduled__2025-03-16T00:00:00+00:00, execution_date=20250316T000000, start_date=20250317T000031, end_date=20250317T000227
+[2025-03-17T00:02:28.221+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-17T00:02:28.249+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 128 for task run_dbt_clean (Bash command failed. The command returned a non-zero exit code 2.; 239538)
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-03-17T00:02:28.327+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-17T00:02:28.642+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-17T00:02:28.654+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

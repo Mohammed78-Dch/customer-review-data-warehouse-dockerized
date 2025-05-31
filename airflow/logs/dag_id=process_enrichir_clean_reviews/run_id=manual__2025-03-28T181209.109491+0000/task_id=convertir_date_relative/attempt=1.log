@@ -1,0 +1,29 @@
+[2025-03-28T18:12:12.400+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-28T18:12:12.441+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.convertir_date_relative manual__2025-03-28T18:12:09.109491+00:00 [queued]>
+[2025-03-28T18:12:12.459+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.convertir_date_relative manual__2025-03-28T18:12:09.109491+00:00 [queued]>
+[2025-03-28T18:12:12.460+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-28T18:12:12.490+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): convertir_date_relative> on 2025-03-28 18:12:09.109491+00:00
+[2025-03-28T18:12:12.503+0000] {standard_task_runner.py:72} INFO - Started process 268198 to run task
+[2025-03-28T18:12:12.514+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'process_enrichir_clean_reviews', 'convertir_date_relative', 'manual__2025-03-28T18:12:09.109491+00:00', '--job-id', '2381', '--raw', '--subdir', 'DAGS_FOLDER/process_clean_reviews.py', '--cfg-path', '/tmp/tmprjiil_j0']
+[2025-03-28T18:12:12.516+0000] {standard_task_runner.py:105} INFO - Job 2381: Subtask convertir_date_relative
+[2025-03-28T18:12:12.639+0000] {task_command.py:467} INFO - Running <TaskInstance: process_enrichir_clean_reviews.convertir_date_relative manual__2025-03-28T18:12:09.109491+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-28T18:12:12.904+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='process_enrichir_clean_reviews' AIRFLOW_CTX_TASK_ID='convertir_date_relative' AIRFLOW_CTX_EXECUTION_DATE='2025-03-28T18:12:09.109491+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-28T18:12:09.109491+00:00'
+[2025-03-28T18:12:12.907+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-28T18:12:12.907+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-28T18:12:12.908+0000] {logging_mixin.py:190} INFO - Current task name:convertir_date_relative state:running start_date:2025-03-28 18:12:12.442050+00:00
+[2025-03-28T18:12:12.909+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews and current dag run status:running
+[2025-03-28T18:12:12.910+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-28T18:12:12.911+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-28T18:12:12.913+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/convertir_date_relative.py']
+[2025-03-28T18:12:12.934+0000] {subprocess.py:99} INFO - Output:
+[2025-03-28T18:12:16.707+0000] {subprocess.py:106} INFO - ✅ Conversion des dates et insertion/mise à jour terminées avec succès.
+[2025-03-28T18:12:16.727+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-28T18:12:16.811+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-28T18:12:16.813+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=process_enrichir_clean_reviews, task_id=convertir_date_relative, run_id=manual__2025-03-28T18:12:09.109491+00:00, execution_date=20250328T181209, start_date=20250328T181212, end_date=20250328T181216
+[2025-03-28T18:12:16.899+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-28T18:12:16.900+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-28T18:12:16.901+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews queued_at:2025-03-28 18:12:09.136701+00:00
+[2025-03-28T18:12:16.901+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-28T18:12:16.944+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-28T18:12:17.118+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-28T18:12:17.127+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

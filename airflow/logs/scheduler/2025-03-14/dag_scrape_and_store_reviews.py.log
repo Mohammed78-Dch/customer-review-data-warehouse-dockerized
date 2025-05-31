@@ -1,0 +1,585 @@
+[2025-03-14T00:00:01.464+0000] {processor.py:186} INFO - Started process (PID=385133) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:01.556+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:01.574+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:01.560+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:01.705+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:01.691+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:01.707+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:02.328+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 1.048 seconds
+[2025-03-14T00:00:11.609+0000] {processor.py:186} INFO - Started process (PID=385656) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:11.637+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:11.662+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:11.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:11.805+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:11.774+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:11.807+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:12.253+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.809 seconds
+[2025-03-14T00:00:14.799+0000] {processor.py:186} INFO - Started process (PID=385748) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:14.809+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:14.826+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:14.825+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:14.860+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:14.854+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:14.862+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:15.213+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.510 seconds
+[2025-03-14T00:00:15.537+0000] {processor.py:186} INFO - Started process (PID=385769) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:15.538+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:15.544+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:15.544+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:15.573+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:15.563+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:15.574+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:15.809+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.347 seconds
+[2025-03-14T00:00:15.890+0000] {processor.py:186} INFO - Started process (PID=385783) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:15.892+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:15.901+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:15.900+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:15.941+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:15.914+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:15.942+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:16.182+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.356 seconds
+[2025-03-14T00:00:18.405+0000] {processor.py:186} INFO - Started process (PID=385877) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:18.420+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:18.424+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:18.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:18.487+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:18.459+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:18.489+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:18.923+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.705 seconds
+[2025-03-14T00:00:33.185+0000] {processor.py:186} INFO - Started process (PID=386179) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:33.198+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:33.221+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:33.203+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:33.270+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:33.251+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:33.273+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:33.701+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.756 seconds
+[2025-03-14T00:00:41.028+0000] {processor.py:186} INFO - Started process (PID=386268) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:41.034+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:00:41.045+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:41.043+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:41.079+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:00:41.074+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:00:41.082+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:00:41.366+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.468 seconds
+[2025-03-14T00:01:00.851+0000] {processor.py:186} INFO - Started process (PID=386805) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:00.903+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:00.966+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:00.964+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:01.112+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:01.083+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:01.153+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:01.449+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.884 seconds
+[2025-03-14T00:01:05.859+0000] {processor.py:186} INFO - Started process (PID=386887) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:05.864+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:05.870+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:05.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:05.985+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:05.964+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:05.988+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:06.394+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.768 seconds
+[2025-03-14T00:01:08.376+0000] {processor.py:186} INFO - Started process (PID=386956) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:08.385+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:08.406+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:08.391+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:08.533+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:08.507+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:08.534+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:09.534+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 1.484 seconds
+[2025-03-14T00:01:12.022+0000] {processor.py:186} INFO - Started process (PID=387006) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:12.048+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:12.053+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:12.052+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:12.147+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:12.073+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:12.149+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:12.520+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.937 seconds
+[2025-03-14T00:01:19.952+0000] {processor.py:186} INFO - Started process (PID=387224) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:19.955+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:20.004+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:20.003+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:20.031+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:20.021+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:20.058+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:20.473+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.570 seconds
+[2025-03-14T00:01:22.305+0000] {processor.py:186} INFO - Started process (PID=387351) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:22.307+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:22.314+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:22.313+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:22.343+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:22.339+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:22.346+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:22.483+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.230 seconds
+[2025-03-14T00:01:23.747+0000] {processor.py:186} INFO - Started process (PID=387406) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:23.749+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:23.765+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:23.763+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:23.814+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:23.809+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:23.815+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:23.998+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.366 seconds
+[2025-03-14T00:01:35.276+0000] {processor.py:186} INFO - Started process (PID=387872) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:35.282+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:35.287+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:35.286+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:35.312+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:35.303+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:35.315+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:35.450+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.205 seconds
+[2025-03-14T00:01:51.365+0000] {processor.py:186} INFO - Started process (PID=388460) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:51.466+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:51.469+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:51.468+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:51.521+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:51.518+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:51.522+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:51.637+0000] {processor.py:186} INFO - Started process (PID=388484) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:51.639+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:51.642+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:51.641+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:51.653+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:51.651+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:51.655+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:51.717+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.380 seconds
+[2025-03-14T00:01:51.886+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.278 seconds
+[2025-03-14T00:01:53.045+0000] {processor.py:186} INFO - Started process (PID=388541) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:53.048+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:53.067+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:53.066+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:53.085+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:53.079+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:53.087+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:53.099+0000] {processor.py:186} INFO - Started process (PID=388537) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:53.103+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:53.152+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:53.137+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:53.213+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.196 seconds
+[2025-03-14T00:01:53.211+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:53.201+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:53.245+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:53.570+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.530 seconds
+[2025-03-14T00:01:54.545+0000] {processor.py:186} INFO - Started process (PID=388619) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:54.547+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:54.557+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:54.555+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:54.567+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:54.564+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:54.568+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:54.698+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.183 seconds
+[2025-03-14T00:01:56.534+0000] {processor.py:186} INFO - Started process (PID=388688) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:56.540+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:01:56.544+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:56.542+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:56.611+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:01:56.606+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:01:56.618+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:01:56.988+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.541 seconds
+[2025-03-14T00:02:07.220+0000] {processor.py:186} INFO - Started process (PID=389282) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:07.244+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:07.253+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:07.253+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:07.301+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:07.286+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:07.302+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:07.494+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.370 seconds
+[2025-03-14T00:02:25.260+0000] {processor.py:186} INFO - Started process (PID=390070) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:25.319+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:25.328+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:25.326+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:25.381+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:25.377+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:25.383+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:25.623+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.500 seconds
+[2025-03-14T00:02:26.701+0000] {processor.py:186} INFO - Started process (PID=390135) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:26.703+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:26.712+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:26.711+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:26.723+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:26.721+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:26.724+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:26.977+0000] {processor.py:186} INFO - Started process (PID=390145) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:26.979+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:26.981+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:26.980+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:27.081+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:26.986+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:27.083+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:27.096+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.422 seconds
+[2025-03-14T00:02:27.372+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.412 seconds
+[2025-03-14T00:02:28.883+0000] {processor.py:186} INFO - Started process (PID=390239) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:28.886+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:28.891+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:28.890+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:28.914+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:28.900+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:28.936+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:29.308+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.470 seconds
+[2025-03-14T00:02:30.228+0000] {processor.py:186} INFO - Started process (PID=390318) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:30.251+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:30.257+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:30.255+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:30.322+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:30.316+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:30.324+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:30.458+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.284 seconds
+[2025-03-14T00:02:34.482+0000] {processor.py:186} INFO - Started process (PID=390587) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:34.495+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:34.500+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:34.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:34.559+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:34.539+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:34.560+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:34.948+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.577 seconds
+[2025-03-14T00:02:46.425+0000] {processor.py:186} INFO - Started process (PID=391111) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:46.441+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:02:46.447+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:46.444+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:46.488+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:02:46.484+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:02:46.491+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:02:46.715+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.466 seconds
+[2025-03-14T00:03:11.248+0000] {processor.py:186} INFO - Started process (PID=391997) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:11.260+0000] {processor.py:186} INFO - Started process (PID=391998) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:11.297+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:03:11.299+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:03:11.303+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:11.301+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:11.303+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:11.302+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:11.339+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:11.332+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:03:11.341+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:11.342+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:11.339+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:03:11.344+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:11.518+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.399 seconds
+[2025-03-14T00:03:11.615+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.468 seconds
+[2025-03-14T00:03:12.474+0000] {processor.py:186} INFO - Started process (PID=392050) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:12.481+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:03:12.522+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:12.520+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:12.586+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:12.543+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:03:12.588+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:13.128+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.743 seconds
+[2025-03-14T00:03:13.301+0000] {processor.py:186} INFO - Started process (PID=392064) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:13.335+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:03:13.364+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:13.363+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:13.395+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:13.391+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:03:13.397+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:13.756+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.489 seconds
+[2025-03-14T00:03:16.733+0000] {processor.py:186} INFO - Started process (PID=392177) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:16.743+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:03:16.746+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:16.745+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:16.790+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:16.762+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:03:16.791+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:17.390+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.718 seconds
+[2025-03-14T00:03:22.214+0000] {processor.py:186} INFO - Started process (PID=392347) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:22.242+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:03:22.341+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:22.340+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:22.578+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:03:22.553+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:03:22.584+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:03:22.879+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.983 seconds
+[2025-03-14T00:05:16.806+0000] {processor.py:186} INFO - Started process (PID=393061) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:05:16.902+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:05:16.908+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:05:16.907+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:05:17.569+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:05:17.510+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:05:17.573+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:05:17.912+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 1.150 seconds
+[2025-03-14T00:06:02.197+0000] {processor.py:186} INFO - Started process (PID=393760) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:06:02.270+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:06:02.282+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:06:02.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:06:02.303+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:06:02.296+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:06:02.307+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:06:02.521+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.338 seconds
+[2025-03-14T00:06:32.753+0000] {processor.py:186} INFO - Started process (PID=394430) to work on /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:06:32.762+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py for tasks to queue
+[2025-03-14T00:06:32.766+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:06:32.766+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:06:32.778+0000] {logging_mixin.py:190} INFO - [2025-03-14T00:06:32.774+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py", line 5, in <module>
+    from scripts.scraper import scrape_bank_reviews # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'scripts'
+[2025-03-14T00:06:32.780+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py
+[2025-03-14T00:06:32.878+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scrape_and_store_reviews.py took 0.141 seconds

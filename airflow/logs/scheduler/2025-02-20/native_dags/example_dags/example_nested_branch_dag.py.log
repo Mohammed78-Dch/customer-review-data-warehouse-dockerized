@@ -1,0 +1,22 @@
+[2025-02-20T12:25:03.777+0100] {processor.py:186} INFO - Started process (PID=990) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-02-20T12:25:03.782+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2025-02-20T12:25:03.791+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:03.789+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-02-20T12:25:03.839+0100] {processor.py:925} INFO - DAG(s) 'example_nested_branch_dag' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-02-20T12:25:04.095+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.093+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_nested_branch_dag
+[2025-02-20T12:25:04.157+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.156+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_nested_branch_dag
+[2025-02-20T12:25:04.211+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.209+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:example_nested_branch_dag
+[2025-02-20T12:25:04.294+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.293+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_nested_branch_dag
+[2025-02-20T12:25:04.342+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.341+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_nested_branch_dag
+[2025-02-20T12:25:04.393+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.392+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_nested_branch_dag
+[2025-02-20T12:25:04.442+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.441+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_nested_branch_dag
+[2025-02-20T12:25:04.444+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.443+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:25:04.494+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.493+0100] {dag.py:3262} INFO - Creating ORM DAG for example_nested_branch_dag
+[2025-02-20T12:25:04.535+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:04.534+0100] {dag.py:4180} INFO - Setting next_dagrun for example_nested_branch_dag to 2025-02-19 00:00:00+00:00, run_after=2025-02-20 00:00:00+00:00
+[2025-02-20T12:25:04.631+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.879 seconds
+[2025-02-20T12:28:29.931+0100] {processor.py:186} INFO - Started process (PID=1074) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-02-20T12:28:29.936+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2025-02-20T12:28:29.944+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:29.943+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-02-20T12:28:29.991+0100] {processor.py:925} INFO - DAG(s) 'example_nested_branch_dag' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2025-02-20T12:28:30.056+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:30.056+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:28:30.126+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:30.126+0100] {dag.py:4180} INFO - Setting next_dagrun for example_nested_branch_dag to 2025-02-19 00:00:00+00:00, run_after=2025-02-20 00:00:00+00:00
+[2025-02-20T12:28:30.184+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.276 seconds

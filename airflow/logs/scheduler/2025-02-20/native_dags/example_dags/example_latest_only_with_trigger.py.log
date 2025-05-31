@@ -1,0 +1,22 @@
+[2025-02-20T12:24:59.673+0100] {processor.py:186} INFO - Started process (PID=986) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-02-20T12:24:59.677+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2025-02-20T12:24:59.685+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:24:59.683+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-02-20T12:24:59.716+0100] {processor.py:925} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-02-20T12:25:00.121+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.119+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:latest_only_with_trigger
+[2025-02-20T12:25:00.179+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.178+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:latest_only_with_trigger
+[2025-02-20T12:25:00.225+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.223+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:latest_only_with_trigger
+[2025-02-20T12:25:00.310+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.309+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:latest_only_with_trigger
+[2025-02-20T12:25:00.362+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.361+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:latest_only_with_trigger
+[2025-02-20T12:25:00.413+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.412+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:latest_only_with_trigger
+[2025-02-20T12:25:00.461+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.459+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:latest_only_with_trigger
+[2025-02-20T12:25:00.462+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.462+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:25:00.502+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.502+0100] {dag.py:3262} INFO - Creating ORM DAG for latest_only_with_trigger
+[2025-02-20T12:25:00.533+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:00.533+0100] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-02-20 04:00:00+00:00, run_after=2025-02-20 08:00:00+00:00
+[2025-02-20T12:25:00.587+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.938 seconds
+[2025-02-20T12:28:28.175+0100] {processor.py:186} INFO - Started process (PID=1072) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-02-20T12:28:28.180+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2025-02-20T12:28:28.185+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:28.184+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-02-20T12:28:28.208+0100] {processor.py:925} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-02-20T12:28:28.250+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:28.250+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:28:28.282+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:28.282+0100] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-02-20 04:00:00+00:00, run_after=2025-02-20 08:00:00+00:00
+[2025-02-20T12:28:28.335+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.178 seconds

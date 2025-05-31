@@ -1,0 +1,933 @@
+[2025-03-30T01:29:56.104+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-30T01:29:56.170+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_and_store_reviews.scrape_and_insert_data_to_json scheduled__2025-03-23T00:00:00+00:00 [queued]>
+[2025-03-30T01:29:56.191+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_and_store_reviews.scrape_and_insert_data_to_json scheduled__2025-03-23T00:00:00+00:00 [queued]>
+[2025-03-30T01:29:56.191+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-30T01:29:56.246+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-03-23 00:00:00+00:00
+[2025-03-30T01:29:56.276+0000] {standard_task_runner.py:72} INFO - Started process 738745 to run task
+[2025-03-30T01:29:56.287+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'scrape_and_store_reviews', 'scrape_and_insert_data_to_json', 'scheduled__2025-03-23T00:00:00+00:00', '--job-id', '2497', '--raw', '--subdir', 'DAGS_FOLDER/scrape_and_store_reviews.py', '--cfg-path', '/tmp/tmp_utnq7k1']
+[2025-03-30T01:29:56.290+0000] {standard_task_runner.py:105} INFO - Job 2497: Subtask scrape_and_insert_data_to_json
+[2025-03-30T01:29:56.523+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_and_store_reviews.scrape_and_insert_data_to_json scheduled__2025-03-23T00:00:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-30T01:29:57.047+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='scrape_and_store_reviews' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-23T00:00:00+00:00'
+[2025-03-30T01:29:57.052+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-30T01:29:57.053+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-30T01:29:57.053+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-03-30 01:29:56.171109+00:00
+[2025-03-30T01:29:57.054+0000] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_reviews and current dag run status:running
+[2025-03-30T01:29:57.055+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-30T01:29:57.058+0000] {logging_mixin.py:190} INFO - 
+ [1/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:29:57.059+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:29:57.974+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:30:08.002+0000] {logging_mixin.py:190} INFO - 
+ [2/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:30:08.003+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:30:08.168+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:30:18.183+0000] {logging_mixin.py:190} INFO - 
+ [3/1023] Extraction pour Bank Al Maghrib...
+[2025-03-30T01:30:18.183+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:30:18.337+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:30:28.351+0000] {logging_mixin.py:190} INFO - 
+ [4/1023] Extraction pour Bank Al Maghrib...
+[2025-03-30T01:30:28.352+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:30:28.594+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:30:38.605+0000] {logging_mixin.py:190} INFO - 
+ [5/1023] Extraction pour ...
+[2025-03-30T01:30:38.606+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:30:38.786+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:30:48.801+0000] {logging_mixin.py:190} INFO - 
+ [6/1023] Extraction pour Musée Bank Al Maghrib...
+[2025-03-30T01:30:48.803+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:30:48.993+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:30:59.007+0000] {logging_mixin.py:190} INFO - 
+ [7/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:30:59.007+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:30:59.176+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:31:09.187+0000] {logging_mixin.py:190} INFO - 
+ [8/1023] Extraction pour Bank Al Maghrib...
+[2025-03-30T01:31:09.188+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:31:09.371+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:31:19.387+0000] {logging_mixin.py:190} INFO - 
+ [9/1023] Extraction pour Banque Al-Maghrib...
+[2025-03-30T01:31:19.389+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:31:19.601+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:31:29.615+0000] {logging_mixin.py:190} INFO - 
+ [10/1023] Extraction pour ...
+[2025-03-30T01:31:29.616+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:31:29.793+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:31:39.805+0000] {logging_mixin.py:190} INFO - 
+ [11/1023] Extraction pour Bank Al Maghrib...
+[2025-03-30T01:31:39.806+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:31:39.983+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:31:49.999+0000] {logging_mixin.py:190} INFO - 
+ [12/1023] Extraction pour Banque du Maroc...
+[2025-03-30T01:31:50.000+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:31:50.173+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:32:00.187+0000] {logging_mixin.py:190} INFO - 
+ [13/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:32:00.188+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:32:00.363+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:32:10.375+0000] {logging_mixin.py:190} INFO - 
+ [14/1023] Extraction pour Al Barid Bank...
+[2025-03-30T01:32:10.375+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:32:10.509+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:32:20.525+0000] {logging_mixin.py:190} INFO - 
+ [15/1023] Extraction pour Poste Maroc Almaghrib Alarabi...
+[2025-03-30T01:32:20.526+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:32:20.678+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:32:30.690+0000] {logging_mixin.py:190} INFO - 
+ [16/1023] Extraction pour Banque Al Maghrib...
+[2025-03-30T01:32:30.691+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:32:30.886+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:32:40.901+0000] {logging_mixin.py:190} INFO - 
+ [17/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:32:40.901+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:32:41.079+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:32:51.093+0000] {logging_mixin.py:190} INFO - 
+ [18/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:32:51.094+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:32:51.228+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:33:01.240+0000] {logging_mixin.py:190} INFO - 
+ [19/1023] Extraction pour بنك المغرب Bank Al Maghrib...
+[2025-03-30T01:33:01.240+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:33:01.389+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:33:11.400+0000] {logging_mixin.py:190} INFO - 
+ [20/1023] Extraction pour Banque Al Maghrib...
+[2025-03-30T01:33:11.401+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:33:11.576+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:33:21.590+0000] {logging_mixin.py:190} INFO - 
+ [21/1023] Extraction pour Banque Al Maghrib...
+[2025-03-30T01:33:21.591+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:33:21.813+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:33:31.825+0000] {logging_mixin.py:190} INFO - 
+ [22/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:33:31.827+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:33:32.144+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:33:42.159+0000] {logging_mixin.py:190} INFO - 
+ [23/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:33:42.160+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:33:42.348+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:33:52.362+0000] {logging_mixin.py:190} INFO - 
+ [24/1023] Extraction pour Centre sociosportif Bank Al Maghreb...
+[2025-03-30T01:33:52.363+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:33:52.538+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:34:02.553+0000] {logging_mixin.py:190} INFO - 
+ [25/1023] Extraction pour Al Barid Bank...
+[2025-03-30T01:34:02.553+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:34:02.698+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:34:12.710+0000] {logging_mixin.py:190} INFO - 
+ [26/1023] Extraction pour Bank Al-Maghrib...
+[2025-03-30T01:34:12.711+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:34:12.996+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:34:23.012+0000] {logging_mixin.py:190} INFO - 
+ [27/1023] Extraction pour Bank Al Maghrib...
+[2025-03-30T01:34:23.013+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:34:23.157+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:34:33.171+0000] {logging_mixin.py:190} INFO - 
+ [28/1023] Extraction pour Bank Al Maghrib بنك المغرب...
+[2025-03-30T01:34:33.172+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:34:33.328+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:34:43.343+0000] {logging_mixin.py:190} INFO - 
+ [29/1023] Extraction pour Banque Al Maghreb...
+[2025-03-30T01:34:43.344+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:34:43.507+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:34:53.521+0000] {logging_mixin.py:190} INFO - 
+ [30/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:34:53.522+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:34:53.687+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:35:03.701+0000] {logging_mixin.py:190} INFO - 
+ [31/1023] Extraction pour Agence Attijari Wafa Banque...
+[2025-03-30T01:35:03.702+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:35:03.863+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:35:13.875+0000] {logging_mixin.py:190} INFO - 
+ [32/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:35:13.875+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:35:14.011+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:35:24.025+0000] {logging_mixin.py:190} INFO - 
+ [33/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:35:24.026+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:35:24.225+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:35:34.238+0000] {logging_mixin.py:190} INFO - 
+ [34/1023] Extraction pour Attijariwafa bank...
+[2025-03-30T01:35:34.239+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:35:34.438+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:35:44.450+0000] {logging_mixin.py:190} INFO - 
+ [35/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:35:44.451+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:35:44.635+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:35:54.647+0000] {logging_mixin.py:190} INFO - 
+ [36/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:35:54.648+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:35:54.805+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:36:04.818+0000] {logging_mixin.py:190} INFO - 
+ [37/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:36:04.819+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:36:04.951+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:36:14.965+0000] {logging_mixin.py:190} INFO - 
+ [38/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:36:14.966+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:36:15.183+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:36:25.198+0000] {logging_mixin.py:190} INFO - 
+ [39/1023] Extraction pour Attijari Wafa Bank...
+[2025-03-30T01:36:25.201+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:36:25.562+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:36:35.581+0000] {logging_mixin.py:190} INFO - 
+ [40/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:36:35.581+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:36:35.734+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:36:45.745+0000] {logging_mixin.py:190} INFO - 
+ [41/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:36:45.745+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:36:45.916+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:36:55.931+0000] {logging_mixin.py:190} INFO - 
+ [42/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:36:55.932+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:36:56.122+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:37:06.135+0000] {logging_mixin.py:190} INFO - 
+ [43/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:37:06.136+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:37:06.266+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:37:16.277+0000] {logging_mixin.py:190} INFO - 
+ [44/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:37:16.278+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:37:16.452+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:37:26.467+0000] {logging_mixin.py:190} INFO - 
+ [45/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:37:26.468+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:37:26.754+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:37:36.770+0000] {logging_mixin.py:190} INFO - 
+ [46/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:37:36.771+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:37:36.908+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:37:46.921+0000] {logging_mixin.py:190} INFO - 
+ [47/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:37:46.922+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:37:47.074+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:37:57.088+0000] {logging_mixin.py:190} INFO - 
+ [48/1023] Extraction pour Attijariwafabank...
+[2025-03-30T01:37:57.089+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:37:57.233+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:38:07.247+0000] {logging_mixin.py:190} INFO - 
+ [49/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:38:07.248+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:38:07.474+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:38:17.485+0000] {logging_mixin.py:190} INFO - 
+ [50/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:38:17.485+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:38:17.652+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:38:27.667+0000] {logging_mixin.py:190} INFO - 
+ [51/1023] Extraction pour Attijari Wafa Bank...
+[2025-03-30T01:38:27.669+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:38:27.935+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:38:37.951+0000] {logging_mixin.py:190} INFO - 
+ [52/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:38:37.952+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:38:38.117+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:38:48.131+0000] {logging_mixin.py:190} INFO - 
+ [53/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:38:48.131+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:38:48.297+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:38:58.311+0000] {logging_mixin.py:190} INFO - 
+ [54/1023] Extraction pour Attijari wafabank...
+[2025-03-30T01:38:58.312+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:38:58.477+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:39:08.491+0000] {logging_mixin.py:190} INFO - 
+ [55/1023] Extraction pour Attijariwafa bank...
+[2025-03-30T01:39:08.492+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:39:08.668+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:39:18.680+0000] {logging_mixin.py:190} INFO - 
+ [56/1023] Extraction pour Attijariwafa bank...
+[2025-03-30T01:39:18.681+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:39:18.835+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:39:28.849+0000] {logging_mixin.py:190} INFO - 
+ [57/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:39:28.849+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:39:29.100+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:39:39.110+0000] {logging_mixin.py:190} INFO - 
+ [58/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:39:39.110+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:39:39.257+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:39:49.276+0000] {logging_mixin.py:190} INFO - 
+ [59/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:39:49.281+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:39:49.412+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:39:59.433+0000] {logging_mixin.py:190} INFO - 
+ [60/1023] Extraction pour Attijariwafabank التجاري وفابنك...
+[2025-03-30T01:39:59.433+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:39:59.573+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:40:09.588+0000] {logging_mixin.py:190} INFO - 
+ [61/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:40:09.589+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:40:09.743+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:40:19.760+0000] {logging_mixin.py:190} INFO - 
+ [62/1023] Extraction pour التجاري وفا بنك...
+[2025-03-30T01:40:19.764+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:40:19.916+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:40:29.930+0000] {logging_mixin.py:190} INFO - 
+ [63/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:40:29.931+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:40:30.079+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:40:40.093+0000] {logging_mixin.py:190} INFO - 
+ [64/1023] Extraction pour Agence Attijariwafa bank...
+[2025-03-30T01:40:40.093+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:40:40.263+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:40:50.280+0000] {logging_mixin.py:190} INFO - 
+ [65/1023] Extraction pour ATTIJARIWAFA BANK...
+[2025-03-30T01:40:50.280+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:40:50.443+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:41:00.457+0000] {logging_mixin.py:190} INFO - 
+ [66/1023] Extraction pour Attijariwafa bank...
+[2025-03-30T01:41:00.458+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:41:00.595+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:41:10.609+0000] {logging_mixin.py:190} INFO - 
+ [67/1023] Extraction pour Agence Attajariwafa Banque...
+[2025-03-30T01:41:10.610+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:41:10.761+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:41:20.775+0000] {logging_mixin.py:190} INFO - 
+ [68/1023] Extraction pour Attijari Wafa Banque...
+[2025-03-30T01:41:20.776+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:41:20.927+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:41:30.941+0000] {logging_mixin.py:190} INFO - 
+ [69/1023] Extraction pour Attijariwafabank...
+[2025-03-30T01:41:30.942+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:41:31.068+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:41:41.081+0000] {logging_mixin.py:190} INFO - 
+ [70/1023] Extraction pour Attijariwafabanque...
+[2025-03-30T01:41:41.082+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:41:41.203+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:41:51.217+0000] {logging_mixin.py:190} INFO - 
+ [71/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:41:51.218+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:41:51.347+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:42:01.366+0000] {logging_mixin.py:190} INFO - 
+ [72/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:42:01.366+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:42:01.517+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:42:11.531+0000] {logging_mixin.py:190} INFO - 
+ [73/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:42:11.532+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:42:11.689+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:42:21.700+0000] {logging_mixin.py:190} INFO - 
+ [74/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:42:21.701+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:42:21.877+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:42:31.897+0000] {logging_mixin.py:190} INFO - 
+ [75/1023] Extraction pour Attijariwafa bank...
+[2025-03-30T01:42:31.898+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:42:32.032+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:42:42.046+0000] {logging_mixin.py:190} INFO - 
+ [76/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:42:42.047+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:42:42.200+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:42:52.218+0000] {logging_mixin.py:190} INFO - 
+ [77/1023] Extraction pour Attijariwafabank (Agence SALAM)...
+[2025-03-30T01:42:52.219+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:42:52.407+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:43:02.421+0000] {logging_mixin.py:190} INFO - 
+ [78/1023] Extraction pour ATTIJARIWAFA BANK...
+[2025-03-30T01:43:02.421+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:43:02.573+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:43:12.588+0000] {logging_mixin.py:190} INFO - 
+ [79/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:43:12.588+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:43:12.737+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:43:22.751+0000] {logging_mixin.py:190} INFO - 
+ [80/1023] Extraction pour Attijari Wafa Banque...
+[2025-03-30T01:43:22.751+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:43:22.891+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:43:32.905+0000] {logging_mixin.py:190} INFO - 
+ [81/1023] Extraction pour Attijariwafa Agence Hassan I...
+[2025-03-30T01:43:32.905+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:43:33.055+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:43:43.069+0000] {logging_mixin.py:190} INFO - 
+ [82/1023] Extraction pour ATW...
+[2025-03-30T01:43:43.070+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:43:43.219+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:43:53.234+0000] {logging_mixin.py:190} INFO - 
+ [83/1023] Extraction pour AttijariWafa Banque...
+[2025-03-30T01:43:53.235+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:43:53.391+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:44:03.405+0000] {logging_mixin.py:190} INFO - 
+ [84/1023] Extraction pour ...
+[2025-03-30T01:44:03.405+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:44:03.536+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:44:13.549+0000] {logging_mixin.py:190} INFO - 
+ [85/1023] Extraction pour Attijariwafa bank Bd La Grande Ceinture...
+[2025-03-30T01:44:13.550+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:44:13.700+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:44:23.714+0000] {logging_mixin.py:190} INFO - 
+ [86/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:44:23.715+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:44:23.860+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:44:33.875+0000] {logging_mixin.py:190} INFO - 
+ [87/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:44:33.875+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:44:34.026+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:44:44.044+0000] {logging_mixin.py:190} INFO - 
+ [88/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:44:44.045+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:44:44.178+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:44:54.190+0000] {logging_mixin.py:190} INFO - 
+ [89/1023] Extraction pour ATTIJARIWAFA Bank...
+[2025-03-30T01:44:54.191+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:44:54.347+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:45:04.360+0000] {logging_mixin.py:190} INFO - 
+ [90/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:45:04.361+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:45:04.510+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:45:14.523+0000] {logging_mixin.py:190} INFO - 
+ [91/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:45:14.524+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:45:14.675+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:45:24.685+0000] {logging_mixin.py:190} INFO - 
+ [92/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:45:24.686+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:45:24.877+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:45:34.900+0000] {logging_mixin.py:190} INFO - 
+ [93/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:45:34.900+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:45:35.030+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:45:45.045+0000] {logging_mixin.py:190} INFO - 
+ [94/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:45:45.046+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:45:45.194+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:45:55.205+0000] {logging_mixin.py:190} INFO - 
+ [95/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:45:55.206+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:45:55.336+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:46:05.350+0000] {logging_mixin.py:190} INFO - 
+ [96/1023] Extraction pour Banque populaire...
+[2025-03-30T01:46:05.356+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:46:05.484+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:46:15.497+0000] {logging_mixin.py:190} INFO - 
+ [97/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:46:15.498+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:46:15.622+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:46:25.635+0000] {logging_mixin.py:190} INFO - 
+ [98/1023] Extraction pour banque populaire...
+[2025-03-30T01:46:25.636+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:46:25.826+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:46:35.841+0000] {logging_mixin.py:190} INFO - 
+ [99/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:46:35.842+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:46:35.968+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:46:45.986+0000] {logging_mixin.py:190} INFO - 
+ [100/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:46:45.987+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:46:46.139+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:46:56.155+0000] {logging_mixin.py:190} INFO - 
+ [101/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:46:56.155+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:46:56.285+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:47:06.299+0000] {logging_mixin.py:190} INFO - 
+ [102/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:47:06.300+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:47:06.450+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:47:16.468+0000] {logging_mixin.py:190} INFO - 
+ [103/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:47:16.469+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:47:16.618+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:47:26.630+0000] {logging_mixin.py:190} INFO - 
+ [104/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:47:26.630+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:47:26.761+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:47:36.776+0000] {logging_mixin.py:190} INFO - 
+ [105/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:47:36.777+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:47:36.928+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:47:46.943+0000] {logging_mixin.py:190} INFO - 
+ [106/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:47:46.944+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:47:47.091+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:47:57.110+0000] {logging_mixin.py:190} INFO - 
+ [107/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:47:57.110+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:47:57.289+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:48:07.303+0000] {logging_mixin.py:190} INFO - 
+ [108/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:48:07.304+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:48:07.496+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:48:17.509+0000] {logging_mixin.py:190} INFO - 
+ [109/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:48:17.510+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:48:17.637+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:48:27.650+0000] {logging_mixin.py:190} INFO - 
+ [110/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:48:27.651+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:48:27.787+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:48:37.801+0000] {logging_mixin.py:190} INFO - 
+ [111/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:48:37.803+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:48:37.952+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:48:47.966+0000] {logging_mixin.py:190} INFO - 
+ [112/1023] Extraction pour Banque populaire...
+[2025-03-30T01:48:47.967+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:48:48.126+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:48:58.140+0000] {logging_mixin.py:190} INFO - 
+ [113/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:48:58.140+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:48:58.297+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:49:08.312+0000] {logging_mixin.py:190} INFO - 
+ [114/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:49:08.312+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:49:08.447+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:49:18.459+0000] {logging_mixin.py:190} INFO - 
+ [115/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:49:18.460+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:49:18.605+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:49:28.624+0000] {logging_mixin.py:190} INFO - 
+ [116/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:49:28.624+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:49:28.815+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:49:38.830+0000] {logging_mixin.py:190} INFO - 
+ [117/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:49:38.831+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:49:39.028+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:49:49.044+0000] {logging_mixin.py:190} INFO - 
+ [118/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:49:49.046+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:49:49.202+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:49:59.224+0000] {logging_mixin.py:190} INFO - 
+ [119/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:49:59.225+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:49:59.390+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:50:09.406+0000] {logging_mixin.py:190} INFO - 
+ [120/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:50:09.407+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:50:09.577+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:50:19.595+0000] {logging_mixin.py:190} INFO - 
+ [121/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:50:19.597+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:50:19.770+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:50:29.783+0000] {logging_mixin.py:190} INFO - 
+ [122/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:50:29.784+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:50:30.093+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:50:40.124+0000] {logging_mixin.py:190} INFO - 
+ [123/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:50:40.125+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:50:40.278+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:50:50.290+0000] {logging_mixin.py:190} INFO - 
+ [124/1023] Extraction pour ...
+[2025-03-30T01:50:50.290+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:50:50.475+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:51:00.485+0000] {logging_mixin.py:190} INFO - 
+ [125/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:51:00.486+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:51:00.671+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:51:10.685+0000] {logging_mixin.py:190} INFO - 
+ [126/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:51:10.690+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:51:10.818+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:51:20.832+0000] {logging_mixin.py:190} INFO - 
+ [127/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:51:20.833+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:51:20.993+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:51:31.006+0000] {logging_mixin.py:190} INFO - 
+ [128/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:51:31.007+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:51:31.185+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:51:41.200+0000] {logging_mixin.py:190} INFO - 
+ [129/1023] Extraction pour banque populaire...
+[2025-03-30T01:51:41.200+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:51:41.327+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:51:51.346+0000] {logging_mixin.py:190} INFO - 
+ [130/1023] Extraction pour Banque populaire patrice lumumba...
+[2025-03-30T01:51:51.347+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:51:51.514+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:52:01.525+0000] {logging_mixin.py:190} INFO - 
+ [131/1023] Extraction pour banque populaire...
+[2025-03-30T01:52:01.526+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:52:01.673+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:52:11.687+0000] {logging_mixin.py:190} INFO - 
+ [132/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:52:11.688+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:52:11.812+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:52:21.826+0000] {logging_mixin.py:190} INFO - 
+ [133/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:52:21.827+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:52:22.003+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:52:32.017+0000] {logging_mixin.py:190} INFO - 
+ [134/1023] Extraction pour banque Populaire...
+[2025-03-30T01:52:32.018+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:52:32.209+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:52:42.226+0000] {logging_mixin.py:190} INFO - 
+ [135/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:52:42.227+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:52:42.382+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:52:52.399+0000] {logging_mixin.py:190} INFO - 
+ [136/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:52:52.400+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:52:52.558+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:53:02.574+0000] {logging_mixin.py:190} INFO - 
+ [137/1023] Extraction pour Banque populaire...
+[2025-03-30T01:53:02.575+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:53:02.727+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:53:12.745+0000] {logging_mixin.py:190} INFO - 
+ [138/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:53:12.746+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:53:12.887+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:53:22.903+0000] {logging_mixin.py:190} INFO - 
+ [139/1023] Extraction pour banque populaire nahda 1...
+[2025-03-30T01:53:22.906+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:53:23.056+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:53:33.071+0000] {logging_mixin.py:190} INFO - 
+ [140/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:53:33.072+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:53:33.197+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:53:43.213+0000] {logging_mixin.py:190} INFO - 
+ [141/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:53:43.213+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:53:43.376+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:53:53.395+0000] {logging_mixin.py:190} INFO - 
+ [142/1023] Extraction pour BANQUE POPULAIRE...
+[2025-03-30T01:53:53.396+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:53:53.560+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:54:03.581+0000] {logging_mixin.py:190} INFO - 
+ [143/1023] Extraction pour Banque populaire...
+[2025-03-30T01:54:03.582+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:54:03.738+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:54:13.753+0000] {logging_mixin.py:190} INFO - 
+ [144/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:54:13.754+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:54:13.939+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:54:24.220+0000] {logging_mixin.py:190} INFO - 
+ [145/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:54:24.221+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:54:24.742+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:54:33.573+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:54:34.136+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:54:35.427+0000] {logger.py:11} INFO - WebDriver version 134.0.6998.165 selected
+[2025-03-30T01:54:35.444+0000] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
+[2025-03-30T01:54:35.446+0000] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/linux64/chromedriver-linux64.zip
+[2025-03-30T01:54:36.058+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-03-30T01:54:41.577+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:54:43.685+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165]
+[2025-03-30T01:55:45.626+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T01:55:46.036+0000] {logging_mixin.py:190} INFO - 📌 32 avis trouvés
+[2025-03-30T01:55:51.155+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Banque Populaire', 'branch name': 'Banque Populaire - 26R5+8VF, Salé 11003', 'rating': '3,0', 'location': '26R5+8VF, Salé 11003', 'avis': [{'auteur': 'Nabil Sakhaoui', 'rating': '1', 'date': 'il y a 7\xa0mois', 'avis_text': "Je suis très déçu par le service de cette agence bancaire. Il y avait une longue file d'attente avec un seul guichet ouvert, rendant l'attente interminable. De plus, il n'y avait pas de disponibilité de cash dans l'agence, ce qui est …"}, {'auteur': 'hanae Laya', 'rating': '1', 'date': 'il y a 7\xa0ans', 'avis_text': "Personnel qui ouvre les comptes pour la 1ere fois au client n'est pas du tout compétente.prière réformer vos personnel pour ne pas faire la distinction entre les clients.c'est vraiment intolérable."}, {'auteur': 'نجمة نجمة', 'rating': '1', 'date': 'il y a 4\xa0mois', 'avis_text': 'service nul'}, {'auteur': 'Hassan Aguezzar', 'rating': '5', 'date': 'il y a 11\xa0mois', 'avis_text': 'Service rapide et sécurisé.'}, {'auteur': 'Zerzouri Amar', 'rating': '4', 'date': 'il y a un an', 'avis_text': 'Très  accueillant avec le 😃 …'}, {'auteur': 'Yassine El bourki', 'rating': '1', 'date': 'il y a 7\xa0ans', 'avis_text': 'Jamais répondent au télèphone, service clientel 0.0001'}, {'auteur': 'Abouaymane Irgam', 'rating': '4', 'date': 'il y a 4\xa0ans', 'avis_text': 'Petite agence mais efficace. Toujours souriants'}, {'auteur': 'Mustapha', 'rating': '3', 'date': 'il y a 6\xa0ans', 'avis_text': 'Bon emplacement à hay salm salé'}, {'auteur': 'Adil Ouchker', 'rating': '1', 'date': 'il y a 4\xa0ans', 'avis_text': 'Directeur bizarre je trouve'}, {'auteur': 'Mohamed Reda Hamria', 'rating': '2', 'date': 'il y a 2\xa0ans', 'avis_text': 'Service client à revoir !!'}, {'auteur': 'jihane G', 'rating': '1', 'date': 'il y a 6\xa0ans', 'avis_text': 'personnel incompétent'}, {'auteur': 'Walae Walae', 'rating': '1', 'date': 'il y a 5\xa0mois', 'avis_text': "Aujourd'hui, je suis allé ouvrir un compte, je n'ai pas trouvé la dame à qui j'ai demandé au gars à la réception, il a dit qu'elle était allée déjeuner, puis j'ai attendu 45 minutes et elle est sortie et est revenue, elle n'est toujours pas …"}, {'auteur': 'F Z', 'rating': '5', 'date': 'il y a un mois', 'avis_text': "Merci à l'employé de la Banque Populaire, agence Qamar, quartier Moulay Ismail Salé, Maroc\nChic et professionnel dans les relations"}, {'auteur': 'Emi Mimi', 'rating': '1', 'date': 'il y a 5\xa0ans', 'avis_text': "Des employés incompétents manipulent les clients, chacun d'eux n'est pas qualifié, d'après mon expérience avec eux depuis 7 ans. Chaque année, pendant mon séjour à l'étranger, je communique avec eux sans prendre au sérieux et sans adhérer à …"}, {'auteur': 'hasnae sabbar', 'rating': '5', 'date': 'il y a un an', 'avis_text': "Un mois et j'essaie de communiquer avec vous et il n'y a aucune vie avec qui vous appelez. Je n'ai pas compris que l'agence est ouverte et que les employés sont là."}, {'auteur': 'Tahiri Fatima', 'rating': '1', 'date': 'il y a un an', 'avis_text': "Kanait d'Allemagne, Kaysoni, et personne ne veut me répondre. Elle parle de débrancher le téléphone."}, {'auteur': 'nona Nona', 'rating': '5', 'date': 'il y a un an', 'avis_text': "Ne répondez pas par email ou appel, c'est dommage"}, {'auteur': 'mol misbah', 'rating': '1', 'date': 'il y a 4\xa0ans', 'avis_text': 'Gestion sans rapport et déductions injustes'}, {'auteur': 'Najib Magri', 'rating': '5', 'date': 'il y a 8\xa0ans', 'avis_text': 'Personnel souriant et compétent. Agence bien située.'}, {'auteur': 'Marwa Maghraoui', 'rating': '3', 'date': 'il y a 5\xa0ans', 'avis_text': 'Le service est trop long comme toujours'}, {'auteur': 'Brahim Jnaini', 'rating': '1', 'date': 'il y a 2\xa0ans', 'avis_text': 'Il leur est interdit de répondre'}, {'auteur': 'Nour-eddine Labiad', 'rating': '3', 'date': 'il y a 7\xa0ans', 'avis_text': 'Standard.'}, {'auteur': 'Youssef Hafid', 'rating': '4', 'date': 'il y a 4\xa0ans', 'avis_text': 'Banque populaire'}], 'nombre_avis': 23}
+[2025-03-30T01:55:51.157+0000] {logging_mixin.py:190} INFO - 
+ [146/1023] Extraction pour Crédit du Maroc...
+[2025-03-30T01:55:51.158+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:55:51.406+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:55:51.947+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:55:52.390+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T01:56:43.673+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T01:56:43.921+0000] {logging_mixin.py:190} INFO - 📌 19 avis trouvés
+[2025-03-30T01:56:45.879+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Crédit du Maroc', 'branch name': 'Crédit du Maroc - Av. Annakhil, Rabat', 'rating': '2,9', 'location': 'Av. Annakhil, Rabat', 'avis': [{'auteur': 'Adil Abite', 'rating': '1', 'date': 'il y a 3\xa0mois', 'avis_text': 'Mauvaise acceuil, une personne a la caisse, pause dej a 14:14 ???, personne ne le remplace, et doit attendre 30 min. 😤😡😡😤 …'}, {'auteur': 'khalil', 'rating': '1', 'date': 'il y a 5\xa0ans', 'avis_text': "Un traitement immonde, j'attends depuis 3 mois qu'un problème de malversation soit règlé. On ne prend plus mes appels au niveau de mon agence, et quand j'appelle le siège on me dit de m'adresser a mon agence. 3mois que dure ce manège. Je vous déconseille ces malfrats"}, {'auteur': 'Karim Tourkmani', 'rating': '1', 'date': 'il y a un an', 'avis_text': "Par rapport aux autres banques,service clientèle moyen surtout dans cette agence.En général, je ne recommande pas d'ouvrir un compte ici."}, {'auteur': 'Boubeker MAAYOUCHI', 'rating': '1', 'date': 'il y a 3\xa0ans', 'avis_text': 'Vous pouvez appeler autant que vous voulez,  personne ne vous répondra. Les clients premium peuvent attendre. Dommage pour une banque.'}, {'auteur': 'Aero Astronaut', 'rating': '5', 'date': 'il y a 2\xa0ans', 'avis_text': "Très bon service rapide personnel professionnel un grande merci Madame Khadija et monsieur taibi et aussi notre aimable madame sihame qui nous rend service comme d'habitude\nBon continuation"}, {'auteur': 'Amine Sekkat', 'rating': '1', 'date': 'il y a 4\xa0ans', 'avis_text': 'Service déplorable, documents qui se perdent, aucune mesure sanitaire appliquée (pas de masques pas de mesure de température...)\nBref à fuire absolument'}, {'auteur': 'ismail mammar', 'rating': '1', 'date': 'il y a 7\xa0ans', 'avis_text': 'une mauvaise expérience avec CDM et en particulier cette agence'}, {'auteur': 'Youssef Designer', 'rating': '5', 'date': 'il y a 8\xa0ans', 'avis_text': 'Banque'}, {'auteur': 'Karen Martin', 'rating': '1', 'date': 'il y a 6\xa0mois', 'avis_text': "Ils ne sont même pas disponibles pendant les heures de travail. Et lorsqu'ils sont disponibles, ils n'ont qu'une seule personne qui travaille, donc c'est incroyablement lent de faire quoi que ce soit."}, {'auteur': 'ZACH RACHDI', 'rating': '5', 'date': 'il y a 3\xa0ans', 'avis_text': "Ottman est fabuleux. Merci pour toute l'aide"}, {'auteur': 'Driss LABYAD', 'rating': '5', 'date': 'il y a 3\xa0ans', 'avis_text': 'Prêt agricole'}], 'nombre_avis': 11}
+[2025-03-30T01:56:45.880+0000] {logging_mixin.py:190} INFO - 
+ [147/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:56:45.881+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:56:46.028+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:56:46.493+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:56:46.963+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T01:57:33.581+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T01:57:33.841+0000] {logging_mixin.py:190} INFO - 📌 18 avis trouvés
+[2025-03-30T01:57:34.646+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Banque Populaire agence al moustakbal', 'branch name': 'Crédit du Maroc - Av. Annakhil, Rabat', 'rating': '2,1', 'location': 'lotissement 9 juillet N°6, Av. Moulay Hassan I, Temara 12010', 'avis': [{'auteur': 'Stof Stof', 'rating': '1', 'date': 'il y a 5\xa0ans', 'avis_text': 'Service laisse à désirer.  Personnel non professionnel.  Mauvaise comportement vis-à-vis des clients.'}, {'auteur': 'Stouf Ramram', 'rating': '5', 'date': 'il y a 2\xa0ans', 'avis_text': 'Très bon service, meilleure agence à temara'}, {'auteur': 'Imane S.', 'rating': '3', 'date': 'il y a 4\xa0ans', 'avis_text': 'Une agence correcte, mais avec le COVID le service est devenu pénible.'}, {'auteur': 'yassine rhm', 'rating': '5', 'date': 'il y a 7\xa0ans', 'avis_text': 'Bonne agence du BP avec du personnel accueillant et serviable .'}, {'auteur': 'Prenom Nom', 'rating': '1', 'date': 'il y a un an', 'avis_text': 'Mauvaise comportement pffffffffff😡😡😡😡😡😡 …'}, {'auteur': 'ZINEB ZINEB', 'rating': '1', 'date': 'il y a 4\xa0ans', 'avis_text': 'personnels non qualifier mauvis service'}, {'auteur': 'cris bon', 'rating': '1', 'date': 'il y a 3\xa0ans', 'avis_text': 'Manque d argent dans les distributeurs. Il faire plusieurs banques pour trouver un distributeur'}, {'auteur': 'Ghizlane K', 'rating': '2', 'date': 'il y a 4\xa0ans', 'avis_text': 'lenteur du service'}, {'auteur': 'khadija', 'rating': '1', 'date': 'il y a 6\xa0ans', 'avis_text': 'Mauvaise service'}, {'auteur': 'Safaa Safaa', 'rating': '1', 'date': 'il y a 6\xa0mois', 'avis_text': 'Services médiocres et lents, comme les tortues, et les clients ne sont pas aidés dans leurs affaires👎👎👎👎👎👎👎 …'}, {'auteur': 'hicham mountazim', 'rating': '1', 'date': 'il y a 6\xa0mois', 'avis_text': "Je ne recommande pas du tout cette agence, restez à l'écart, ce sera mieux pour vous"}, {'auteur': 'Aymen El ghazouli', 'rating': '1', 'date': 'il y a 10\xa0mois', 'avis_text': "Très mauvais service. Ces gens manquent de professionnalisme. Très inefficace. J'ai dû y retourner un million de fois pour fermer mon compte. Très trompeur."}, {'auteur': 'Jamal SHR', 'rating': '1', 'date': 'il y a un an', 'avis_text': 'Très mauvaises organisations et service médiocre'}, {'auteur': 'YOUNES CH', 'rating': '1', 'date': 'il y a un mois', 'avis_text': '👎🏻 …'}], 'nombre_avis': 14}
+[2025-03-30T01:57:34.647+0000] {logging_mixin.py:190} INFO - 
+ [148/1023] Extraction pour Banque Populaire...
+[2025-03-30T01:57:34.647+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:57:34.835+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:57:35.225+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:57:35.668+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T01:58:20.438+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T01:58:20.705+0000] {logging_mixin.py:190} INFO - 📌 10 avis trouvés
+[2025-03-30T01:58:23.419+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Banque Populaire', 'branch name': 'Banque Populaire - VX27+HMV, Skhirat', 'rating': '3,4', 'location': 'VX27+HMV, Skhirat', 'avis': [{'auteur': 'Letto Percane', 'rating': '1', 'date': 'il y a 7\xa0mois', 'avis_text': "Je suis très déçu de mon expérience avec la Banque Populaire. Tout d'abord, le chargé de produits ne fait preuve d'aucune courtoisie. À chaque fois que j'ai posé une question, il a répondu qu'il n'était pas possible de satisfaire ma …"}, {'auteur': 'Nora Lam', 'rating': '5', 'date': 'il y a 8\xa0mois', 'avis_text': "Je tiens à exprimer ma sincère gratitude pour le service rendu a ma maman\nVotre professionnalisme, votre dévouement et votre patience Mr le directeur Karim  avec des gens d'un certain âge dont la connaissance de l'univers digital et …"}, {'auteur': 'Zinou Martin', 'rating': '1', 'date': 'il y a 4\xa0ans', 'avis_text': "Une banque où les clients attendent que la femme de ménage termine de passer la serpillière à 10h30 alors que l'agence ouvre ses portes à 8h15???? Il y a du laisser aller et ce n'est pas professionnel du tout !! Dommage je vais changer de banque carrément passer chez la concurrence 🤔☹️ …"}, {'auteur': 'Simo Skhirat', 'rating': '5', 'date': 'il y a 5\xa0ans', 'avis_text': 'Service professionnel et courtois..et employés sympas et accueillant..🙂 …'}, {'auteur': 'CAD DesignTech', 'rating': '5', 'date': 'il y a 8\xa0ans', 'avis_text': 'Très bon service à la clientèle'}, {'auteur': 'Mr Nour King', 'rating': '5', 'date': 'il y a 2\xa0ans', 'avis_text': "Oublions la banque elle-même. Cette agence offre un service merveilleux. Ils m'ont beaucoup aidé. Le directeur est vraiment sympa et les ouvriers aussi. Cela ne va pas mieux. Et honnêtement, ils sont meilleurs que celui près du rond-point."}], 'nombre_avis': 6}
+[2025-03-30T01:58:23.420+0000] {logging_mixin.py:190} INFO - 
+ [149/1023] Extraction pour BANQUE POPULAIRE AGENCE AL INBIAAT...
+[2025-03-30T01:58:23.421+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:58:23.580+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:58:24.359+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:58:24.750+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T01:59:16.320+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T01:59:16.555+0000] {logging_mixin.py:190} INFO - 📌 12 avis trouvés
+[2025-03-30T01:59:17.113+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'BANQUE POPULAIRE AGENCE AL INBIAAT', 'branch name': 'BANQUE POPULAIRE AGENCE AL INBIAAT - 368P+HC4, Av. Ibn Al Haytem, Salé', 'rating': '2,5', 'location': '368P+HC4, Av. Ibn Al Haytem, Salé', 'avis': [{'auteur': 'Abdelaziz LEMKHARBECH', 'rating': '3', 'date': 'il y a 2\xa0ans', 'avis_text': 'Je ne sais pas'}, {'auteur': 'Karim Elouafi', 'rating': '3', 'date': 'il y a un an', 'avis_text': 'Service de Bonn'}, {'auteur': 'Jules Cesar', 'rating': '2', 'date': 'il y a 7\xa0ans', 'avis_text': 'Trop de monde'}, {'auteur': 'Mstafa Kwisto', 'rating': '5', 'date': 'il y a 10\xa0ans', 'avis_text': 'Bonjour'}], 'nombre_avis': 4}
+[2025-03-30T01:59:17.113+0000] {logging_mixin.py:190} INFO - 
+ [150/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T01:59:17.114+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T01:59:17.263+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:59:18.775+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T01:59:19.204+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T01:59:57.072+0000] {timeout.py:68} ERROR - Process timed out, PID: 738745
+[2025-03-30T02:00:02.701+0000] {logging_mixin.py:190} INFO - 
+ [151/1023] Extraction pour Attijariwafa Bank...
+[2025-03-30T02:00:02.701+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:00:03.154+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:00:03.595+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:00:04.016+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:00:49.155+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:00:49.388+0000] {logging_mixin.py:190} INFO - 📌 9 avis trouvés
+[2025-03-30T02:00:49.931+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Attijariwafa Bank', 'branch name': 'Attijariwafa Bank - X43G+FCC, Av. Azzaitoun, Rabat', 'rating': '2,1', 'location': 'X43G+FCC, Av. Azzaitoun, Rabat', 'avis': [{'auteur': 'Hajar Sadeq', 'rating': '1', 'date': 'il y a un an', 'avis_text': "Cet endroit a Beaucoup changé, personnel devenu très froid,pas du tout accueillant, courant dans tout les sens ,hausse des prix sans aucune amélioration. Dommage c'était un endroit très sympa"}, {'auteur': 'Anass Driouch', 'rating': '1', 'date': 'il y a 2\xa0mois', 'avis_text': 'Service nul, nul, nul, à éviter.'}, {'auteur': 'Mehdi LAKRIKBA', 'rating': '5', 'date': 'il y a 2\xa0ans', 'avis_text': "Agence Bancaire conviviale, le personnel est au petit soin et très disponible, beaucoup de places pour stationnement et des horaires adéquats grâce au libre service disponible jusqu'à 21 heures chaque soir en semaine"}, {'auteur': 'noussaiba elibrahimi', 'rating': '1', 'date': 'il y a un an', 'avis_text': 'Service très lent'}, {'auteur': 'Karim Essayegh', 'rating': '1', 'date': 'il y a 4\xa0ans', 'avis_text': 'service pitoyable'}, {'auteur': 'hamdan alsuwaidi', 'rating': '1', 'date': 'il y a 4\xa0mois', 'avis_text': "Endroit pas sûr.. il y avait 1 femme assise sur une chaise très près du distributeur automatique et demandant de l'argent.. en même temps, un autre homme est venu demander de l'argent.. et ils m'ont suivi jusqu'à la voiture"}, {'auteur': 'zakariya boubakr', 'rating': '4', 'date': 'il y a 7\xa0ans', 'avis_text': "C'est un banc"}], 'nombre_avis': 7}
+[2025-03-30T02:00:49.932+0000] {logging_mixin.py:190} INFO - 
+ [152/1023] Extraction pour Société Générale BAB EL HAD...
+[2025-03-30T02:00:49.933+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:00:50.118+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:00:50.548+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:00:50.951+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:01:40.560+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:01:40.971+0000] {logging_mixin.py:190} INFO - 📌 11 avis trouvés
+[2025-03-30T02:01:41.591+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Société Générale BAB EL HAD', 'branch name': 'Société Générale BAB EL HAD - ANGLE AVENUE HASSAN II RUE TCHAD HASSAN, Rabat 10060', 'rating': '3,1', 'location': 'ANGLE AVENUE HASSAN II RUE TCHAD HASSAN, Rabat 10060', 'avis': [{'auteur': 'Youness Laissaoui', 'rating': '1', 'date': 'il y a un an', 'avis_text': "À eviter , deux ans que je leur demande de fermer mon deuxieme compte bancaire et celui-ci est toujours actif, j ai bien signé le formulaire de cloture mais pourtant celui ci continue de comptabiliser les frais de tenu de compte. Le service client ne repond jamais, 20 fois que j'appel sur des jours differents et aucune reponse. À eviter"}, {'auteur': 'nawfal zouaoui', 'rating': '5', 'date': 'il y a 2\xa0ans', 'avis_text': 'Personnel top. Hyper serviable, meme si je ne suis pas un client de leur agence, ils ont repondu non seulement repondu a ma demande mais ils ont fait plus que leur possible. Je remercie enormement Omar Fekkak et le directeur de l agence pour leur professionnalisme. Respect!'}, {'auteur': 'bon look vision', 'rating': '5', 'date': 'il y a 3\xa0ans', 'avis_text': 'Meilleurs personnel de toute les banque Societer général du Maroc top'}, {'auteur': 'Abdellah Bouzid', 'rating': '4', 'date': 'il y a 8\xa0ans', 'avis_text': 'La plus Proche au Centre Ville'}, {'auteur': 'Mohamed Massuab', 'rating': '4', 'date': 'il y a 6\xa0ans', 'avis_text': 'Tétouan'}], 'nombre_avis': 5}
+[2025-03-30T02:01:41.592+0000] {logging_mixin.py:190} INFO - 
+ [153/1023] Extraction pour Banque Populaire...
+[2025-03-30T02:01:41.592+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:01:41.789+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:01:42.198+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:01:42.604+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:02:28.085+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:02:28.453+0000] {logging_mixin.py:190} INFO - 📌 6 avis trouvés
+[2025-03-30T02:02:29.133+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Banque Populaire', 'branch name': 'Banque Populaire - H8C6+WW2, Casablanca', 'rating': '4,3', 'location': 'H8C6+WW2, Casablanca', 'avis': [{'auteur': 'yassine majdi', 'rating': '5', 'date': 'il y a un an', 'avis_text': "Ya pas bcp de monde . J'ai été bien servi 👍 …"}, {'auteur': 'Redouane Nabihi', 'rating': '5', 'date': 'il y a un an', 'avis_text': 'Bon service'}, {'auteur': 'Jamal Thani', 'rating': '5', 'date': 'il y a 8\xa0mois', 'avis_text': 'Service très sympathique. Ils essaieront de vous aider'}], 'nombre_avis': 3}
+[2025-03-30T02:02:29.135+0000] {logging_mixin.py:190} INFO - 
+ [154/1023] Extraction pour Banque Populaire...
+[2025-03-30T02:02:29.135+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:02:29.348+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:02:29.890+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:02:30.238+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:03:19.861+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:03:20.354+0000] {logging_mixin.py:190} INFO - 📌 3 avis trouvés
+[2025-03-30T02:03:20.640+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Banque Populaire', 'branch name': 'Banque Populaire - 69XQ+JXX, Kénitra', 'rating': '3,5', 'location': '69XQ+JXX, Kénitra', 'avis': [{'auteur': 'Zineb Lotfi', 'rating': '3', 'date': 'il y a une semaine', 'avis_text': 'le GAB est presque toujours en panne…'}], 'nombre_avis': 1}
+[2025-03-30T02:03:20.642+0000] {logging_mixin.py:190} INFO - 
+ [155/1023] Extraction pour Banque Populaire...
+[2025-03-30T02:03:20.645+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:03:20.812+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:03:22.963+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:03:23.386+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:04:11.152+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:04:11.578+0000] {logging_mixin.py:190} INFO - 📌 15 avis trouvés
+[2025-03-30T02:04:12.395+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Banque Populaire', 'branch name': 'Banque Populaire - 7942+M9Q, Kénitra', 'rating': '3,7', 'location': '7942+M9Q, Kénitra', 'avis': [{'auteur': 'Aziz Tamsna', 'rating': '4', 'date': 'il y a un an', 'avis_text': 'Services un peut long'}, {'auteur': 'Audio Positive', 'rating': '3', 'date': 'il y a 7\xa0ans', 'avis_text': 'Guichet à l extérieur, pas sécurisé le soir'}, {'auteur': 'erissay', 'rating': '1', 'date': 'il y a 8\xa0ans', 'avis_text': 'Toujours bloqué'}, {'auteur': 'wpnour', 'rating': '3', 'date': 'il y a un an', 'avis_text': "Cela prend plus d'une demi-heure, une pression intense"}, {'auteur': 'Adil Toula', 'rating': '4', 'date': 'il y a 7\xa0ans', 'avis_text': 'Banque plutôt correcte'}], 'nombre_avis': 5}
+[2025-03-30T02:04:12.396+0000] {logging_mixin.py:190} INFO - 
+ [156/1023] Extraction pour ...
+[2025-03-30T02:04:12.397+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:04:12.534+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:04:12.985+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:04:13.453+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:04:59.724+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:05:00.295+0000] {logging_mixin.py:190} INFO - 📌 13 avis trouvés
+[2025-03-30T02:05:01.063+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Agence BMCI', 'branch name': 'Banque Populaire - 7942+M9Q, Kénitra', 'rating': '2,4', 'location': '3 Rue Ouargha, Rabat', 'avis': [{'auteur': 'Muriel Autino', 'rating': '2', 'date': 'il y a 6\xa0mois', 'avis_text': "Pas de service client à l'e oute : jamais de réponse aux messages, impossible de joindre ma chargée de compte par tél. Ordres de virement pas traité. Je dois réclamer ! Quel manque de professionnalisme"}, {'auteur': 'david TURBAN', 'rating': '1', 'date': 'il y a 2\xa0ans', 'avis_text': 'Expérience client : banque et agence à éviter. A la limite de l amateurisme. Quand je vois  les avis négatifs des clients cela confirment mon expérience catastrophe. A ÉVITER.  Le monde change mais pas la Bmci. Aucune remise en question. Bye bye.'}, {'auteur': 'Yassin BOUGHABA', 'rating': '4', 'date': 'il y a 3\xa0ans', 'avis_text': 'Equipe professionnelle est attentive.'}, {'auteur': 'Mourad TIJANI', 'rating': '1', 'date': 'il y a un an', 'avis_text': "On dirait une brocante, que des amateurs qui n'ont rien à voir avec le service clientèle...\nBref personnel a recadrer"}, {'auteur': 'Mehdi Griguer', 'rating': '1', 'date': 'il y a 3\xa0ans', 'avis_text': "2 mois d'attente pour le fonctionnement de la dotation touristique, et ça ne marche toujours pas ! Zéro professionalisme"}, {'auteur': 'Mehdi', 'rating': '1', 'date': 'il y a 3\xa0ans', 'avis_text': "la pire banque dans le cartier d'agdal"}, {'auteur': 'Med El Habib El Kouchi', 'rating': '4', 'date': 'il y a 8\xa0ans', 'avis_text': 'Très bon truc'}], 'nombre_avis': 7}
+[2025-03-30T02:05:01.067+0000] {logging_mixin.py:190} INFO - 
+ [157/1023] Extraction pour Société Générale Salé Karia...
+[2025-03-30T02:05:01.068+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:05:01.202+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:05:01.606+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:05:02.385+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:05:49.501+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:05:50.013+0000] {logging_mixin.py:190} INFO - 📌 6 avis trouvés
+[2025-03-30T02:05:52.630+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Société Générale Salé Karia', 'branch name': 'Société Générale Salé Karia - Angle Bd My Rachid et Bd Prince Sidi Mohamed - KARIA - Sala El Jadida, 11120', 'rating': '1,0', 'location': 'Angle Bd My Rachid et Bd Prince Sidi Mohamed - KARIA - Sala El Jadida, 11120', 'avis': [{'auteur': 'The World Wide News', 'rating': '1', 'date': 'il y a 7\xa0mois', 'avis_text': 'Je me demandais si je pouvais mettre 0 étoile mais pas de chance,...\nUne agence? Non, rien à voir.\nUn marché? Non plus, …'}, {'auteur': 'Al Do', 'rating': '1', 'date': 'il y a 3\xa0ans', 'avis_text': 'Alors deja je mets 1 etoile car on peut pas mettre zero ..tres mauvaise experience avec la fille au guichet ainsi que sa stagiaire ..aucune éducation et professionalisme pas de bonjour ni merci elle est hautaine et vulgaire et ne respecte …'}, {'auteur': 'Corvus Corax', 'rating': '1', 'date': 'il y a un an', 'avis_text': 'Pas de bank SG!'}, {'auteur': 'Maria', 'rating': '1', 'date': 'il y a 2\xa0ans', 'avis_text': 'Service 0'}], 'nombre_avis': 4}
+[2025-03-30T02:05:52.634+0000] {logging_mixin.py:190} INFO - 
+ [158/1023] Extraction pour Société Générale Sale Bettana...
+[2025-03-30T02:05:52.634+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:05:52.800+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:05:53.216+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:05:53.687+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:06:42.854+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:06:43.427+0000] {logging_mixin.py:190} INFO - 📌 15 avis trouvés
+[2025-03-30T02:06:48.673+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Société Générale Sale Bettana', 'branch name': 'Société Générale Sale Bettana - Av. Sakia Al Hamra, Salé 10040', 'rating': '2,2', 'location': 'Av. Sakia Al Hamra, Salé 10040', 'avis': [{'auteur': 'Nabil hr', 'rating': '1', 'date': 'il y a un an', 'avis_text': 'Manque de serieux enorme .\n\nService client désastreux les caissiers passent plus de 15 minutes  avec des …'}, {'auteur': 'Billy Embena', 'rating': '1', 'date': 'il y a un an', 'avis_text': "Service très médiocre, si ce serait possible qu'on change tout le personnel en commençant par la caissière, qui se prend pour une misse monde je ne sais pas si cette agence est fiancée par des dealers de drogue ou quoi une notion du …"}, {'auteur': 'Bintou DIOP', 'rating': '1', 'date': 'il y a un an', 'avis_text': 'Service hyper médiocre\nJe suis installée à Salé le lendemain suis partie à la banque SG Bettana pour demander le transfert de mon agence d’Agadir à Salé Bettana Mr Omar de l’agence a …'}, {'auteur': 'Reda El alami', 'rating': '1', 'date': 'il y a un an', 'avis_text': '+1h d attente juste pour un versement, service trop long, une seul agent.\nA évité'}, {'auteur': 'bajtot yassine', 'rating': '1', 'date': 'il y a un mois', 'avis_text': 'Service hyper médiocre'}, {'auteur': 'gti ss', 'rating': '1', 'date': 'il y a 11\xa0mois', 'avis_text': 'Très longue attente.tres longue.1h30 pour retirer 1 chèque?!'}, {'auteur': 'MED AD', 'rating': '2', 'date': 'il y a un an', 'avis_text': 'Gab de moins en moins nombreux. Ils viennent de fermer une agence avec son gab sur avenue lalla Asmae.'}, {'auteur': 'Mina Mina', 'rating': '5', 'date': 'il y a un an', 'avis_text': 'Tout le personnel est serviable\nJe recommande 👍👍 …'}, {'auteur': 'Mahfoudi Aymen', 'rating': '1', 'date': 'il y a un an', 'avis_text': "Service nul.\nLa porte d'à côté, c'est parce que le train est dans le train avant le téléphone …"}, {'auteur': 'Youness Berkia', 'rating': '1', 'date': 'il y a 3\xa0mois', 'avis_text': "Service lent, favoritisme, une seule personne travaille au lieu de 4, je veux dire je pensais avoir vu pire mais là c'est le pire, 1 étoile c'est trop pour cette agence."}, {'auteur': 'Mbarek Chama', 'rating': '5', 'date': 'il y a 2\xa0ans', 'avis_text': "Oh mon Dieu, bénis-nous d'où nous ne nous attendons pas"}, {'auteur': 'توقعات الأبراج اليومية', 'rating': '5', 'date': 'il y a 5\xa0ans', 'avis_text': "c'est bon"}], 'nombre_avis': 12}
+[2025-03-30T02:06:48.674+0000] {logging_mixin.py:190} INFO - 
+ [159/1023] Extraction pour BMCI...
+[2025-03-30T02:06:48.675+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:06:48.856+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:06:49.468+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:06:50.034+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:07:38.460+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:07:43.783+0000] {logging_mixin.py:190} INFO - 📌 12 avis trouvés
+[2025-03-30T02:07:45.466+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'BMCI', 'branch name': 'BMCI - 6 Av. Mehdi Ben Barka, Rabat 10000', 'rating': '2,3', 'location': '6 Av. Mehdi Ben Barka, Rabat 10000', 'avis': [{'auteur': 'Alan fischer', 'rating': '1', 'date': 'il y a un an', 'avis_text': "Un service tres mediocre. Tres lent ! Je crois qu'au moyen age les banques etaient plus rapides. Aucun profesionalisme. On sait a quoi s'attendre d'une banque marocaine."}, {'auteur': 'Khalid Yassine', 'rating': '1', 'date': 'il y a 6\xa0ans', 'avis_text': 'Accueil sympathique mais service bancaire déplorable.\n\nSuite à une erreur de leur part, on me facture des frais injustifiés. Malgre mes …'}, {'auteur': 'Ilham FRGT', 'rating': '1', 'date': 'il y a 8\xa0mois', 'avis_text': 'Le service est vraiment médiocre.'}, {'auteur': 'Med Med', 'rating': '1', 'date': 'il y a 7\xa0ans', 'avis_text': 'Service se détériore jour après jour avec ses nouveaux recrus il y a un laisser aller total'}, {'auteur': 'Atamoh ATAMOH', 'rating': '5', 'date': 'il y a 7\xa0ans', 'avis_text': "Bon accueil des clients, pas trop d'attente au guichet, je recommande"}, {'auteur': 'Elmahjoub Chentouf', 'rating': '5', 'date': 'il y a 6\xa0ans', 'avis_text': 'Application utile merci de vous éfforts'}], 'nombre_avis': 6}
+[2025-03-30T02:07:45.466+0000] {logging_mixin.py:190} INFO - 
+ [160/1023] Extraction pour Bmce bank Gab...
+[2025-03-30T02:07:45.467+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:07:45.675+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:07:46.057+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:07:46.517+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T02:08:30.732+0000] {logging_mixin.py:190} INFO - ✅ Fin du scrolling
+[2025-03-30T02:08:31.027+0000] {logging_mixin.py:190} INFO - 📌 1 avis trouvés
+[2025-03-30T02:08:31.189+0000] {logging_mixin.py:190} INFO - ✅ Détails des avis : {'Bank name': 'Bmce bank Gab', 'branch name': 'Bmce bank Gab - X47X+W74, Rabat', 'rating': '5,0', 'location': 'X47X+W74, Rabat', 'avis': [], 'nombre_avis': 0}
+[2025-03-30T02:08:31.190+0000] {logging_mixin.py:190} INFO - 
+ [161/1023] Extraction pour Crédit du Maroc...
+[2025-03-30T02:08:31.190+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:08:31.391+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:28:05.176+0000] {logging_mixin.py:190} INFO - 
+ [162/1023] Extraction pour Banque Populaire...
+[2025-03-30T02:28:05.208+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:28:06.091+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:28:16.159+0000] {logging_mixin.py:190} INFO - 
+ [163/1023] Extraction pour Banque Populaire...
+[2025-03-30T02:28:16.160+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:28:16.312+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:28:26.331+0000] {logging_mixin.py:190} INFO - 
+ [164/1023] Extraction pour ...
+[2025-03-30T02:28:26.332+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:28:26.511+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:28:36.908+0000] {logging_mixin.py:190} INFO - 
+ [165/1023] Extraction pour Société Générale Fal Ould Oumeir...
+[2025-03-30T02:28:36.909+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T02:28:37.360+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T02:38:43.031+0000] {job.py:229} INFO - Heartbeat recovered after 607.18 seconds
+[2025-03-30T13:55:37.709+0000] {local_task_job_runner.py:228} ERROR - Heartbeat time limit exceeded!
+[2025-03-30T13:55:37.711+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-03-30T13:55:37.769+0000] {process_utils.py:132} INFO - Sending 15 to group 738745. PIDs of all processes in the group: [738745]
+[2025-03-30T13:55:37.795+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 738745
+[2025-03-30T13:55:40.376+0000] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-03-30T13:55:43.235+0000] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/mohammed/venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 56, in scheduler
+    run_command_with_daemon_option(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 59, in <lambda>
+    callback=lambda: _run_scheduler_job(args),
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 47, in _run_scheduler_job
+    run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/scheduler_job_runner.py", line 990, in _execute
+    executor.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 392, in start
+    self.impl.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 330, in start
+    worker.start()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 281, in _Popen
+    return Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 71, in _launch
+    code = process_obj._bootstrap(parent_sentinel=child_r)
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 80, in run
+    return super().run()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 211, in do_work
+    self.execute_work(key=key, command=command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 100, in execute_work
+    state = self._execute_work_in_fork(command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 142, in _execute_work_in_fork
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/airflow/scripts/insert_data_to_json.py", line 9, in insert_data_to_json
+    scraped_data = scrape_bank_reviews()
+  File "/home/mohammed/airflow/scripts/scraper.py", line 181, in scrape_bank_reviews
+    reviews,ads,bank_name = extraire_avis(bank['url'])
+  File "/home/mohammed/airflow/scripts/scraper.py", line 66, in extraire_avis
+    service = Service(ChromeDriverManager().install())
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/manager.py", line 35, in _get_driver_binary_path
+    binary_path = self._cache_manager.find_driver(driver)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/driver_cache.py", line 107, in find_driver
+    driver_version = self.get_cache_key_driver_version(driver)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/driver_cache.py", line 154, in get_cache_key_driver_version
+    return driver.get_driver_version_to_download()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/driver.py", line 48, in get_driver_version_to_download
+    return self.get_latest_release_version()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/drivers/chrome.py", line 59, in get_latest_release_version
+    response = self._http_client.get(url)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/webdriver_manager/core/http.py", line 32, in get
+    resp = requests.get(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1058, in _validate_conn
+    conn.connect()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-03-30T13:55:43.433+0000] {logging_mixin.py:190} INFO - 
+ [166/1023] Extraction pour Bank Assafa...
+[2025-03-30T13:55:43.435+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-30T13:55:43.949+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T13:55:44.904+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-30T13:55:45.462+0000] {logger.py:11} INFO - Driver [/home/mohammed/.wdm/drivers/chromedriver/linux64/134.0.6998.165/chromedriver-linux64/chromedriver] found in cache
+[2025-03-30T13:56:38.632+0000] {process_utils.py:150} WARNING - process psutil.Process(pid=738745, name='airflow task ru', status='sleeping', started='01:29:55') did not respond to SIGTERM. Trying SIGKILL
+[2025-03-30T13:56:38.776+0000] {process_utils.py:87} INFO - Sending the signal 9 to group 738745
+[2025-03-30T13:56:39.062+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=738745, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='01:29:55') (738745) terminated with exit code -9
+[2025-03-30T13:56:39.084+0000] {standard_task_runner.py:190} ERROR - ('Job 2497 was killed before it finished (likely due to running out of memory)', 'For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed')

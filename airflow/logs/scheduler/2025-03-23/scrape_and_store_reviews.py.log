@@ -1,0 +1,861 @@
+[2025-03-23T00:00:18.462+0000] {processor.py:186} INFO - Started process (PID=390492) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:00:18.468+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:00:18.471+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:00:18.470+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:00:18.585+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:00:18.630+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:00:18.630+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:00:18.996+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:00:18.996+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:00:19.088+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.831 seconds
+[2025-03-23T00:00:49.222+0000] {processor.py:186} INFO - Started process (PID=391223) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:00:49.223+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:00:49.226+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:00:49.226+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:00:49.290+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:00:49.329+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:00:49.329+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:00:49.358+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:00:49.358+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:00:49.377+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.162 seconds
+[2025-03-23T00:01:19.456+0000] {processor.py:186} INFO - Started process (PID=391739) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:01:19.458+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:01:19.460+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:01:19.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:01:19.515+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:01:19.544+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:01:19.543+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:01:19.572+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:01:19.571+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:01:19.593+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.144 seconds
+[2025-03-23T00:01:50.118+0000] {processor.py:186} INFO - Started process (PID=392359) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:01:50.120+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:01:50.123+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:01:50.122+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:01:50.197+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:01:50.248+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:01:50.248+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:01:50.286+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:01:50.285+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:01:50.437+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.328 seconds
+[2025-03-23T00:02:20.655+0000] {processor.py:186} INFO - Started process (PID=393002) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:02:20.657+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:02:20.661+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:02:20.661+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:02:20.743+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:02:20.784+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:02:20.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:02:20.819+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:02:20.819+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:02:20.845+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.203 seconds
+[2025-03-23T00:02:51.070+0000] {processor.py:186} INFO - Started process (PID=393655) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:02:51.076+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:02:51.080+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:02:51.079+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:02:51.219+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:02:51.280+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:02:51.280+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:02:51.358+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:02:51.358+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:02:51.418+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.368 seconds
+[2025-03-23T00:03:21.641+0000] {processor.py:186} INFO - Started process (PID=394289) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:03:21.644+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:03:21.657+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:03:21.657+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:03:21.921+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:03:22.031+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:03:22.030+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:03:22.078+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:03:22.078+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:03:22.141+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.521 seconds
+[2025-03-23T00:03:52.220+0000] {processor.py:186} INFO - Started process (PID=394895) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:03:52.222+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:03:52.225+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:03:52.224+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:03:52.322+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:03:52.360+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:03:52.360+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:03:52.408+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:03:52.408+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:03:52.437+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.227 seconds
+[2025-03-23T00:04:23.315+0000] {processor.py:186} INFO - Started process (PID=395510) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:04:23.316+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:04:23.319+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:04:23.319+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:04:23.448+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:04:23.519+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:04:23.518+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:04:23.611+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:04:23.611+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:04:23.674+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.371 seconds
+[2025-03-23T00:04:55.371+0000] {processor.py:186} INFO - Started process (PID=396101) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:04:55.374+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:04:55.384+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:04:55.383+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:04:55.746+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:04:55.809+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:04:55.807+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:04:55.859+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:04:55.859+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:04:55.901+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.555 seconds
+[2025-03-23T00:05:26.076+0000] {processor.py:186} INFO - Started process (PID=396744) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:05:26.079+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:05:26.084+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:05:26.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:05:26.213+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:05:26.265+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:05:26.265+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:05:26.312+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:05:26.312+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:05:26.383+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.329 seconds
+[2025-03-23T00:05:56.543+0000] {processor.py:186} INFO - Started process (PID=397343) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:05:56.545+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:05:56.548+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:05:56.547+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:05:56.677+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:05:56.860+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:05:56.860+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:05:57.005+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:05:57.005+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:05:57.061+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.528 seconds
+[2025-03-23T00:06:27.853+0000] {processor.py:186} INFO - Started process (PID=397857) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:06:27.888+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:06:27.891+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:06:27.891+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:06:27.941+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:06:27.968+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:06:27.968+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:06:27.990+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:06:27.990+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:06:28.856+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.010 seconds
+[2025-03-23T00:06:59.036+0000] {processor.py:186} INFO - Started process (PID=398503) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:06:59.037+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:06:59.040+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:06:59.039+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:06:59.101+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:06:59.133+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:06:59.132+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:06:59.600+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:06:59.599+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:06:59.674+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.645 seconds
+[2025-03-23T00:07:36.543+0000] {processor.py:186} INFO - Started process (PID=399051) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:07:36.545+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:07:36.551+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:07:36.550+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:07:36.699+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:07:36.775+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:07:36.774+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:07:37.280+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:07:37.280+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:07:37.319+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.789 seconds
+[2025-03-23T00:08:08.166+0000] {processor.py:186} INFO - Started process (PID=399549) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:08:08.167+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:08:08.171+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:08:08.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:08:08.263+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:08:08.311+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:08:08.310+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:08:08.823+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:08:08.823+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:08:08.864+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.709 seconds
+[2025-03-23T00:08:39.027+0000] {processor.py:186} INFO - Started process (PID=400167) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:08:39.028+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:08:39.031+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:08:39.030+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:08:39.078+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:08:39.247+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:08:39.247+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:08:39.271+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:08:39.271+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:08:39.290+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.270 seconds
+[2025-03-23T00:09:10.271+0000] {processor.py:186} INFO - Started process (PID=400808) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:09:10.274+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:09:10.279+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:09:10.278+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:09:10.420+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:09:10.496+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:09:10.494+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:09:10.587+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:09:10.586+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:09:10.655+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.401 seconds
+[2025-03-23T00:09:40.877+0000] {processor.py:186} INFO - Started process (PID=401455) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:09:40.880+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:09:40.891+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:09:40.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:09:41.004+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:09:41.062+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:09:41.061+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:09:41.148+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:09:41.148+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:09:41.212+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.351 seconds
+[2025-03-23T00:10:11.784+0000] {processor.py:186} INFO - Started process (PID=402115) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:10:11.785+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:10:11.787+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:10:11.787+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:10:11.844+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:10:11.871+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:10:11.871+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:10:11.894+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:10:11.894+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:10:11.914+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.137 seconds
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2025-03-23T00:43:18.018+0000] {processor.py:186} INFO - Started process (PID=805) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:43:18.027+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:43:18.038+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:43:18.037+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:43:18.307+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:43:18.429+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:43:18.423+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:43:18.561+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:43:18.560+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:43:18.680+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.704 seconds
+[2025-03-23T00:44:04.972+0000] {processor.py:186} INFO - Started process (PID=1657) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:44:04.989+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:44:04.995+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:44:04.994+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:44:05.999+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:44:06.421+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:44:06.420+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:44:06.992+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:44:06.991+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:44:07.325+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 2.379 seconds
+[2025-03-23T00:44:37.541+0000] {processor.py:186} INFO - Started process (PID=2409) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:44:37.544+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:44:37.549+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:44:37.548+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:44:37.739+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:44:37.801+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:44:37.801+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:44:37.885+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:44:37.885+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:44:38.052+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.532 seconds
+[2025-03-23T00:45:24.057+0000] {processor.py:186} INFO - Started process (PID=2814) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:45:24.064+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:45:24.076+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:45:24.074+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:45:24.424+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:45:24.595+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:45:24.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:45:24.734+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:45:24.733+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:45:24.839+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.817 seconds
+[2025-03-23T00:45:55.436+0000] {processor.py:186} INFO - Started process (PID=3231) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:45:55.441+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:45:55.448+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:45:55.448+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:45:55.633+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:45:55.716+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:45:55.716+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:45:55.857+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:45:55.857+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:45:58.550+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.546 seconds
+[2025-03-23T00:46:28.965+0000] {processor.py:186} INFO - Started process (PID=4025) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:46:29.002+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:46:29.007+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:46:29.005+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:46:29.131+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:46:29.200+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:46:29.199+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:46:29.266+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:46:29.265+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:46:29.423+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.475 seconds
+[2025-03-23T00:47:00.128+0000] {processor.py:186} INFO - Started process (PID=4438) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:47:00.135+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:47:00.149+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:47:00.147+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:47:00.368+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:47:00.484+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:47:00.484+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:47:00.644+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:47:00.643+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:47:00.737+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.632 seconds
+[2025-03-23T00:47:30.852+0000] {processor.py:186} INFO - Started process (PID=4853) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:47:30.856+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:47:30.864+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:47:30.862+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:47:30.996+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:47:31.065+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:47:31.064+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:47:31.121+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:47:31.120+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:47:31.165+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.330 seconds
+[2025-03-23T00:48:01.339+0000] {processor.py:186} INFO - Started process (PID=5325) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:48:01.341+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:48:01.345+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:48:01.344+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:48:01.442+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:48:01.493+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:48:01.492+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:48:01.532+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:48:01.532+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:48:01.565+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.238 seconds
+[2025-03-23T00:48:32.220+0000] {processor.py:186} INFO - Started process (PID=5722) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:48:32.223+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:48:32.237+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:48:32.236+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:48:32.661+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:48:32.812+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:48:32.811+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:48:32.976+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:48:32.975+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:48:33.102+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.914 seconds
+[2025-03-23T00:49:03.488+0000] {processor.py:186} INFO - Started process (PID=6265) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:49:03.492+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:49:03.498+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:49:03.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:49:03.665+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:49:03.736+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:49:03.735+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:49:03.793+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:49:03.793+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:49:03.838+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.371 seconds
+[2025-03-23T00:49:35.423+0000] {processor.py:186} INFO - Started process (PID=6673) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:49:35.426+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:49:35.432+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:49:35.431+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:49:35.577+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:49:35.646+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:49:35.646+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:49:35.711+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:49:35.711+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:49:35.766+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.360 seconds
+[2025-03-23T00:50:07.793+0000] {processor.py:186} INFO - Started process (PID=7008) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:50:07.835+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:50:07.845+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:50:07.843+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:50:08.049+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:50:08.107+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:50:08.107+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:50:08.157+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:50:08.156+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:50:08.273+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.491 seconds
+[2025-03-23T00:50:43.114+0000] {processor.py:186} INFO - Started process (PID=8369) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:50:43.117+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:50:43.126+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:50:43.125+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:50:43.408+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:50:43.453+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:50:43.453+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:50:43.498+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:50:43.497+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:50:44.233+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.148 seconds
+[2025-03-23T00:51:14.609+0000] {processor.py:186} INFO - Started process (PID=8873) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:51:14.613+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:51:14.629+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:51:14.628+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:51:17.439+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:51:17.533+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:51:17.532+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:51:17.618+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:51:17.618+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:51:17.690+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.565 seconds
+[2025-03-23T00:51:47.981+0000] {processor.py:186} INFO - Started process (PID=9366) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:51:47.985+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:51:48.002+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:51:47.998+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:51:48.402+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:51:48.569+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:51:48.559+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:51:48.843+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:51:48.843+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:51:49.224+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.312 seconds
+[2025-03-23T00:52:20.105+0000] {processor.py:186} INFO - Started process (PID=11194) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:52:20.119+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:52:20.137+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:52:20.127+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:52:20.880+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:52:20.968+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:52:20.967+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:52:21.037+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:52:21.037+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:52:21.089+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.032 seconds
+[2025-03-23T00:52:51.690+0000] {processor.py:186} INFO - Started process (PID=16921) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:52:51.693+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:52:51.701+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:52:51.700+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:52:51.940+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:52:52.156+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:52:52.156+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:52:52.240+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:52:52.239+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:52:52.288+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.622 seconds
+[2025-03-23T00:53:22.626+0000] {processor.py:186} INFO - Started process (PID=19839) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:53:22.629+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:53:22.639+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:53:22.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:53:22.948+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:53:23.098+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:53:23.097+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:53:23.252+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:53:23.252+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:53:23.357+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.769 seconds
+[2025-03-23T00:53:53.587+0000] {processor.py:186} INFO - Started process (PID=20899) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:53:53.589+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:53:53.607+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:53:53.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:53:54.061+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:53:54.445+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:53:54.445+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:53:55.792+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:53:55.759+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:53:56.488+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 2.948 seconds
+[2025-03-23T00:54:26.732+0000] {processor.py:186} INFO - Started process (PID=21370) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:54:26.761+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:54:26.772+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:54:26.770+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:54:26.891+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:54:26.983+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:54:26.982+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:54:27.074+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:54:27.074+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:54:27.125+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.457 seconds
+[2025-03-23T00:54:57.477+0000] {processor.py:186} INFO - Started process (PID=22750) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:54:57.481+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:54:57.488+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:54:57.487+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:54:57.675+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:54:58.125+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:54:58.121+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:54:58.252+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:54:58.242+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:54:58.331+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.881 seconds
+[2025-03-23T00:55:29.181+0000] {processor.py:186} INFO - Started process (PID=25671) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:55:29.214+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:55:29.219+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:55:29.218+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:55:29.407+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:55:29.523+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:55:29.522+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:55:29.573+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:55:29.572+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:55:29.647+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.486 seconds
+[2025-03-23T00:56:00.295+0000] {processor.py:186} INFO - Started process (PID=26316) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:56:00.297+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:56:00.313+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:56:00.310+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:56:00.625+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:56:00.732+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:56:00.730+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:56:00.822+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:56:00.821+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:56:00.894+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.637 seconds
+[2025-03-23T00:56:31.202+0000] {processor.py:186} INFO - Started process (PID=27479) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:56:31.206+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:56:31.223+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:56:31.221+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:56:31.610+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:56:31.770+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:56:31.769+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:56:31.892+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:56:31.892+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:56:31.974+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.806 seconds
+[2025-03-23T00:57:02.695+0000] {processor.py:186} INFO - Started process (PID=28802) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:57:02.696+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:57:02.705+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:57:02.702+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:57:02.914+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:57:03.041+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:57:03.040+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:57:03.122+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:57:03.121+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:57:03.199+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.518 seconds
+[2025-03-23T00:57:33.568+0000] {processor.py:186} INFO - Started process (PID=29859) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:57:33.573+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:57:33.578+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:57:33.577+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:57:33.658+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:57:34.009+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:57:34.008+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:57:34.077+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:57:34.077+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:57:34.182+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.627 seconds
+[2025-03-23T00:58:06.526+0000] {processor.py:186} INFO - Started process (PID=31635) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:58:06.528+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:58:06.536+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:58:06.534+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:58:06.737+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:58:06.824+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:58:06.824+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:58:06.964+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:58:06.964+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:58:07.039+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.532 seconds
+[2025-03-23T00:58:37.768+0000] {processor.py:186} INFO - Started process (PID=32708) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:58:37.770+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:58:37.774+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:58:37.773+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:58:37.839+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:58:37.879+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:58:37.878+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:58:37.920+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:58:37.920+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:58:37.950+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.190 seconds
+[2025-03-23T00:59:08.313+0000] {processor.py:186} INFO - Started process (PID=33741) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:59:08.335+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:59:08.337+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:59:08.337+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:59:08.393+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:59:08.437+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:59:08.437+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:59:08.460+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:59:08.460+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:59:08.506+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.205 seconds
+[2025-03-23T00:59:38.586+0000] {processor.py:186} INFO - Started process (PID=35338) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:59:38.587+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T00:59:38.590+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:59:38.589+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:59:38.670+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T00:59:38.727+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:59:38.726+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T00:59:38.780+0000] {logging_mixin.py:190} INFO - [2025-03-23T00:59:38.780+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T00:59:38.825+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.247 seconds
+[2025-03-23T01:00:09.480+0000] {processor.py:186} INFO - Started process (PID=37182) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:00:09.490+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:00:09.495+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:00:09.494+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:00:09.582+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:00:09.623+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:00:09.623+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:00:09.660+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:00:09.660+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:00:09.786+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.315 seconds
+[2025-03-23T01:00:40.349+0000] {processor.py:186} INFO - Started process (PID=37587) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:00:40.351+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:00:40.355+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:00:40.354+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:00:40.437+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:00:40.480+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:00:40.479+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:00:40.516+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:00:40.516+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:00:40.550+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.211 seconds
+[2025-03-23T01:01:10.684+0000] {processor.py:186} INFO - Started process (PID=37995) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:01:10.686+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:01:10.688+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:01:10.688+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:01:10.764+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:01:10.802+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:01:10.801+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:01:10.843+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:01:10.842+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:01:10.871+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.194 seconds
+[2025-03-23T01:01:41.403+0000] {processor.py:186} INFO - Started process (PID=38395) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:01:41.405+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:01:41.409+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:01:41.408+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:01:41.515+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:01:41.549+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:01:41.549+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:01:41.598+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:01:41.597+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:01:41.629+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.236 seconds
+[2025-03-23T01:02:11.890+0000] {processor.py:186} INFO - Started process (PID=38806) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:02:11.892+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:02:11.897+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:02:11.896+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:02:12.011+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:02:12.063+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:02:12.063+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:02:12.327+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:02:12.327+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:02:12.358+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.477 seconds
+[2025-03-23T01:02:42.468+0000] {processor.py:186} INFO - Started process (PID=39215) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:02:42.470+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:02:42.474+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:02:42.473+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:02:42.543+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:02:42.585+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:02:42.585+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:02:42.787+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:02:42.787+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:02:42.823+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.363 seconds
+[2025-03-23T01:03:13.704+0000] {processor.py:186} INFO - Started process (PID=39618) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:03:13.706+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:03:13.712+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:03:13.711+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:03:13.809+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:03:14.058+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:03:14.057+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:03:14.094+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:03:14.093+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:03:14.116+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.425 seconds
+[2025-03-23T01:03:49.958+0000] {processor.py:186} INFO - Started process (PID=40023) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:03:49.961+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:03:49.967+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:03:49.966+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:03:50.704+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:03:50.766+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:03:50.766+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:03:50.829+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:03:50.829+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:03:50.869+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.926 seconds
+[2025-03-23T01:04:21.166+0000] {processor.py:186} INFO - Started process (PID=40429) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:04:21.203+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:04:21.206+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:04:21.206+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:04:21.633+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:04:21.688+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:04:21.688+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:04:21.742+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:04:21.741+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:04:21.783+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.625 seconds
+[2025-03-23T01:04:52.586+0000] {processor.py:186} INFO - Started process (PID=40836) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:04:52.588+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:04:52.591+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:04:52.590+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:04:52.662+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:04:52.699+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:04:52.699+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:04:52.741+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:04:52.741+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:04:52.771+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.192 seconds
+[2025-03-23T01:05:23.414+0000] {processor.py:186} INFO - Started process (PID=41197) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:05:23.415+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:05:23.418+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:05:23.417+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:05:23.493+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:05:23.528+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:05:23.528+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:05:23.560+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:05:23.560+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:05:23.584+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.178 seconds
+[2025-03-23T01:05:53.764+0000] {processor.py:186} INFO - Started process (PID=41601) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:05:53.765+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:05:53.768+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:05:53.767+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:05:53.841+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:05:53.877+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:05:53.877+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:05:53.908+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:05:53.908+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:05:53.935+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.179 seconds
+[2025-03-23T01:06:26.167+0000] {processor.py:186} INFO - Started process (PID=42040) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:06:26.170+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:06:26.192+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:06:26.188+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:06:26.361+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:06:26.427+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:06:26.426+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:06:26.485+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:06:26.485+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:06:26.561+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.413 seconds
+[2025-03-23T01:06:56.923+0000] {processor.py:186} INFO - Started process (PID=42437) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:06:56.925+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:06:56.928+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:06:56.928+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:06:57.038+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:06:57.101+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:06:57.100+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:06:57.192+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:06:57.192+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:06:57.240+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.326 seconds
+[2025-03-23T01:07:27.360+0000] {processor.py:186} INFO - Started process (PID=42849) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:07:27.361+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:07:27.363+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:07:27.363+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:07:27.419+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:07:27.448+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:07:27.448+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:07:27.474+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:07:27.474+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:07:27.500+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.148 seconds
+[2025-03-23T01:07:59.486+0000] {processor.py:186} INFO - Started process (PID=43221) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:07:59.487+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:07:59.492+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:07:59.492+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:07:59.560+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:07:59.594+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:07:59.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:07:59.631+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:07:59.631+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:07:59.664+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.185 seconds
+[2025-03-23T01:08:29.797+0000] {processor.py:186} INFO - Started process (PID=43626) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:08:29.800+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:08:29.805+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:08:29.804+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:08:29.887+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:08:29.929+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:08:29.929+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:08:29.996+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:08:29.995+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:08:30.034+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.245 seconds
+[2025-03-23T01:09:00.213+0000] {processor.py:186} INFO - Started process (PID=44027) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:09:00.215+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:09:00.221+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:09:00.220+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:09:00.376+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:09:00.439+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:09:00.439+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:09:00.497+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:09:00.496+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:09:00.545+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.347 seconds
+[2025-03-23T01:09:30.903+0000] {processor.py:186} INFO - Started process (PID=44433) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:09:30.905+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:09:30.909+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:09:30.908+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:09:31.002+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:09:31.045+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:09:31.044+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:09:31.111+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:09:31.111+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:09:31.142+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.251 seconds
+[2025-03-23T01:10:01.620+0000] {processor.py:186} INFO - Started process (PID=44837) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:10:02.129+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:10:02.132+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:10:02.131+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:10:02.180+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:10:02.208+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:10:02.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:10:02.232+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:10:02.232+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:10:02.971+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.359 seconds
+[2025-03-23T01:10:33.156+0000] {processor.py:186} INFO - Started process (PID=45241) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:10:33.158+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:10:33.168+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:10:33.167+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:10:33.314+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:10:33.371+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:10:33.370+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:10:33.442+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:10:33.442+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:10:33.494+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.364 seconds
+[2025-03-23T01:11:03.564+0000] {processor.py:186} INFO - Started process (PID=45645) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:11:03.565+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:11:03.570+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:11:03.569+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:11:03.668+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:11:03.709+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:11:03.708+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:11:03.738+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:11:03.737+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:11:03.763+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.206 seconds
+[2025-03-23T01:11:34.045+0000] {processor.py:186} INFO - Started process (PID=46050) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:11:34.047+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:11:34.056+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:11:34.055+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:11:34.265+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:11:34.416+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:11:34.415+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:11:34.502+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:11:34.501+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:11:34.548+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.524 seconds
+[2025-03-23T01:12:04.897+0000] {processor.py:186} INFO - Started process (PID=46456) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:12:04.928+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:12:04.933+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:12:04.932+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:12:05.112+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:12:05.185+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:12:05.184+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:12:05.253+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:12:05.253+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:12:05.347+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.463 seconds
+[2025-03-23T01:12:39.529+0000] {processor.py:186} INFO - Started process (PID=46844) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:12:39.534+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:12:39.537+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:12:39.537+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:12:39.692+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:12:39.748+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:12:39.747+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:12:39.809+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:12:39.809+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:12:39.869+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.351 seconds
+[2025-03-23T01:13:10.490+0000] {processor.py:186} INFO - Started process (PID=47248) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:13:10.492+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:13:10.518+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:13:10.507+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:13:11.145+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:13:11.267+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:13:11.265+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:13:11.432+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:13:11.431+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:13:11.545+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.087 seconds
+[2025-03-23T01:13:42.022+0000] {processor.py:186} INFO - Started process (PID=47654) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:13:42.265+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:13:42.276+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:13:42.274+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:13:42.628+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:13:42.907+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:13:42.906+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:13:43.191+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:13:43.190+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:13:43.380+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.377 seconds
+[2025-03-23T01:14:14.149+0000] {processor.py:186} INFO - Started process (PID=48058) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:14:14.164+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:14:14.175+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:14:14.174+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:14:14.650+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:14:14.784+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:14:14.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:14:14.926+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:14:14.917+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:14:15.013+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.898 seconds
+[2025-03-23T01:14:45.590+0000] {processor.py:186} INFO - Started process (PID=48464) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:14:45.592+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:14:45.594+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:14:45.594+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:14:45.673+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:14:45.719+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:14:45.719+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:14:45.753+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:14:45.752+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:14:45.779+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.197 seconds
+[2025-03-23T01:15:15.897+0000] {processor.py:186} INFO - Started process (PID=48872) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:15:15.898+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:15:15.902+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:15:15.901+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:15:16.006+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:15:16.041+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:15:16.040+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:15:16.083+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:15:16.082+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:15:16.120+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.233 seconds
+[2025-03-23T01:15:46.575+0000] {processor.py:186} INFO - Started process (PID=49275) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:15:46.580+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:15:46.584+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:15:46.584+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:15:46.701+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:15:46.765+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:15:46.763+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:15:46.827+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:15:46.827+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:15:46.888+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.327 seconds
+[2025-03-23T01:16:17.279+0000] {processor.py:186} INFO - Started process (PID=49680) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:16:17.281+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:16:17.287+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:16:17.286+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:16:17.385+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:16:17.435+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:16:17.435+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:16:17.484+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:16:17.483+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:16:17.523+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.259 seconds
+[2025-03-23T01:16:48.512+0000] {processor.py:186} INFO - Started process (PID=50086) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:16:48.515+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:16:48.535+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:16:48.534+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:16:48.810+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:16:48.962+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:16:48.961+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:16:49.101+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:16:49.100+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:16:49.298+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.848 seconds
+[2025-03-23T01:17:19.790+0000] {processor.py:186} INFO - Started process (PID=50493) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:17:19.792+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:17:19.794+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:17:19.794+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:17:19.844+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:17:19.872+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:17:19.872+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:17:19.897+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:17:19.896+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:17:19.933+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.149 seconds
+[2025-03-23T01:17:51.780+0000] {processor.py:186} INFO - Started process (PID=50896) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:17:51.781+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:17:51.783+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:17:51.783+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:17:51.888+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:17:51.961+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:17:51.961+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:17:52.043+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:17:52.043+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:17:52.106+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.337 seconds
+[2025-03-23T01:18:22.258+0000] {processor.py:186} INFO - Started process (PID=51299) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:18:22.259+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:18:22.263+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:18:22.263+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:18:22.359+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:18:22.405+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:18:22.405+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:18:22.448+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:18:22.447+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:18:22.482+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.233 seconds
+[2025-03-23T01:18:52.991+0000] {processor.py:186} INFO - Started process (PID=51705) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:18:52.993+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:18:52.999+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:18:52.998+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:18:53.134+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:18:53.193+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:18:53.192+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:18:53.238+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:18:53.238+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:18:53.275+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.308 seconds
+[2025-03-23T01:19:23.593+0000] {processor.py:186} INFO - Started process (PID=52109) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:19:23.595+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:19:23.599+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:19:23.598+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:19:23.670+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:19:23.707+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:19:23.707+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:19:23.739+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:19:23.738+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:19:23.764+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.183 seconds
+[2025-03-23T01:19:53.958+0000] {processor.py:186} INFO - Started process (PID=52518) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:19:53.961+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:19:53.966+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:19:53.965+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:19:54.069+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:19:54.120+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:19:54.120+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:19:54.160+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:19:54.159+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:19:54.191+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.247 seconds
+[2025-03-23T01:20:26.739+0000] {processor.py:186} INFO - Started process (PID=52924) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:20:26.743+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:20:26.749+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:20:26.748+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:20:26.845+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:20:26.880+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:20:26.879+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:20:26.913+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:20:26.913+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:20:26.940+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.213 seconds
+[2025-03-23T01:20:57.049+0000] {processor.py:186} INFO - Started process (PID=53336) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:20:57.051+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:20:57.054+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:20:57.054+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:20:57.132+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:20:57.169+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:20:57.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:20:57.213+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:20:57.213+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:20:57.242+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.204 seconds
+[2025-03-23T01:21:27.337+0000] {processor.py:186} INFO - Started process (PID=53740) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:21:27.339+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:21:27.343+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:21:27.342+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:21:27.458+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:21:27.510+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:21:27.509+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:21:27.571+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:21:27.570+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:21:27.603+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.280 seconds
+[2025-03-23T01:21:57.671+0000] {processor.py:186} INFO - Started process (PID=54148) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:21:57.673+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:21:57.678+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:21:57.678+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:21:57.820+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:21:57.911+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:21:57.911+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:21:57.989+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:21:57.989+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:21:58.029+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.371 seconds
+[2025-03-23T01:22:28.142+0000] {processor.py:186} INFO - Started process (PID=54552) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:22:28.144+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:22:28.148+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:22:28.147+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:22:28.247+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:22:28.295+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:22:28.295+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:22:28.333+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:22:28.333+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:22:28.357+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.228 seconds
+[2025-03-23T01:22:58.729+0000] {processor.py:186} INFO - Started process (PID=54948) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:22:58.731+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:22:58.735+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:22:58.734+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:22:58.851+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:22:58.892+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:22:58.891+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:22:58.931+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:22:58.931+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:22:58.965+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.250 seconds
+[2025-03-23T01:23:29.422+0000] {processor.py:186} INFO - Started process (PID=55351) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:23:29.424+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:23:29.429+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:23:29.428+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:23:29.614+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:23:29.666+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:23:29.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:23:29.733+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:23:29.733+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:23:29.794+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.389 seconds
+[2025-03-23T01:23:59.977+0000] {processor.py:186} INFO - Started process (PID=55763) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:23:59.978+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:23:59.981+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:23:59.981+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:24:00.145+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:24:00.271+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:24:00.270+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:24:00.358+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:24:00.358+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:24:00.495+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.530 seconds
+[2025-03-23T01:24:32.533+0000] {processor.py:186} INFO - Started process (PID=56151) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:24:32.536+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:24:32.540+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:24:32.540+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:24:32.623+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:24:32.665+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:24:32.664+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:24:32.704+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:24:32.704+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:24:32.741+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.217 seconds
+[2025-03-23T01:25:03.227+0000] {processor.py:186} INFO - Started process (PID=56557) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:25:03.229+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:25:03.234+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:25:03.234+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:25:03.320+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:25:03.356+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:25:03.356+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:25:03.387+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:25:03.387+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:25:03.492+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.272 seconds
+[2025-03-23T01:25:33.589+0000] {processor.py:186} INFO - Started process (PID=56962) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:25:33.591+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:25:33.599+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:25:33.598+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:25:33.748+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:25:33.815+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:25:33.815+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:25:33.883+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:25:33.883+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:25:33.957+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.378 seconds
+[2025-03-23T01:26:04.125+0000] {processor.py:186} INFO - Started process (PID=57369) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:26:04.126+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:26:04.129+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:26:04.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:26:04.219+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:26:04.257+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:26:04.257+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:26:04.318+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:26:04.318+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:26:04.369+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.257 seconds
+[2025-03-23T01:26:34.839+0000] {processor.py:186} INFO - Started process (PID=57766) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:26:34.841+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:26:34.844+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:26:34.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:26:34.936+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:26:34.975+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:26:34.974+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:26:35.025+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:26:35.025+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:26:35.062+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.235 seconds
+[2025-03-23T01:27:05.210+0000] {processor.py:186} INFO - Started process (PID=58171) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:27:05.211+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:27:05.213+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:27:05.213+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:27:05.309+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:27:05.355+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:27:05.355+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:27:05.420+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:27:05.420+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:27:05.462+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.264 seconds
+[2025-03-23T01:27:35.829+0000] {processor.py:186} INFO - Started process (PID=58578) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:27:35.831+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:27:35.835+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:27:35.835+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:27:35.974+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:27:36.033+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:27:36.033+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:27:36.080+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:27:36.080+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:27:36.118+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.299 seconds
+[2025-03-23T01:28:06.696+0000] {processor.py:186} INFO - Started process (PID=58974) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:28:06.698+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:28:06.702+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:28:06.701+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:28:06.807+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:28:06.858+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:28:06.858+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:28:06.909+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:28:06.909+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:28:06.945+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.261 seconds
+[2025-03-23T01:28:37.405+0000] {processor.py:186} INFO - Started process (PID=59366) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:28:37.407+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:28:37.412+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:28:37.411+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:28:37.567+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:28:37.629+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:28:37.629+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:28:37.701+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:28:37.701+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:28:37.749+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.358 seconds
+[2025-03-23T01:29:07.857+0000] {processor.py:186} INFO - Started process (PID=59776) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:29:07.860+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:29:07.863+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:29:07.863+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:29:07.968+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:29:08.019+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:29:08.018+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:29:08.071+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:29:08.070+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:29:08.120+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.273 seconds
+[2025-03-23T01:29:38.357+0000] {processor.py:186} INFO - Started process (PID=60183) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:29:38.358+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:29:38.361+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:29:38.361+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:29:38.452+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:29:38.554+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:29:38.553+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:29:38.688+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:29:38.688+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:29:38.784+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.440 seconds
+[2025-03-23T01:30:09.632+0000] {processor.py:186} INFO - Started process (PID=60588) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:30:09.635+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:30:09.637+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:30:09.637+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:30:09.702+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:30:09.736+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:30:09.736+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:30:09.776+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:30:09.776+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:30:09.801+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.176 seconds
+[2025-03-23T01:30:44.163+0000] {processor.py:186} INFO - Started process (PID=61003) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:30:44.165+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:30:44.169+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:30:44.168+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:30:44.287+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:30:44.349+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:30:44.349+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:30:44.394+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:30:44.394+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:30:44.427+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.280 seconds
+[2025-03-23T01:32:39.288+0000] {processor.py:186} INFO - Started process (PID=61151) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:32:39.293+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:32:39.299+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:32:39.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:32:39.560+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:32:39.656+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:32:39.656+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:32:39.849+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:32:39.849+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:32:39.900+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.675 seconds
+[2025-03-23T01:33:10.009+0000] {processor.py:186} INFO - Started process (PID=61292) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:33:10.010+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:33:10.012+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:33:10.011+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:33:10.083+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:33:10.127+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:33:10.126+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:33:10.157+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:33:10.156+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:33:10.183+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.185 seconds
+[2025-03-23T01:33:41.470+0000] {processor.py:186} INFO - Started process (PID=61425) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:33:41.475+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:33:41.479+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:33:41.478+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:33:41.632+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:33:41.709+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:33:41.708+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:33:41.893+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:33:41.888+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:33:41.987+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.536 seconds
+[2025-03-23T01:34:14.969+0000] {processor.py:186} INFO - Started process (PID=61559) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:34:14.970+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:34:14.972+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:34:14.971+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:34:15.035+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:34:15.067+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:34:15.067+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:34:15.095+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:34:15.095+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:34:15.119+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.158 seconds
+[2025-03-23T01:34:45.772+0000] {processor.py:186} INFO - Started process (PID=61694) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:34:45.774+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:34:45.776+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:34:45.775+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:34:45.854+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:34:45.889+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:34:45.889+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:34:45.931+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:34:45.931+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:34:45.959+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.198 seconds
+[2025-03-23T01:35:16.867+0000] {processor.py:186} INFO - Started process (PID=61830) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:35:16.873+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:35:16.887+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:35:16.876+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:35:17.519+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:35:17.686+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:35:17.685+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:35:17.801+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:35:17.800+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:35:17.903+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.106 seconds
+[2025-03-23T01:35:48.161+0000] {processor.py:186} INFO - Started process (PID=61969) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:35:48.163+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:35:48.165+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:35:48.165+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:35:48.269+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:35:48.333+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:35:48.331+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:35:48.374+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:35:48.374+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:35:48.428+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.282 seconds
+[2025-03-23T01:36:18.489+0000] {processor.py:186} INFO - Started process (PID=62100) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:36:18.490+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:36:18.492+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:36:18.491+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:36:18.548+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:36:18.581+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:36:18.581+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:36:18.608+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:36:18.608+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:36:18.633+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.152 seconds
+[2025-03-23T01:36:51.136+0000] {processor.py:186} INFO - Started process (PID=62237) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:36:51.138+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:36:51.139+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:36:51.139+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:36:51.211+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:36:51.254+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:36:51.254+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:36:51.284+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:36:51.284+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:36:51.311+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.182 seconds
+[2025-03-23T01:37:21.862+0000] {processor.py:186} INFO - Started process (PID=62370) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:37:21.891+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:37:21.939+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:37:21.927+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:37:22.336+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:37:22.454+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:37:22.454+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:37:22.539+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:37:22.538+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:37:22.610+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.792 seconds
+[2025-03-23T01:37:52.900+0000] {processor.py:186} INFO - Started process (PID=62506) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:37:52.902+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:37:52.905+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:37:52.904+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:37:53.035+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:37:53.095+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:37:53.095+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:37:53.168+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:37:53.167+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:37:53.208+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 0.318 seconds
+[2025-03-23T01:38:23.526+0000] {processor.py:186} INFO - Started process (PID=62640) to work on /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:38:23.530+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/scrape_and_store_reviews.py for tasks to queue
+[2025-03-23T01:38:23.533+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:38:23.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:38:23.760+0000] {processor.py:925} INFO - DAG(s) 'scrape_and_store_reviews' retrieved from /home/mohammed/airflow/dags/scrape_and_store_reviews.py
+[2025-03-23T01:38:23.837+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:38:23.836+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-23T01:38:23.951+0000] {logging_mixin.py:190} INFO - [2025-03-23T01:38:23.950+0000] {dag.py:4180} INFO - Setting next_dagrun for scrape_and_store_reviews to 2025-03-23 00:00:00+00:00, run_after=2025-03-30 00:00:00+00:00
+[2025-03-23T01:38:25.043+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/scrape_and_store_reviews.py took 1.538 seconds

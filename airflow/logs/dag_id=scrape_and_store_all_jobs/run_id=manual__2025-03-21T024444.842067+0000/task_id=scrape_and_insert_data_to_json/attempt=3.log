@@ -1,0 +1,225 @@
+[2025-03-21T02:48:45.856+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-21T02:48:45.950+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scrape_and_store_all_jobs.scrape_and_insert_data_to_json manual__2025-03-21T02:44:44.842067+00:00 [queued]>
+[2025-03-21T02:48:45.992+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scrape_and_store_all_jobs.scrape_and_insert_data_to_json manual__2025-03-21T02:44:44.842067+00:00 [queued]>
+[2025-03-21T02:48:45.993+0000] {taskinstance.py:2867} INFO - Starting attempt 3 of 2
+[2025-03-21T02:48:46.042+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-03-21 02:44:44.842067+00:00
+[2025-03-21T02:48:46.071+0000] {standard_task_runner.py:72} INFO - Started process 607183 to run task
+[2025-03-21T02:48:46.088+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'scrape_and_store_all_jobs', 'scrape_and_insert_data_to_json', 'manual__2025-03-21T02:44:44.842067+00:00', '--job-id', '1896', '--raw', '--subdir', 'DAGS_FOLDER/dags/scrape_and_store_all_jobs.py', '--cfg-path', '/tmp/tmpzb7qcmui']
+[2025-03-21T02:48:46.091+0000] {standard_task_runner.py:105} INFO - Job 1896: Subtask scrape_and_insert_data_to_json
+[2025-03-21T02:48:46.389+0000] {task_command.py:467} INFO - Running <TaskInstance: scrape_and_store_all_jobs.scrape_and_insert_data_to_json manual__2025-03-21T02:44:44.842067+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-21T02:48:46.832+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='scrape_and_store_all_jobs' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-03-21T02:44:44.842067+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-21T02:44:44.842067+00:00'
+[2025-03-21T02:48:46.836+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-21T02:48:46.837+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-21T02:48:46.838+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-03-21 02:48:45.950981+00:00
+[2025-03-21T02:48:46.839+0000] {logging_mixin.py:190} INFO - Dag name:scrape_and_store_all_jobs and current dag run status:running
+[2025-03-21T02:48:46.840+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-21T02:48:46.852+0000] {logging_mixin.py:190} INFO - Extraction des données depuis rekrute.com...
+[2025-03-21T02:48:48.849+0000] {logging_mixin.py:190} INFO - (rekrute.com) Nombre total de pages : 172
+[2025-03-21T02:48:48.850+0000] {logging_mixin.py:190} INFO - (rekrute.com) Traitement de la page 1...
+[2025-03-21T02:48:50.453+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/168619.png'
+[2025-03-21T02:48:50.483+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : RPA BLUEPRISM Developer
+[2025-03-21T02:48:50.931+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169858.png'
+[2025-03-21T02:48:50.966+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Dessinateur Projeteur Installation Générale/Tuyauterie H/F
+[2025-03-21T02:48:51.349+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169857.png'
+[2025-03-21T02:48:51.388+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Chargé(e) de Clientèle
+[2025-03-21T02:48:51.755+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169856.png'
+[2025-03-21T02:48:51.792+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Chef Comptable
+[2025-03-21T02:48:52.287+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169855.png'
+[2025-03-21T02:48:52.362+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Chargé de clientèle - Réception d'appel - Rabat
+[2025-03-21T02:48:52.914+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169852.png'
+[2025-03-21T02:48:52.962+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Conseiller Digital
+[2025-03-21T02:48:53.419+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169853.png'
+[2025-03-21T02:48:53.494+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Conseiller Commercial
+[2025-03-21T02:48:53.932+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169854.png'
+[2025-03-21T02:48:53.976+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Conseiller Commercial
+[2025-03-21T02:48:54.422+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/168514.png'
+[2025-03-21T02:48:54.458+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Manager H/F
+[2025-03-21T02:48:54.837+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169850.jpg'
+[2025-03-21T02:48:54.877+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Responsable Compensation and Benefits H/F
+[2025-03-21T02:48:57.768+0000] {logging_mixin.py:190} INFO - (rekrute.com) Traitement de la page 2...
+[2025-03-21T02:48:59.246+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169849.jpg'
+[2025-03-21T02:48:59.307+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Accountant
+[2025-03-21T02:48:59.753+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169846.png'
+[2025-03-21T02:48:59.784+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Back Office
+[2025-03-21T02:49:00.177+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169848.png'
+[2025-03-21T02:49:00.217+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Chargé(e) s de Conduite d'Activité francophones
+[2025-03-21T02:49:00.589+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169847.png'
+[2025-03-21T02:49:00.617+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : HR Generalist
+[2025-03-21T02:49:01.008+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169368.png'
+[2025-03-21T02:49:01.042+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Développeur Full Stack de Talent Expérimenté - PHP7 (H/F)
+[2025-03-21T02:49:01.479+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169845.jpg'
+[2025-03-21T02:49:01.538+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Ingénieur Safety/Sécurité Incendie
+[2025-03-21T02:49:01.947+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169843.png'
+[2025-03-21T02:49:02.007+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Cadre Recouvrement
+[2025-03-21T02:49:02.406+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169196.png'
+[2025-03-21T02:49:02.477+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Data Analyst - Contrôle de Gestion H/F
+[2025-03-21T02:49:02.864+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/169842.png'
+[2025-03-21T02:49:02.925+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Chargé(e) de support informatique N0 parfaitement francophones
+[2025-03-21T02:49:03.390+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/168920.png'
+[2025-03-21T02:49:03.535+0000] {logging_mixin.py:190} INFO - (rekrute.com) Offre ignorée (URL existe déjà) : Assistante RH
+[2025-03-21T02:49:05.540+0000] {logging_mixin.py:190} INFO - Extraction des données depuis marocemploi.net...
+[2025-03-21T02:49:05.543+0000] {logging_mixin.py:190} INFO - (marocemploi.net) Traitement de la page 1...
+[2025-03-21T02:49:07.375+0000] {logging_mixin.py:190} INFO - Erreur lors du téléchargement de l'image: [Errno 2] No such file or directory: '/mnt/c/Users/hp/Desktop/offres/images/928465.jpg'
+[2025-03-21T02:49:07.397+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-03-21T02:49:07.399+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-03-21T02:49:07.422+0000] {process_utils.py:132} INFO - Sending 15 to group 607183. PIDs of all processes in the group: [607183]
+[2025-03-21T02:49:07.423+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 607183
+[2025-03-21T02:49:07.425+0000] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-03-21T02:49:07.489+0000] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/mohammed/venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 56, in scheduler
+    run_command_with_daemon_option(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 59, in <lambda>
+    callback=lambda: _run_scheduler_job(args),
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/scheduler_command.py", line 47, in _run_scheduler_job
+    run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/scheduler_job_runner.py", line 990, in _execute
+    executor.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 392, in start
+    self.impl.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 330, in start
+    worker.start()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 281, in _Popen
+    return Popen(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 71, in _launch
+    code = process_obj._bootstrap(parent_sentinel=child_r)
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 80, in run
+    return super().run()
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 211, in do_work
+    self.execute_work(key=key, command=command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 100, in execute_work
+    state = self._execute_work_in_fork(command)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/traces/tracer.py", line 58, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/executors/local_executor.py", line 142, in _execute_work_in_fork
+    args.func(args)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 763, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/mohammed/airflow/dags/scripts/insert_data_to_json_all_jobs.py", line 17, in insert_data_to_json
+    scraped_data = extract_data()
+  File "/home/mohammed/airflow/dags/scripts/scraping_all_jobs.py", line 277, in extract_data
+    all_offers.extend(extract_from_marocemploi_net())
+  File "/home/mohammed/airflow/dags/scripts/scraping_all_jobs.py", line 262, in extract_from_marocemploi_net
+    print(f"(rekrute.com) Offre ignorée (URL existe déjà) : {title}")
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.11/logging/__init__.py", line 1559, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.11/logging/__init__.py", line 1634, in _log
+    self.handle(record)
+  File "/usr/lib/python3.11/logging/__init__.py", line 1644, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.11/logging/__init__.py", line 1706, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.11/logging/__init__.py", line 978, in handle
+    self.emit(record)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/log/file_task_handler.py", line 277, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.11/logging/handlers.py", line 75, in emit
+    logging.FileHandler.emit(self, record)
+  File "/usr/lib/python3.11/logging/__init__.py", line 1230, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.11/logging/__init__.py", line 1110, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.11/logging/__init__.py", line 953, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.11/logging/__init__.py", line 689, in format
+    record.asctime = self.formatTime(record, self.datefmt)
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/log/timezone_aware.py", line 44, in formatTime
+    dt = timezone.from_timestamp(record.created, tz="local")
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/timezone.py", line 316, in from_timestamp
+    result = coerce_datetime(dt.datetime.fromtimestamp(timestamp, tz=utc))
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-03-21T02:49:07.708+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-21T02:49:07.761+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=607183, status='terminated', exitcode=0, started='02:48:45') (607183) terminated with exit code 0

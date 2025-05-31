@@ -1,0 +1,252 @@
+[2025-03-20T14:24:04.289+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-20T14:24:04.388+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.sentiment_analysis manual__2025-03-20T13:54:56.598645+00:00 [queued]>
+[2025-03-20T14:24:04.432+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.sentiment_analysis manual__2025-03-20T13:54:56.598645+00:00 [queued]>
+[2025-03-20T14:24:04.433+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-03-20T14:24:04.480+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): sentiment_analysis> on 2025-03-20 13:54:56.598645+00:00
+[2025-03-20T14:24:04.496+0000] {standard_task_runner.py:72} INFO - Started process 75256 to run task
+[2025-03-20T14:24:04.511+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'process_enrichir_clean_reviews', 'sentiment_analysis', 'manual__2025-03-20T13:54:56.598645+00:00', '--job-id', '1851', '--raw', '--subdir', 'DAGS_FOLDER/process_clean_reviews.py', '--cfg-path', '/tmp/tmpger9p_eh']
+[2025-03-20T14:24:04.513+0000] {standard_task_runner.py:105} INFO - Job 1851: Subtask sentiment_analysis
+[2025-03-20T14:24:04.722+0000] {task_command.py:467} INFO - Running <TaskInstance: process_enrichir_clean_reviews.sentiment_analysis manual__2025-03-20T13:54:56.598645+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-20T14:24:05.078+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='process_enrichir_clean_reviews' AIRFLOW_CTX_TASK_ID='sentiment_analysis' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T13:54:56.598645+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-20T13:54:56.598645+00:00'
+[2025-03-20T14:24:05.081+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-20T14:24:05.081+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-20T14:24:05.082+0000] {logging_mixin.py:190} INFO - Current task name:sentiment_analysis state:running start_date:2025-03-20 14:24:04.390135+00:00
+[2025-03-20T14:24:05.082+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews and current dag run status:running
+[2025-03-20T14:24:05.083+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-20T14:24:05.090+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-20T14:24:05.094+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/sentiment_analysis.py']
+[2025-03-20T14:24:05.125+0000] {subprocess.py:99} INFO - Output:
+[2025-03-20T14:26:27.113+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.117+0000] {subprocess.py:106} INFO -   File "/home/mohammed/airflow/scripts/sentiment_analysis.py", line 171, in <module>
+[2025-03-20T14:26:27.118+0000] {subprocess.py:106} INFO -     sentiment_analyzer = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
+[2025-03-20T14:26:27.119+0000] {subprocess.py:106} INFO -                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.119+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 895, in pipeline
+[2025-03-20T14:26:27.126+0000] {subprocess.py:106} INFO -     framework, model = infer_framework_load_model(
+[2025-03-20T14:26:27.129+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.130+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 296, in infer_framework_load_model
+[2025-03-20T14:26:27.130+0000] {subprocess.py:106} INFO -     raise ValueError(
+[2025-03-20T14:26:27.131+0000] {subprocess.py:106} INFO - ValueError: Could not load model nlptown/bert-base-multilingual-uncased-sentiment with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.bert.modeling_bert.BertForSequenceClassification'>). See the original errors:
+[2025-03-20T14:26:27.131+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.132+0000] {subprocess.py:106} INFO - while loading with AutoModelForSequenceClassification, an error is thrown:
+[2025-03-20T14:26:27.132+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.133+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+[2025-03-20T14:26:27.133+0000] {subprocess.py:106} INFO -     conn = connection.create_connection(
+[2025-03-20T14:26:27.134+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.135+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 72, in create_connection
+[2025-03-20T14:26:27.135+0000] {subprocess.py:106} INFO -     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+[2025-03-20T14:26:27.135+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.136+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/socket.py", line 974, in getaddrinfo
+[2025-03-20T14:26:27.136+0000] {subprocess.py:106} INFO -     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2025-03-20T14:26:27.137+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.137+0000] {subprocess.py:106} INFO - socket.gaierror: [Errno -3] Temporary failure in name resolution
+[2025-03-20T14:26:27.138+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.139+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:26:27.139+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.140+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.141+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+[2025-03-20T14:26:27.142+0000] {subprocess.py:106} INFO -     httplib_response = self._make_request(
+[2025-03-20T14:26:27.143+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.143+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+[2025-03-20T14:26:27.144+0000] {subprocess.py:106} INFO -     self._validate_conn(conn)
+[2025-03-20T14:26:27.146+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1058, in _validate_conn
+[2025-03-20T14:26:27.147+0000] {subprocess.py:106} INFO -     conn.connect()
+[2025-03-20T14:26:27.148+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+[2025-03-20T14:26:27.148+0000] {subprocess.py:106} INFO -     self.sock = conn = self._new_conn()
+[2025-03-20T14:26:27.149+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.149+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+[2025-03-20T14:26:27.149+0000] {subprocess.py:106} INFO -     raise NewConnectionError(
+[2025-03-20T14:26:27.150+0000] {subprocess.py:106} INFO - urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fc88f492e50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+[2025-03-20T14:26:27.150+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.150+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:26:27.151+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.151+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.151+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+[2025-03-20T14:26:27.152+0000] {subprocess.py:106} INFO -     resp = conn.urlopen(
+[2025-03-20T14:26:27.152+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^
+[2025-03-20T14:26:27.153+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+[2025-03-20T14:26:27.153+0000] {subprocess.py:106} INFO -     retries = retries.increment(
+[2025-03-20T14:26:27.153+0000] {subprocess.py:106} INFO -               ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.154+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+[2025-03-20T14:26:27.154+0000] {subprocess.py:106} INFO -     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[2025-03-20T14:26:27.156+0000] {subprocess.py:106} INFO - urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/resolve/main/tf_model.h5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc88f492e50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2025-03-20T14:26:27.157+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.158+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:26:27.160+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.161+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.163+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 283, in infer_framework_load_model
+[2025-03-20T14:26:27.165+0000] {subprocess.py:106} INFO -     model = model_class.from_pretrained(model, **kwargs)
+[2025-03-20T14:26:27.165+0000] {subprocess.py:106} INFO -             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.166+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+[2025-03-20T14:26:27.166+0000] {subprocess.py:106} INFO -     return model_class.from_pretrained(
+[2025-03-20T14:26:27.166+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.167+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3599, in from_pretrained
+[2025-03-20T14:26:27.167+0000] {subprocess.py:106} INFO -     if has_file(pretrained_model_name_or_path, TF2_WEIGHTS_NAME, **has_file_kwargs):
+[2025-03-20T14:26:27.167+0000] {subprocess.py:106} INFO -        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.168+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 655, in has_file
+[2025-03-20T14:26:27.168+0000] {subprocess.py:106} INFO -     response = get_session().head(
+[2025-03-20T14:26:27.169+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.169+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 624, in head
+[2025-03-20T14:26:27.169+0000] {subprocess.py:106} INFO -     return self.request("HEAD", url, **kwargs)
+[2025-03-20T14:26:27.170+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.170+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+[2025-03-20T14:26:27.170+0000] {subprocess.py:106} INFO -     resp = self.send(prep, **send_kwargs)
+[2025-03-20T14:26:27.171+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.171+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+[2025-03-20T14:26:27.171+0000] {subprocess.py:106} INFO -     r = adapter.send(request, **kwargs)
+[2025-03-20T14:26:27.172+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.172+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+[2025-03-20T14:26:27.173+0000] {subprocess.py:106} INFO -     return super().send(request, *args, **kwargs)
+[2025-03-20T14:26:27.173+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.173+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+[2025-03-20T14:26:27.174+0000] {subprocess.py:106} INFO -     raise ConnectionError(e, request=request)
+[2025-03-20T14:26:27.174+0000] {subprocess.py:106} INFO - requests.exceptions.ConnectionError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/resolve/main/tf_model.h5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc88f492e50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"), '(Request ID: 4c956fc2-a209-4c3a-9324-5dd13ca59945)')
+[2025-03-20T14:26:27.175+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.176+0000] {subprocess.py:106} INFO - while loading with BertForSequenceClassification, an error is thrown:
+[2025-03-20T14:26:27.177+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.178+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+[2025-03-20T14:26:27.179+0000] {subprocess.py:106} INFO -     conn = connection.create_connection(
+[2025-03-20T14:26:27.180+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.181+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 72, in create_connection
+[2025-03-20T14:26:27.182+0000] {subprocess.py:106} INFO -     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+[2025-03-20T14:26:27.184+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.185+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/socket.py", line 974, in getaddrinfo
+[2025-03-20T14:26:27.186+0000] {subprocess.py:106} INFO -     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2025-03-20T14:26:27.186+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.186+0000] {subprocess.py:106} INFO - socket.gaierror: [Errno -3] Temporary failure in name resolution
+[2025-03-20T14:26:27.187+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.187+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:26:27.188+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.188+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.188+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+[2025-03-20T14:26:27.189+0000] {subprocess.py:106} INFO -     httplib_response = self._make_request(
+[2025-03-20T14:26:27.189+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.190+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+[2025-03-20T14:26:27.190+0000] {subprocess.py:106} INFO -     self._validate_conn(conn)
+[2025-03-20T14:26:27.191+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1058, in _validate_conn
+[2025-03-20T14:26:27.191+0000] {subprocess.py:106} INFO -     conn.connect()
+[2025-03-20T14:26:27.191+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+[2025-03-20T14:26:27.192+0000] {subprocess.py:106} INFO -     self.sock = conn = self._new_conn()
+[2025-03-20T14:26:27.192+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.192+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+[2025-03-20T14:26:27.193+0000] {subprocess.py:106} INFO -     raise NewConnectionError(
+[2025-03-20T14:26:27.194+0000] {subprocess.py:106} INFO - urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fc88f3d9d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+[2025-03-20T14:26:27.195+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.196+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:26:27.198+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.200+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.202+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+[2025-03-20T14:26:27.203+0000] {subprocess.py:106} INFO -     resp = conn.urlopen(
+[2025-03-20T14:26:27.205+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^
+[2025-03-20T14:26:27.205+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+[2025-03-20T14:26:27.206+0000] {subprocess.py:106} INFO -     retries = retries.increment(
+[2025-03-20T14:26:27.206+0000] {subprocess.py:106} INFO -               ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.207+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+[2025-03-20T14:26:27.207+0000] {subprocess.py:106} INFO -     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[2025-03-20T14:26:27.208+0000] {subprocess.py:106} INFO - urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/resolve/main/tf_model.h5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc88f3d9d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2025-03-20T14:26:27.208+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.208+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:26:27.209+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.209+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:26:27.210+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 283, in infer_framework_load_model
+[2025-03-20T14:26:27.210+0000] {subprocess.py:106} INFO -     model = model_class.from_pretrained(model, **kwargs)
+[2025-03-20T14:26:27.211+0000] {subprocess.py:106} INFO -             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.211+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3599, in from_pretrained
+[2025-03-20T14:26:27.212+0000] {subprocess.py:106} INFO -     if has_file(pretrained_model_name_or_path, TF2_WEIGHTS_NAME, **has_file_kwargs):
+[2025-03-20T14:26:27.212+0000] {subprocess.py:106} INFO -        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.213+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 655, in has_file
+[2025-03-20T14:26:27.216+0000] {subprocess.py:106} INFO -     response = get_session().head(
+[2025-03-20T14:26:27.219+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.220+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 624, in head
+[2025-03-20T14:26:27.220+0000] {subprocess.py:106} INFO -     return self.request("HEAD", url, **kwargs)
+[2025-03-20T14:26:27.221+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.222+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+[2025-03-20T14:26:27.223+0000] {subprocess.py:106} INFO -     resp = self.send(prep, **send_kwargs)
+[2025-03-20T14:26:27.223+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.224+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+[2025-03-20T14:26:27.224+0000] {subprocess.py:106} INFO -     r = adapter.send(request, **kwargs)
+[2025-03-20T14:26:27.225+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.225+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+[2025-03-20T14:26:27.231+0000] {subprocess.py:106} INFO -     return super().send(request, *args, **kwargs)
+[2025-03-20T14:26:27.231+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:26:27.232+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+[2025-03-20T14:26:27.232+0000] {subprocess.py:106} INFO -     raise ConnectionError(e, request=request)
+[2025-03-20T14:26:27.233+0000] {subprocess.py:106} INFO - requests.exceptions.ConnectionError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/resolve/main/tf_model.h5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc88f3d9d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"), '(Request ID: 5fac17ee-cfb9-4d7c-becb-5807443ec21e)')
+[2025-03-20T14:26:27.233+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.233+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:27.234+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:26:29.368+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2025-03-20T14:26:29.440+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-20T14:26:29.471+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-20T14:26:29.474+0000] {logging_mixin.py:190} INFO - Task start:2025-03-20 14:24:04.390135+00:00 end:2025-03-20 14:26:29.465191+00:00 duration:145.075056
+[2025-03-20T14:26:29.476+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): sentiment_analysis> dag:<DAG: process_enrichir_clean_reviews> dagrun:<DagRun process_enrichir_clean_reviews @ 2025-03-20 13:54:56.598645+00:00: manual__2025-03-20T13:54:56.598645+00:00, state:running, queued_at: 2025-03-20 13:54:56.735338+00:00. externally triggered: True>
+[2025-03-20T14:26:29.477+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-20T14:26:29.478+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=process_enrichir_clean_reviews, task_id=sentiment_analysis, run_id=manual__2025-03-20T13:54:56.598645+00:00, execution_date=20250320T135456, start_date=20250320T142404, end_date=20250320T142629
+[2025-03-20T14:26:29.641+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-20T14:26:29.643+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 1851 for task sentiment_analysis (Bash command failed. The command returned a non-zero exit code 1.; 75256)
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-20T14:26:29.718+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-20T14:26:29.828+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T14:26:29.842+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

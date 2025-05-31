@@ -1,0 +1,28 @@
+[2025-03-16T23:58:55.572+0000] {processor.py:186} INFO - Started process (PID=238193) to work on /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:58:55.573+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-03-16T23:58:55.575+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:55.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:58:55.621+0000] {processor.py:925} INFO - DAG(s) 'load_reviews_pipeline' retrieved from /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:58:57.330+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.329+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:load_reviews_pipeline
+[2025-03-16T23:58:57.363+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.362+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:load_reviews_pipeline
+[2025-03-16T23:58:57.383+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.382+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:load_reviews_pipeline
+[2025-03-16T23:58:57.411+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.411+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:load_reviews_pipeline
+[2025-03-16T23:58:57.429+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.428+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:load_reviews_pipeline
+[2025-03-16T23:58:57.442+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.441+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:load_reviews_pipeline
+[2025-03-16T23:58:57.457+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.455+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:load_reviews_pipeline
+[2025-03-16T23:58:57.458+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.458+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-16T23:58:57.540+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.539+0000] {dag.py:3262} INFO - Creating ORM DAG for load_reviews_pipeline
+[2025-03-16T23:58:57.607+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:58:57.606+0000] {dag.py:4180} INFO - Setting next_dagrun for load_reviews_pipeline to 2024-03-17 00:00:00+00:00, run_after=2024-03-18 00:00:00+00:00
+[2025-03-16T23:58:57.665+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_load_reviews.py took 2.108 seconds
+[2025-03-16T23:59:16.195+0000] {processor.py:186} INFO - Started process (PID=238613) to work on /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:59:16.196+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-03-16T23:59:16.197+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:59:16.197+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:59:16.208+0000] {processor.py:925} INFO - DAG(s) 'load_reviews_pipeline' retrieved from /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:59:16.232+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:59:16.232+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-16T23:59:16.259+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:59:16.258+0000] {dag.py:4180} INFO - Setting next_dagrun for load_reviews_pipeline to 2024-03-17 00:00:00+00:00, run_after=2024-03-18 00:00:00+00:00
+[2025-03-16T23:59:16.289+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_load_reviews.py took 0.105 seconds
+[2025-03-16T23:59:57.943+0000] {processor.py:186} INFO - Started process (PID=239013) to work on /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:59:57.948+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-03-16T23:59:57.978+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:59:57.977+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:59:58.119+0000] {processor.py:925} INFO - DAG(s) 'load_reviews_pipeline' retrieved from /home/mohammed/airflow/dags/dag_load_reviews.py
+[2025-03-16T23:59:58.277+0000] {logging_mixin.py:190} INFO - [2025-03-16T23:59:58.275+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-16T23:59:59.141+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_load_reviews.py took 1.331 seconds

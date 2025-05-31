@@ -1,0 +1,257 @@
+[2025-03-19T23:53:24.376+0000] {processor.py:186} INFO - Started process (PID=792) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:53:24.385+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:53:24.394+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:53:24.393+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:53:24.865+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:53:24.858+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+[2025-03-19T23:53:24.866+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:53:24.975+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.642 seconds
+[2025-03-19T23:53:55.161+0000] {processor.py:186} INFO - Started process (PID=1193) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:53:55.162+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:53:55.168+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:53:55.167+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:53:55.410+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:53:55.408+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+[2025-03-19T23:53:55.411+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:53:55.480+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.335 seconds
+[2025-03-19T23:54:25.617+0000] {processor.py:186} INFO - Started process (PID=1601) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:54:25.620+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:54:25.629+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:54:25.628+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:54:25.816+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:54:25.813+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+[2025-03-19T23:54:25.817+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:54:25.862+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.264 seconds
+[2025-03-19T23:54:56.429+0000] {processor.py:186} INFO - Started process (PID=2002) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:54:56.436+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:54:56.445+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:54:56.444+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:54:56.655+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:54:56.653+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+[2025-03-19T23:54:56.656+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:54:56.717+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.324 seconds
+[2025-03-19T23:55:27.281+0000] {processor.py:186} INFO - Started process (PID=2402) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:55:27.292+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:55:27.300+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:55:27.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:55:27.528+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:55:27.525+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+[2025-03-19T23:55:27.529+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:55:27.596+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.354 seconds
+[2025-03-19T23:55:58.058+0000] {processor.py:186} INFO - Started process (PID=2837) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:55:58.059+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:55:58.065+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:55:58.064+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:55:58.328+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:55:58.324+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+[2025-03-19T23:55:58.330+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:55:58.390+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.347 seconds
+[2025-03-19T23:56:28.681+0000] {processor.py:186} INFO - Started process (PID=3261) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:56:28.695+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:56:28.712+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:56:28.711+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:56:29.806+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:56:29.783+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/__init__.py", line 73, in <module>
+    from .pooling import connect
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 43, in <module>
+    import dns.resolver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/resolver.py", line 30, in <module>
+    import dns._ddr
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/_ddr.py", line 12, in <module>
+    import dns.nameserver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/nameserver.py", line 5, in <module>
+    import dns.asyncquery
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/asyncquery.py", line 38, in <module>
+    from dns.query import (
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/query.py", line 67, in <module>
+    _CoreNetworkBackend = httpcore.NetworkBackend
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'httpcore' has no attribute 'NetworkBackend'
+[2025-03-19T23:56:29.809+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:56:29.888+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 1.300 seconds
+[2025-03-19T23:57:00.026+0000] {processor.py:186} INFO - Started process (PID=3682) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:00.028+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:57:00.034+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:57:00.033+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:00.691+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:57:00.684+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/__init__.py", line 73, in <module>
+    from .pooling import connect
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 43, in <module>
+    import dns.resolver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/resolver.py", line 30, in <module>
+    import dns._ddr
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/_ddr.py", line 12, in <module>
+    import dns.nameserver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/nameserver.py", line 5, in <module>
+    import dns.asyncquery
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/asyncquery.py", line 38, in <module>
+    from dns.query import (
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/query.py", line 67, in <module>
+    _CoreNetworkBackend = httpcore.NetworkBackend
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'httpcore' has no attribute 'NetworkBackend'
+[2025-03-19T23:57:00.693+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:00.780+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.777 seconds
+[2025-03-19T23:57:05.496+0000] {processor.py:186} INFO - Started process (PID=3748) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:05.498+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:57:05.504+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:57:05.503+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:06.136+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:57:06.131+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/__init__.py", line 73, in <module>
+    from .pooling import connect
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 43, in <module>
+    import dns.resolver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/resolver.py", line 30, in <module>
+    import dns._ddr
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/_ddr.py", line 12, in <module>
+    import dns.nameserver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/nameserver.py", line 5, in <module>
+    import dns.asyncquery
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/asyncquery.py", line 38, in <module>
+    from dns.query import (
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/query.py", line 67, in <module>
+    _CoreNetworkBackend = httpcore.NetworkBackend
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'httpcore' has no attribute 'NetworkBackend'
+[2025-03-19T23:57:06.139+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:06.220+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.759 seconds
+[2025-03-19T23:57:36.579+0000] {processor.py:186} INFO - Started process (PID=4159) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:36.585+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:57:36.595+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:57:36.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:37.177+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:57:37.171+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/__init__.py", line 73, in <module>
+    from .pooling import connect
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 43, in <module>
+    import dns.resolver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/resolver.py", line 30, in <module>
+    import dns._ddr
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/_ddr.py", line 12, in <module>
+    import dns.nameserver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/nameserver.py", line 5, in <module>
+    import dns.asyncquery
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/asyncquery.py", line 38, in <module>
+    from dns.query import (
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/query.py", line 67, in <module>
+    _CoreNetworkBackend = httpcore.NetworkBackend
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'httpcore' has no attribute 'NetworkBackend'
+[2025-03-19T23:57:37.179+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:57:37.256+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.737 seconds
+[2025-03-19T23:58:07.853+0000] {processor.py:186} INFO - Started process (PID=4560) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:58:07.857+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:58:07.861+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:07.860+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:58:08.490+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:08.485+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dag_scraper_offres_emploi.py", line 4, in <module>
+    import mysql.connector
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/__init__.py", line 73, in <module>
+    from .pooling import connect
+  File "/home/mohammed/venv/lib/python3.11/site-packages/mysql/connector/pooling.py", line 43, in <module>
+    import dns.resolver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/resolver.py", line 30, in <module>
+    import dns._ddr
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/_ddr.py", line 12, in <module>
+    import dns.nameserver
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/nameserver.py", line 5, in <module>
+    import dns.asyncquery
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/asyncquery.py", line 38, in <module>
+    from dns.query import (
+  File "/home/mohammed/venv/lib/python3.11/site-packages/dns/query.py", line 67, in <module>
+    _CoreNetworkBackend = httpcore.NetworkBackend
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'httpcore' has no attribute 'NetworkBackend'
+[2025-03-19T23:58:08.491+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:58:08.557+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 0.729 seconds
+[2025-03-19T23:58:39.158+0000] {processor.py:186} INFO - Started process (PID=4986) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:58:39.160+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:58:39.165+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:39.164+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:58:39.586+0000] {processor.py:925} INFO - DAG(s) 'automate_emploi_extraction' retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:58:41.704+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.702+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:automate_emploi_extraction
+[2025-03-19T23:58:41.758+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.756+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:automate_emploi_extraction
+[2025-03-19T23:58:41.806+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.805+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:automate_emploi_extraction
+[2025-03-19T23:58:41.861+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.860+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:automate_emploi_extraction
+[2025-03-19T23:58:41.899+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.898+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:automate_emploi_extraction
+[2025-03-19T23:58:41.938+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.937+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:automate_emploi_extraction
+[2025-03-19T23:58:41.986+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.985+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:automate_emploi_extraction
+[2025-03-19T23:58:41.987+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:41.986+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T23:58:42.020+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:42.019+0000] {dag.py:3262} INFO - Creating ORM DAG for automate_emploi_extraction
+[2025-03-19T23:58:42.044+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:58:42.043+0000] {dag.py:4180} INFO - Setting next_dagrun for automate_emploi_extraction to 2023-10-01 00:00:00+00:00, run_after=2023-10-02 00:00:00+00:00
+[2025-03-19T23:58:42.105+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 2.968 seconds
+[2025-03-19T23:59:12.255+0000] {processor.py:186} INFO - Started process (PID=5453) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:59:12.257+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:59:12.264+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:59:12.262+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:59:13.080+0000] {processor.py:925} INFO - DAG(s) 'automate_emploi_extraction' retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:59:13.158+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:59:13.157+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T23:59:13.232+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:59:13.231+0000] {dag.py:4180} INFO - Setting next_dagrun for automate_emploi_extraction to 2023-10-01 00:00:00+00:00, run_after=2023-10-02 00:00:00+00:00
+[2025-03-19T23:59:13.298+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 1.083 seconds
+[2025-03-19T23:59:45.582+0000] {processor.py:186} INFO - Started process (PID=5940) to work on /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:59:45.590+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py for tasks to queue
+[2025-03-19T23:59:45.606+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:59:45.604+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:59:47.850+0000] {processor.py:925} INFO - DAG(s) 'automate_emploi_extraction' retrieved from /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py
+[2025-03-19T23:59:48.763+0000] {logging_mixin.py:190} INFO - [2025-03-19T23:59:48.763+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T23:59:49.433+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag_scraper_offres_emploi.py took 4.044 seconds

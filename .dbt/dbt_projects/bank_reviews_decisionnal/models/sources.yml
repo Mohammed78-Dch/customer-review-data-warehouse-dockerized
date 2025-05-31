@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: transactional
+    database: project_data_wherhouse
+    schema: transactional
+    tables:
+      - name: clean_reviews
+        tables:
+      - name: clean_reviews_enriched

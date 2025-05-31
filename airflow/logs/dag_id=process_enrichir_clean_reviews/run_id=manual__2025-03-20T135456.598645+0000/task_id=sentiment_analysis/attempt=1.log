@@ -1,0 +1,434 @@
+[2025-03-20T13:55:12.201+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-20T13:55:12.260+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.sentiment_analysis manual__2025-03-20T13:54:56.598645+00:00 [queued]>
+[2025-03-20T13:55:12.281+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_enrichir_clean_reviews.sentiment_analysis manual__2025-03-20T13:54:56.598645+00:00 [queued]>
+[2025-03-20T13:55:12.282+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-20T13:55:12.324+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): sentiment_analysis> on 2025-03-20 13:54:56.598645+00:00
+[2025-03-20T13:55:12.345+0000] {standard_task_runner.py:72} INFO - Started process 50422 to run task
+[2025-03-20T13:55:12.359+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'process_enrichir_clean_reviews', 'sentiment_analysis', 'manual__2025-03-20T13:54:56.598645+00:00', '--job-id', '1850', '--raw', '--subdir', 'DAGS_FOLDER/process_clean_reviews.py', '--cfg-path', '/tmp/tmp024xzg3l']
+[2025-03-20T13:55:12.363+0000] {standard_task_runner.py:105} INFO - Job 1850: Subtask sentiment_analysis
+[2025-03-20T13:55:12.688+0000] {task_command.py:467} INFO - Running <TaskInstance: process_enrichir_clean_reviews.sentiment_analysis manual__2025-03-20T13:54:56.598645+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-20T13:55:12.994+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='process_enrichir_clean_reviews' AIRFLOW_CTX_TASK_ID='sentiment_analysis' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T13:54:56.598645+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-20T13:54:56.598645+00:00'
+[2025-03-20T13:55:12.997+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-20T13:55:12.997+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-20T13:55:12.998+0000] {logging_mixin.py:190} INFO - Current task name:sentiment_analysis state:running start_date:2025-03-20 13:55:12.261204+00:00
+[2025-03-20T13:55:12.999+0000] {logging_mixin.py:190} INFO - Dag name:process_enrichir_clean_reviews and current dag run status:running
+[2025-03-20T13:55:12.999+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-20T13:55:13.001+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-20T13:55:13.004+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/mohammed/airflow/scripts/sentiment_analysis.py']
+[2025-03-20T13:55:13.021+0000] {subprocess.py:99} INFO - Output:
+[2025-03-20T14:02:11.111+0000] {subprocess.py:106} INFO - Error while downloading from https://cdn-lfs.hf.co/nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB%7EXQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6%7E0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR%7E6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt%7Eo2w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:02:11.112+0000] {subprocess.py:106} INFO - Trying to resume download...
+[2025-03-20T14:02:11.112+0000] {subprocess.py:106} INFO - 2025-03-20 14:02:11,110 - WARNING - Error while downloading from https://cdn-lfs.hf.co/nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB%7EXQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6%7E0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR%7E6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt%7Eo2w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:02:11.112+0000] {subprocess.py:106} INFO - Trying to resume download...
+[2025-03-20T14:17:19.553+0000] {subprocess.py:106} INFO - Error while downloading from https://cdn-lfs.hf.co/nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB%7EXQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6%7E0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR%7E6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt%7Eo2w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:17:19.650+0000] {subprocess.py:106} INFO - Trying to resume download...
+[2025-03-20T14:17:19.658+0000] {subprocess.py:106} INFO - 2025-03-20 14:17:19,516 - WARNING - Error while downloading from https://cdn-lfs.hf.co/nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB%7EXQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6%7E0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR%7E6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt%7Eo2w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:17:19.662+0000] {subprocess.py:106} INFO - Trying to resume download...
+[2025-03-20T14:17:50.975+0000] {subprocess.py:106} INFO - Error while downloading from https://cdn-lfs.hf.co/nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB%7EXQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6%7E0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR%7E6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt%7Eo2w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:17:50.981+0000] {subprocess.py:106} INFO - Trying to resume download...
+[2025-03-20T14:17:50.990+0000] {subprocess.py:106} INFO - 2025-03-20 14:17:50,975 - WARNING - Error while downloading from https://cdn-lfs.hf.co/nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB%7EXQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6%7E0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR%7E6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt%7Eo2w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:17:50.991+0000] {subprocess.py:106} INFO - Trying to resume download...
+[2025-03-20T14:18:31.285+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.287+0000] {subprocess.py:106} INFO -   File "/home/mohammed/airflow/scripts/sentiment_analysis.py", line 171, in <module>
+[2025-03-20T14:18:31.302+0000] {subprocess.py:106} INFO -     sentiment_analyzer = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
+[2025-03-20T14:18:31.304+0000] {subprocess.py:106} INFO -                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.305+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 895, in pipeline
+[2025-03-20T14:18:31.311+0000] {subprocess.py:106} INFO -     framework, model = infer_framework_load_model(
+[2025-03-20T14:18:31.314+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.315+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 296, in infer_framework_load_model
+[2025-03-20T14:18:31.316+0000] {subprocess.py:106} INFO -     raise ValueError(
+[2025-03-20T14:18:31.323+0000] {subprocess.py:106} INFO - ValueError: Could not load model nlptown/bert-base-multilingual-uncased-sentiment with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSequenceClassification'>, <class 'transformers.models.bert.modeling_bert.BertForSequenceClassification'>). See the original errors:
+[2025-03-20T14:18:31.328+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.328+0000] {subprocess.py:106} INFO - while loading with AutoModelForSequenceClassification, an error is thrown:
+[2025-03-20T14:18:31.329+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.329+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 444, in _error_catcher
+[2025-03-20T14:18:31.329+0000] {subprocess.py:106} INFO -     yield
+[2025-03-20T14:18:31.338+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 567, in read
+[2025-03-20T14:18:31.339+0000] {subprocess.py:106} INFO -     data = self._fp_read(amt) if not fp_closed else b""
+[2025-03-20T14:18:31.339+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.340+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 533, in _fp_read
+[2025-03-20T14:18:31.342+0000] {subprocess.py:106} INFO -     return self._fp.read(amt) if amt is not None else self._fp.read()
+[2025-03-20T14:18:31.343+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.349+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/http/client.py", line 473, in read
+[2025-03-20T14:18:31.349+0000] {subprocess.py:106} INFO -     s = self.fp.read(amt)
+[2025-03-20T14:18:31.356+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.360+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/socket.py", line 718, in readinto
+[2025-03-20T14:18:31.361+0000] {subprocess.py:106} INFO -     return self._sock.recv_into(b)
+[2025-03-20T14:18:31.361+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.362+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/ssl.py", line 1314, in recv_into
+[2025-03-20T14:18:31.362+0000] {subprocess.py:106} INFO -     return self.read(nbytes, buffer)
+[2025-03-20T14:18:31.363+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.363+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/ssl.py", line 1166, in read
+[2025-03-20T14:18:31.363+0000] {subprocess.py:106} INFO -     return self._sslobj.read(len, buffer)
+[2025-03-20T14:18:31.364+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.365+0000] {subprocess.py:106} INFO - TimeoutError: The read operation timed out
+[2025-03-20T14:18:31.367+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.368+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.369+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.369+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.370+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/models.py", line 816, in generate
+[2025-03-20T14:18:31.370+0000] {subprocess.py:106} INFO -     yield from self.raw.stream(chunk_size, decode_content=True)
+[2025-03-20T14:18:31.371+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 628, in stream
+[2025-03-20T14:18:31.371+0000] {subprocess.py:106} INFO -     data = self.read(amt=amt, decode_content=decode_content)
+[2025-03-20T14:18:31.372+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.372+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 566, in read
+[2025-03-20T14:18:31.373+0000] {subprocess.py:106} INFO -     with self._error_catcher():
+[2025-03-20T14:18:31.373+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/contextlib.py", line 158, in __exit__
+[2025-03-20T14:18:31.374+0000] {subprocess.py:106} INFO -     self.gen.throw(typ, value, traceback)
+[2025-03-20T14:18:31.374+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 449, in _error_catcher
+[2025-03-20T14:18:31.375+0000] {subprocess.py:106} INFO -     raise ReadTimeoutError(self._pool, None, "Read timed out.")
+[2025-03-20T14:18:31.375+0000] {subprocess.py:106} INFO - urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:18:31.665+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.666+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.666+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.667+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.667+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 454, in http_get
+[2025-03-20T14:18:31.668+0000] {subprocess.py:106} INFO -     for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+[2025-03-20T14:18:31.669+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/models.py", line 822, in generate
+[2025-03-20T14:18:31.669+0000] {subprocess.py:106} INFO -     raise ConnectionError(e)
+[2025-03-20T14:18:31.672+0000] {subprocess.py:106} INFO - requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:18:31.673+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.673+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.674+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.674+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.675+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 444, in _error_catcher
+[2025-03-20T14:18:31.675+0000] {subprocess.py:106} INFO -     yield
+[2025-03-20T14:18:31.679+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 567, in read
+[2025-03-20T14:18:31.680+0000] {subprocess.py:106} INFO -     data = self._fp_read(amt) if not fp_closed else b""
+[2025-03-20T14:18:31.681+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.682+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 533, in _fp_read
+[2025-03-20T14:18:31.683+0000] {subprocess.py:106} INFO -     return self._fp.read(amt) if amt is not None else self._fp.read()
+[2025-03-20T14:18:31.684+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.685+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/http/client.py", line 473, in read
+[2025-03-20T14:18:31.686+0000] {subprocess.py:106} INFO -     s = self.fp.read(amt)
+[2025-03-20T14:18:31.686+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.686+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/socket.py", line 718, in readinto
+[2025-03-20T14:18:31.687+0000] {subprocess.py:106} INFO -     return self._sock.recv_into(b)
+[2025-03-20T14:18:31.687+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.688+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/ssl.py", line 1314, in recv_into
+[2025-03-20T14:18:31.688+0000] {subprocess.py:106} INFO -     return self.read(nbytes, buffer)
+[2025-03-20T14:18:31.688+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.689+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/ssl.py", line 1166, in read
+[2025-03-20T14:18:31.689+0000] {subprocess.py:106} INFO -     return self._sslobj.read(len, buffer)
+[2025-03-20T14:18:31.690+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.690+0000] {subprocess.py:106} INFO - TimeoutError: The read operation timed out
+[2025-03-20T14:18:31.690+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.691+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.691+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.691+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.692+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/models.py", line 816, in generate
+[2025-03-20T14:18:31.692+0000] {subprocess.py:106} INFO -     yield from self.raw.stream(chunk_size, decode_content=True)
+[2025-03-20T14:18:31.693+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 628, in stream
+[2025-03-20T14:18:31.696+0000] {subprocess.py:106} INFO -     data = self.read(amt=amt, decode_content=decode_content)
+[2025-03-20T14:18:31.697+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.698+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 566, in read
+[2025-03-20T14:18:31.702+0000] {subprocess.py:106} INFO -     with self._error_catcher():
+[2025-03-20T14:18:31.704+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/contextlib.py", line 158, in __exit__
+[2025-03-20T14:18:31.704+0000] {subprocess.py:106} INFO -     self.gen.throw(typ, value, traceback)
+[2025-03-20T14:18:31.705+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 449, in _error_catcher
+[2025-03-20T14:18:31.705+0000] {subprocess.py:106} INFO -     raise ReadTimeoutError(self._pool, None, "Read timed out.")
+[2025-03-20T14:18:31.706+0000] {subprocess.py:106} INFO - urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:18:31.706+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.707+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.707+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.708+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.708+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 454, in http_get
+[2025-03-20T14:18:31.709+0000] {subprocess.py:106} INFO -     for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+[2025-03-20T14:18:31.709+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/models.py", line 822, in generate
+[2025-03-20T14:18:31.710+0000] {subprocess.py:106} INFO -     raise ConnectionError(e)
+[2025-03-20T14:18:31.710+0000] {subprocess.py:106} INFO - requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:18:31.710+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.711+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.711+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.712+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.718+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 444, in _error_catcher
+[2025-03-20T14:18:31.723+0000] {subprocess.py:106} INFO -     yield
+[2025-03-20T14:18:31.723+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 567, in read
+[2025-03-20T14:18:31.724+0000] {subprocess.py:106} INFO -     data = self._fp_read(amt) if not fp_closed else b""
+[2025-03-20T14:18:31.724+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.725+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 533, in _fp_read
+[2025-03-20T14:18:31.725+0000] {subprocess.py:106} INFO -     return self._fp.read(amt) if amt is not None else self._fp.read()
+[2025-03-20T14:18:31.726+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.726+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/http/client.py", line 473, in read
+[2025-03-20T14:18:31.727+0000] {subprocess.py:106} INFO -     s = self.fp.read(amt)
+[2025-03-20T14:18:31.727+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.728+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/socket.py", line 718, in readinto
+[2025-03-20T14:18:31.728+0000] {subprocess.py:106} INFO -     return self._sock.recv_into(b)
+[2025-03-20T14:18:31.729+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.729+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/ssl.py", line 1314, in recv_into
+[2025-03-20T14:18:31.730+0000] {subprocess.py:106} INFO -     return self.read(nbytes, buffer)
+[2025-03-20T14:18:31.731+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.734+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/ssl.py", line 1166, in read
+[2025-03-20T14:18:31.740+0000] {subprocess.py:106} INFO -     return self._sslobj.read(len, buffer)
+[2025-03-20T14:18:31.742+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.742+0000] {subprocess.py:106} INFO - TimeoutError: The read operation timed out
+[2025-03-20T14:18:31.743+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.743+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.744+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.744+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.745+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/models.py", line 816, in generate
+[2025-03-20T14:18:31.745+0000] {subprocess.py:106} INFO -     yield from self.raw.stream(chunk_size, decode_content=True)
+[2025-03-20T14:18:31.746+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 628, in stream
+[2025-03-20T14:18:31.746+0000] {subprocess.py:106} INFO -     data = self.read(amt=amt, decode_content=decode_content)
+[2025-03-20T14:18:31.747+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.747+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 566, in read
+[2025-03-20T14:18:31.748+0000] {subprocess.py:106} INFO -     with self._error_catcher():
+[2025-03-20T14:18:31.748+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/contextlib.py", line 158, in __exit__
+[2025-03-20T14:18:31.749+0000] {subprocess.py:106} INFO -     self.gen.throw(typ, value, traceback)
+[2025-03-20T14:18:31.749+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/response.py", line 449, in _error_catcher
+[2025-03-20T14:18:31.750+0000] {subprocess.py:106} INFO -     raise ReadTimeoutError(self._pool, None, "Read timed out.")
+[2025-03-20T14:18:31.750+0000] {subprocess.py:106} INFO - urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:18:31.751+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.751+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.760+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.761+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.761+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 454, in http_get
+[2025-03-20T14:18:31.762+0000] {subprocess.py:106} INFO -     for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+[2025-03-20T14:18:31.762+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/models.py", line 822, in generate
+[2025-03-20T14:18:31.763+0000] {subprocess.py:106} INFO -     raise ConnectionError(e)
+[2025-03-20T14:18:31.763+0000] {subprocess.py:106} INFO - requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+[2025-03-20T14:18:31.763+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.764+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.764+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.765+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.765+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+[2025-03-20T14:18:31.766+0000] {subprocess.py:106} INFO -     conn = connection.create_connection(
+[2025-03-20T14:18:31.766+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.766+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 95, in create_connection
+[2025-03-20T14:18:31.767+0000] {subprocess.py:106} INFO -     raise err
+[2025-03-20T14:18:31.767+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+[2025-03-20T14:18:31.768+0000] {subprocess.py:106} INFO -     sock.connect(sa)
+[2025-03-20T14:18:31.768+0000] {subprocess.py:106} INFO - TimeoutError: timed out
+[2025-03-20T14:18:31.777+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.780+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.780+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.781+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.781+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+[2025-03-20T14:18:31.782+0000] {subprocess.py:106} INFO -     httplib_response = self._make_request(
+[2025-03-20T14:18:31.782+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.783+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+[2025-03-20T14:18:31.783+0000] {subprocess.py:106} INFO -     self._validate_conn(conn)
+[2025-03-20T14:18:31.784+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1058, in _validate_conn
+[2025-03-20T14:18:31.784+0000] {subprocess.py:106} INFO -     conn.connect()
+[2025-03-20T14:18:31.785+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+[2025-03-20T14:18:31.785+0000] {subprocess.py:106} INFO -     self.sock = conn = self._new_conn()
+[2025-03-20T14:18:31.786+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.786+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 179, in _new_conn
+[2025-03-20T14:18:31.787+0000] {subprocess.py:106} INFO -     raise ConnectTimeoutError(
+[2025-03-20T14:18:31.787+0000] {subprocess.py:106} INFO - urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f3f50c15e10>, 'Connection to cdn-lfs.hf.co timed out. (connect timeout=10)')
+[2025-03-20T14:18:31.790+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.793+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.796+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.798+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.799+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+[2025-03-20T14:18:31.800+0000] {subprocess.py:106} INFO -     resp = conn.urlopen(
+[2025-03-20T14:18:31.800+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^
+[2025-03-20T14:18:31.801+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+[2025-03-20T14:18:31.802+0000] {subprocess.py:106} INFO -     retries = retries.increment(
+[2025-03-20T14:18:31.802+0000] {subprocess.py:106} INFO -               ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.803+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+[2025-03-20T14:18:31.804+0000] {subprocess.py:106} INFO -     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[2025-03-20T14:18:31.805+0000] {subprocess.py:106} INFO - urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB~XQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6~0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR~6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt~o2w__&Key-Pair-Id=K3RPWS32NSSJCE (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3f50c15e10>, 'Connection to cdn-lfs.hf.co timed out. (connect timeout=10)'))
+[2025-03-20T14:18:31.807+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.809+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.813+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.815+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.816+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 283, in infer_framework_load_model
+[2025-03-20T14:18:31.816+0000] {subprocess.py:106} INFO -     model = model_class.from_pretrained(model, **kwargs)
+[2025-03-20T14:18:31.817+0000] {subprocess.py:106} INFO -             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.817+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+[2025-03-20T14:18:31.818+0000] {subprocess.py:106} INFO -     return model_class.from_pretrained(
+[2025-03-20T14:18:31.818+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.819+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3516, in from_pretrained
+[2025-03-20T14:18:31.819+0000] {subprocess.py:106} INFO -     resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
+[2025-03-20T14:18:31.820+0000] {subprocess.py:106} INFO -                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.820+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 402, in cached_file
+[2025-03-20T14:18:31.821+0000] {subprocess.py:106} INFO -     resolved_file = hf_hub_download(
+[2025-03-20T14:18:31.822+0000] {subprocess.py:106} INFO -                     ^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.831+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+[2025-03-20T14:18:31.833+0000] {subprocess.py:106} INFO -     return fn(*args, **kwargs)
+[2025-03-20T14:18:31.834+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.834+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+[2025-03-20T14:18:31.835+0000] {subprocess.py:106} INFO -     return _hf_hub_download_to_cache_dir(
+[2025-03-20T14:18:31.836+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.836+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1011, in _hf_hub_download_to_cache_dir
+[2025-03-20T14:18:31.836+0000] {subprocess.py:106} INFO -     _download_to_tmp_and_move(
+[2025-03-20T14:18:31.837+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1547, in _download_to_tmp_and_move
+[2025-03-20T14:18:31.837+0000] {subprocess.py:106} INFO -     http_get(
+[2025-03-20T14:18:31.838+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 471, in http_get
+[2025-03-20T14:18:31.838+0000] {subprocess.py:106} INFO -     return http_get(
+[2025-03-20T14:18:31.839+0000] {subprocess.py:106} INFO -            ^^^^^^^^^
+[2025-03-20T14:18:31.839+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 471, in http_get
+[2025-03-20T14:18:31.840+0000] {subprocess.py:106} INFO -     return http_get(
+[2025-03-20T14:18:31.840+0000] {subprocess.py:106} INFO -            ^^^^^^^^^
+[2025-03-20T14:18:31.840+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 471, in http_get
+[2025-03-20T14:18:31.841+0000] {subprocess.py:106} INFO -     return http_get(
+[2025-03-20T14:18:31.841+0000] {subprocess.py:106} INFO -            ^^^^^^^^^
+[2025-03-20T14:18:31.842+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 371, in http_get
+[2025-03-20T14:18:31.842+0000] {subprocess.py:106} INFO -     r = _request_wrapper(
+[2025-03-20T14:18:31.843+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.845+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 303, in _request_wrapper
+[2025-03-20T14:18:31.847+0000] {subprocess.py:106} INFO -     response = get_session().request(method=method, url=url, **params)
+[2025-03-20T14:18:31.850+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.851+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+[2025-03-20T14:18:31.852+0000] {subprocess.py:106} INFO -     resp = self.send(prep, **send_kwargs)
+[2025-03-20T14:18:31.853+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.854+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+[2025-03-20T14:18:31.854+0000] {subprocess.py:106} INFO -     r = adapter.send(request, **kwargs)
+[2025-03-20T14:18:31.855+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.855+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+[2025-03-20T14:18:31.856+0000] {subprocess.py:106} INFO -     return super().send(request, *args, **kwargs)
+[2025-03-20T14:18:31.856+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.856+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 507, in send
+[2025-03-20T14:18:31.857+0000] {subprocess.py:106} INFO -     raise ConnectTimeout(e, request=request)
+[2025-03-20T14:18:31.860+0000] {subprocess.py:106} INFO - requests.exceptions.ConnectTimeout: (MaxRetryError("HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/0435c6c12c80a0a2206137c9fa8f6478fce4f4de88ac3d43d0f0e0da3c8c767b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1742482538&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjQ4MjUzOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ubHB0b3duL2JlcnQtYmFzZS1tdWx0aWxpbmd1YWwtdW5jYXNlZC1zZW50aW1lbnQvMDQzNWM2YzEyYzgwYTBhMjIwNjEzN2M5ZmE4ZjY0NzhmY2U0ZjRkZTg4YWMzZDQzZDBmMGUwZGEzYzhjNzY3Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=pCZCgFuM8cgGu8YLSyZ6PY0kxRBmBhTzV5TEgwbKPBoufpPN9PcydjNCCcgTF-WoFBT0GoyrgsqBV2FqGvg56KP-LsbUJPB~XQSiNpdMHmcD6flRj7BkwCFpwgibxu7fuRCRcF7yE-6~0lo-UJLHtJrd0EYKf3okqLR030ENQlAmPIHYDtR~6x-5e0p-3jHxlMKStlBcn42GOjzJaclXRkS9juTg37Z-gOcL2Pm8RKHCDvYJtMa2rCpvO3WpoNNPTDz3YQ-m9NotJ8gMhW4tLdZDxTRzfaXEOvIwxxRkdc875fFJWVrmt5tI1wDAcjNTfJ498nigK5nWBh-9Gt~o2w__&Key-Pair-Id=K3RPWS32NSSJCE (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3f50c15e10>, 'Connection to cdn-lfs.hf.co timed out. (connect timeout=10)'))"), '(Request ID: a5f973a5-911d-4a15-96f4-2f958ad49e7c)')
+[2025-03-20T14:18:31.862+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.862+0000] {subprocess.py:106} INFO - while loading with BertForSequenceClassification, an error is thrown:
+[2025-03-20T14:18:31.863+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.863+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+[2025-03-20T14:18:31.864+0000] {subprocess.py:106} INFO -     conn = connection.create_connection(
+[2025-03-20T14:18:31.864+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.865+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 72, in create_connection
+[2025-03-20T14:18:31.865+0000] {subprocess.py:106} INFO -     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+[2025-03-20T14:18:31.865+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.866+0000] {subprocess.py:106} INFO -   File "/usr/lib/python3.11/socket.py", line 974, in getaddrinfo
+[2025-03-20T14:18:31.867+0000] {subprocess.py:106} INFO -     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2025-03-20T14:18:31.868+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.869+0000] {subprocess.py:106} INFO - socket.gaierror: [Errno -3] Temporary failure in name resolution
+[2025-03-20T14:18:31.870+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.871+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.872+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.873+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.873+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+[2025-03-20T14:18:31.874+0000] {subprocess.py:106} INFO -     httplib_response = self._make_request(
+[2025-03-20T14:18:31.877+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.879+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+[2025-03-20T14:18:31.879+0000] {subprocess.py:106} INFO -     self._validate_conn(conn)
+[2025-03-20T14:18:31.880+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1058, in _validate_conn
+[2025-03-20T14:18:31.881+0000] {subprocess.py:106} INFO -     conn.connect()
+[2025-03-20T14:18:31.881+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+[2025-03-20T14:18:31.882+0000] {subprocess.py:106} INFO -     self.sock = conn = self._new_conn()
+[2025-03-20T14:18:31.882+0000] {subprocess.py:106} INFO -                        ^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.883+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+[2025-03-20T14:18:31.884+0000] {subprocess.py:106} INFO -     raise NewConnectionError(
+[2025-03-20T14:18:31.884+0000] {subprocess.py:106} INFO - urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f3f50c05f90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+[2025-03-20T14:18:31.887+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.887+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.888+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.888+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.889+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+[2025-03-20T14:18:31.889+0000] {subprocess.py:106} INFO -     resp = conn.urlopen(
+[2025-03-20T14:18:31.890+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^
+[2025-03-20T14:18:31.890+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+[2025-03-20T14:18:31.892+0000] {subprocess.py:106} INFO -     retries = retries.increment(
+[2025-03-20T14:18:31.893+0000] {subprocess.py:106} INFO -               ^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.899+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+[2025-03-20T14:18:31.900+0000] {subprocess.py:106} INFO -     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[2025-03-20T14:18:31.901+0000] {subprocess.py:106} INFO - urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/resolve/main/tf_model.h5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3f50c05f90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2025-03-20T14:18:31.903+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.903+0000] {subprocess.py:106} INFO - During handling of the above exception, another exception occurred:
+[2025-03-20T14:18:31.904+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.904+0000] {subprocess.py:106} INFO - Traceback (most recent call last):
+[2025-03-20T14:18:31.905+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 283, in infer_framework_load_model
+[2025-03-20T14:18:31.905+0000] {subprocess.py:106} INFO -     model = model_class.from_pretrained(model, **kwargs)
+[2025-03-20T14:18:31.906+0000] {subprocess.py:106} INFO -             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.906+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3599, in from_pretrained
+[2025-03-20T14:18:31.907+0000] {subprocess.py:106} INFO -     if has_file(pretrained_model_name_or_path, TF2_WEIGHTS_NAME, **has_file_kwargs):
+[2025-03-20T14:18:31.907+0000] {subprocess.py:106} INFO -        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.908+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/transformers/utils/hub.py", line 655, in has_file
+[2025-03-20T14:18:31.908+0000] {subprocess.py:106} INFO -     response = get_session().head(
+[2025-03-20T14:18:31.909+0000] {subprocess.py:106} INFO -                ^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.909+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 624, in head
+[2025-03-20T14:18:31.911+0000] {subprocess.py:106} INFO -     return self.request("HEAD", url, **kwargs)
+[2025-03-20T14:18:31.912+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.913+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+[2025-03-20T14:18:31.914+0000] {subprocess.py:106} INFO -     resp = self.send(prep, **send_kwargs)
+[2025-03-20T14:18:31.919+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.920+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+[2025-03-20T14:18:31.921+0000] {subprocess.py:106} INFO -     r = adapter.send(request, **kwargs)
+[2025-03-20T14:18:31.921+0000] {subprocess.py:106} INFO -         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.922+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+[2025-03-20T14:18:31.922+0000] {subprocess.py:106} INFO -     return super().send(request, *args, **kwargs)
+[2025-03-20T14:18:31.923+0000] {subprocess.py:106} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-03-20T14:18:31.923+0000] {subprocess.py:106} INFO -   File "/home/mohammed/venv/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+[2025-03-20T14:18:31.924+0000] {subprocess.py:106} INFO -     raise ConnectionError(e, request=request)
+[2025-03-20T14:18:31.924+0000] {subprocess.py:106} INFO - requests.exceptions.ConnectionError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /nlptown/bert-base-multilingual-uncased-sentiment/resolve/main/tf_model.h5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3f50c05f90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"), '(Request ID: a8fdf657-f555-46b1-8dfc-96cd76fc6367)')
+[2025-03-20T14:18:31.925+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.926+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:31.928+0000] {subprocess.py:106} INFO - 
+[2025-03-20T14:18:59.190+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2025-03-20T14:19:00.219+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-20T14:19:00.583+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-20T14:19:00.586+0000] {logging_mixin.py:190} INFO - Task start:2025-03-20 13:55:12.261204+00:00 end:2025-03-20 14:19:00.508293+00:00 duration:1428.247089
+[2025-03-20T14:19:00.605+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): sentiment_analysis> dag:<DAG: process_enrichir_clean_reviews> dagrun:<DagRun process_enrichir_clean_reviews @ 2025-03-20 13:54:56.598645+00:00: manual__2025-03-20T13:54:56.598645+00:00, state:running, queued_at: 2025-03-20 13:54:56.735338+00:00. externally triggered: True>
+[2025-03-20T14:19:00.607+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-20T14:19:00.611+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=process_enrichir_clean_reviews, task_id=sentiment_analysis, run_id=manual__2025-03-20T13:54:56.598645+00:00, execution_date=20250320T135456, start_date=20250320T135512, end_date=20250320T141900
+[2025-03-20T14:19:01.270+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-20T14:19:01.299+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 1850 for task sentiment_analysis (Bash command failed. The command returned a non-zero exit code 1.; 50422)
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-20T14:19:01.431+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-20T14:19:01.987+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T14:19:01.993+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,22 @@
+[2025-02-20T12:25:10.941+0100] {processor.py:186} INFO - Started process (PID=993) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-20T12:25:10.943+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-02-20T12:25:10.947+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:10.947+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-20T12:25:10.964+0100] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-20T12:25:11.200+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.199+0100] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2025-02-20T12:25:11.249+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.248+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2025-02-20T12:25:11.292+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.291+0100] {override.py:1930} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2025-02-20T12:25:11.354+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.353+0100] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_params_ui_tutorial
+[2025-02-20T12:25:11.392+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.391+0100] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_params_ui_tutorial
+[2025-02-20T12:25:11.429+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.428+0100] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_params_ui_tutorial
+[2025-02-20T12:25:11.477+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.476+0100] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_params_ui_tutorial
+[2025-02-20T12:25:11.478+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.478+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:25:11.508+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.507+0100] {dag.py:3262} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2025-02-20T12:25:11.509+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:25:11.509+0100] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-02-20T12:25:11.569+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.647 seconds
+[2025-02-20T12:28:33.672+0100] {processor.py:186} INFO - Started process (PID=1077) to work on /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-20T12:28:33.678+0100] {processor.py:914} INFO - Processing file /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-02-20T12:28:33.686+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:33.684+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-20T12:28:33.723+0100] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-20T12:28:33.869+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:33.868+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-20T12:28:33.916+0100] {logging_mixin.py:190} INFO - [2025-02-20T12:28:33.915+0100] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-02-20T12:28:33.988+0100] {processor.py:208} INFO - Processing /home/mohammed/venv/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.338 seconds

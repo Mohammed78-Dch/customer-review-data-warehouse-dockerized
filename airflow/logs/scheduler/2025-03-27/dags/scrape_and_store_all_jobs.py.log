@@ -1,0 +1,98 @@
+[2025-03-27T00:50:33.777+0000] {processor.py:186} INFO - Started process (PID=733) to work on /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:50:33.780+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py for tasks to queue
+[2025-03-27T00:50:33.787+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:50:33.787+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:50:33.846+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:50:33.837+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py", line 7, in <module>
+    from insert_data_to_json_all_jobs import insert_data_to_json
+ModuleNotFoundError: No module named 'insert_data_to_json_all_jobs'
+[2025-03-27T00:50:33.847+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:50:33.964+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py took 0.223 seconds
+[2025-03-27T00:51:04.411+0000] {processor.py:186} INFO - Started process (PID=1306) to work on /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:51:04.418+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py for tasks to queue
+[2025-03-27T00:51:04.428+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:51:04.427+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:51:04.448+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:51:04.442+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py", line 7, in <module>
+    from insert_data_to_json_all_jobs import insert_data_to_json
+ModuleNotFoundError: No module named 'insert_data_to_json_all_jobs'
+[2025-03-27T00:51:04.449+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:51:04.529+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py took 0.147 seconds
+[2025-03-27T00:51:35.666+0000] {processor.py:186} INFO - Started process (PID=1728) to work on /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:51:35.668+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py for tasks to queue
+[2025-03-27T00:51:35.671+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:51:35.671+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:51:35.678+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:51:35.676+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py", line 7, in <module>
+    from insert_data_to_json_all_jobs import insert_data_to_json
+ModuleNotFoundError: No module named 'insert_data_to_json_all_jobs'
+[2025-03-27T00:51:35.679+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:51:35.746+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py took 0.089 seconds
+[2025-03-27T00:52:06.539+0000] {processor.py:186} INFO - Started process (PID=2133) to work on /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:52:06.542+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py for tasks to queue
+[2025-03-27T00:52:06.551+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:52:06.550+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:52:06.559+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:52:06.556+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py", line 7, in <module>
+    from insert_data_to_json_all_jobs import insert_data_to_json
+ModuleNotFoundError: No module named 'insert_data_to_json_all_jobs'
+[2025-03-27T00:52:06.560+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:52:06.640+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py took 0.122 seconds
+[2025-03-27T00:52:36.752+0000] {processor.py:186} INFO - Started process (PID=2538) to work on /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:52:36.754+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py for tasks to queue
+[2025-03-27T00:52:36.758+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:52:36.757+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:52:36.766+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:52:36.763+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py", line 7, in <module>
+    from insert_data_to_json_all_jobs import insert_data_to_json
+ModuleNotFoundError: No module named 'insert_data_to_json_all_jobs'
+[2025-03-27T00:52:36.767+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:52:36.814+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py took 0.071 seconds
+[2025-03-27T00:53:06.948+0000] {processor.py:186} INFO - Started process (PID=2946) to work on /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:53:06.950+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py for tasks to queue
+[2025-03-27T00:53:06.952+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:53:06.951+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:53:06.956+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:53:06.955+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py", line 7, in <module>
+    from insert_data_to_json_all_jobs import insert_data_to_json
+ModuleNotFoundError: No module named 'insert_data_to_json_all_jobs'
+[2025-03-27T00:53:06.957+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:53:06.995+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py took 0.055 seconds
+[2025-03-27T00:53:37.542+0000] {processor.py:186} INFO - Started process (PID=3775) to work on /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:53:37.544+0000] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py for tasks to queue
+[2025-03-27T00:53:37.549+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:53:37.548+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:53:37.558+0000] {logging_mixin.py:190} INFO - [2025-03-27T00:53:37.555+0000] {dagbag.py:387} ERROR - Failed to import: /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+Traceback (most recent call last):
+  File "/home/mohammed/venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py", line 7, in <module>
+    from insert_data_to_json_all_jobs import insert_data_to_json
+ModuleNotFoundError: No module named 'insert_data_to_json_all_jobs'
+[2025-03-27T00:53:37.558+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py
+[2025-03-27T00:53:37.610+0000] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dags/scrape_and_store_all_jobs.py took 0.081 seconds

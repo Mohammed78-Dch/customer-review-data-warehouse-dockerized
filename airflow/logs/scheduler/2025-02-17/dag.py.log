@@ -1,0 +1,14 @@
+[2025-02-17T17:36:56.391+0100] {processor.py:186} INFO - Started process (PID=517) to work on /home/mohammed/airflow/dags/dag.py
+[2025-02-17T17:36:56.398+0100] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag.py for tasks to queue
+[2025-02-17T17:36:56.415+0100] {logging_mixin.py:190} INFO - [2025-02-17T17:36:56.409+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag.py
+[2025-02-17T17:36:56.733+0100] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /home/mohammed/airflow/dags/dag.py
+[2025-02-17T17:37:02.407+0100] {logging_mixin.py:190} INFO - [2025-02-17T17:37:02.401+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T17:37:02.519+0100] {logging_mixin.py:190} INFO - [2025-02-17T17:37:02.514+0100] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-02-16 00:00:00+00:00, run_after=2025-02-17 00:00:00+00:00
+[2025-02-17T17:37:02.617+0100] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag.py took 6.288 seconds
+[2025-02-17T17:40:03.432+0100] {processor.py:186} INFO - Started process (PID=646) to work on /home/mohammed/airflow/dags/dag.py
+[2025-02-17T17:40:03.435+0100] {processor.py:914} INFO - Processing file /home/mohammed/airflow/dags/dag.py for tasks to queue
+[2025-02-17T17:40:03.445+0100] {logging_mixin.py:190} INFO - [2025-02-17T17:40:03.442+0100] {dagbag.py:588} INFO - Filling up the DagBag from /home/mohammed/airflow/dags/dag.py
+[2025-02-17T17:40:03.583+0100] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /home/mohammed/airflow/dags/dag.py
+[2025-02-17T17:40:08.455+0100] {logging_mixin.py:190} INFO - [2025-02-17T17:40:08.453+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T17:40:08.511+0100] {logging_mixin.py:190} INFO - [2025-02-17T17:40:08.509+0100] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2025-02-16 00:00:00+00:00, run_after=2025-02-17 00:00:00+00:00
+[2025-02-17T17:40:08.603+0100] {processor.py:208} INFO - Processing /home/mohammed/airflow/dags/dag.py took 5.205 seconds

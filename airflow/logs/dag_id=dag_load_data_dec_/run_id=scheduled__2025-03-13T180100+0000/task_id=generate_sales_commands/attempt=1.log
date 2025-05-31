@@ -1,0 +1,37 @@
+[2025-03-13T19:12:26.932+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-13T19:12:26.986+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_load_data_dec_.generate_sales_commands scheduled__2025-03-13T18:01:00+00:00 [queued]>
+[2025-03-13T19:12:27.008+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_load_data_dec_.generate_sales_commands scheduled__2025-03-13T18:01:00+00:00 [queued]>
+[2025-03-13T19:12:27.008+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-13T19:12:27.042+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): generate_sales_commands> on 2025-03-13 18:01:00+00:00
+[2025-03-13T19:12:27.059+0000] {standard_task_runner.py:72} INFO - Started process 140204 to run task
+[2025-03-13T19:12:27.066+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dag_load_data_dec_', 'generate_sales_commands', 'scheduled__2025-03-13T18:01:00+00:00', '--job-id', '145', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_data_decesional.py', '--cfg-path', '/tmp/tmpwhw611yr']
+[2025-03-13T19:12:27.069+0000] {standard_task_runner.py:105} INFO - Job 145: Subtask generate_sales_commands
+[2025-03-13T19:12:27.196+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_load_data_dec_.generate_sales_commands scheduled__2025-03-13T18:01:00+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-13T19:12:27.512+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dag_load_data_dec_' AIRFLOW_CTX_TASK_ID='generate_sales_commands' AIRFLOW_CTX_EXECUTION_DATE='2025-03-13T18:01:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-13T18:01:00+00:00'
+[2025-03-13T19:12:27.514+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-13T19:12:27.514+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-13T19:12:27.514+0000] {logging_mixin.py:190} INFO - Current task name:generate_sales_commands state:running start_date:2025-03-13 19:12:26.986951+00:00
+[2025-03-13T19:12:27.514+0000] {logging_mixin.py:190} INFO - Dag name:dag_load_data_dec_ and current dag run status:running
+[2025-03-13T19:12:27.515+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-13T19:12:27.534+0000] {logging_mixin.py:190} INFO - ++++ Inserting num_sales=5 new records ++++
+[2025-03-13T19:12:27.578+0000] {base.py:84} INFO - Retrieving connection 'transactional_db_conn'
+[2025-03-13T19:12:27.595+0000] {sql.py:624} INFO - Running statement: INSERT INTO sales (customer_id, product_id, employee_id, quantity, sale_date, discount, total_amount) VALUES (%s, %s, %s, %s, %s, %s, %s), parameters: (410, 27, 3, 2, datetime.datetime(2025, 3, 13, 19, 12, 26, 534512), 0.07, 186.0)
+[2025-03-13T19:12:27.939+0000] {sql.py:633} INFO - Rows affected: 1
+[2025-03-13T19:12:27.965+0000] {sql.py:624} INFO - Running statement: INSERT INTO sales (customer_id, product_id, employee_id, quantity, sale_date, discount, total_amount) VALUES (%s, %s, %s, %s, %s, %s, %s), parameters: (281, 27, 4, 5, datetime.datetime(2025, 3, 13, 19, 12, 18, 951264), 0.12, 440.0)
+[2025-03-13T19:12:27.971+0000] {sql.py:633} INFO - Rows affected: 1
+[2025-03-13T19:12:27.986+0000] {sql.py:624} INFO - Running statement: INSERT INTO sales (customer_id, product_id, employee_id, quantity, sale_date, discount, total_amount) VALUES (%s, %s, %s, %s, %s, %s, %s), parameters: (283, 28, 2, 1, datetime.datetime(2025, 3, 13, 19, 12, 26, 976263), 0.18, 82.0)
+[2025-03-13T19:12:27.989+0000] {sql.py:633} INFO - Rows affected: 1
+[2025-03-13T19:12:28.003+0000] {sql.py:624} INFO - Running statement: INSERT INTO sales (customer_id, product_id, employee_id, quantity, sale_date, discount, total_amount) VALUES (%s, %s, %s, %s, %s, %s, %s), parameters: (483, 44, 5, 3, datetime.datetime(2025, 3, 13, 19, 12, 26, 993440), 0.01, 297.0)
+[2025-03-13T19:12:28.008+0000] {sql.py:633} INFO - Rows affected: 1
+[2025-03-13T19:12:28.026+0000] {sql.py:624} INFO - Running statement: INSERT INTO sales (customer_id, product_id, employee_id, quantity, sale_date, discount, total_amount) VALUES (%s, %s, %s, %s, %s, %s, %s), parameters: (467, 30, 5, 3, datetime.datetime(2025, 3, 13, 19, 12, 19, 14157), 0.15, 255.0)
+[2025-03-13T19:12:28.029+0000] {sql.py:633} INFO - Rows affected: 1
+[2025-03-13T19:12:28.033+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-13T19:12:28.048+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-13T19:12:28.049+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=dag_load_data_dec_, task_id=generate_sales_commands, run_id=scheduled__2025-03-13T18:01:00+00:00, execution_date=20250313T180100, start_date=20250313T191226, end_date=20250313T191228
+[2025-03-13T19:12:28.097+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-13T19:12:28.098+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-13T19:12:28.098+0000] {logging_mixin.py:190} INFO - Dag name:dag_load_data_dec_ queued_at:2025-03-13 19:12:25.452175+00:00
+[2025-03-13T19:12:28.098+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:PythonOperator
+[2025-03-13T19:12:28.143+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-13T19:12:28.167+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-13T19:12:28.175+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

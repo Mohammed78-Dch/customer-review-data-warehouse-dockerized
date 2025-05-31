@@ -1,0 +1,29 @@
+[2025-03-03T18:05:21.888+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-03T18:05:21.930+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Simple_etl.load_task manual__2025-03-03T17:58:13.152459+00:00 [queued]>
+[2025-03-03T18:05:21.944+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Simple_etl.load_task manual__2025-03-03T17:58:13.152459+00:00 [queued]>
+[2025-03-03T18:05:21.945+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-03T18:05:21.967+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_task> on 2025-03-03 17:58:13.152459+00:00
+[2025-03-03T18:05:21.973+0000] {standard_task_runner.py:72} INFO - Started process 69943 to run task
+[2025-03-03T18:05:21.981+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'Simple_etl', 'load_task', 'manual__2025-03-03T17:58:13.152459+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl.py', '--cfg-path', '/tmp/tmpe8yyfgr3']
+[2025-03-03T18:05:21.983+0000] {standard_task_runner.py:105} INFO - Job 48: Subtask load_task
+[2025-03-03T18:05:22.090+0000] {task_command.py:467} INFO - Running <TaskInstance: Simple_etl.load_task manual__2025-03-03T17:58:13.152459+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-03T18:05:22.307+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Simple_etl' AIRFLOW_CTX_TASK_ID='load_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-03T17:58:13.152459+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-03T17:58:13.152459+00:00'
+[2025-03-03T18:05:22.308+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-03T18:05:22.309+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-03T18:05:22.309+0000] {logging_mixin.py:190} INFO - Current task name:load_task state:running start_date:2025-03-03 18:05:21.930879+00:00
+[2025-03-03T18:05:22.309+0000] {logging_mixin.py:190} INFO - Dag name:Simple_etl and current dag run status:running
+[2025-03-03T18:05:22.310+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-03T18:05:22.310+0000] {logging_mixin.py:190} INFO - -------------load_task-----------------------
+[2025-03-03T18:05:22.311+0000] {logging_mixin.py:190} INFO - /home/mohammed/input/bank-additional.csv
+[2025-03-03T18:05:22.311+0000] {logging_mixin.py:190} INFO - [{"duration":4.3645256917},{"duration":4.3642156863},{"duration":4.1533783784},{"duration":3.8277272
+[2025-03-03T18:05:22.311+0000] {logging_mixin.py:190} INFO - -------------load_task-----------------------
+[2025-03-03T18:05:22.818+0000] {python.py:240} INFO - Done. Returned value was: /home/mohammed/input/bank-additional.csv
+[2025-03-03T18:05:22.881+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-03T18:05:22.881+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=Simple_etl, task_id=load_task, run_id=manual__2025-03-03T17:58:13.152459+00:00, execution_date=20250303T175813, start_date=20250303T180521, end_date=20250303T180522
+[2025-03-03T18:05:22.937+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-03T18:05:22.937+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-03T18:05:22.937+0000] {logging_mixin.py:190} INFO - Dag name:Simple_etl queued_at:2025-03-03 17:58:13.168927+00:00
+[2025-03-03T18:05:22.938+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:PythonOperator
+[2025-03-03T18:05:22.957+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-03T18:05:22.992+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-03T18:05:22.998+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

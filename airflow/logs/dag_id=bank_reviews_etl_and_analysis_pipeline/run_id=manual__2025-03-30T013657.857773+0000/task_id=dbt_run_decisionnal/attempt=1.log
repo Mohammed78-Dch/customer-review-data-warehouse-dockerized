@@ -1,0 +1,53 @@
+[2025-03-30T01:37:01.973+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-30T01:37:02.045+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.dbt_run_decisionnal manual__2025-03-30T01:36:57.857773+00:00 [queued]>
+[2025-03-30T01:37:02.084+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.dbt_run_decisionnal manual__2025-03-30T01:36:57.857773+00:00 [queued]>
+[2025-03-30T01:37:02.085+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-30T01:37:02.141+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): dbt_run_decisionnal> on 2025-03-30 01:36:57.857773+00:00
+[2025-03-30T01:37:02.156+0000] {standard_task_runner.py:72} INFO - Started process 745442 to run task
+[2025-03-30T01:37:02.169+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'dbt_run_decisionnal', 'manual__2025-03-30T01:36:57.857773+00:00', '--job-id', '2499', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmpehx7_rsx']
+[2025-03-30T01:37:02.172+0000] {standard_task_runner.py:105} INFO - Job 2499: Subtask dbt_run_decisionnal
+[2025-03-30T01:37:02.373+0000] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.dbt_run_decisionnal manual__2025-03-30T01:36:57.857773+00:00 [running]> on host DESKTOP-IM7V4RI.
+[2025-03-30T01:37:02.785+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run_decisionnal' AIRFLOW_CTX_EXECUTION_DATE='2025-03-30T01:36:57.857773+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-30T01:36:57.857773+00:00'
+[2025-03-30T01:37:02.802+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-30T01:37:02.805+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-30T01:37:02.806+0000] {logging_mixin.py:190} INFO - Current task name:dbt_run_decisionnal state:running start_date:2025-03-30 01:37:02.046260+00:00
+[2025-03-30T01:37:02.808+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-03-30T01:37:02.814+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-30T01:37:02.822+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-03-30T01:37:02.832+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/mohammed/.dbt/dbt_projects/bank_reviews_decisionnal && dbt run --full-refresh']
+[2025-03-30T01:37:02.874+0000] {subprocess.py:99} INFO - Output:
+[2025-03-30T01:37:07.862+0000] {subprocess.py:106} INFO - [0m01:37:07  Running with dbt=1.9.3
+[2025-03-30T01:37:08.364+0000] {subprocess.py:106} INFO - [0m01:37:08  Registered adapter: postgres=1.9.0
+[2025-03-30T01:37:09.672+0000] {subprocess.py:106} INFO - [0m01:37:09  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-30T01:37:09.673+0000] {subprocess.py:106} INFO - There are 1 unused configuration paths:
+[2025-03-30T01:37:09.674+0000] {subprocess.py:106} INFO - - models.bank_reviews_decisionnal.decisionnal
+[2025-03-30T01:37:09.930+0000] {subprocess.py:106} INFO - [0m01:37:09  Found 5 models, 2 sources, 547 macros
+[2025-03-30T01:37:09.937+0000] {subprocess.py:106} INFO - [0m01:37:09
+[2025-03-30T01:37:09.939+0000] {subprocess.py:106} INFO - [0m01:37:09  Concurrency: 4 threads (target='dev')
+[2025-03-30T01:37:09.940+0000] {subprocess.py:106} INFO - [0m01:37:09
+[2025-03-30T01:37:10.580+0000] {subprocess.py:106} INFO - [0m01:37:10  1 of 5 START sql table model decisionnal.dim_bank .............................. [RUN]
+[2025-03-30T01:37:10.583+0000] {subprocess.py:106} INFO - [0m01:37:10  2 of 5 START sql table model decisionnal.dim_branch ............................ [RUN]
+[2025-03-30T01:37:10.589+0000] {subprocess.py:106} INFO - [0m01:37:10  3 of 5 START sql table model decisionnal.dim_location .......................... [RUN]
+[2025-03-30T01:37:10.594+0000] {subprocess.py:106} INFO - [0m01:37:10  4 of 5 START sql table model decisionnal.dim_sentiment ......................... [RUN]
+[2025-03-30T01:37:11.488+0000] {subprocess.py:106} INFO - [0m01:37:11  2 of 5 OK created sql table model decisionnal.dim_branch ....................... [[32mSELECT 298[0m in 0.88s]
+[2025-03-30T01:37:11.492+0000] {subprocess.py:106} INFO - [0m01:37:11  3 of 5 OK created sql table model decisionnal.dim_location ..................... [[32mSELECT 298[0m in 0.88s]
+[2025-03-30T01:37:11.494+0000] {subprocess.py:106} INFO - [0m01:37:11  1 of 5 OK created sql table model decisionnal.dim_bank ......................... [[32mSELECT 299[0m in 0.90s]
+[2025-03-30T01:37:11.496+0000] {subprocess.py:106} INFO - [0m01:37:11  4 of 5 OK created sql table model decisionnal.dim_sentiment .................... [[32mSELECT 3[0m in 0.88s]
+[2025-03-30T01:37:11.509+0000] {subprocess.py:106} INFO - [0m01:37:11  5 of 5 START sql table model decisionnal.fact_reviews .......................... [RUN]
+[2025-03-30T01:37:12.258+0000] {subprocess.py:106} INFO - [0m01:37:12  5 of 5 OK created sql table model decisionnal.fact_reviews ..................... [[32mSELECT 2591[0m in 0.74s]
+[2025-03-30T01:37:12.323+0000] {subprocess.py:106} INFO - [0m01:37:12
+[2025-03-30T01:37:12.324+0000] {subprocess.py:106} INFO - [0m01:37:12  Finished running 5 table models in 0 hours 0 minutes and 2.38 seconds (2.38s).
+[2025-03-30T01:37:12.459+0000] {subprocess.py:106} INFO - [0m01:37:12
+[2025-03-30T01:37:12.461+0000] {subprocess.py:106} INFO - [0m01:37:12  [32mCompleted successfully[0m
+[2025-03-30T01:37:12.463+0000] {subprocess.py:106} INFO - [0m01:37:12
+[2025-03-30T01:37:12.464+0000] {subprocess.py:106} INFO - [0m01:37:12  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[2025-03-30T01:37:22.981+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-03-30T01:37:23.087+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-30T01:37:23.089+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=dbt_run_decisionnal, run_id=manual__2025-03-30T01:36:57.857773+00:00, execution_date=20250330T013657, start_date=20250330T013702, end_date=20250330T013723
+[2025-03-30T01:37:23.183+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-30T01:37:23.184+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-30T01:37:23.184+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline queued_at:2025-03-30 01:36:58.580667+00:00
+[2025-03-30T01:37:23.185+0000] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-IM7V4RI. operator:BashOperator
+[2025-03-30T01:37:23.235+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-30T01:37:23.282+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-30T01:37:23.290+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

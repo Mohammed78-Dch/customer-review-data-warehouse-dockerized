@@ -1,0 +1,30 @@
+bank_reviews_transactional:
+  outputs:
+    dev:
+      type: postgres
+      host: pg-365fb9de-mmohxx20-ac9b.j.aivencloud.com
+      user: avnadmin
+      password: "AVNS_Mog690hTB5WdacVAvzF"  # 🔒 Remplace par ton mot de passe réel
+      port: 15054
+      dbname: project_data_wherhouse
+      schema: transactional  # DBT remplacera cela selon les modèles avec +schema
+      threads: 4
+      sslmode: require       # 🔐 Important pour Aiven
+  target: dev
+
+
+
+
+
+# bank_reviews_transactional:
+#   outputs:
+#     dev:
+#       type: postgres
+#       host: localhost
+#       user: user_project
+#       password: "2002"
+#       port: 5432
+#       dbname: project_data_wherhouse
+#       schema: transactional  # Laisse "public" ici, car DBT le remplace avec +schema
+#       threads: 4
+#   target: dev

@@ -66,6 +66,7 @@ This project was developed individually as part of the Data Warehouse module. Al
 
 ## 📁 Repository Structure
 
+```
 📁 project-data-warehouse/
 ├── airflow/
 │   ├── dags/
@@ -77,6 +78,7 @@ This project was developed individually as part of the Data Warehouse module. Al
 │   ├── models/
 │   └── dbt_project.yml
 └── README.md
+```
 
 ---
 

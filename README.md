@@ -10,7 +10,7 @@
 **Mohammed Dechraoui**  
 Master 2 – Systèmes d'Information et Systèmes Intelligents (M2SI)  
 Institut National de Statistique et d'Économie Appliquée (INSEA)  
-📧 mohammed.dechraoui@insea.ac.ma *(example)*  
+📧 m.dechraoui@insea.ac.ma 
 📅 Academic Year: 2024–2025  
 
 ---
@@ -70,61 +70,156 @@ This project was developed individually as part of the Data Warehouse module. Al
 📁 project-data-warehouse/
 ├── airflow/
 │   ├── dags/
-│   │   └── review_pipeline_dag.py
+│   │   └── dag_load_reviews.py
 │   └── scripts/
+│       ├── connect_to_db.py
+│       ├── scraper_banks.py
 │       ├── scraper.py
-│       └── sentiment_analysis.py
+│       ├── insert_data_to_json.py
+│       ├── insert_data_to_postgresql.py
+│       ├── convertir_data_relative.py
+│       ├── detect_language.py
+│       ├── topic_modeling.py
+│       ├── sentiment_analysis.py
+│       ├── banks_maroc.json 
+│       └── avis.json
+│
 ├── .dbt/
-│   ├── models/
-│   └── dbt_project.yml
+│   └── dbt_projects/
+│        ├── bank_reviews_decisionnal/
+│        └── bank_reviews_transactional/
+│
+├── requirements.txt
+│
 └── README.md
 ```
 
----
-
-## 🧪 Tools & Libraries Used
-
-- **Languages**: Python, SQL
-- **Data Collection**: Scrapy, Google Maps search, JSON
-- **Transformation**: DBT
-- **Analysis**: TextBlob,  NLTK
-- **Automation**: Apache Airflow
-- **Database**: PostgreSQL
-- **Visualization**: Looker Studio
-- **Version Control**: GitHub
 
 ---
 
-## 📄 Deliverables Checklist
+## 📷 Project Visuals
 
-| Deliverable                        | Status     |
-|------------------------------------|------------|
-| Python script for data collection  | ✅ Complete |
-| Airflow DAGs for automation        | ✅ Complete |
-| DBT models for transformation      | ✅ Complete |
-| PostgreSQL star schema             | ✅ Complete |
-| Looker Studio dashboard            | ✅ Complete |
-| Project documentation              | ✅ Complete |
+### 📌 Architecture Diagram
 
----
+![Architecture Diagram](./assets/architecture_diagram.png)
 
-## 🧠 Learned Skills
+> This diagram illustrates the complete pipeline from scraping to dashboarding, including Airflow, PostgreSQL, DBT, and Looker Studio.
 
-- Designing a modern ETL/ELT pipeline with **Airflow and DBT**
-- Applying **NLP techniques** (sentiment analysis, topic modeling) to real-world unstructured data
-- Modeling a data warehouse using **star schema**
-- Building **interactive BI dashboards** for business users
-- End-to-end project automation with scheduling and monitoring
+### 📊 Dashboard (Looker Studio)
+
+![Dashboard Screenshot](./assets/dashboard_looker_studio.png)
+
+> Interactive dashboard presenting sentiment trends, top reviewed branches, frequent topics, and customer satisfaction distribution.
 
 ---
 
-## 📚 Supervisor
+## 🛠️ Technologies & Dependencies
 
-**Professor:** Dr. [Name of Supervisor]  
-Course: Data Warehouse & Business Intelligence  
-INSEA – Master M2SI
+### 🔍 Web Scraping
+- `selenium==4.19.0`
+- `webdriver-manager==4.0.1`
+- `beautifulsoup4==4.12.3`
+
+### 🗂️ JSON & Utilities (built-in modules)
+- `json`, `os`, `time`, `random`, `re`, `urllib.parse`, `logging`
+
+### 🧠 NLP & Text Mining
+- `langdetect==1.0.9`
+- `transformers==4.41.1`
+- `spacy==3.7.4`
+- `nltk==3.8.1`
+- `gensim==4.3.2`
+- `pandas==2.2.2`
+
+### 📦 Database
+- `psycopg2-binary==2.9.9` (PostgreSQL connector)
+
+### ⚙️ Workflow Orchestration
+- **Apache Airflow** (DAG for ETL pipeline)
+
+### 🧱 Data Modeling
+- **DBT** (Data Build Tool – with two projects: transactional & decisionnal)
+
+### 📊 Visualization
+- **Looker Studio (Google Data Studio)** – Connected to PostgreSQL
 
 ---
+
+## 📥 Required Downloads (before execution)
+
+```bash
+# spaCy language models
+python -m spacy download en_core_web_sm
+python -m spacy download fr_core_news_sm
+python -m spacy download es_core_news_sm
+python -m spacy download de_core_news_sm
+
+# NLTK stopwords
+python -c "import nltk; nltk.download('stopwords')"
+
+
+---
+# 🔄 Data Pipeline Flow
+
+### 🏦 [Scraping]  
+Banques et avis collectés via `scraper_banks.py` et `scraper.py`.
+
+### 💾 [Storage]  
+Données brutes stockées en JSON puis chargées dans PostgreSQL.
+
+### 🧹 [Preprocessing]
+- Conversion des dates relatives.
+- Détection de la langue des avis.
+- Analyse de sentiment avec modèles Transformers.
+- Extraction des thèmes dominants avec modélisation LDA.
+
+### 🤖 [Automation]  
+Toutes les étapes sont orchestrées via le DAG Airflow : `dag_load_reviews.py`.
+
+### 🧱 [Modeling]  
+Données transformées avec DBT en tables de faits et de dimensions :
+- `fact_reviews`
+- `dim_bank`
+- `dim_branch`
+- `dim_location`
+- `dim_sentiment`
+
+### 📊 [Visualization]  
+Tableaux de bord connectés à PostgreSQL via **Looker Studio**.
+
+---
+
+# 🔍 Example Use Cases
+
+- Détection des agences sous-performantes à partir des avis clients.
+- Identification des plaintes récurrentes (ex. : attente, panne DAB).
+- Compréhension des différences régionales dans les avis.
+- Benchmark des performances entre différentes banques.
+
+---
+
+# 🧠 Key Learning Outcomes
+
+- Création de systèmes de scraping robustes et modulaires avec gestion d’erreurs.
+- Application de techniques de NLP sur des données clients réelles.
+- Construction de **schémas en étoile** et modélisation dimensionnelle.
+- Utilisation d’**Airflow** et **DBT** pour des pipelines en production.
+- Communication des résultats via des dashboards clairs et interactifs.
+
+---
+
+# 📄 Evaluation Checklist
+
+| Deliverable                             | Status     |
+|----------------------------------------|------------|
+| ✅ Scraping scripts & data collection  | ✅ Complete |
+| ✅ JSON → PostgreSQL loading           | ✅ Complete |
+| ✅ NLP processing (lang/sentiment/topic) | ✅ Complete |
+| ✅ DAG orchestration with Airflow      | ✅ Complete |
+| ✅ Star schema & DBT models            | ✅ Complete |
+| ✅ Dashboard Looker Studio             | ✅ Complete |
+| ✅ Architecture + Documentation        | ✅ Complete |
+
 
 ## 📌 Remarks
 

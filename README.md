@@ -157,9 +157,9 @@ python -m spacy download de_core_news_sm
 # NLTK stopwords
 python -c "import nltk; nltk.download('stopwords')"
 
-
+```
 ---
-# 🔄 Data Pipeline Flow
+## 🔄 Data Pipeline Flow
 
 ### 🏦 [Scraping]  
 Banques et avis collectés via `scraper_banks.py` et `scraper.py`.

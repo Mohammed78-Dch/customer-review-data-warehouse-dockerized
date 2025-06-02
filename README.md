@@ -189,7 +189,7 @@ Tableaux de bord connectés à PostgreSQL via **Looker Studio**.
 
 ---
 
-# 🔍 Example Use Cases
+## 🔍 Example Use Cases
 
 - Détection des agences sous-performantes à partir des avis clients.
 - Identification des plaintes récurrentes (ex. : attente, panne DAB).
@@ -198,7 +198,7 @@ Tableaux de bord connectés à PostgreSQL via **Looker Studio**.
 
 ---
 
-# 🧠 Key Learning Outcomes
+## 🧠 Key Learning Outcomes
 
 - Création de systèmes de scraping robustes et modulaires avec gestion d’erreurs.
 - Application de techniques de NLP sur des données clients réelles.
@@ -208,7 +208,7 @@ Tableaux de bord connectés à PostgreSQL via **Looker Studio**.
 
 ---
 
-# 📄 Evaluation Checklist
+## 📄 Evaluation Checklist
 
 | Deliverable                             | Status     |
 |----------------------------------------|------------|

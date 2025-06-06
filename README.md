@@ -116,23 +116,23 @@ This project was developed individually as part of the Data Warehouse module. Al
 ## 🛠️ Technologies & Dependencies
 
 ### 🔍 Web Scraping
-- `selenium==4.19.0`
-- `webdriver-manager==4.0.1`
-- `beautifulsoup4==4.12.3`
+- `selenium`
+- `webdriver-manager`
+- `beautifulsoup4`
 
 ### 🗂️ JSON & Utilities (built-in modules)
 - `json`, `os`, `time`, `random`, `re`, `urllib.parse`, `logging`
 
 ### 🧠 NLP & Text Mining
-- `langdetect==1.0.9`
-- `transformers==4.41.1`
-- `spacy==3.7.4`
-- `nltk==3.8.1`
-- `gensim==4.3.2`
-- `pandas==2.2.2`
+- `langdetect`
+- `transformers`
+- `spacy`
+- `nltk`
+- `gensim`
+- `pandas`
 
 ### 📦 Database
-- `psycopg2-binary==2.9.9` (PostgreSQL connector)
+- `psycopg2-binary` (PostgreSQL connector)
 
 ### ⚙️ Workflow Orchestration
 - **Apache Airflow** (DAG for ETL pipeline)
@@ -207,7 +207,7 @@ Tableaux de bord connectés à PostgreSQL via **Looker Studio**.
 - Communication des résultats via des dashboards clairs et interactifs.
 
 ---
-
+<!-- 
 ## 📄 Evaluation Checklist
 
 | Deliverable                             | Status     |
@@ -218,7 +218,7 @@ Tableaux de bord connectés à PostgreSQL via **Looker Studio**.
 | ✅ DAG orchestration with Airflow      | ✅ Complete |
 | ✅ Star schema & DBT models            | ✅ Complete |
 | ✅ Dashboard Looker Studio             | ✅ Complete |
-| ✅ Architecture + Documentation        | ✅ Complete |
+| ✅ Architecture + Documentation        | ✅ Complete | -->
 
 
 ## 📌 Remarks
@@ -226,3 +226,7 @@ Tableaux de bord connectés à PostgreSQL via **Looker Studio**.
 This project simulates a real-world data engineering and analytics challenge in the banking sector, using customer voice data to drive insights.  
 All scripts, models, dashboards, and datasets are included in this submission and stored in the GitHub repository.
 
+## 👨‍🏫 Supervision
+Professor: Dr. BENELALLAM Imade
+Course: Data Warehousing and Business Intelligence
+Institution: INSEA

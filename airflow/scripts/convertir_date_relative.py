@@ -1,91 +1,3 @@
-# import psycopg2
-# import re
-# from datetime import datetime, timedelta
-
-# # 🔹 Fonction pour convertir une date relative en date absolue
-# def convertir_date_relative(date_relative):
-#     """
-#     Convertit une date relative (ex: 'il y a 10 mois', 'il y a un jour') en date absolue au format YYYY/MM/DD.
-#     """
-#     # Définir la date actuelle (aujourd'hui)
-#     aujourd_hui = datetime.today()
-
-#     # Utiliser une expression régulière pour extraire le nombre et l'unité (mois, ans, an, jour)
-#     match = re.search(r"il y a (\d+)( mois| ans| an| jours| jour)", date_relative)
-    
-#     if match:
-#         nombre = int(match.group(1))
-#         unite = match.group(2)
-        
-#         # Calculer la date en fonction de l'unité
-#         if " mois" or "mois"  in unite:
-#             nouvelle_date = aujourd_hui.replace(day=1) - timedelta(days=nombre * 30)  # Approximatif
-#         elif " an" or "an" in unite:
-#             nouvelle_date = aujourd_hui.replace(year=aujourd_hui.year - nombre)
-#         elif " jour" or "jour" in unite:
-#             nouvelle_date = aujourd_hui - timedelta(days=nombre)
-
-#         return nouvelle_date.strftime("%Y/%m/%d")  # Format YYYY/MM/DD
-    
-#     # Cas particulier : "il y a un an"
-#     if "il y a un an" or "il y a un an" in date_relative:
-#         nouvelle_date = aujourd_hui.replace(year=aujourd_hui.year - 1)
-#         return nouvelle_date.strftime("%Y/%m/%d")
-
-#     # Cas particulier : "il y a un mois"
-#     if "il y a un mois" or "il y a unmois" in date_relative:
-#         nouvelle_date = aujourd_hui.replace(day=1) - timedelta(days=30)  # Approximatif
-#         return nouvelle_date.strftime("%Y/%m/%d")
-
-#     # Cas particulier : "il y a un jour"
-#     if "il y a un jour" or "il y a unjour" in date_relative:
-#         nouvelle_date = aujourd_hui - timedelta(days=1)
-#         return nouvelle_date.strftime("%Y/%m/%d")
-
-#     return "Date inconnue"
-
-# # 🔹 Connexion à PostgreSQL
-# try:
-#     conn = psycopg2.connect(
-#         dbname="project_data_wherhouse",
-#         user="user_project",
-#         password="2002",
-#         host="localhost",
-#         port="5432"
-#     )
-#     cur = conn.cursor()
-
-#     # 🔹 Ajouter la colonne review_date_absolute si elle n'existe pas
-#     cur.execute("""
-#         ALTER TABLE transactional.clean_reviews
-#         ADD COLUMN IF NOT EXISTS review_date_absolute TEXT;
-#     """)
-#     conn.commit()
-
-#     # 🔹 Récupérer les dates relatives
-#     cur.execute("SELECT id, review_date FROM transactional.clean_reviews WHERE review_date IS NOT NULL;")
-#     rows = cur.fetchall()
-
-#     # 🔹 Appliquer la conversion et mettre à jour la table
-#     for review_id, date_relative in rows:
-#         date_absolute = convertir_date_relative(date_relative)
-#         cur.execute("""
-#             UPDATE transactional.clean_reviews
-#             SET review_date_absolute = %s
-#             WHERE id = %s;
-#         """, (date_absolute, review_id))
-
-#     conn.commit()
-#     print("✅ Conversion des dates terminée avec succès.")
-
-# except Exception as e:
-#     print(f"❌ Erreur : {e}")
-
-# finally:
-#     if cur:
-#         cur.close()
-#     if conn:
-#         conn.close()
 import psycopg2
 import re
 from dateutil.relativedelta import relativedelta
@@ -150,13 +62,7 @@ def convertir_date_relative(date_relative):
 
 # 🔹 Connexion à PostgreSQL
 try:
-    # conn = psycopg2.connect(
-    #     dbname="project_data_wherhouse",
-    #     user="user_project",
-    #     password="2002",
-    #     host="localhost",
-    #     port="5432"
-    # )
+
     conn = connect_to_aiven_db()  # Utiliser la fonction de connexion définie dans connect_to_db.py
     if not conn:
         raise Exception("Échec de la connexion à la base de données.")

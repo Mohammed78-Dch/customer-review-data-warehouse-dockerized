@@ -15,15 +15,51 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from bs4 import BeautifulSoup
 import os
 
+
+base_dir = os.path.dirname(os.path.abspath(__file__))  # dossier du script courant
+
+# Construire le chemin relatif sans le répéter
+banks_maroc_path = os.path.join(base_dir, 'banks_maroc.json')
+avis_path = os.path.join(base_dir, 'avis.json')
+print(f"Loading from: {banks_maroc_path}")  # Debug si nécessaire
+
 # Configuration constants
 MAX_SCROLL_RETRIES = 5  # Reduced from 10 to 5 for faster execution
 SCROLL_WAIT_TIME = (0.5, 1.0)  # Reduced wait time between scrolls
 MAX_BANKS = None  # Set to a number to limit processing, None for all
 
-def setup_driver(headless=True):
-    """Configure and return a Selenium WebDriver with anti-detection measures."""
+# def setup_driver(headless=True):
+#     """Configure and return a Selenium WebDriver with anti-detection measures."""
+#     service = Service(ChromeDriverManager().install())
+#     options = webdriver.ChromeOptions()
+#     options.add_argument("--start-maximized")
+#     options.add_argument("--disable-blink-features=AutomationControlled")
+#     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
+#     options.add_argument("--lang=fr,en;q=0.9,ar;q=0.8")
+#     options.add_experimental_option("excludeSwitches", ["enable-automation"])
+#     options.add_experimental_option('useAutomationExtension', False)
+    
+#     # if headless:
+#     #     options.add_argument("--headless=new")
+    
+#     driver = webdriver.Chrome(service=service, options=options)
+#     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+#     return driver
+
+
+def setup_driver(profile_name="SeleniumProfile", headless=False):
+    """Configure WebDriver with a custom profile for extensions."""
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
+    
+    # Créer un profil personnalisé
+    profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
+    os.makedirs(profile_path, exist_ok=True)
+    
+    options.add_argument(f"--user-data-dir={profile_path}")
+    options.add_argument("--profile-directory=Default")
+    
+    # Options anti-détection
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
@@ -31,12 +67,14 @@ def setup_driver(headless=True):
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
     
-    if headless:
-        options.add_argument("--headless=new")
+    # if headless:
+    #     options.add_argument("--headless=new")
     
     driver = webdriver.Chrome(service=service, options=options)
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+    
     return driver
+
 
 def accept_cookies(driver):
     """Accept cookies if the consent dialog appears."""
@@ -61,6 +99,17 @@ def get_bank_metadata(soup):
     location = address_meta['content'].split('·')[1].strip() if address_meta and '·' in address_meta['content'] else ''
     
     return bank_name, location
+
+# def click_reviews_button(driver):
+#     """Click on the reviews button to open the reviews section."""
+#     try:
+#         reviews_button = WebDriverWait(driver, 10).until(
+#             EC.element_to_be_clickable((By.XPATH, "//button[contains(@aria-label, 'avis') or contains(@aria-label, 'الآراء')]"))
+#         )
+#         reviews_button.click()
+#         return True
+#     except:
+#         return False
 
 def click_reviews_button(driver):
     """Click on the reviews button to open the reviews section."""
@@ -139,7 +188,7 @@ def extraire_avis(driver, url):
     
     # Accept cookies if needed
     accept_cookies(driver)
-    
+    # time.sleep(200)
     # Get bank metadata
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     bank_name, location = get_bank_metadata(soup)
@@ -175,11 +224,11 @@ def filter_new_reviews(new_reviews, existing_reviews):
 
 def load_existing_reviews():
     """Load existing reviews from the JSON file."""
-    if not os.path.exists("avis.json"):
+    if not os.path.exists(avis_path):
         return {}
         
     try:
-        with open("avis.json", "r", encoding="utf-8") as f:
+        with open(avis_path, "r", encoding="utf-8") as f:
             content = f.read().strip()
             return json.loads(content) if content else {}
     except json.JSONDecodeError:
@@ -188,14 +237,15 @@ def load_existing_reviews():
 
 def save_reviews(all_reviews):
     """Save all reviews to the JSON file."""
-    with open("avis.json", "w", encoding="utf-8") as f:
+    with open(avis_path, "w", encoding="utf-8") as f:
         json.dump(all_reviews, f, indent=4, ensure_ascii=False)
 
 def scrape_bank_reviews():
     # Load banks data
     try:
-        with open('banks_maroc.json', 'r', encoding='utf-8') as f:
+        with open(banks_maroc_path, 'r', encoding='utf-8') as f:
             all_banks = json.load(f)
+            # all_banks = all_bankss[:1] # For testing, limit to first bank
     except Exception as e:
         print(f"❌ Error loading banks data: {e}")
         return
@@ -260,5 +310,3 @@ def scrape_bank_reviews():
         driver.quit()
         print("🔚 WebDriver closed")
 
-# if __name__ == "__main__":
-#     main()

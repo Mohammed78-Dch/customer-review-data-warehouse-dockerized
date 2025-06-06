@@ -4,6 +4,11 @@ from connect_to_db import connect_to_aiven_db
 
 
 import os
+
+base_dir = os.path.dirname(__file__)
+
+# Construire le chemin relatif sans le répéter
+avis_path = os.path.join(base_dir, 'avis.json')
 # Récupérer les credentials depuis les variables d'environnement
 # DB_HOST = os.getenv("DB_HOST", "localhost")
 # DB_NAME = os.getenv("DB_NAME", "project_data_wherhouse")
@@ -28,7 +33,7 @@ def insert_data_to_postgresql(**kwargs):
         # scraped_data = scrape_bank_reviews()
         
         # Charger le fichier JSON des banques
-        with open('/home/mohammed/airflow/scripts/avis.json', 'r', encoding='utf-8') as f:
+        with open(avis_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             
         # Création de la table enriched si elle n'existe pas

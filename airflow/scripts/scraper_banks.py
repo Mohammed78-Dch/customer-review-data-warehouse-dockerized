@@ -2,6 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
 import time
 import re
 import random
@@ -10,17 +13,21 @@ from urllib.parse import quote_plus
 import json
 import os
 
+base_dir = os.path.dirname(os.path.abspath(__file__))
+banks_maroc_path = os.path.join(base_dir, "banks_maroc.json")
+banks_maroc_err_path = os.path.join(base_dir, "banks_maroc_ERR.json")
 # Configuration Chrome (2024)
-options = webdriver.ChromeOptions()
-options.add_argument("--start-maximized")
-options.add_argument("--disable-blink-features=AutomationControlled")
-options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
-options.add_experimental_option('useAutomationExtension', False)
-options.add_argument("--headless=new")  # Uncomment for headless mode
+# service = Service(ChromeDriverManager().install())
+# options = webdriver.ChromeOptions()
+# options.add_argument("--start-maximized")
+# options.add_argument("--disable-blink-features=AutomationControlled")
+# options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
+# options.add_experimental_option("excludeSwitches", ["enable-automation"])
+# options.add_experimental_option('useAutomationExtension', False)
+# # options.add_argument("--headless=new")  # Uncomment for headless mode
 
-driver = webdriver.Chrome(options=options)
-driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+# driver = webdriver.Chrome(options=options)
+# driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
 # Banks list
 banks = [
@@ -166,7 +173,7 @@ def extraire_note_adresse(text):
         
     return "N/A"
 
-def scroll_pour_charger_tout(conteneur):
+def scroll_pour_charger_tout(driver, conteneur):
     """Scroll to load all results"""
     last_height = 0
     retries = 0
@@ -184,10 +191,41 @@ def scroll_pour_charger_tout(conteneur):
         last_height = new_height
     
     print("✅ Fin du scrolling")
+   
+   
+def setup_driver(profile_name="SeleniumProfile", headless=False):
+    """Configure WebDriver with a custom profile for extensions."""
+    service = Service(ChromeDriverManager().install())
+    options = webdriver.ChromeOptions()
     
+    # Créer un profil personnalisé
+    profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
+    os.makedirs(profile_path, exist_ok=True)
+    
+    
+    options.add_argument(f"--user-data-dir={profile_path}")
+    options.add_argument("--profile-directory=Default")
+    
+    # Options anti-détection
+    options.add_argument("--start-maximized")
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
+    options.add_argument("--lang=fr,en;q=0.9,ar;q=0.8")
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option('useAutomationExtension', False)
+    
+    # if headless:
+    #     options.add_argument("--headless=new")
+    
+    driver = webdriver.Chrome(service=service, options=options)
+    driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+    
+    return driver 
 
 
 def extraire_banques():
+    driver = setup_driver(headless=True)
+
     for ville in villes:
         print(f"\n📍 Initialisation pour {ville}...")
         search_query = f"banques {ville} Maroc"
@@ -205,7 +243,7 @@ def extraire_banques():
             )
             
             # Scroll to load all results
-            scroll_pour_charger_tout(conteneur_avis)
+            scroll_pour_charger_tout(driver, conteneur_avis)
             
             # Extract all results
             resultats = driver.find_elements(By.XPATH, "//div[starts-with(@class, 'Nv2PK')]")
@@ -227,11 +265,16 @@ def extraire_banques():
                     if contient_mot_cle(nom_complet):
                         continue
                     
+                    
+                    
+                    
 
                     try:
                         # Première classe W4Efsd (adresse)
                         adresse_elements = resultat.find_element(By.XPATH, ".//div[@class='W4Efsd'][2]").text.split('·')[1].strip().split('\n')[0]
                         if adresse_elements =="": adresse = resultat.find_element(By.XPATH, ".//div[@class='W4Efsd'][2]").text.split('·')[2].strip().split('\n')[0]
+                        else:
+                            adresse = adresse_elements
                     except:
                         adresse_elements = "N/A"
                     # Extract phone
@@ -301,11 +344,11 @@ def extraire_banques():
             driver.save_screenshot(f"erreur_{ville}.png")
         
         # Add delay between cities to avoid rate limiting
-        time.sleep(random.uniform(3, 5))
+        time.sleep(random.uniform(0.5, 1))
         
     # Charger les banques existantes (si le fichier existe)
-    if os.path.exists("banks_maroc.json"):
-        with open("banks_maroc.json", "r", encoding="utf-8") as f:
+    if os.path.exists(banks_maroc_path):
+        with open(banks_maroc_path, "r", encoding="utf-8") as f:
             banques_existantes = json.load(f)
     else:
         banques_existantes = []
@@ -331,7 +374,7 @@ def extraire_banques():
         banques_total = banques_existantes + banques_nouvelles
 
         # Sauvegarder le tout
-        with open("banks_maroc.json", "w", encoding="utf-8") as f:
+        with open(banks_maroc_path, "w", encoding="utf-8") as f:
             json.dump(banques_total, f, indent=4, ensure_ascii=False)
 
         print(f"\n🌟 Extraction terminée : {len(banques_nouvelles)} nouvelles banques ajoutées")
@@ -346,7 +389,7 @@ def extraire_banques():
     finally:
         # Sauvegarde partielle en cas d'erreur
         if banques_nouvelles:
-            with open("banks_maroc_ERR.json", "w", encoding="utf-8") as f:
+            with open(banks_maroc_err_path, "w", encoding="utf-8") as f:
                 json.dump(banques_nouvelles, f, indent=4, ensure_ascii=False)
             print(f"💾 Sauvegarde partielle : {len(banques_nouvelles)} nouvelles banques")
 

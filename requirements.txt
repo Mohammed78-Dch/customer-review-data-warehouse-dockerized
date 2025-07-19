@@ -1,33 +1,31 @@
 # Web Scraping
-selenium==4.19.0
-webdriver-manager==4.0.1
-beautifulsoup4==4.12.3
+selenium==4.9.1
 
-# JSON, OS, etc. (modules intégrés à Python, pas besoin d'installation)
-# json
-# os
-# time
-# random
-# re
-# urllib.parse
+webdriver-manager==4.0.2
 
-# Base de données PostgreSQL
-psycopg2-binary==2.9.9
+beautifulsoup4==4.13.3
 
-# Traitement du langage naturel
+
+dbt-postgres==1.9.0
+psycopg2-binary==2.9.10
+pandas==2.0.3
+numpy==1.23.5
+scikit-learn==1.6.1
 langdetect==1.0.9
-transformers==4.41.1
-spacy==3.7.4
-nltk==3.8.1
-gensim==4.3.2
-pandas==2.2.2
-
-# Logging (intégré à Python)
-# logging
-
-# Téléchargements nécessaires (à exécuter séparément dans un script ou manuellement)
-# python -m spacy download en_core_web_sm
-# python -m spacy download fr_core_news_sm
-# python -m spacy download es_core_news_sm
-# python -m spacy download de_core_news_sm
-# nltk.download('stopwords')
+gensim==4.3.3
+textblob==0.19.0
+translate==3.6.1
+googletrans==4.0.0rc1
+scrapy==2.11.1
+spacy==3.8.4
+# en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+# fr_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.8.0/fr_core_news_sm-3.8.0-py3-none-any.whl
+# es_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl
+# de_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0-py3-none-any.whl
+nltk==3.9.1
+regex==2024.11.6
+tqdm==4.67.1
+pip>=25.1.1
+setuptools>=80
+wheel>=0.43
+# autres packages dont tu as besoin

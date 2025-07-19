@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-
+import tempfile
 import time
 import re
 import random
@@ -12,6 +12,11 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from urllib.parse import quote_plus
 import json
 import os
+import logging
+
+# Configuration du logger
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 banks_maroc_path = os.path.join(base_dir, "banks_maroc.json")
@@ -190,22 +195,55 @@ def scroll_pour_charger_tout(driver, conteneur):
             
         last_height = new_height
     
-    print("✅ Fin du scrolling")
+    logging.info("✅ Fin du scrolling")
    
    
-def setup_driver(profile_name="SeleniumProfile", headless=False):
-    """Configure WebDriver with a custom profile for extensions."""
+# def setup_driver(profile_name="SeleniumProfile", headless=False):
+#     """Configure WebDriver with a custom profile for extensions."""
+#     service = Service(ChromeDriverManager().install())
+#     options = webdriver.ChromeOptions()
+    
+#     # Créer un profil personnalisé
+#     profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
+#     os.makedirs(profile_path, exist_ok=True)
+    
+    
+#     options.add_argument(f"--user-data-dir={profile_path}")
+#     options.add_argument("--profile-directory=Default")
+    
+#     # Options anti-détection
+#     options.add_argument("--start-maximized")
+#     options.add_argument("--disable-blink-features=AutomationControlled")
+#     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
+#     options.add_argument("--lang=fr,en;q=0.9,ar;q=0.8")
+#     options.add_experimental_option("excludeSwitches", ["enable-automation"])
+#     options.add_experimental_option('useAutomationExtension', False)
+    
+#     # if headless:
+#     #     options.add_argument("--headless=new")
+    
+#     driver = webdriver.Chrome(service=service, options=options)
+#     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+    
+#     return driver 
+
+def setup_driver(profile_name=None, headless=False):
+    """Configure WebDriver with an optional custom profile for extensions."""
+
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
-    
-    # Créer un profil personnalisé
-    profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
-    os.makedirs(profile_path, exist_ok=True)
-    
-    
-    options.add_argument(f"--user-data-dir={profile_path}")
-    options.add_argument("--profile-directory=Default")
-    
+
+    if profile_name:
+        # Crée un profil fixe si on a précisé profile_name
+        profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
+        os.makedirs(profile_path, exist_ok=True)
+        options.add_argument(f"--user-data-dir={profile_path}")
+        options.add_argument("--profile-directory=Default")
+    else:
+        # Sinon, créer un user-data-dir temporaire unique
+        temp_profile_path = tempfile.mkdtemp(suffix=f"_chrome_{int(time.time())}")
+        options.add_argument(f"--user-data-dir={temp_profile_path}")
+
     # Options anti-détection
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
@@ -213,21 +251,22 @@ def setup_driver(profile_name="SeleniumProfile", headless=False):
     options.add_argument("--lang=fr,en;q=0.9,ar;q=0.8")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
-    
-    # if headless:
-    #     options.add_argument("--headless=new")
-    
+
+    if headless:
+        options.add_argument("--headless=new")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+
     driver = webdriver.Chrome(service=service, options=options)
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-    
-    return driver 
 
+    return driver
 
 def extraire_banques():
     driver = setup_driver(headless=True)
-
-    for ville in villes:
-        print(f"\n📍 Initialisation pour {ville}...")
+    villess = villes[:1]
+    for ville in villess:
+        logging.info(f"\n📍 Initialisation pour {ville}...")
         search_query = f"banques {ville} Maroc"
         encoded_query = quote_plus(search_query)
         driver.get(f"https://www.google.com/maps/search/{encoded_query}")
@@ -247,7 +286,7 @@ def extraire_banques():
             
             # Extract all results
             resultats = driver.find_elements(By.XPATH, "//div[starts-with(@class, 'Nv2PK')]")
-            print(f"[{ville}] {len(resultats)} résultats trouvés")
+            logging.info(f"[{ville}] {len(resultats)} résultats trouvés")
             count = 0
             
             for resultat in resultats:
@@ -328,19 +367,19 @@ def extraire_banques():
                         doublons.add(url)
                         count += 1
                         
-                        print(f"✅ {nom_complet} ({agence})")
+                        logging.info(f"✅ {nom_complet} ({agence})")
                     else:
-                        print(f"🚫 Doublon ou données incomplètes : {nom_complet}")
+                        logging.info(f"🚫 Doublon ou données incomplètes : {nom_complet}")
                         
                 except Exception as e:
-                    print(f"⚠️ Élément non parsé : {str(e)[:50]}")
+                    logging.info(f"⚠️ Élément non parsé : {str(e)[:50]}")
                     continue
                     
-            print(f"[{ville}] {count} banques enregistrées" if count > 0 else f"[{ville}] Aucune banque enregistrée")
-            print(f"✅ [{ville}] Extraction terminée")
+            logging.info(f"[{ville}] {count} banques enregistrées" if count > 0 else f"[{ville}] Aucune banque enregistrée")
+            logging.info(f"✅ [{ville}] Extraction terminée")
             
         except Exception as e:
-            print(f"❌ [{ville}] Erreur critique : {str(e)[:100]}")
+            logging.info(f"❌ [{ville}] Erreur critique : {str(e)[:100]}")
             driver.save_screenshot(f"erreur_{ville}.png")
         
         # Add delay between cities to avoid rate limiting
@@ -368,7 +407,7 @@ def extraire_banques():
                 banques_nouvelles.append(bank)
                 urls_existantes.add(bank['url'])  # Éviter les doublons si répétées dans la même session
             else:
-                print(f"⏭️ Banque déjà présente (URL existante) : {bank['Bank name']}")
+                logging.info(f"⏭️ Banque déjà présente (URL existante) : {bank['Bank name']}")
 
         # Ajouter les nouvelles banques à l’ensemble existant
         banques_total = banques_existantes + banques_nouvelles
@@ -377,24 +416,24 @@ def extraire_banques():
         with open(banks_maroc_path, "w", encoding="utf-8") as f:
             json.dump(banques_total, f, indent=4, ensure_ascii=False)
 
-        print(f"\n🌟 Extraction terminée : {len(banques_nouvelles)} nouvelles banques ajoutées")
-        print(f"📁 Total banques enregistrées : {len(banques_total)} dans 'banks_maroc.json'")
+        logging.info(f"\n🌟 Extraction terminée : {len(banques_nouvelles)} nouvelles banques ajoutées")
+        logging.info(f"📁 Total banques enregistrées : {len(banques_total)} dans 'banks_maroc.json'")
 
     except KeyboardInterrupt:
-        print("\n⚠️ Arrêt forcé par l'utilisateur")
+        logging.info("\n⚠️ Arrêt forcé par l'utilisateur")
 
     except Exception as e:
-        print(f"\n❌ Erreur critique : {str(e)}")
+        logging.info(f"\n❌ Erreur critique : {str(e)}")
 
     finally:
         # Sauvegarde partielle en cas d'erreur
         if banques_nouvelles:
             with open(banks_maroc_err_path, "w", encoding="utf-8") as f:
                 json.dump(banques_nouvelles, f, indent=4, ensure_ascii=False)
-            print(f"💾 Sauvegarde partielle : {len(banques_nouvelles)} nouvelles banques")
+            logging.info(f"💾 Sauvegarde partielle : {len(banques_nouvelles)} nouvelles banques")
 
         try:
             driver.quit()
-            print("🔚 WebDriver fermé")
+            logging.info("🔚 WebDriver fermé")
         except Exception:
-            print("🔚 WebDriver déjà fermé ou non initialisé")
+            logging.info("🔚 WebDriver déjà fermé ou non initialisé")

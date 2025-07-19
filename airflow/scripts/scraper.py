@@ -14,6 +14,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from bs4 import BeautifulSoup
 import os
+import logging
+import tempfile
+
+
+# Configuration du logger
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 base_dir = os.path.dirname(os.path.abspath(__file__))  # dossier du script courant
@@ -21,13 +27,13 @@ base_dir = os.path.dirname(os.path.abspath(__file__))  # dossier du script coura
 # Construire le chemin relatif sans le répéter
 banks_maroc_path = os.path.join(base_dir, 'banks_maroc.json')
 avis_path = os.path.join(base_dir, 'avis.json')
-print(f"Loading from: {banks_maroc_path}")  # Debug si nécessaire
+logging.info(f"Loading from: {banks_maroc_path}")  # Debug si nécessaire
 
 # Configuration constants
 MAX_SCROLL_RETRIES = 5  # Reduced from 10 to 5 for faster execution
 SCROLL_WAIT_TIME = (0.5, 1.0)  # Reduced wait time between scrolls
-MAX_BANKS = None  # Set to a number to limit processing, None for all
-
+# MAX_BANKS = None  # Set to a number to limit processing, None for all
+MAX_BANKS = 2
 # def setup_driver(headless=True):
 #     """Configure and return a Selenium WebDriver with anti-detection measures."""
 #     service = Service(ChromeDriverManager().install())
@@ -47,18 +53,51 @@ MAX_BANKS = None  # Set to a number to limit processing, None for all
 #     return driver
 
 
-def setup_driver(profile_name="SeleniumProfile", headless=False):
-    """Configure WebDriver with a custom profile for extensions."""
+# def setup_driver(profile_name="SeleniumProfile", headless=False):
+#     """Configure WebDriver with a custom profile for extensions."""
+#     service = Service(ChromeDriverManager().install())
+#     options = webdriver.ChromeOptions()
+    
+#     # Créer un profil personnalisé
+#     profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
+#     os.makedirs(profile_path, exist_ok=True)
+    
+#     options.add_argument(f"--user-data-dir={profile_path}")
+#     options.add_argument("--profile-directory=Default")
+    
+#     # Options anti-détection
+#     options.add_argument("--start-maximized")
+#     options.add_argument("--disable-blink-features=AutomationControlled")
+#     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
+#     options.add_argument("--lang=fr,en;q=0.9,ar;q=0.8")
+#     options.add_experimental_option("excludeSwitches", ["enable-automation"])
+#     options.add_experimental_option('useAutomationExtension', False)
+    
+#     # if headless:
+#     #     options.add_argument("--headless=new")
+    
+#     driver = webdriver.Chrome(service=service, options=options)
+#     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+    
+#     return driver
+
+def setup_driver(profile_name=None, headless=False):
+    """Configure WebDriver with an optional custom profile for extensions."""
+
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
-    
-    # Créer un profil personnalisé
-    profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
-    os.makedirs(profile_path, exist_ok=True)
-    
-    options.add_argument(f"--user-data-dir={profile_path}")
-    options.add_argument("--profile-directory=Default")
-    
+
+    if profile_name:
+        # Crée un profil fixe si on a précisé profile_name
+        profile_path = os.path.expanduser("~") + f"/ChromeProfiles/{profile_name}"
+        os.makedirs(profile_path, exist_ok=True)
+        options.add_argument(f"--user-data-dir={profile_path}")
+        options.add_argument("--profile-directory=Default")
+    else:
+        # Sinon, créer un user-data-dir temporaire unique
+        temp_profile_path = tempfile.mkdtemp()
+        options.add_argument(f"--user-data-dir={temp_profile_path}")
+
     # Options anti-détection
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
@@ -66,15 +105,16 @@ def setup_driver(profile_name="SeleniumProfile", headless=False):
     options.add_argument("--lang=fr,en;q=0.9,ar;q=0.8")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
-    
-    # if headless:
-    #     options.add_argument("--headless=new")
-    
+
+    if headless:
+        options.add_argument("--headless=new")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+
     driver = webdriver.Chrome(service=service, options=options)
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-    
-    return driver
 
+    return driver
 
 def accept_cookies(driver):
     """Accept cookies if the consent dialog appears."""
@@ -195,7 +235,7 @@ def extraire_avis(driver, url):
     
     # Click on reviews button
     if not click_reviews_button(driver):
-        print(f"❌ Could not find reviews button for URL: {url}")
+        logging.info(f"❌ Could not find reviews button for URL: {url}")
         return [], location, bank_name
     
     # Wait for reviews container
@@ -204,7 +244,7 @@ def extraire_avis(driver, url):
             EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'm6QErb') and contains(@class, 'DxyBCb')]"))
         )
     except:
-        print(f"❌ Could not find reviews container for URL: {url}")
+        logging.info(f"❌ Could not find reviews container for URL: {url}")
         return [], location, bank_name
     
     # Scroll to load all reviews
@@ -214,7 +254,7 @@ def extraire_avis(driver, url):
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     reviews = extract_reviews(driver, soup)
     
-    print(f"📌 {len(reviews)} reviews found for {bank_name}")
+    logging.info(f"📌 {len(reviews)} reviews found for {bank_name}")
     return reviews, location, bank_name
 
 def filter_new_reviews(new_reviews, existing_reviews):
@@ -232,7 +272,7 @@ def load_existing_reviews():
             content = f.read().strip()
             return json.loads(content) if content else {}
     except json.JSONDecodeError:
-        print("❌ Invalid JSON in avis.json, initializing empty database")
+        logging.info("❌ Invalid JSON in avis.json, initializing empty database")
         return {}
 
 def save_reviews(all_reviews):
@@ -247,7 +287,7 @@ def scrape_bank_reviews():
             all_banks = json.load(f)
             # all_banks = all_bankss[:1] # For testing, limit to first bank
     except Exception as e:
-        print(f"❌ Error loading banks data: {e}")
+        logging.info(f"❌ Error loading banks data: {e}")
         return
     
     # Limit number of banks to process if specified
@@ -262,7 +302,7 @@ def scrape_bank_reviews():
         
         # Process each bank
         for index, bank in enumerate(banks, 1):
-            print(f"\n[{index}/{len(banks)}] Extracting reviews for {bank['Bank name']}...")
+            logging.info(f"\n[{index}/{len(banks)}] Extracting reviews for {bank['Bank name']}...")
             
             try:
                 # Extract reviews
@@ -283,9 +323,9 @@ def scrape_bank_reviews():
                     if new_reviews:
                         all_reviews[bank['url']]["avis"].extend(new_reviews)
                         all_reviews[bank['url']]["nombre_avis"] = len(all_reviews[bank['url']]["avis"])
-                        print(f"➕ Added {len(new_reviews)} new reviews for {bank_name}")
+                        logging.info(f"➕ Added {len(new_reviews)} new reviews for {bank_name}")
                     else:
-                        print(f"🔁 No new reviews for {bank_name}")
+                        logging.info(f"🔁 No new reviews for {bank_name}")
                 else:
                     # New bank, add all reviews
                     all_reviews[bank['url']] = {
@@ -297,16 +337,16 @@ def scrape_bank_reviews():
                         "avis": reviews,
                         "nombre_avis": len(reviews)
                     }
-                    print(f"🆕 Added new bank: {bank_name}")
+                    logging.info(f"🆕 Added new bank: {bank_name}")
                 
                 # Save after each bank to prevent data loss
                 save_reviews(all_reviews)
                 
             except Exception as e:
-                print(f"❌ Error processing {bank['Bank name']}: {e}")
+                logging.info(f"❌ Error processing {bank['Bank name']}: {e}")
     
     finally:
         # Clean up
         driver.quit()
-        print("🔚 WebDriver closed")
+        logging.info("🔚 WebDriver closed")
 

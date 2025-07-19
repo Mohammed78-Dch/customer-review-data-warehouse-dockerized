@@ -1,0 +1,722 @@
+[2025-07-17T13:27:47.256+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-17T13:27:47.538+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T12:33:17.658441+00:00 [queued]>
+[2025-07-17T13:27:47.555+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T12:33:17.658441+00:00 [queued]>
+[2025-07-17T13:27:47.636+0000] {taskinstance.py:2867} INFO - Starting attempt 3 of 3
+[2025-07-17T13:27:47.790+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-07-17 12:33:17.658441+00:00
+[2025-07-17T13:27:47.804+0000] {standard_task_runner.py:72} INFO - Started process 140 to run task
+[2025-07-17T13:27:47.816+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'scrape_and_insert_data_to_json', 'manual__2025-07-17T12:33:17.658441+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmp9jd5fg1o']
+[2025-07-17T13:27:47.820+0000] {standard_task_runner.py:105} INFO - Job 109: Subtask scrape_and_insert_data_to_json
+[2025-07-17T13:27:48.386+0000] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T12:33:17.658441+00:00 [running]> on host 569ba507bc01
+[2025-07-17T13:27:48.657+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-07-17T12:33:17.658441+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-17T12:33:17.658441+00:00'
+[2025-07-17T13:27:48.662+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-07-17T13:27:48.666+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-07-17T13:27:48.668+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-07-17 13:27:47.540321+00:00
+[2025-07-17T13:27:48.671+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-07-17T13:27:48.674+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-07-17T13:27:48.680+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-17T13:27:50.071+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T13:27:51.282+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T13:27:51.616+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+[2025-07-17T13:27:59.304+0000] {scraper_banks.py:269} INFO - 
+📍 Initialisation pour Casablanca...
+[2025-07-17T13:29:42.609+0000] {job.py:229} INFO - Heartbeat recovered after 22.59 seconds
+[2025-07-17T13:30:19.211+0000] {job.py:229} INFO - Heartbeat recovered after 21.25 seconds
+[2025-07-17T13:31:21.946+0000] {job.py:229} INFO - Heartbeat recovered after 21.55 seconds
+[2025-07-17T13:31:38.620+0000] {scraper_banks.py:198} INFO - ✅ Fin du scrolling
+[2025-07-17T13:31:39.065+0000] {scraper_banks.py:289} INFO - [Casablanca] 120 résultats trouvés
+[2025-07-17T13:31:39.709+0000] {scraper_banks.py:370} INFO - ✅ Bank Al Maghrib (agence Al Barid Bank 115 Bd de Paris)
+[2025-07-17T13:31:40.407+0000] {scraper_banks.py:370} INFO - ✅ Banque Centrale Populaire (agence Banque Populaire 101 Bd Mohammed Zerktouni)
+[2025-07-17T13:31:41.101+0000] {scraper_banks.py:370} INFO - ✅ Siège Social Banque Société Générale (agence Société Générale Banque Offshore 55 Bd Abdelmoumen)
+[2025-07-17T13:31:41.425+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H9JP+73J Av 2 Mars)
+[2025-07-17T13:31:41.865+0000] {scraper_banks.py:370} INFO - ✅ CaixaBank Casablanca (agence Casablanca Finance Group 179 Bd d'Anfa)
+[2025-07-17T13:31:42.483+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA (agence Bank of Africa J95G+6MR Bd Sidi Mohamed Ben Abdellah)
+[2025-07-17T13:31:43.307+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA Siège Social (agence Bank of Africa 140 Bd Hassan II)
+[2025-07-17T13:31:43.650+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Hay Chrifa (Banque Populaire Hay Chrifa)
+[2025-07-17T13:31:44.363+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moulay Driss 1er (agence Banque Populaire 108 bd Moulay Idriss 1er ang rue Ibn Jaljal)
+[2025-07-17T13:31:44.843+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire El Khatabi (agence Banque Populaire 2 Avenue Moulay Rachid Casablanca)
+[2025-07-17T13:31:45.520+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire El Fida (agence Banque Populaire Bd El Fida)
+[2025-07-17T13:31:46.420+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moulay Youssef (agence Banque Populaire 54 Res My Youssef bd My Youssef)
+[2025-07-17T13:31:47.243+0000] {scraper_banks.py:370} INFO - ✅ Arab Bank Plc (agence Arab Bank Maroc 174 Bd Mohammed V)
+[2025-07-17T13:31:47.834+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Hay Sadri (Banque Populaire Hay Sadri)
+[2025-07-17T13:31:48.471+0000] {scraper_banks.py:370} INFO - ✅ CIH BANK (agence CIH Bank Av des FAR Avenue Hassan II 187)
+[2025-07-17T13:31:49.135+0000] {scraper_banks.py:370} INFO - ✅ Crédit du Maroc (agence Crédit du Maroc 19 Bd 2 Mars Hay Al Masjid)
+[2025-07-17T13:31:49.802+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Cité Djemaa (agence Banque Populaire 364 avenue Docteur Moulasim Bouafi Quartier: Ben M'Sik)
+[2025-07-17T13:31:50.465+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H9PW+W6G Bd de la Résistance)
+[2025-07-17T13:31:51.093+0000] {scraper_banks.py:370} INFO - ✅ Société Générale, Agence Casablanca, El Fida. (agence Société Générale Maroc 321 Bd El Fida)
+[2025-07-17T13:31:51.593+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H9QQ+286 Bd Lahcen Ou Ider)
+[2025-07-17T13:31:52.339+0000] {scraper_banks.py:370} INFO - ✅ Bank Al Amal (agence Al Barid Bank H9MF+H38 Bd Mohammed Zerktouni)
+[2025-07-17T13:31:52.671+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire
+[2025-07-17T13:31:53.142+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank - Agence Casa Massira (agence CFG Bank 101 Bd Al Massira Al Khadra)
+[2025-07-17T13:31:53.834+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Arab Bank Plc
+[2025-07-17T13:31:54.650+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire El Khatabi
+[2025-07-17T13:31:55.272+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank (agence Umnia Bank )
+[2025-07-17T13:31:55.703+0000] {scraper_banks.py:370} INFO - ✅ Bank chaabi (agence Chaabi International Bank H99H+V2G Bd Anoual)
+[2025-07-17T13:31:56.075+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire Moulay Driss 1er
+[2025-07-17T13:31:56.578+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire Moulay Youssef
+[2025-07-17T13:31:57.080+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire
+[2025-07-17T13:31:57.629+0000] {scraper_banks.py:370} INFO - ✅ Bank Of Africa, Agence Al Massira, Maarif. (agence Bank of Africa Rue Abou Abdellah Nafii)
+[2025-07-17T13:31:58.166+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire, Agence AL ÎRFANE, Casablanca. (agence Banque Populaire HFX7+R27)
+[2025-07-17T13:31:58.551+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank - Agence Palmiers (agence CFG Bank 5 Rue Ibnou Toufail)
+[2025-07-17T13:31:58.983+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H97V+4MQ Bd Modibo Keita)
+[2025-07-17T13:31:59.464+0000] {scraper_banks.py:370} INFO - ✅ Dar Al Amane Bank (agence Al Barid Bank Angle Rue de Rome et Rue Abou Fariss)
+[2025-07-17T13:31:59.901+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Ain Borja (agence Banque Populaire 60 Bd Ibn Tachfine)
+[2025-07-17T13:32:00.371+0000] {scraper_banks.py:370} INFO - ✅ Crédit du Maroc (agence Crédit du Maroc 1 Bd de Strasbourg)
+[2025-07-17T13:32:00.791+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moussa Bnou Noussair (agence Banque Populaire 44 Rue Jean Jaures Casablanca)
+[2025-07-17T13:32:01.138+0000] {scraper_banks.py:370} INFO - ✅ Banque Crédit Agricole (agence Crédit Agricole du Maroc 104 Bd Abdelmoumen)
+[2025-07-17T13:32:01.869+0000] {scraper_banks.py:370} INFO - ✅ Societe Generale Maroc (SGMA) - SG Securities Services (agence Crédit du Maroc 55 Bd Abdelmoumen)
+[2025-07-17T13:32:02.343+0000] {scraper_banks.py:370} INFO - ✅ Bank Al Yousr (agence Bank Al Yousr H9C2+QXX)
+[2025-07-17T13:32:02.851+0000] {scraper_banks.py:370} INFO - ✅ Société Générale (agence Société Générale Maroc G9G5+2GQ)
+[2025-07-17T13:32:03.879+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Souna (agence Umnia Bank 586 Bd Modibo Keita)
+[2025-07-17T13:32:04.621+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank - Agence Casa Gauthier (agence CFG Bank Av Hassan Souktani)
+[2025-07-17T13:32:05.113+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (Siège Social) (agence Attijariwafa Bank 2 Bd Moulay Youssef)
+[2025-07-17T13:32:05.608+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa la Gironde (agence Bank of Africa H9QW+8XF Rue Barathon)
+[2025-07-17T13:32:30.044+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa (agence Bank of Africa LOT 134 LOTISSEMENT ENNASSIM CASABLANCA)
+[2025-07-17T13:32:30.520+0000] {scraper_banks.py:370} INFO - ✅ CIH Bank (agence CIH Bank Boulevard Omar Al Khiam Boulevard Atlas)
+[2025-07-17T13:32:30.903+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Al Manar (agence Banque Populaire 105 Bd Ibn Baraka Residence Arrajaa Quartier El Hank Casa)
+[2025-07-17T13:32:31.139+0000] {job.py:229} INFO - Heartbeat recovered after 28.46 seconds
+[2025-07-17T13:32:31.421+0000] {scraper_banks.py:370} INFO - ✅ Bank Assafa (agence Bank Assafa G9J2+9H9 Av Abou Bakr el Kadiri)
+[2025-07-17T13:32:31.825+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank Agence Casa 2 Mars (agence CFG Bank 108 Av 2 Mars)
+[2025-07-17T13:32:32.552+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Sidi Maarouf (agence Umnia Bank GH2 Imm Rés Panorama 2 Av Abou Bakr el Kadiri)
+[2025-07-17T13:32:33.280+0000] {scraper_banks.py:370} INFO - ✅ BMCE Bank of Africa - Agence Bourgogne (agence Bank of Africa H9W3+VMG bd de Bourgogne ang rue Abou AlWaqt Khalaf)
+[2025-07-17T13:32:33.999+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA (agence Bank of Africa 650 Boulevard Mohamed V)
+[2025-07-17T13:32:34.439+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Ouled Ziane (agence Banque Populaire rue Ahmed Sebbagh and rue 71 derb El Kabir)
+[2025-07-17T13:32:34.776+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Agence Lalla Yacout (agence Banque Populaire 39 Av Lalla Yacout)
+[2025-07-17T13:32:35.184+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Agence Hassan Seghir (agence Banque Populaire H9WR+M5R Angle Bd Hassan Seghir et Rue Hmida)
+[2025-07-17T13:32:35.617+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire G8CC+C7P Unnamed Road)
+[2025-07-17T13:32:36.000+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire HC2C+XH3)
+[2025-07-17T13:32:36.485+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank Kelaa Mgouna 20100)
+[2025-07-17T13:32:36.852+0000] {scraper_banks.py:370} INFO - ✅ Bank Assafa (agence Bank Assafa H983+64V Rue Al Oukhouane)
+[2025-07-17T13:32:37.191+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire, Agence Cité Plateau, Maarif. (agence Banque Populaire H9F6+3PC Angrue Francois Ponsard Et Rue Al Moubarid Cite Plateau Casa)
+[2025-07-17T13:32:37.660+0000] {scraper_banks.py:370} INFO - ✅ Centre National De Formation de la Banque Populaire (agence Banque Populaire ANFA)
+[2025-07-17T13:32:37.988+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa bank (agence Attijariwafa Bank H9F4+XXC Bd Yacoub El Mansour)
+[2025-07-17T13:32:38.513+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa (agence Bank of Africa H99V+3P2 Bd El Fida)
+[2025-07-17T13:33:14.149+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-07-17T13:35:14.583+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2025-07-17T13:35:15.749+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Attijariwafa Bank
+[2025-07-17T13:35:19.567+0000] {scraper_banks.py:378} INFO - [Casablanca] 59 banques enregistrées
+[2025-07-17T13:35:19.570+0000] {scraper_banks.py:379} INFO - ✅ [Casablanca] Extraction terminée
+[2025-07-17T13:35:19.618+0000] {job.py:229} INFO - Heartbeat recovered after 163.04 seconds
+[2025-07-17T13:35:20.218+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-17T13:35:20.913+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T13:35:22.788+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T13:35:23.090+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+[2025-07-17T13:35:28.708+0000] {scraper_banks.py:269} INFO - 
+📍 Initialisation pour Casablanca...
+[2025-07-17T13:48:34.469+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-07-17T13:49:12.655+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2025-07-17T13:49:53.159+0000] {local_task_job_runner.py:228} ERROR - Heartbeat time limit exceeded!
+[2025-07-17T13:49:54.039+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-07-17T13:49:54.501+0000] {process_utils.py:132} INFO - Sending 15 to group 140. PIDs of all processes in the group: [166, 449, 455, 459, 460, 489, 497, 553, 561, 487, 671, 172, 180, 182, 206, 215, 279, 204, 140]
+[2025-07-17T13:49:54.545+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 140
+[2025-07-17T13:49:54.894+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=671, status='terminated', started='13:47:57') (671) terminated with exit code None
+[2025-07-17T13:49:54.974+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=497, status='terminated', started='13:35:24') (497) terminated with exit code None
+[2025-07-17T13:49:54.992+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=561, status='terminated', started='13:35:28') (561) terminated with exit code None
+[2025-07-17T13:49:55.293+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=279, status='terminated', started='13:27:59') (279) terminated with exit code None
+[2025-07-17T13:49:55.310+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=553, status='terminated', started='13:35:27') (553) terminated with exit code None
+[2025-07-17T13:49:54.875+0000] {taskinstance.py:3094} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-17T13:49:55.656+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=215, status='terminated', started='13:27:53') (215) terminated with exit code None
+[2025-07-17T13:49:55.661+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=204, status='terminated', started='13:27:53') (204) terminated with exit code None
+[2025-07-17T13:49:56.218+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=487, status='terminated', started='13:35:24') (487) terminated with exit code None
+[2025-07-17T13:49:58.834+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=459, status='terminated', started='13:35:23') (459) terminated with exit code None
+[2025-07-17T13:49:58.628+0000] {taskinstance.py:3095} ERROR - Stacktrace: 
+  File "/home/***/.local/bin/***", line 8, in <module>
+    sys.exit(main())
+  File "/home/***/.local/lib/python3.11/site-packages/***/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/providers/celery/cli/celery_command.py", line 64, in wrapper
+    providers_configuration_loaded(func)(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/providers/celery/cli/celery_command.py", line 237, in worker
+    _run_command_with_daemon_option(
+  File "/home/***/.local/lib/python3.11/site-packages/***/providers/celery/cli/celery_command.py", line 50, in _run_command_with_daemon_option
+    run_command_with_daemon_option(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+  File "/home/***/.local/lib/python3.11/site-packages/***/providers/celery/cli/celery_command.py", line 230, in run_celery_worker
+    celery_app.worker_main(options)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/app/base.py", line 391, in worker_main
+    self.start(argv=argv)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/app/base.py", line 371, in start
+    celery.main(args=argv, standalone_mode=False)
+  File "/home/***/venv/lib/python3.11/site-packages/click/core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "/home/***/venv/lib/python3.11/site-packages/click/core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/***/venv/lib/python3.11/site-packages/click/core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/***/venv/lib/python3.11/site-packages/click/core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "/home/***/venv/lib/python3.11/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/bin/base.py", line 135, in caller
+    return f(ctx, *args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/bin/worker.py", line 356, in worker
+    worker.start()
+  File "/home/***/.local/lib/python3.11/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+  File "/home/***/.local/lib/python3.11/site-packages/celery/concurrency/base.py", line 130, in start
+    self.on_start()
+  File "/home/***/.local/lib/python3.11/site-packages/celery/concurrency/prefork.py", line 109, in on_start
+    P = self._pool = Pool(processes=self.limit,
+  File "/home/***/.local/lib/python3.11/site-packages/celery/concurrency/asynpool.py", line 464, in __init__
+    super().__init__(processes, *args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/concurrency/asynpool.py", line 482, in _create_worker_process
+    return super()._create_worker_process(i)
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/process.py", line 120, in start
+    self._popen = self._Popen(self)
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/context.py", line 331, in _Popen
+    return Popen(process_obj)
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/popen_fork.py", line 22, in __init__
+    self._launch(process_obj)
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/popen_fork.py", line 77, in _launch
+    code = process_obj._bootstrap()
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/process.py", line 323, in _bootstrap
+    self.run()
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/process.py", line 110, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+  File "/home/***/.local/lib/python3.11/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "/home/***/.local/lib/python3.11/site-packages/celery/app/trace.py", line 651, in fast_trace_task
+    R, I, T, Rstr = tasks[task].__trace__(
+  File "/home/***/.local/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/providers/celery/executors/celery_executor_utils.py", line 139, in execute_command
+    _execute_in_fork(command_to_exec, celery_task_id)
+  File "/home/***/.local/lib/python3.11/site-packages/***/providers/celery/executors/celery_executor_utils.py", line 171, in _execute_in_fork
+    args.func(args)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/commands/task_command.py", line 254, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/commands/task_command.py", line 322, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/jobs/job.py", line 421, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/***/.local/lib/python3.11/site-packages/***/jobs/job.py", line 450, in execute_job
+    ret = execute_callable()
+  File "/home/***/.local/lib/python3.11/site-packages/***/jobs/local_task_job_runner.py", line 171, in _execute
+    self.task_runner.start()
+  File "/home/***/.local/lib/python3.11/site-packages/***/task/task_runner/standard_task_runner.py", line 55, in start
+    self.process = self._start_by_fork()
+  File "/home/***/.local/lib/python3.11/site-packages/***/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/***/.local/lib/python3.11/site-packages/***/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/***/.local/lib/python3.11/site-packages/***/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/***/.local/lib/python3.11/site-packages/***/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/***/scripts/insert_data_to_json.py", line 14, in insert_data_to_json
+    extraire_banques()
+  File "/opt/***/scripts/scraper_banks.py", line 403, in extraire_banques
+    extraire_banques()  # Cette fonction remplit une variable `banques`, supposée globale
+  File "/opt/***/scripts/scraper_banks.py", line 285, in extraire_banques
+    scroll_pour_charger_tout(driver, conteneur_avis)
+  File "/opt/***/scripts/scraper_banks.py", line 190, in scroll_pour_charger_tout
+    new_height = driver.execute_script("return arguments[0].scrollHeight", conteneur)
+  File "/home/***/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 500, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+  File "/home/***/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/***/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/***/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/***/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+  File "/home/***/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/***/venv/lib/python3.11/site-packages/urllib3/poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/***/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/***/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/***/venv/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/local/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+  File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 3095, in signal_handler
+    self.log.error("Stacktrace: \n%s", "".join(traceback.format_stack()))
+
+[2025-07-17T13:49:58.854+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=489, status='terminated', started='13:35:24') (489) terminated with exit code None
+[2025-07-17T13:49:58.891+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=460, status='terminated', started='13:35:23') (460) terminated with exit code None
+[2025-07-17T13:49:58.910+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=455, status='terminated', started='13:35:23') (455) terminated with exit code None
+[2025-07-17T13:49:59.228+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=206, status='terminated', started='13:27:53') (206) terminated with exit code None
+[2025-07-17T13:49:59.608+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=180, status='terminated', started='13:27:52') (180) terminated with exit code None
+[2025-07-17T13:49:59.778+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=182, status='terminated', started='13:27:52') (182) terminated with exit code None
+[2025-07-17T13:49:59.954+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=172, status='terminated', started='13:27:51') (172) terminated with exit code None
+[2025-07-17T13:50:00.169+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe47badfa90>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/edc604c5c0b7710044d6d1d7fe399aff
+[2025-07-17T13:50:00.244+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe47baef1d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/edc604c5c0b7710044d6d1d7fe399aff
+[2025-07-17T13:50:00.262+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe47b76fa10>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/edc604c5c0b7710044d6d1d7fe399aff
+[2025-07-17T13:50:00.705+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=166, status='terminated', started='13:27:51') (166) terminated with exit code None
+[2025-07-17T13:50:00.710+0000] {scraper_banks.py:437} INFO - 🔚 WebDriver fermé
+[2025-07-17T13:50:36.620+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 14, in insert_data_to_json
+    extraire_banques()
+  File "/opt/airflow/scripts/scraper_banks.py", line 403, in extraire_banques
+    extraire_banques()  # Cette fonction remplit une variable `banques`, supposée globale
+    ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper_banks.py", line 285, in extraire_banques
+    scroll_pour_charger_tout(driver, conteneur_avis)
+  File "/opt/airflow/scripts/scraper_banks.py", line 190, in scroll_pour_charger_tout
+    new_height = driver.execute_script("return arguments[0].scrollHeight", conteneur)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 500, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/selenium/webdriver/remote/remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/urllib3/poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3097, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-07-17T13:50:37.919+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-07-17T13:50:37.941+0000] {logging_mixin.py:190} INFO - Task start:2025-07-17 13:27:47.540321+00:00 end:2025-07-17 13:50:37.437870+00:00 duration:1369.897549
+[2025-07-17T13:50:38.025+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): scrape_and_insert_data_to_json> dag:<DAG: bank_reviews_etl_and_analysis_pipeline> dagrun:<DagRun bank_reviews_etl_and_analysis_pipeline @ 2025-07-17 12:33:17.658441+00:00: manual__2025-07-17T12:33:17.658441+00:00, state:running, queued_at: 2025-07-17 12:33:20.027328+00:00. externally triggered: True>
+[2025-07-17T13:50:38.034+0000] {logging_mixin.py:190} INFO - Failure caused by Task received SIGTERM signal
+[2025-07-17T13:50:38.053+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=scrape_and_insert_data_to_json, run_id=manual__2025-07-17T12:33:17.658441+00:00, execution_date=20250717T123317, start_date=20250717T132747, end_date=20250717T135037
+[2025-07-17T13:50:44.800+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-07-17T13:50:45.624+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=449, status='terminated', started='13:35:22') (449) terminated with exit code None
+[2025-07-17T13:50:45.675+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=140, status='terminated', exitcode=2, started='13:27:47') (140) terminated with exit code 2
+[2025-07-17T13:50:46.833+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-07-18T18:05:05.959+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-18T18:05:07.009+0000] {taskinstance.py:2604} INFO - Dependencies not met for <TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T12:33:17.658441+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2025-07-18T18:05:07.054+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2025-07-18T18:05:14.651+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-18T18:05:15.419+0000] {taskinstance.py:2604} INFO - Dependencies not met for <TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T12:33:17.658441+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2025-07-18T18:05:15.434+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run

@@ -1,0 +1,50 @@
+[2025-07-16T17:30:02.100+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-16T17:30:03.301+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json scheduled__2025-07-06T00:00:00+00:00 [queued]>
+[2025-07-16T17:30:03.362+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json scheduled__2025-07-06T00:00:00+00:00 [queued]>
+[2025-07-16T17:30:03.365+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-07-16T17:30:03.427+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-07-06 00:00:00+00:00
+[2025-07-16T17:30:03.454+0000] {standard_task_runner.py:72} INFO - Started process 421 to run task
+[2025-07-16T17:30:03.467+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'scrape_and_insert_data_to_json', 'scheduled__2025-07-06T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmpjfuozqzj']
+[2025-07-16T17:30:03.477+0000] {standard_task_runner.py:105} INFO - Job 11: Subtask scrape_and_insert_data_to_json
+[2025-07-16T17:30:03.803+0000] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json scheduled__2025-07-06T00:00:00+00:00 [running]> on host 569ba507bc01
+[2025-07-16T17:30:04.854+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-07-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-06T00:00:00+00:00'
+[2025-07-16T17:30:04.891+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-07-16T17:30:04.896+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-07-16T17:30:04.900+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-07-16 17:30:03.305315+00:00
+[2025-07-16T17:30:04.906+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-07-16T17:30:04.911+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-07-16T17:30:04.937+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-16T17:30:08.510+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-16T17:30:11.717+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-16T17:30:16.726+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+[2025-07-16T17:30:22.229+0000] {insert_data_to_json.py:20} INFO - ❌ Erreur lors du scraping : Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x561c2d8ad7da <unknown>
+#1 0x561c2d3522e0 <unknown>
+#2 0x561c2d38c7bd <unknown>
+#3 0x561c2d387ad7 <unknown>
+#4 0x561c2d3d7e9e <unknown>
+#5 0x561c2d3d7466 <unknown>
+#6 0x561c2d3c9683 <unknown>
+#7 0x561c2d395b5b <unknown>
+#8 0x561c2d396f31 <unknown>
+#9 0x561c2d87272b <unknown>
+#10 0x561c2d876534 <unknown>
+#11 0x561c2d859229 <unknown>
+#12 0x561c2d8770d8 <unknown>
+#13 0x561c2d83d61f <unknown>
+#14 0x561c2d89add8 <unknown>
+#15 0x561c2d89afb6 <unknown>
+#16 0x561c2d8acaf6 <unknown>
+#17 0x7fb4475511c4 <unknown>
+
+[2025-07-16T17:30:22.235+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-07-16T17:30:22.517+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-07-16T17:30:22.523+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=scrape_and_insert_data_to_json, run_id=scheduled__2025-07-06T00:00:00+00:00, execution_date=20250706T000000, start_date=20250716T173003, end_date=20250716T173022
+[2025-07-16T17:30:22.695+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-07-16T17:30:22.699+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-07-16T17:30:22.702+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline queued_at:2025-07-16 17:28:11.807597+00:00
+[2025-07-16T17:30:22.706+0000] {logging_mixin.py:190} INFO - Task hostname:569ba507bc01 operator:PythonOperator
+[2025-07-16T17:30:22.776+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-07-16T17:30:22.907+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-16T17:30:22.914+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

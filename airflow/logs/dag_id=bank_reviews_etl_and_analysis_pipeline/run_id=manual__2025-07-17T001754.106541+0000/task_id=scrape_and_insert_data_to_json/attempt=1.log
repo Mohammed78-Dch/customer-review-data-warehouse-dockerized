@@ -1,0 +1,42 @@
+[2025-07-17T00:18:22.383+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-17T00:18:22.568+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T00:17:54.106541+00:00 [queued]>
+[2025-07-17T00:18:22.582+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T00:17:54.106541+00:00 [queued]>
+[2025-07-17T00:18:22.584+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-07-17T00:18:22.607+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-07-17 00:17:54.106541+00:00
+[2025-07-17T00:18:22.618+0000] {standard_task_runner.py:72} INFO - Started process 2751 to run task
+[2025-07-17T00:18:22.626+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'scrape_and_insert_data_to_json', 'manual__2025-07-17T00:17:54.106541+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmplphgldlm']
+[2025-07-17T00:18:22.629+0000] {standard_task_runner.py:105} INFO - Job 44: Subtask scrape_and_insert_data_to_json
+[2025-07-17T00:18:22.716+0000] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T00:17:54.106541+00:00 [running]> on host 569ba507bc01
+[2025-07-17T00:18:22.916+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-07-17T00:17:54.106541+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-17T00:17:54.106541+00:00'
+[2025-07-17T00:18:22.918+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-07-17T00:18:22.920+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-07-17T00:18:22.922+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-07-17 00:18:22.570523+00:00
+[2025-07-17T00:18:22.923+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-07-17T00:18:22.925+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-07-17T00:18:22.928+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-17T00:18:23.746+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T00:18:24.571+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T00:18:24.831+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T00:18:25.456+0000] {logger.py:11} INFO - WebDriver version 138.0.7204.157 selected
+[2025-07-17T00:18:25.466+0000] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.157/linux64/chromedriver-linux64.zip
+[2025-07-17T00:18:25.468+0000] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.157/linux64/chromedriver-linux64.zip
+[2025-07-17T00:18:25.786+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-07-17T00:18:34.235+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T00:18:35.277+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157]
+[2025-07-17T00:18:49.517+0000] {scraper_banks.py:269} INFO - 
+📍 Initialisation pour Casablanca...
+[2025-07-17T00:19:33.619+0000] {job.py:229} INFO - Heartbeat recovered after 27.28 seconds
+[2025-07-17T00:20:27.321+0000] {job.py:229} INFO - Heartbeat recovered after 43.06 seconds
+[2025-07-17T00:20:44.356+0000] {job.py:229} INFO - Heartbeat recovered after 17.05 seconds
+[2025-07-17T00:21:37.421+0000] {scraper_banks.py:382} INFO - ❌ [Casablanca] Erreur critique : Message: script timeout
+  (Session info: chrome=138.0.7204.157)
+Stacktrace:
+#0 0x55c7ff0ae7da <unkno
+[2025-07-17T00:21:38.917+0000] {job.py:229} INFO - Heartbeat recovered after 39.33 seconds
+[2025-07-17T00:21:41.569+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-17T00:21:43.552+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T00:21:46.314+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T00:21:46.891+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+[2025-07-17T00:22:26.298+0000] {job.py:229} INFO - Heartbeat recovered after 36.86 seconds
+[2025-07-17T00:22:27.329+0000] {scraper_banks.py:269} INFO - 
+📍 Initialisation pour Casablanca...

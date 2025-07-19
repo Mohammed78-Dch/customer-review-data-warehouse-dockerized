@@ -1,0 +1,384 @@
+[2025-07-17T11:01:10.546+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-17T11:01:11.087+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T11:00:36.830164+00:00 [queued]>
+[2025-07-17T11:01:11.119+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T11:00:36.830164+00:00 [queued]>
+[2025-07-17T11:01:11.122+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-07-17T11:01:11.182+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scrape_and_insert_data_to_json> on 2025-07-17 11:00:36.830164+00:00
+[2025-07-17T11:01:11.204+0000] {standard_task_runner.py:72} INFO - Started process 1185 to run task
+[2025-07-17T11:01:11.218+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'scrape_and_insert_data_to_json', 'manual__2025-07-17T11:00:36.830164+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmp4b07bsa4']
+[2025-07-17T11:01:11.223+0000] {standard_task_runner.py:105} INFO - Job 56: Subtask scrape_and_insert_data_to_json
+[2025-07-17T11:01:11.379+0000] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.scrape_and_insert_data_to_json manual__2025-07-17T11:00:36.830164+00:00 [running]> on host 569ba507bc01
+[2025-07-17T11:01:11.695+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='scrape_and_insert_data_to_json' AIRFLOW_CTX_EXECUTION_DATE='2025-07-17T11:00:36.830164+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-17T11:00:36.830164+00:00'
+[2025-07-17T11:01:11.701+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-07-17T11:01:11.704+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-07-17T11:01:11.708+0000] {logging_mixin.py:190} INFO - Current task name:scrape_and_insert_data_to_json state:running start_date:2025-07-17 11:01:11.091881+00:00
+[2025-07-17T11:01:11.714+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-07-17T11:01:11.717+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-07-17T11:01:11.723+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-17T11:01:12.942+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T11:01:13.710+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T11:01:14.063+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+[2025-07-17T11:01:35.937+0000] {scraper_banks.py:269} INFO - 
+📍 Initialisation pour Casablanca...
+[2025-07-17T11:03:24.254+0000] {job.py:229} INFO - Heartbeat recovered after 27.42 seconds
+[2025-07-17T11:04:57.788+0000] {scraper_banks.py:198} INFO - ✅ Fin du scrolling
+[2025-07-17T11:04:58.274+0000] {scraper_banks.py:289} INFO - [Casablanca] 120 résultats trouvés
+[2025-07-17T11:04:58.710+0000] {scraper_banks.py:370} INFO - ✅ Bank Al Maghrib (agence Al Barid Bank 115 Bd de Paris)
+[2025-07-17T11:04:58.904+0000] {scraper_banks.py:370} INFO - ✅ Banque Centrale Populaire (agence Banque Populaire 101 Bd Mohammed Zerktouni)
+[2025-07-17T11:04:59.235+0000] {scraper_banks.py:370} INFO - ✅ Siège Social Banque Société Générale (agence Société Générale Banque Offshore 55 Bd Abdelmoumen)
+[2025-07-17T11:04:59.431+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H9JP+73J Av 2 Mars)
+[2025-07-17T11:04:59.604+0000] {scraper_banks.py:370} INFO - ✅ CaixaBank Casablanca (agence Casablanca Finance Group 179 Bd d'Anfa)
+[2025-07-17T11:04:59.770+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA (agence Bank of Africa J95G+6MR Bd Sidi Mohamed Ben Abdellah)
+[2025-07-17T11:04:59.987+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA Siège Social (agence Bank of Africa 140 Bd Hassan II)
+[2025-07-17T11:05:00.168+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Hay Chrifa (Banque Populaire Hay Chrifa)
+[2025-07-17T11:05:00.328+0000] {scraper_banks.py:370} INFO - ✅ .CIH Bank, Agence Brahim Roudani (agence CIH Bank Boulevard Brahim Roudani Ennahas Ennahoui)
+[2025-07-17T11:05:00.530+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moulay Driss 1er (agence Banque Populaire 108 bd Moulay Idriss 1er ang rue Ibn Jaljal)
+[2025-07-17T11:05:00.735+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire El Khatabi (agence Banque Populaire 2 Avenue Moulay Rachid Casablanca)
+[2025-07-17T11:05:00.901+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire El Fida (agence Banque Populaire Bd El Fida)
+[2025-07-17T11:05:01.108+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moulay Youssef (agence Banque Populaire 54 Res My Youssef bd My Youssef)
+[2025-07-17T11:05:01.363+0000] {scraper_banks.py:370} INFO - ✅ Arab Bank Plc (agence Arab Bank Maroc 174 Bd Mohammed V)
+[2025-07-17T11:05:01.588+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Hay Sadri (Banque Populaire Hay Sadri)
+[2025-07-17T11:05:01.800+0000] {scraper_banks.py:370} INFO - ✅ CIH BANK (agence CIH Bank Av des FAR Avenue Hassan II 187)
+[2025-07-17T11:05:02.042+0000] {scraper_banks.py:370} INFO - ✅ Crédit du Maroc (agence Crédit du Maroc 19 Bd 2 Mars Hay Al Masjid)
+[2025-07-17T11:05:02.274+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Cité Djemaa (agence Banque Populaire 364 avenue Docteur Moulasim Bouafi Quartier: Ben M'Sik)
+[2025-07-17T11:05:02.462+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H9PW+W6G Bd de la Résistance)
+[2025-07-17T11:05:02.679+0000] {scraper_banks.py:370} INFO - ✅ Société Générale, Agence Casablanca, El Fida. (agence Société Générale Maroc 321 Bd El Fida)
+[2025-07-17T11:05:02.888+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank - Agence Casa Racine (agence CFG Bank 5 Av Mohamed Sijilmassi)
+[2025-07-17T11:05:03.104+0000] {scraper_banks.py:370} INFO - ✅ Bank Al Amal (agence Al Barid Bank H9MF+H38 Bd Mohammed Zerktouni)
+[2025-07-17T11:05:03.336+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire
+[2025-07-17T11:05:03.626+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank - Agence Casa Massira (agence CFG Bank 101 Bd Al Massira Al Khadra)
+[2025-07-17T11:05:03.912+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Arab Bank Plc
+[2025-07-17T11:05:04.229+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire El Khatabi
+[2025-07-17T11:05:04.512+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank (agence Umnia Bank )
+[2025-07-17T11:05:04.740+0000] {scraper_banks.py:370} INFO - ✅ Bank chaabi (agence Chaabi International Bank H99H+V2G Bd Anoual)
+[2025-07-17T11:05:04.941+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire Moulay Driss 1er
+[2025-07-17T11:05:05.202+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire Moulay Youssef
+[2025-07-17T11:05:05.419+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H9QQ+286 Bd Lahcen Ou Ider)
+[2025-07-17T11:05:05.643+0000] {scraper_banks.py:370} INFO - ✅ Bank Of Africa, Agence Al Massira, Maarif. (agence Bank of Africa Rue Abou Abdellah Nafii)
+[2025-07-17T11:05:05.887+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire, Agence AL ÎRFANE, Casablanca. (agence Banque Populaire HFX7+R27)
+[2025-07-17T11:05:06.149+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank - Agence Palmiers (agence CFG Bank 5 Rue Ibnou Toufail)
+[2025-07-17T11:05:06.474+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H97V+4MQ Bd Modibo Keita)
+[2025-07-17T11:05:06.756+0000] {scraper_banks.py:370} INFO - ✅ Dar Al Amane Bank (agence Al Barid Bank Angle Rue de Rome et Rue Abou Fariss)
+[2025-07-17T11:05:06.953+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire, Agence Bouchentouf, Casablanca. (agence Banque Populaire H99W+CG4 Bd El Fida)
+[2025-07-17T11:05:07.330+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Ain Borja (agence Banque Populaire 60 Bd Ibn Tachfine)
+[2025-07-17T11:05:07.589+0000] {scraper_banks.py:370} INFO - ✅ Crédit du Maroc (agence Crédit du Maroc 1 Bd de Strasbourg)
+[2025-07-17T11:05:07.846+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moussa Bnou Noussair (agence Banque Populaire 44 Rue Jean Jaures Casablanca)
+[2025-07-17T11:05:08.026+0000] {scraper_banks.py:370} INFO - ✅ Banque Crédit Agricole (agence Crédit Agricole du Maroc 104 Bd Abdelmoumen)
+[2025-07-17T11:05:08.229+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa (agence Bank of Africa LOT 134 LOTISSEMENT ENNASSIM CASABLANCA)
+[2025-07-17T11:05:08.482+0000] {scraper_banks.py:370} INFO - ✅ Societe Generale Maroc (SGMA) - SG Securities Services (agence Crédit du Maroc 55 Bd Abdelmoumen)
+[2025-07-17T11:05:08.699+0000] {scraper_banks.py:370} INFO - ✅ Bank Al Yousr (agence Bank Al Yousr H9C2+QXX)
+[2025-07-17T11:05:08.875+0000] {scraper_banks.py:370} INFO - ✅ Société Générale (agence Société Générale Maroc G9G5+2GQ)
+[2025-07-17T11:05:09.048+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Souna (agence Umnia Bank 586 Bd Modibo Keita)
+[2025-07-17T11:05:09.267+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank - Agence Casa Gauthier (agence CFG Bank Av Hassan Souktani)
+[2025-07-17T11:05:09.545+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (Siège Social) (agence Attijariwafa Bank 2 Bd Moulay Youssef)
+[2025-07-17T11:05:09.763+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa la Gironde (agence Bank of Africa H9QW+8XF Rue Barathon)
+[2025-07-17T11:05:09.945+0000] {scraper_banks.py:370} INFO - ✅ CIH Bank (agence CIH Bank Boulevard Omar Al Khiam Boulevard Atlas)
+[2025-07-17T11:05:10.214+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Al Manar (agence Banque Populaire 105 Bd Ibn Baraka Residence Arrajaa Quartier El Hank Casa)
+[2025-07-17T11:05:10.602+0000] {scraper_banks.py:370} INFO - ✅ Bank Assafa (agence Bank Assafa G9J2+9H9 Av Abou Bakr el Kadiri)
+[2025-07-17T11:05:10.859+0000] {scraper_banks.py:370} INFO - ✅ CFG Bank Agence Casa 2 Mars (agence CFG Bank 108 Av 2 Mars)
+[2025-07-17T11:05:11.063+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Sidi Maarouf (agence Umnia Bank GH2 Imm Rés Panorama 2 Av Abou Bakr el Kadiri)
+[2025-07-17T11:05:11.291+0000] {scraper_banks.py:370} INFO - ✅ BMCE Bank of Africa - Agence Bourgogne (agence Bank of Africa H9W3+VMG bd de Bourgogne ang rue Abou AlWaqt Khalaf)
+[2025-07-17T11:05:11.646+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA (agence Bank of Africa 650 Boulevard Mohamed V)
+[2025-07-17T11:05:11.819+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Ouled Ziane (agence Banque Populaire rue Ahmed Sebbagh and rue 71 derb El Kabir)
+[2025-07-17T11:05:11.987+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Agence Lalla Yacout (agence Banque Populaire 39 Av Lalla Yacout)
+[2025-07-17T11:05:12.229+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Agence Hassan Seghir (agence Banque Populaire H9WR+M5R Angle Bd Hassan Seghir et Rue Hmida)
+[2025-07-17T11:05:12.534+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire G8CC+C7P Unnamed Road)
+[2025-07-17T11:05:12.700+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire HC2C+XH3)
+[2025-07-17T11:05:13.144+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank Kelaa Mgouna 20100)
+[2025-07-17T11:05:13.583+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Smara (agence Banque Populaire 4 bd Smara rue 170 Quartier: Aïn Chok)
+[2025-07-17T11:05:13.813+0000] {scraper_banks.py:370} INFO - ✅ Bank Assafa (agence Bank Assafa H983+64V Rue Al Oukhouane)
+[2025-07-17T11:05:14.195+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire, Agence Cité Plateau, Maarif. (agence Banque Populaire H9F6+3PC Angrue Francois Ponsard Et Rue Al Moubarid Cite Plateau Casa)
+[2025-07-17T11:05:14.519+0000] {scraper_banks.py:370} INFO - ✅ Centre National De Formation de la Banque Populaire (agence Banque Populaire ANFA)
+[2025-07-17T11:05:14.729+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa bank (agence Attijariwafa Bank H9F4+XXC Bd Yacoub El Mansour)
+[2025-07-17T11:05:15.176+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa (agence Bank of Africa H99V+3P2 Bd El Fida)
+[2025-07-17T11:05:15.453+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank H97R+372 Av 2 Mars)
+[2025-07-17T11:05:15.701+0000] {scraper_banks.py:370} INFO - ✅ banque populaire (agence Banque Populaire 314 Bd Mekdad Lahrizi)
+[2025-07-17T11:05:15.972+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Yacoub El Mansour (agence Banque Populaire 2 Ang Yel Mansour & Rue Acacias)
+[2025-07-17T11:05:16.277+0000] {scraper_banks.py:370} INFO - ✅ Siège C - BANK OF AFRICA (agence Bank of Africa H9MG+WHX)
+[2025-07-17T11:05:16.586+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Derb Ghalef (agence Umnia Bank 5 Boulevard Bir Anzarane)
+[2025-07-17T11:05:16.895+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank G7XX+8QJ)
+[2025-07-17T11:05:17.169+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire El Fida
+[2025-07-17T11:05:17.466+0000] {scraper_banks.py:370} INFO - ✅ Bank Al Karam_Siège Social (agence Al Barid Bank 157 Bd Hassan II)
+[2025-07-17T11:05:17.683+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire
+[2025-07-17T11:05:17.934+0000] {scraper_banks.py:372} INFO - 🚫 Doublon ou données incomplètes : Banque Populaire Cité Djemaa
+[2025-07-17T11:05:18.304+0000] {scraper_banks.py:370} INFO - ✅ Crédit du Maroc (agence Crédit du Maroc 38 Rue Atlas Hay Assalam - CIL-)
+[2025-07-17T11:05:18.591+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Oulad Haddou (agence Banque Populaire 4 Rue N 1029 Sidi Maarouf Oulad Haddou Casablanca)
+[2025-07-17T11:05:18.792+0000] {scraper_banks.py:370} INFO - ✅ Crédit du Maroc (agence Crédit du Maroc HCV3+HHC)
+[2025-07-17T11:05:19.027+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Ain Sebaa. (agence Umnia Bank Bd Chefchaouni)
+[2025-07-17T11:05:19.200+0000] {scraper_banks.py:370} INFO - ✅ Banco Sabadell Maroc (agence Crédit du Maroc 191 bd Mohamed Zerktouni Twin Center Tour Ouest)
+[2025-07-17T11:05:19.383+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Sahraoui (agence Banque Populaire H9VJ+M9X Rue Abderrahman Sahraoui)
+[2025-07-17T11:05:19.596+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire 3 bd Oued Sebou rue 152)
+[2025-07-17T11:05:19.858+0000] {scraper_banks.py:370} INFO - ✅ CIH Bank (agence CIH Bank Alles De La Gare Bd Chefchaouni)
+[2025-07-17T11:05:20.104+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa (agence Bank of Africa 458 bd Oued Sebou 20220 Casablanca Bd Oued Sebou)
+[2025-07-17T11:05:20.327+0000] {scraper_banks.py:370} INFO - ✅ CIH Bank Yaacoub Al Mansour (agence CIH Bank H8CX+284)
+[2025-07-17T11:05:20.517+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank G8GQ+4R2 Unnamed Road)
+[2025-07-17T11:05:20.697+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Oulfa (agence Umnia Bank Rond-point George Bd Oued Oum Rabia)
+[2025-07-17T11:05:20.882+0000] {scraper_banks.py:370} INFO - ✅ CIH Bank Sidi Maarouf (agence CIH Bank G8GX+4P3، Av Abou Bakr el Kadiri Route Principale 1029 Al Mostakbalgh 4 Rdpt Al Moustakbal)
+[2025-07-17T11:05:21.070+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank HC3F+85G Av Reda Guedira)
+[2025-07-17T11:05:21.266+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire, Agence Ibnou Nafis, Maarif. (agence Banque Populaire 62 Ibnou Nafis)
+[2025-07-17T11:05:21.481+0000] {scraper_banks.py:370} INFO - ✅ Bank of Africa (agence Bank of Africa HCF2+C38 Rue Maamora)
+[2025-07-17T11:05:21.658+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire H9FX+CQ4 Rue Maamora)
+[2025-07-17T11:05:21.892+0000] {scraper_banks.py:370} INFO - ✅ CIH Bank, Agence Derb Ghallef, Casablanca (agence CIH Bank Boulevard Bir Anzarane)
+[2025-07-17T11:05:22.075+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank H9RX+HCJ Bd Emile Zola)
+[2025-07-17T11:05:22.258+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moulay Islimane (agence Banque Populaire 4 lot Espérance II (Ain Sebaâ) Quartier: Aïn Sebaâ)
+[2025-07-17T11:05:22.428+0000] {scraper_banks.py:370} INFO - ✅ Banque populaire beauséjour (agence Banque Populaire 245 Bd Yacoub El Mansour)
+[2025-07-17T11:05:22.685+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire - Al Baida (agence Banque Populaire Angle Bd 9 Avril Et Rue Mansart)
+[2025-07-17T11:05:22.871+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank H8WP+8PX)
+[2025-07-17T11:05:23.070+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire (agence Banque Populaire 921 bd El Fida Prolongé hay Farah)
+[2025-07-17T11:05:23.244+0000] {scraper_banks.py:370} INFO - ✅ Banque populaire Hay Hassani (Banque populaire Hay Hassani)
+[2025-07-17T11:05:23.564+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA LALLA YACOUT PART/PRO (agence Bank of Africa Av Lalla Yacout)
+[2025-07-17T11:05:23.728+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank 724 Av du 6 Novembre 1975)
+[2025-07-17T11:05:23.928+0000] {scraper_banks.py:370} INFO - ✅ Umnia Bank Casablanca Hay Sadri (Umnia Bank Casablanca Hay Sadri)
+[2025-07-17T11:05:24.278+0000] {scraper_banks.py:370} INFO - ✅ EBRD Casablanca RO (agence Casablanca Finance Group Immeuble Zevaco d'Azemmour Rue 46)
+[2025-07-17T11:05:24.497+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Moulay Rachid (agence Banque Populaire 64 Av Joudar Med Hay Rahma Casablanca)
+[2025-07-17T11:05:24.693+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa bank Casa Rue de Sebta (Attijariwafa bank Casa Rue de Sebta)
+[2025-07-17T11:05:24.921+0000] {scraper_banks.py:370} INFO - ✅ Société Générale La Gironde (agence Société Générale Maroc Angle rues Ifni et Rabia Al Adaouia)
+[2025-07-17T11:05:25.151+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Romandie (agence Banque Populaire 305 Boulevard Bir Anzarane)
+[2025-07-17T11:05:25.324+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Inara (agence Banque Populaire GCQ2+RJG Bd El Qods)
+[2025-07-17T11:05:25.500+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank H9C3+CG3 Bd Ghandi)
+[2025-07-17T11:05:25.711+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank G8PJ+V9X Bd Omar Al Khiam)
+[2025-07-17T11:05:25.892+0000] {scraper_banks.py:370} INFO - ✅ CIH Bank (agence CIH Bank Boulevard Al Qods Lot 152 Prefecture)
+[2025-07-17T11:05:26.087+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Agence Haj Omar (agence Banque Populaire JF36+Q4P)
+[2025-07-17T11:05:26.311+0000] {scraper_banks.py:370} INFO - ✅ BANK OF AFRICA (agence Bank of Africa GCRH+H6W Bd Oued Ad Dahab)
+[2025-07-17T11:05:26.533+0000] {scraper_banks.py:370} INFO - ✅ Banque Populaire Bine Lamdoune البنك الشعبي بين لمدون (agence Banque Populaire bd El Kanadissa -ex Pylones ang rue 17)
+[2025-07-17T11:05:26.742+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank (agence Attijariwafa Bank HCMH+GQV Ave Abdelkader Torres)
+[2025-07-17T11:05:26.942+0000] {scraper_banks.py:370} INFO - ✅ Attijariwafa Bank Moussa ben Noussair (agence Attijariwafa Bank H9Q9+GXX en face de Dream Family Rue Moussa Ben Noussair)
+[2025-07-17T11:05:26.943+0000] {scraper_banks.py:378} INFO - [Casablanca] 112 banques enregistrées
+[2025-07-17T11:05:26.946+0000] {scraper_banks.py:379} INFO - ✅ [Casablanca] Extraction terminée
+[2025-07-17T11:05:27.985+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-17T11:05:28.664+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T11:05:30.512+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T11:05:30.762+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+[2025-07-17T11:05:59.555+0000] {scraper_banks.py:269} INFO - 
+📍 Initialisation pour Casablanca...
+[2025-07-17T11:06:03.102+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/venv/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-07-17T11:06:03.366+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2025-07-17T11:06:09.439+0000] {job.py:229} INFO - Heartbeat recovered after 42.54 seconds
+[2025-07-17T11:06:09.477+0000] {scraper_banks.py:426} INFO - 
+❌ Erreur critique : Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=138.0.7204.157)
+Stacktrace:
+#0 0x55e5f88957da <unknown>
+#1 0x55e5f833a2e0 <unknown>
+#2 0x55e5f83314c1 <unknown>
+#3 0x55e5f8322789 <unknown>
+#4 0x55e5f83244d0 <unknown>
+#5 0x55e5f8322b2e <unknown>
+#6 0x55e5f832249a <unknown>
+#7 0x55e5f8322175 <unknown>
+#8 0x55e5f831ffd5 <unknown>
+#9 0x55e5f83207ba <unknown>
+#10 0x55e5f833d809 <unknown>
+#11 0x55e5f83d8335 <unknown>
+#12 0x55e5f83b18b2 <unknown>
+#13 0x55e5f83d771c <unknown>
+#14 0x55e5f83b1683 <unknown>
+#15 0x55e5f837db5b <unknown>
+#16 0x55e5f837ef31 <unknown>
+#17 0x55e5f885a72b <unknown>
+#18 0x55e5f885e534 <unknown>
+#19 0x55e5f8841229 <unknown>
+#20 0x55e5f885f0d8 <unknown>
+#21 0x55e5f882561f <unknown>
+#22 0x55e5f8882dd8 <unknown>
+#23 0x55e5f8882fb6 <unknown>
+#24 0x55e5f8894af6 <unknown>
+#25 0x7fb8c28d21c4 <unknown>
+
+[2025-07-17T11:06:29.918+0000] {scraper_banks.py:437} INFO - 🔚 WebDriver fermé
+[2025-07-17T11:06:29.931+0000] {insert_data_to_json.py:15} INFO - ✅ Banques extraites avec succès.
+[2025-07-17T11:06:30.404+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-07-17T11:06:30.809+0000] {job.py:229} INFO - Heartbeat recovered after 21.39 seconds
+[2025-07-17T11:06:31.673+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T11:06:32.251+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-07-17T11:06:32.586+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+[2025-07-17T11:06:33.965+0000] {insert_data_to_json.py:20} INFO - ❌ Erreur lors du scraping : Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x55bc50de27da <unknown>
+#1 0x55bc508872e0 <unknown>
+#2 0x55bc508c17bd <unknown>
+#3 0x55bc508bcad7 <unknown>
+#4 0x55bc5090ce9e <unknown>
+#5 0x55bc5090c466 <unknown>
+#6 0x55bc508fe683 <unknown>
+#7 0x55bc508cab5b <unknown>
+#8 0x55bc508cbf31 <unknown>
+#9 0x55bc50da772b <unknown>
+#10 0x55bc50dab534 <unknown>
+#11 0x55bc50d8e229 <unknown>
+#12 0x55bc50dac0d8 <unknown>
+#13 0x55bc50d7261f <unknown>
+#14 0x55bc50dcfdd8 <unknown>
+#15 0x55bc50dcffb6 <unknown>
+#16 0x55bc50de1af6 <unknown>
+#17 0x7f9dae8f81c4 <unknown>
+
+[2025-07-17T11:06:33.993+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-07-17T11:06:34.668+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-07-17T11:06:34.690+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=bank_reviews_etl_and_analysis_pipeline, task_id=scrape_and_insert_data_to_json, run_id=manual__2025-07-17T11:00:36.830164+00:00, execution_date=20250717T110036, start_date=20250717T110111, end_date=20250717T110634
+[2025-07-17T11:06:35.104+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-07-17T11:06:35.106+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-07-17T11:06:35.109+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline queued_at:2025-07-17 11:00:37.881556+00:00
+[2025-07-17T11:06:35.110+0000] {logging_mixin.py:190} INFO - Task hostname:569ba507bc01 operator:PythonOperator
+[2025-07-17T11:06:35.326+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-07-17T11:06:35.950+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-17T11:06:35.960+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

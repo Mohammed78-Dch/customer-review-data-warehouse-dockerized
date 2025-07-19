@@ -1,0 +1,21 @@
+[2025-07-16T18:08:42.951+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-16T18:08:43.032+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.convertir_date_relative scheduled__2025-06-22T00:00:00+00:00 [queued]>
+[2025-07-16T18:08:43.067+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bank_reviews_etl_and_analysis_pipeline.convertir_date_relative scheduled__2025-06-22T00:00:00+00:00 [queued]>
+[2025-07-16T18:08:43.070+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-07-16T18:08:43.115+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): convertir_date_relative> on 2025-06-22 00:00:00+00:00
+[2025-07-16T18:08:43.136+0000] {standard_task_runner.py:72} INFO - Started process 1049 to run task
+[2025-07-16T18:08:43.165+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'bank_reviews_etl_and_analysis_pipeline', 'convertir_date_relative', 'scheduled__2025-06-22T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/dag_load_reviews.py', '--cfg-path', '/tmp/tmpgnhbc72x']
+[2025-07-16T18:08:43.170+0000] {standard_task_runner.py:105} INFO - Job 29: Subtask convertir_date_relative
+[2025-07-16T18:08:43.429+0000] {task_command.py:467} INFO - Running <TaskInstance: bank_reviews_etl_and_analysis_pipeline.convertir_date_relative scheduled__2025-06-22T00:00:00+00:00 [running]> on host 569ba507bc01
+[2025-07-16T18:08:44.306+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mohammed' AIRFLOW_CTX_DAG_ID='bank_reviews_etl_and_analysis_pipeline' AIRFLOW_CTX_TASK_ID='convertir_date_relative' AIRFLOW_CTX_EXECUTION_DATE='2025-06-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-22T00:00:00+00:00'
+[2025-07-16T18:08:44.331+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-07-16T18:08:44.335+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-07-16T18:08:44.340+0000] {logging_mixin.py:190} INFO - Current task name:convertir_date_relative state:running start_date:2025-07-16 18:08:43.036165+00:00
+[2025-07-16T18:08:44.344+0000] {logging_mixin.py:190} INFO - Dag name:bank_reviews_etl_and_analysis_pipeline and current dag run status:running
+[2025-07-16T18:08:44.349+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-07-16T18:08:44.359+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-07-16T18:08:44.369+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /opt/***/scripts/convertir_date_relative.py']
+[2025-07-16T18:08:44.456+0000] {subprocess.py:99} INFO - Output:
+[2025-07-18T18:05:06.107+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-18T18:05:07.124+0000] {taskinstance.py:2604} INFO - Dependencies not met for <TaskInstance: bank_reviews_etl_and_analysis_pipeline.convertir_date_relative scheduled__2025-06-22T00:00:00+00:00 [skipped]>, dependency 'Task Instance State' FAILED: Task is in the 'skipped' state.
+[2025-07-18T18:05:07.140+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run

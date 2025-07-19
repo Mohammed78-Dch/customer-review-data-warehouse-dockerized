@@ -38,6 +38,16 @@ def insert_data_to_postgresql(**kwargs):
             
         # Création de la table enriched si elle n'existe pas
         cursor.execute("""
+                CREATE SEQUENCE IF NOT EXISTS bank_reviews_id_seq
+                    INCREMENT 1
+                    START 1
+                    MINVALUE 1
+                    MAXVALUE 2147483647
+                    CACHE 1;
+                ALTER SEQUENCE bank_reviews_id_seq OWNED BY public.all_bank_reviews.id;
+            """)
+        print("✅ Séquence bank_reviews_id_seq vérifiée/créée")
+        cursor.execute("""
          CREATE TABLE IF NOT EXISTS public.all_bank_reviews  (
             id integer NOT NULL DEFAULT nextval('bank_reviews_id_seq'::regclass),
             bank_name text COLLATE pg_catalog."default" NOT NULL,

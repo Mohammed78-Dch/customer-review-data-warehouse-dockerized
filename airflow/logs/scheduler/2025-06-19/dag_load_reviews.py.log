@@ -1,0 +1,368 @@
+[2025-06-19T14:11:54.908+0000] {processor.py:186} INFO - Started process (PID=79) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:11:54.940+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:11:55.012+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:11:55.005+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:11:58.231+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:11:58.003+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:11:58.239+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:11:59.367+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 5.323 seconds
+[2025-06-19T14:13:25.406+0000] {processor.py:186} INFO - Started process (PID=149) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:13:25.408+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:13:25.413+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:13:25.412+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:13:25.505+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:13:25.486+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:13:25.509+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:13:25.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.155 seconds
+[2025-06-19T14:13:55.651+0000] {processor.py:186} INFO - Started process (PID=210) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:13:55.652+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:13:55.661+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:13:55.660+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:13:55.777+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:13:55.749+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:13:55.782+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:13:55.820+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.186 seconds
+[2025-06-19T14:14:26.240+0000] {processor.py:186} INFO - Started process (PID=266) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:14:26.242+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:14:26.247+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:14:26.246+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:14:26.364+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:14:26.345+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:14:26.368+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:14:26.408+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.185 seconds
+[2025-06-19T14:14:57.355+0000] {processor.py:186} INFO - Started process (PID=330) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:14:57.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:14:57.360+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:14:57.360+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:14:57.454+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:14:57.441+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:14:57.457+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:14:57.485+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.138 seconds
+[2025-06-19T14:15:28.152+0000] {processor.py:186} INFO - Started process (PID=394) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:15:28.154+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:15:28.156+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:15:28.156+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:15:28.271+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:15:28.247+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:15:28.273+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:15:28.315+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.179 seconds
+[2025-06-19T14:16:00.690+0000] {processor.py:186} INFO - Started process (PID=462) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:16:00.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:16:00.695+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:16:00.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:16:00.813+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:16:00.796+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:16:00.817+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:16:00.865+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.194 seconds
+[2025-06-19T14:18:53.528+0000] {processor.py:186} INFO - Started process (PID=82) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:18:53.533+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:18:53.538+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:18:53.537+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:18:53.923+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:18:53.882+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:18:53.932+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:18:54.259+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.989 seconds
+[2025-06-19T14:19:25.767+0000] {processor.py:186} INFO - Started process (PID=147) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:19:25.768+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:19:25.770+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:19:25.770+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:19:25.993+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:19:25.973+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:19:25.998+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:19:26.055+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.302 seconds
+[2025-06-19T14:19:57.159+0000] {processor.py:186} INFO - Started process (PID=217) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:19:57.161+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:19:57.163+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:19:57.163+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:19:57.272+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:19:57.257+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:19:57.275+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:19:57.307+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.157 seconds
+[2025-06-19T14:20:28.137+0000] {processor.py:186} INFO - Started process (PID=277) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:20:28.145+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:20:28.150+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:20:28.150+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:20:28.615+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:20:28.530+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:20:28.632+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:20:28.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.636 seconds
+[2025-06-19T14:20:59.554+0000] {processor.py:186} INFO - Started process (PID=342) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:20:59.570+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:20:59.589+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:20:59.588+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:20:59.794+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:20:59.739+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:20:59.801+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:20:59.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.332 seconds
+[2025-06-19T14:21:33.280+0000] {processor.py:186} INFO - Started process (PID=370) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:21:33.281+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:21:33.284+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:21:33.283+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:21:33.387+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:21:33.367+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:21:33.391+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:21:33.467+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.203 seconds
+[2025-06-19T14:22:04.135+0000] {processor.py:186} INFO - Started process (PID=435) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:22:04.136+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:22:04.138+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:22:04.137+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:22:04.225+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:22:04.207+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 8, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[2025-06-19T14:22:04.230+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:22:04.287+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.163 seconds
+[2025-06-19T14:22:34.589+0000] {processor.py:186} INFO - Started process (PID=516) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:22:34.591+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:22:34.594+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:22:34.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:22:34.835+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:22:34.816+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 10, in <module>
+    from webdriver_manager.chrome import ChromeDriverManager
+ModuleNotFoundError: No module named 'webdriver_manager'
+[2025-06-19T14:22:34.839+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:22:34.890+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.319 seconds
+[2025-06-19T14:23:05.258+0000] {processor.py:186} INFO - Started process (PID=615) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:23:05.260+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:23:05.264+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:23:05.263+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:23:05.602+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:23:05.578+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 10, in <module>
+    from webdriver_manager.chrome import ChromeDriverManager
+ModuleNotFoundError: No module named 'webdriver_manager'
+[2025-06-19T14:23:05.607+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:23:05.689+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.462 seconds
+[2025-06-19T14:23:36.777+0000] {processor.py:186} INFO - Started process (PID=680) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:23:36.784+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:23:36.796+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:23:36.787+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:23:37.123+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:23:37.110+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_load_reviews.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_load_reviews.py", line 40, in <module>
+    from insert_data_to_json import insert_data_to_json
+  File "/opt/airflow/scripts/insert_data_to_json.py", line 2, in <module>
+    from scraper import scrape_bank_reviews  # Importer la fonction de scraping
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/scraper.py", line 10, in <module>
+    from webdriver_manager.chrome import ChromeDriverManager
+ModuleNotFoundError: No module named 'webdriver_manager'
+[2025-06-19T14:23:37.126+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:23:37.165+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.426 seconds
+[2025-06-19T14:24:07.561+0000] {processor.py:186} INFO - Started process (PID=762) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:24:07.562+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:24:07.564+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:07.564+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:24:08.112+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:08.112+0000] {scraper.py:28} INFO - Loading from: /opt/airflow/scripts/banks_maroc.json
+[2025-06-19T14:24:08.149+0000] {logging_mixin.py:190} INFO - ✅ Pipeline ETL et analyse des avis bancaires configuré avec succès.
+[2025-06-19T14:24:08.153+0000] {processor.py:925} INFO - DAG(s) 'bank_reviews_etl_and_analysis_pipeline' retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:24:08.366+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:08.366+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-19T14:24:08.392+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:08.391+0000] {dag.py:4180} INFO - Setting next_dagrun for bank_reviews_etl_and_analysis_pipeline to 2025-06-15 00:00:00+00:00, run_after=2025-06-22 00:00:00+00:00
+[2025-06-19T14:24:08.442+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 0.893 seconds
+[2025-06-19T14:24:38.611+0000] {processor.py:186} INFO - Started process (PID=827) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:24:38.612+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:24:38.614+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:38.614+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:24:39.668+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:39.668+0000] {scraper.py:28} INFO - Loading from: /opt/airflow/scripts/banks_maroc.json
+[2025-06-19T14:24:39.718+0000] {logging_mixin.py:190} INFO - ✅ Pipeline ETL et analyse des avis bancaires configuré avec succès.
+[2025-06-19T14:24:39.726+0000] {processor.py:925} INFO - DAG(s) 'bank_reviews_etl_and_analysis_pipeline' retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:24:39.795+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:39.794+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-19T14:24:39.867+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:24:39.867+0000] {dag.py:4180} INFO - Setting next_dagrun for bank_reviews_etl_and_analysis_pipeline to 2025-06-15 00:00:00+00:00, run_after=2025-06-22 00:00:00+00:00
+[2025-06-19T14:24:39.912+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 1.321 seconds
+[2025-06-19T14:25:15.124+0000] {processor.py:186} INFO - Started process (PID=899) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:25:15.125+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:25:15.128+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:15.128+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:25:15.920+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:15.920+0000] {scraper.py:28} INFO - Loading from: /opt/airflow/scripts/banks_maroc.json
+[2025-06-19T14:25:15.948+0000] {logging_mixin.py:190} INFO - ✅ Pipeline ETL et analyse des avis bancaires configuré avec succès.
+[2025-06-19T14:25:15.956+0000] {processor.py:925} INFO - DAG(s) 'bank_reviews_etl_and_analysis_pipeline' retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:25:16.019+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:16.018+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-19T14:25:16.089+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:16.089+0000] {dag.py:4180} INFO - Setting next_dagrun for bank_reviews_etl_and_analysis_pipeline to 2025-06-15 00:00:00+00:00, run_after=2025-06-22 00:00:00+00:00
+[2025-06-19T14:25:16.146+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 1.042 seconds
+[2025-06-19T14:25:47.946+0000] {processor.py:186} INFO - Started process (PID=969) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:25:47.950+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:25:47.958+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:47.953+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:25:48.950+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:48.950+0000] {scraper.py:28} INFO - Loading from: /opt/airflow/scripts/banks_maroc.json
+[2025-06-19T14:25:49.019+0000] {logging_mixin.py:190} INFO - ✅ Pipeline ETL et analyse des avis bancaires configuré avec succès.
+[2025-06-19T14:25:49.025+0000] {processor.py:925} INFO - DAG(s) 'bank_reviews_etl_and_analysis_pipeline' retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:25:49.116+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:49.116+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-19T14:25:49.181+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:25:49.181+0000] {dag.py:4180} INFO - Setting next_dagrun for bank_reviews_etl_and_analysis_pipeline to 2025-06-15 00:00:00+00:00, run_after=2025-06-22 00:00:00+00:00
+[2025-06-19T14:25:49.222+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 1.314 seconds
+[2025-06-19T14:26:19.842+0000] {processor.py:186} INFO - Started process (PID=1036) to work on /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:26:19.845+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_load_reviews.py for tasks to queue
+[2025-06-19T14:26:19.853+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:26:19.851+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:26:20.609+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:26:20.609+0000] {scraper.py:28} INFO - Loading from: /opt/airflow/scripts/banks_maroc.json
+[2025-06-19T14:26:20.634+0000] {logging_mixin.py:190} INFO - ✅ Pipeline ETL et analyse des avis bancaires configuré avec succès.
+[2025-06-19T14:26:20.638+0000] {processor.py:925} INFO - DAG(s) 'bank_reviews_etl_and_analysis_pipeline' retrieved from /opt/airflow/dags/dag_load_reviews.py
+[2025-06-19T14:26:20.686+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:26:20.686+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-19T14:26:20.739+0000] {logging_mixin.py:190} INFO - [2025-06-19T14:26:20.738+0000] {dag.py:4180} INFO - Setting next_dagrun for bank_reviews_etl_and_analysis_pipeline to 2025-06-15 00:00:00+00:00, run_after=2025-06-22 00:00:00+00:00
+[2025-06-19T14:26:20.782+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_load_reviews.py took 1.023 seconds

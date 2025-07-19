@@ -3,26 +3,50 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 import os
+# import sys
+
+# # 👉 Calcul du chemin absolu vers le dossier scripts/
+# current_dir = os.path.dirname(os.path.abspath(__file__))  # chemin du fichier DAG
+# scripts_path = os.path.abspath(os.path.join(current_dir, '..', 'scripts'))
+# sys.path.append(scripts_path)
+# # Ajoute ça en haut (juste après scripts_path)
+# project_root = os.path.abspath(os.path.join(current_dir, '..', '..'))  # Racine du projet
+# dbt_transactional_path = os.path.join(project_root, '.dbt', 'dbt_projects', 'bank_reviews_transactional')
+# dbt_decisionnal_path = os.path.join(project_root, '.dbt', 'dbt_projects', 'bank_reviews_decisionnal')
+
+# # 👉 Importation des fonctions Python personnalisées
+# from scripts.insert_data_to_postgresql import insert_data_to_postgresql
+# from scripts.insert_data_to_json import insert_data_to_json
+
 import sys
 
-# 👉 Calcul du chemin absolu vers le dossier scripts/
-current_dir = os.path.dirname(os.path.abspath(__file__))  # chemin du fichier DAG
+# Chemin absolu vers le dossier du fichier DAG
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Ajouter le dossier scripts au path pour importer les modules
 scripts_path = os.path.abspath(os.path.join(current_dir, '..', 'scripts'))
 sys.path.append(scripts_path)
-# Ajoute ça en haut (juste après scripts_path)
-project_root = os.path.abspath(os.path.join(current_dir, '..', '..'))  # Racine du projet
+
+# Optionnel : ajouter la racine du projet et dossiers dbt si besoin
+project_root = os.path.abspath(os.path.join(current_dir, '..', '..'))
 dbt_transactional_path = os.path.join(project_root, '.dbt', 'dbt_projects', 'bank_reviews_transactional')
 dbt_decisionnal_path = os.path.join(project_root, '.dbt', 'dbt_projects', 'bank_reviews_decisionnal')
 
-# 👉 Importation des fonctions Python personnalisées
-from scripts.insert_data_to_postgresql import insert_data_to_postgresql
-from scripts.insert_data_to_json import insert_data_to_json
+sys.path.append(dbt_transactional_path)
+sys.path.append(dbt_decisionnal_path)
+
+# Maintenant, tu peux importer tes modules scripts
+from insert_data_to_postgresql import insert_data_to_postgresql
+from insert_data_to_json import insert_data_to_json
+
+# Ton code DAG ici...
+
 
 default_args = {
     'owner': 'mohammed',
     'depends_on_past': False,
     'start_date': datetime(2025, 6, 8),
-    'retries': 1,
+    'retries': 0,
 }
 
 dag = DAG(
